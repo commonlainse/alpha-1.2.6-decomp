@@ -1,0 +1,11 @@
+Summary for client.jar
+Decompiled with CFR 0.152
+
+
+com.jcraft.jorbis.Drft
+----------------------------
+
+dradfg(int int int int float[] float[] float[] float[] float[] float[] int )
+  Unable to fully structure code
+dradbg(int int int int float[] float[] float[] float[] float[] float[] int )
+  Unable to fully structure code
