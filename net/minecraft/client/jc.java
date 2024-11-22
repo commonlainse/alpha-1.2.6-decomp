@@ -11,7 +11,7 @@ public class jc
 extends ex {
     public fn j = new fn();
 
-    public jc(fo fo2) {
+    public jc(Inventory fo2) {
         int n2;
         int n3;
         this.i.add(new ar(this, this.j.a, this.j.b, 0, 124, 35));

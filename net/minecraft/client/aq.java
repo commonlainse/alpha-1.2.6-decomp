@@ -28,7 +28,7 @@ public abstract class aq {
 
     private void a(lw lw2, double d2, double d3, double d4, float f2) {
         GL11.glDisable(2896);
-        int n2 = nq.ar.bg;
+        int n2 = HeadBanger1337.ar.bg;
         int n3 = (n2 & 0xF) << 4;
         int n4 = n2 & 0xF0;
         float f3 = (float)n3 / 256.0f;
@@ -69,18 +69,18 @@ public abstract class aq {
         GL11.glBlendFunc(770, 771);
         fu fu2 = this.b.e;
         fu2.b(fu2.a("%clamp%/misc/shadow.png"));
-        cy cy2 = this.b();
+        Session cy2 = this.b();
         GL11.glDepthMask((boolean)false);
         float f4 = this.c;
         double d5 = lw2.aV + (lw2.aw - lw2.aV) * (double)f3;
         double d6 = lw2.aW + (lw2.ax - lw2.aW) * (double)f3 + (double)lw2.i_();
         double d7 = lw2.aX + (lw2.ay - lw2.aX) * (double)f3;
-        int n2 = fi.b(d5 - (double)f4);
-        int n3 = fi.b(d5 + (double)f4);
-        int n4 = fi.b(d6 - (double)f4);
-        int n5 = fi.b(d6);
-        int n6 = fi.b(d7 - (double)f4);
-        int n7 = fi.b(d7 + (double)f4);
+        int n2 = TrigLookup.b(d5 - (double)f4);
+        int n3 = TrigLookup.b(d5 + (double)f4);
+        int n4 = TrigLookup.b(d6 - (double)f4);
+        int n5 = TrigLookup.b(d6);
+        int n6 = TrigLookup.b(d7 - (double)f4);
+        int n7 = TrigLookup.b(d7 + (double)f4);
         double d8 = d2 - d5;
         double d9 = d3 - d6;
         double d10 = d4 - d7;
@@ -91,7 +91,7 @@ public abstract class aq {
                 for (int i4 = n6; i4 <= n7; ++i4) {
                     int n8 = cy2.a(i2, i3 - 1, i4);
                     if (n8 <= 0 || cy2.j(i2, i3, i4) <= 3) continue;
-                    this.a(nq.m[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
+                    this.a(HeadBanger1337.m[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
                 }
             }
         }
@@ -101,11 +101,11 @@ public abstract class aq {
         GL11.glDepthMask((boolean)true);
     }
 
-    private cy b() {
+    private Session b() {
         return this.b.g;
     }
 
-    private void a(nq nq2, double d2, double d3, double d4, int n2, int n3, int n4, float f2, float f3, double d5, double d6, double d7) {
+    private void a(HeadBanger1337 nq2, double d2, double d3, double d4, int n2, int n3, int n4, float f2, float f3, double d5, double d6, double d7) {
         is is2 = is.a;
         if (!nq2.b()) {
             return;

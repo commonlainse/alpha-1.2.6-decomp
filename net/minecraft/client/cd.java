@@ -6,11 +6,11 @@ public class cd {
     private int b;
     private int c;
     private int[] d;
-    private fp e;
+    private Item e;
     public final int a;
 
-    public cd(int n2, int n3, int[] nArray, fp fp2) {
-        this.a = fp2.c;
+    public cd(int n2, int n3, int[] nArray, Item fp2) {
+        this.a = fp2.id;
         this.b = n2;
         this.c = n3;
         this.d = nArray;
@@ -46,8 +46,8 @@ public class cd {
         return true;
     }
 
-    public fp b(int[] nArray) {
-        return new fp(this.e.c, this.e.a);
+    public Item b(int[] nArray) {
+        return new Item(this.e.id, this.e.count);
     }
 
     public int a() {

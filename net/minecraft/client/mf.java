@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class mf
 extends pc {
-    public mf(cy cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
+    public mf(Session cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
         super(cy2, d2, d3, d4);
         this.h = 0.04f;
         ++this.b;

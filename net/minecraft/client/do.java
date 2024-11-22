@@ -15,7 +15,7 @@ extends Canvas {
 
     public _do() {
         try {
-            this.a = ImageIO.read(av.class.getResource("/gui/logo.png"));
+            this.a = ImageIO.read(CrashDialog.class.getResource("/gui/logo.png"));
         }
         catch (IOException iOException) {
             // empty catch block

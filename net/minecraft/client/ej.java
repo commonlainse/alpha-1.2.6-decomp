@@ -13,7 +13,7 @@ extends ok {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         super.a(cy2, n2, n3, n4, random);
         if (cy2.j(n2, n3 + 1, n4) >= 9 && random.nextInt(5) == 0) {
             int n5 = cy2.e(n2, n3, n4);

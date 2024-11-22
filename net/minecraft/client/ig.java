@@ -16,11 +16,11 @@ extends ok {
 
     @Override
     protected boolean b(int n2) {
-        return n2 == nq.aA.bh;
+        return n2 == HeadBanger1337.aA.bh;
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         float f2;
         int n5;
         super.a(cy2, n2, n3, n4, random);
@@ -29,7 +29,7 @@ extends ok {
         }
     }
 
-    private float i(cy cy2, int n2, int n3, int n4) {
+    private float i(Session cy2, int n2, int n3, int n4) {
         float f2 = 1.0f;
         int n5 = cy2.a(n2, n3, n4 - 1);
         int n6 = cy2.a(n2, n3, n4 + 1);
@@ -46,7 +46,7 @@ extends ok {
             for (int i3 = n4 - 1; i3 <= n4 + 1; ++i3) {
                 int n13 = cy2.a(i2, n3 - 1, i3);
                 float f3 = 0.0f;
-                if (n13 == nq.aA.bh) {
+                if (n13 == HeadBanger1337.aA.bh) {
                     f3 = 1.0f;
                     if (cy2.e(i2, n3 - 1, i3) > 0) {
                         f3 = 3.0f;
@@ -78,7 +78,7 @@ extends ok {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, int n5) {
+    public void b(Session cy2, int n2, int n3, int n4, int n5) {
         super.b(cy2, n2, n3, n4, n5);
         if (!cy2.z) {
             for (int i2 = 0; i2 < 3; ++i2) {
@@ -87,7 +87,7 @@ extends ok {
                 float f3 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
                 float f4 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
                 float f5 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
-                eo eo2 = new eo(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new fp(dx.Q));
+                DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new Item(dx.Q));
                 eo2.c = 10;
                 cy2.a(eo2);
             }

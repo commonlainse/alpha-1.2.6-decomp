@@ -11,8 +11,8 @@ extends lh {
     }
 
     @Override
-    protected ji a_() {
-        return new bl();
+    protected TileEntityRegistry a_() {
+        return new MobSpawner();
     }
 
     @Override

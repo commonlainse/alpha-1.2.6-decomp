@@ -30,7 +30,7 @@ extends gm {
     @Override
     public void a(float f2, float f3, float f4, float f5, float f6, float f7) {
         for (int i2 = 0; i2 < this.b.length; ++i2) {
-            this.b[i2].d = 0.2f * fi.a(f4 * 0.3f + (float)i2) + 0.4f;
+            this.b[i2].d = 0.2f * TrigLookup.a(f4 * 0.3f + (float)i2) + 0.4f;
         }
     }
 

@@ -10,7 +10,7 @@ extends ad {
     protected float[] j = new float[256];
 
     public ba() {
-        super(nq.C.bg);
+        super(HeadBanger1337.C.bg);
     }
 
     @Override
@@ -25,8 +25,8 @@ extends ad {
         for (int i2 = 0; i2 < 16; ++i2) {
             for (n7 = 0; n7 < 16; ++n7) {
                 f2 = 0.0f;
-                int n8 = (int)(fi.a((float)n7 * (float)Math.PI * 2.0f / 16.0f) * 1.2f);
-                n6 = (int)(fi.a((float)i2 * (float)Math.PI * 2.0f / 16.0f) * 1.2f);
+                int n8 = (int)(TrigLookup.a((float)n7 * (float)Math.PI * 2.0f / 16.0f) * 1.2f);
+                n6 = (int)(TrigLookup.a((float)i2 * (float)Math.PI * 2.0f / 16.0f) * 1.2f);
                 for (n5 = i2 - 1; n5 <= i2 + 1; ++n5) {
                     for (n4 = n7 - 1; n4 <= n7 + 1; ++n4) {
                         n3 = n5 + n8 & 0xF;

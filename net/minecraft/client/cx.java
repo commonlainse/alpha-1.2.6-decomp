@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class cx
-extends nq {
+extends HeadBanger1337 {
     private boolean a;
 
     protected cx(int n2, int n3, boolean bl2) {
@@ -55,19 +55,19 @@ extends nq {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         super.e(cy2, n2, n3, n4);
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4);
-        return (n5 == 0 || nq.m[n5].bs.d()) && cy2.g(n2, n3 - 1, n4);
+        return (n5 == 0 || HeadBanger1337.m[n5].bs.d()) && cy2.g(n2, n3 - 1, n4);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, hf hf2) {
-        int n5 = fi.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
+    public void a(Session cy2, int n2, int n3, int n4, Mob hf2) {
+        int n5 = TrigLookup.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
         cy2.b(n2, n3, n4, n5);
     }
 }

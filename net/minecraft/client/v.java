@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class v
-extends nq {
+extends HeadBanger1337 {
     public v(int n2, int n3) {
         super(n2, n3, hb.p);
     }
@@ -22,8 +22,8 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
-        if (n5 > 0 && nq.m[n5].e() && cy2.o(n2, n3, n4)) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
+        if (n5 > 0 && HeadBanger1337.m[n5].e() && cy2.o(n2, n3, n4)) {
             this.b(cy2, n2, n3, n4, 0);
             cy2.d(n2, n3, n4, 0);
         }
@@ -35,18 +35,18 @@ extends nq {
     }
 
     @Override
-    public void c(cy cy2, int n2, int n3, int n4) {
-        kr kr2 = new kr(cy2, (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f);
+    public void c(Session cy2, int n2, int n3, int n4) {
+        PrimedTNT kr2 = new PrimedTNT(cy2, (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f);
         kr2.a = cy2.l.nextInt(kr2.a / 4) + kr2.a / 8;
         cy2.a(kr2);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, int n5) {
+    public void b(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.z) {
             return;
         }
-        kr kr2 = new kr(cy2, (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f);
+        PrimedTNT kr2 = new PrimedTNT(cy2, (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f);
         cy2.a(kr2);
         cy2.a(kr2, "random.fuse", 1.0f, 1.0f);
     }

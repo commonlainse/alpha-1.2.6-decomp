@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public abstract class ld
-extends nq {
+extends HeadBanger1337 {
     protected ld(int n2, hb hb2) {
         super(n2, (hb2 == hb.g ? 14 : 12) * 16 + 13, hb2);
         float f2 = 0.0f;
@@ -30,7 +30,7 @@ extends nq {
         return this.bg + 1;
     }
 
-    protected int h(cy cy2, int n2, int n3, int n4) {
+    protected int h(Session cy2, int n2, int n3, int n4) {
         if (cy2.f(n2, n3, n4) != this.bs) {
             return -1;
         }
@@ -79,7 +79,7 @@ extends nq {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -98,9 +98,9 @@ extends nq {
         return 0;
     }
 
-    private aoclass e(pk pk2, int n2, int n3, int n4) {
+    private Vector3D e(pk pk2, int n2, int n3, int n4) {
         int n5;
-        aoclass ao2 = aoclass.b(0.0, 0.0, 0.0);
+        Vector3D ao2 = Vector3D.b(0.0, 0.0, 0.0);
         int n6 = this.c(pk2, n2, n3, n4);
         for (n5 = 0; n5 < 4; ++n5) {
             int n7;
@@ -165,11 +165,11 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, lw lw2, aoclass ao2) {
-        aoclass ao3 = this.e((pk)cy2, n2, n3, n4);
-        ao2.a += ao3.a;
-        ao2.b += ao3.b;
-        ao2.c += ao3.c;
+    public void a(Session cy2, int n2, int n3, int n4, lw lw2, Vector3D ao2) {
+        Vector3D ao3 = this.e((pk)cy2, n2, n3, n4);
+        ao2.x += ao3.x;
+        ao2.y += ao3.y;
+        ao2.z += ao3.z;
     }
 
     @Override
@@ -191,7 +191,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         super.a(cy2, n2, n3, n4, random);
     }
 
@@ -201,7 +201,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         int n5;
         if (this.bs == hb.f && random.nextInt(64) == 0 && (n5 = cy2.e(n2, n3, n4)) > 0 && n5 < 8) {
             cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), "liquid.water", random.nextFloat() * 0.25f + 0.75f, random.nextFloat() * 1.0f + 0.5f);
@@ -215,30 +215,30 @@ extends nq {
     }
 
     public static double a(pk pk2, int n2, int n3, int n4, hb hb2) {
-        aoclass ao2 = null;
+        Vector3D ao2 = null;
         if (hb2 == hb.f) {
-            ao2 = ((ld)nq.A).e(pk2, n2, n3, n4);
+            ao2 = ((ld)HeadBanger1337.A).e(pk2, n2, n3, n4);
         }
         if (hb2 == hb.g) {
-            ao2 = ((ld)nq.C).e(pk2, n2, n3, n4);
+            ao2 = ((ld)HeadBanger1337.C).e(pk2, n2, n3, n4);
         }
-        if (ao2.a == 0.0 && ao2.c == 0.0) {
+        if (ao2.x == 0.0 && ao2.z == 0.0) {
             return -1000.0;
         }
-        return Math.atan2(ao2.c, ao2.a) - 1.5707963267948966;
+        return Math.atan2(ao2.z, ao2.x) - 1.5707963267948966;
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         this.j(cy2, n2, n3, n4);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         this.j(cy2, n2, n3, n4);
     }
 
-    private void j(cy cy2, int n2, int n3, int n4) {
+    private void j(Session cy2, int n2, int n3, int n4) {
         if (cy2.a(n2, n3, n4) != this.bh) {
             return;
         }
@@ -262,16 +262,16 @@ extends nq {
             if (bl2) {
                 int n5 = cy2.e(n2, n3, n4);
                 if (n5 == 0) {
-                    cy2.d(n2, n3, n4, nq.ap.bh);
+                    cy2.d(n2, n3, n4, HeadBanger1337.ap.bh);
                 } else if (n5 <= 4) {
-                    cy2.d(n2, n3, n4, nq.w.bh);
+                    cy2.d(n2, n3, n4, HeadBanger1337.w.bh);
                 }
                 this.i(cy2, n2, n3, n4);
             }
         }
     }
 
-    protected void i(cy cy2, int n2, int n3, int n4) {
+    protected void i(Session cy2, int n2, int n3, int n4) {
         cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), "random.fizz", 0.5f, 2.6f + (cy2.l.nextFloat() - cy2.l.nextFloat()) * 0.8f);
         for (int i2 = 0; i2 < 8; ++i2) {
             cy2.a("largesmoke", (double)n2 + Math.random(), (double)n3 + 1.2, (double)n4 + Math.random(), 0.0, 0.0, 0.0);

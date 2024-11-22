@@ -104,7 +104,7 @@ extends bp {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)(this.c / 2 + 90), 70.0f, 0.0f);
         GL11.glRotatef(-20.0f, 0.0f, 0.0f, 1.0f);
-        float f3 = 1.8f - fi.e(fi.a((float)(System.currentTimeMillis() % 1000L) / 1000.0f * (float)Math.PI * 2.0f) * 0.1f);
+        float f3 = 1.8f - TrigLookup.e(TrigLookup.a((float)(System.currentTimeMillis() % 1000L) / 1000.0f * (float)Math.PI * 2.0f) * 0.1f);
         f3 = f3 * 100.0f / (float)(this.g.a(this.l) + 32);
         GL11.glScalef((float)f3, (float)f3, (float)f3);
         this.a(this.g, this.l, 0, -8, 0xFFFF00);
@@ -183,7 +183,7 @@ extends bp {
                     GL11.glTranslatef((float)i5, (float)i4, (float)f3);
                     GL11.glScalef((float)f4, (float)f4, (float)f4);
                     GL11.glRotatef((float)f6, 0.0f, 1.0f, 0.0f);
-                    bk2.a(nq.t, f5);
+                    bk2.a(HeadBanger1337.t, f5);
                     GL11.glPopMatrix();
                 }
             }

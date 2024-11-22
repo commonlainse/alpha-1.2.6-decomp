@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 
 public class kw {
     public BufferedImage a;
-    public cy b;
+    public Session b;
     public int c;
     public int d;
     public boolean e = false;
@@ -14,7 +14,7 @@ public class kw {
     public int g = 0;
     public boolean h = false;
 
-    public kw(cy cy2, int n2, int n3) {
+    public kw(Session cy2, int n2, int n3) {
         this.b = cy2;
         this.a(n2, n3);
     }
@@ -27,7 +27,7 @@ public class kw {
         this.h = false;
     }
 
-    public void a(cy cy2, int n2, int n3) {
+    public void a(Session cy2, int n2, int n3) {
         this.b = cy2;
         this.a(n2, n3);
     }

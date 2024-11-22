@@ -5,14 +5,14 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class jn
-extends nq {
+extends HeadBanger1337 {
     protected jn(int n2, int n3) {
         super(n2, n3, hb.n);
         this.a(0.0f, 0.0f, 0.0f, 1.0f, 0.125f, 1.0f);
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -22,7 +22,7 @@ extends nq {
     }
 
     @Override
-    public nx a(cy cy2, int n2, int n3, int n4, aoclass ao2, aoclass ao3) {
+    public nx a(Session cy2, int n2, int n3, int n4, Vector3D ao2, Vector3D ao3) {
         this.a((pk)cy2, n2, n3, n4);
         return super.a(cy2, n2, n3, n4, ao2, ao3);
     }
@@ -61,12 +61,12 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         return cy2.g(n2, n3 - 1, n4);
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         if (!cy2.z) {
             cy2.b(n2, n3, n4, 15);
             this.h(cy2, n2, n3, n4);
@@ -74,7 +74,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.z) {
             return;
         }
@@ -98,12 +98,12 @@ extends nq {
         if (bl2) {
             this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
             cy2.d(n2, n3, n4, 0);
-        } else if (n5 > 0 && nq.m[n5].e() && oc.a(new oc(this, cy2, n2, n3, n4)) == 3) {
+        } else if (n5 > 0 && HeadBanger1337.m[n5].e() && oc.a(new oc(this, cy2, n2, n3, n4)) == 3) {
             this.h(cy2, n2, n3, n4);
         }
     }
 
-    private void h(cy cy2, int n2, int n3, int n4) {
+    private void h(Session cy2, int n2, int n3, int n4) {
         if (cy2.z) {
             return;
         }

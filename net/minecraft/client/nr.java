@@ -13,9 +13,9 @@ implements bd {
     private ha a;
     private Map b = new HashMap();
     private List c = new ArrayList();
-    private cy d;
+    private Session d;
 
-    public nr(cy cy2) {
+    public nr(Session cy2) {
         this.a = new ha(cy2, new byte[32768], 0, 0);
         this.a.q = true;
         this.a.p = true;

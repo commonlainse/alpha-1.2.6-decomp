@@ -14,12 +14,12 @@ extends bq {
     private double bC;
     private float bD;
     private float bE;
-    private fo bF = new fo(null);
+    private Inventory bF = new Inventory(null);
     private boolean bG = false;
     private boolean bH = false;
     private int bI = 0;
 
-    public mp(Minecraft minecraft, cy cy2, ea ea2, ib ib2) {
+    public mp(Minecraft minecraft, Session cy2, ea ea2, ib ib2) {
         super(minecraft, cy2, ea2, 0);
         this.bx = ib2;
     }
@@ -35,7 +35,7 @@ extends bq {
 
     @Override
     public void e_() {
-        if (!this.as.d(fi.b(this.aw), 64, fi.b(this.ay))) {
+        if (!this.as.d(TrigLookup.b(this.aw), 64, TrigLookup.b(this.ay))) {
             return;
         }
         super.e_();
@@ -104,7 +104,7 @@ extends bq {
 
     private void Q() {
         if (!this.e.a(this.bF)) {
-            this.bx.a((gk)new p(-1, this.e.a));
+            this.bx.a((gk)new p(-1, this.e.storage));
             this.bx.a((gk)new p(-2, this.e.c));
             this.bx.a((gk)new p(-3, this.e.b));
             this.bF = this.e.i();
@@ -112,7 +112,7 @@ extends bq {
     }
 
     @Override
-    protected void a(eo eo2) {
+    protected void a(DroppedItem eo2) {
         id id2 = new id(eo2);
         this.bx.a((gk)id2);
         eo2.aw = (double)id2.b / 32.0;

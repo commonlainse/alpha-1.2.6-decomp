@@ -11,7 +11,7 @@ public class iv {
         this.a = minecraft;
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
     }
 
     public void a(int n2, int n3, int n4, int n5) {
@@ -20,8 +20,8 @@ public class iv {
 
     public boolean b(int n2, int n3, int n4, int n5) {
         this.a.h.a(n2, n3, n4);
-        cy cy2 = this.a.e;
-        nq nq2 = nq.m[cy2.a(n2, n3, n4)];
+        Session cy2 = this.a.e;
+        HeadBanger1337 nq2 = HeadBanger1337.m[cy2.a(n2, n3, n4)];
         int n6 = cy2.e(n2, n3, n4);
         boolean bl2 = cy2.d(n2, n3, n4, 0);
         if (nq2 != null && bl2) {
@@ -44,20 +44,20 @@ public class iv {
         return 5.0f;
     }
 
-    public boolean a(eb eb2, cy cy2, fp fp2) {
-        int n2 = fp2.a;
-        fp fp3 = fp2.a(cy2, eb2);
-        if (fp3 != fp2 || fp3 != null && fp3.a != n2) {
-            eb2.e.a[eb2.e.d] = fp3;
-            if (fp3.a == 0) {
-                eb2.e.a[eb2.e.d] = null;
+    public boolean a(Player eb2, Session cy2, Item fp2) {
+        int n2 = fp2.count;
+        Item fp3 = fp2.a(cy2, eb2);
+        if (fp3 != fp2 || fp3 != null && fp3.count != n2) {
+            eb2.e.storage[eb2.e.d] = fp3;
+            if (fp3.count == 0) {
+                eb2.e.storage[eb2.e.d] = null;
             }
             return true;
         }
         return false;
     }
 
-    public void a(eb eb2) {
+    public void a(Player eb2) {
     }
 
     public void c() {
@@ -67,12 +67,12 @@ public class iv {
         return true;
     }
 
-    public void b(eb eb2) {
+    public void b(Player eb2) {
     }
 
-    public boolean a(eb eb2, cy cy2, fp fp2, int n2, int n3, int n4, int n5) {
+    public boolean a(Player eb2, Session cy2, Item fp2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
-        if (n6 > 0 && nq.m[n6].a(cy2, n2, n3, n4, eb2)) {
+        if (n6 > 0 && HeadBanger1337.m[n6].a(cy2, n2, n3, n4, eb2)) {
             return true;
         }
         if (fp2 == null) {
@@ -81,15 +81,15 @@ public class iv {
         return fp2.a(eb2, cy2, n2, n3, n4, n5);
     }
 
-    public eb b(cy cy2) {
+    public Player b(Session cy2) {
         return new bq(this.a, cy2, this.a.i, cy2.q.g);
     }
 
-    public void a(eb eb2, lw lw2) {
+    public void a(Player eb2, lw lw2) {
         eb2.a_(lw2);
     }
 
-    public void b(eb eb2, lw lw2) {
+    public void b(Player eb2, lw lw2) {
         eb2.c(lw2);
     }
 }

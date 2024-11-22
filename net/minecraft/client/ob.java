@@ -5,14 +5,14 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class ob
-extends nq {
+extends HeadBanger1337 {
     protected ob(int n2, int n3) {
         super(n2, n3, hb.n);
         this.b(true);
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -32,7 +32,7 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         if (cy2.g(n2 - 1, n3, n4)) {
             return true;
         }
@@ -49,7 +49,7 @@ extends nq {
     }
 
     @Override
-    public void d(cy cy2, int n2, int n3, int n4, int n5) {
+    public void d(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         if (n5 == 1 && cy2.g(n2, n3 - 1, n4)) {
             n6 = 5;
@@ -70,7 +70,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         super.a(cy2, n2, n3, n4, random);
         if (cy2.e(n2, n3, n4) == 0) {
             this.e(cy2, n2, n3, n4);
@@ -78,7 +78,7 @@ extends nq {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         if (cy2.g(n2 - 1, n3, n4)) {
             cy2.b(n2, n3, n4, 1);
         } else if (cy2.g(n2 + 1, n3, n4)) {
@@ -94,7 +94,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         if (this.h(cy2, n2, n3, n4)) {
             int n6 = cy2.e(n2, n3, n4);
             boolean bl2 = false;
@@ -120,7 +120,7 @@ extends nq {
         }
     }
 
-    private boolean h(cy cy2, int n2, int n3, int n4) {
+    private boolean h(Session cy2, int n2, int n3, int n4) {
         if (!this.a(cy2, n2, n3, n4)) {
             this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
             cy2.d(n2, n3, n4, 0);
@@ -130,7 +130,7 @@ extends nq {
     }
 
     @Override
-    public nx a(cy cy2, int n2, int n3, int n4, aoclass ao2, aoclass ao3) {
+    public nx a(Session cy2, int n2, int n3, int n4, Vector3D ao2, Vector3D ao3) {
         int n5 = cy2.e(n2, n3, n4) & 7;
         float f2 = 0.15f;
         if (n5 == 1) {
@@ -149,7 +149,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         int n5 = cy2.e(n2, n3, n4);
         double d2 = (float)n2 + 0.5f;
         double d3 = (float)n3 + 0.7f;

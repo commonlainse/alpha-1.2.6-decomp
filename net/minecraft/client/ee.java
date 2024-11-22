@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class ee
 extends pp {
-    public ee(cy cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
+    public ee(Session cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
         super(cy2, d2, d3, d4, d5, d6, d7);
         this.az = d5 + (double)((float)(Math.random() * 2.0 - 1.0) * 0.05f);
         this.aA = d6 + (double)((float)(Math.random() * 2.0 - 1.0) * 0.05f);

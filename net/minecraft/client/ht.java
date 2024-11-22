@@ -16,7 +16,7 @@ extends ec {
         this.a = gm3;
     }
 
-    protected boolean a(ns ns2, int n2) {
+    protected boolean a(Slime ns2, int n2) {
         if (n2 == 0) {
             this.a(this.a);
             GL11.glEnable(2977);
@@ -31,7 +31,7 @@ extends ec {
         return false;
     }
 
-    protected void a(ns ns2, float f2) {
+    protected void a(Slime ns2, float f2) {
         float f3 = (ns2.b + (ns2.a - ns2.b) * f2) / ((float)ns2.c * 0.5f + 1.0f);
         float f4 = 1.0f / (f3 + 1.0f);
         float f5 = ns2.c;
@@ -39,13 +39,13 @@ extends ec {
     }
 
     @Override
-    protected void a(hf hf2, float f2) {
-        this.a((ns)hf2, f2);
+    protected void a(Mob hf2, float f2) {
+        this.a((Slime)hf2, f2);
     }
 
     @Override
-    protected boolean a(hf hf2, int n2) {
-        return this.a((ns)hf2, n2);
+    protected boolean a(Mob hf2, int n2) {
+        return this.a((Slime)hf2, n2);
     }
 }
 

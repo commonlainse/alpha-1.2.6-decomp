@@ -11,7 +11,7 @@ import java.util.Set;
 public class ks {
     public boolean a = false;
     private Random h = new Random();
-    private cy i;
+    private Session i;
     public double b;
     public double c;
     public double d;
@@ -19,7 +19,7 @@ public class ks {
     public float f;
     public Set g = new HashSet();
 
-    public ks(cy cy2, lw lw2, double d2, double d3, double d4, float f2) {
+    public ks(Session cy2, lw lw2, double d2, double d3, double d4, float f2) {
         this.i = cy2;
         this.e = lw2;
         this.f = f2;
@@ -55,10 +55,10 @@ public class ks {
                     for (float f4 = this.f * (0.7f + this.i.l.nextFloat() * 0.6f); f4 > 0.0f; f4 -= f3 * 0.75f) {
                         int n6;
                         int n7;
-                        int n8 = fi.b(d4);
-                        int n9 = this.i.a(n8, n7 = fi.b(d3), n6 = fi.b(d2));
+                        int n8 = TrigLookup.b(d4);
+                        int n9 = this.i.a(n8, n7 = TrigLookup.b(d3), n6 = TrigLookup.b(d2));
                         if (n9 > 0) {
-                            f4 -= (nq.m[n9].a(this.e) + 0.3f) * f3;
+                            f4 -= (HeadBanger1337.m[n9].a(this.e) + 0.3f) * f3;
                         }
                         if (f4 > 0.0f) {
                             this.g.add(new on(n8, n7, n6));
@@ -71,14 +71,14 @@ public class ks {
             }
         }
         this.f *= 2.0f;
-        n4 = fi.b(this.b - (double)this.f - 1.0);
-        n3 = fi.b(this.b + (double)this.f + 1.0);
-        n2 = fi.b(this.c - (double)this.f - 1.0);
-        int n10 = fi.b(this.c + (double)this.f + 1.0);
-        int n11 = fi.b(this.d - (double)this.f - 1.0);
-        int n12 = fi.b(this.d + (double)this.f + 1.0);
+        n4 = TrigLookup.b(this.b - (double)this.f - 1.0);
+        n3 = TrigLookup.b(this.b + (double)this.f + 1.0);
+        n2 = TrigLookup.b(this.c - (double)this.f - 1.0);
+        int n10 = TrigLookup.b(this.c + (double)this.f + 1.0);
+        int n11 = TrigLookup.b(this.d - (double)this.f - 1.0);
+        int n12 = TrigLookup.b(this.d + (double)this.f + 1.0);
         List list = this.i.b(this.e, co.b(n4, n2, n11, n3, n10, n12));
-        aoclass ao2 = aoclass.b(this.b, this.c, this.d);
+        Vector3D ao2 = Vector3D.b(this.b, this.c, this.d);
         for (int i2 = 0; i2 < list.size(); ++i2) {
             lw lw2 = (lw)list.get(i2);
             double d9 = lw2.f(this.b, this.c, this.d) / (double)this.f;
@@ -86,7 +86,7 @@ public class ks {
             d4 = lw2.aw - this.b;
             d3 = lw2.ax - this.c;
             d2 = lw2.ay - this.d;
-            double d10 = fi.a(d4 * d4 + d3 * d3 + d2 * d2);
+            double d10 = TrigLookup.a(d4 * d4 + d3 * d3 + d2 * d2);
             d4 /= d10;
             d3 /= d10;
             d2 /= d10;
@@ -109,8 +109,8 @@ public class ks {
                 int n15 = on2.c;
                 int n16 = this.i.a(n13, n14, n15);
                 int n17 = this.i.a(n13, n14 - 1, n15);
-                if (n16 != 0 || !nq.o[n17] || this.h.nextInt(3) != 0) continue;
-                this.i.d(n13, n14, n15, nq.ar.bh);
+                if (n16 != 0 || !HeadBanger1337.o[n17] || this.h.nextInt(3) != 0) continue;
+                this.i.d(n13, n14, n15, HeadBanger1337.ar.bh);
             }
         }
     }
@@ -132,7 +132,7 @@ public class ks {
                 double d5 = d2 - this.b;
                 double d6 = d3 - this.c;
                 double d7 = d4 - this.d;
-                double d8 = fi.a(d5 * d5 + d6 * d6 + d7 * d7);
+                double d8 = TrigLookup.a(d5 * d5 + d6 * d6 + d7 * d7);
                 d5 /= d8;
                 d6 /= d8;
                 d7 /= d8;
@@ -141,9 +141,9 @@ public class ks {
                 this.i.a("smoke", d2, d3, d4, d5, d6, d7);
             }
             if (n5 <= 0) continue;
-            nq.m[n5].a(this.i, n2, n3, n4, this.i.e(n2, n3, n4), 0.3f);
+            HeadBanger1337.m[n5].a(this.i, n2, n3, n4, this.i.e(n2, n3, n4), 0.3f);
             this.i.d(n2, n3, n4, 0);
-            nq.m[n5].c(this.i, n2, n3, n4);
+            HeadBanger1337.m[n5].c(this.i, n2, n3, n4);
         }
     }
 }

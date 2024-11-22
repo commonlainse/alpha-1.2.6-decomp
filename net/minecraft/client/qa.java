@@ -7,7 +7,7 @@ import java.util.Random;
 public class qa
 extends js {
     @Override
-    public boolean a(cy cy2, Random random, int n2, int n3, int n4) {
+    public boolean a(Session cy2, Random random, int n2, int n3, int n4) {
         int n5;
         int n6;
         int n7;
@@ -30,7 +30,7 @@ extends js {
                 for (n6 = n4 - n8; n6 <= n4 + n8 && bl2; ++n6) {
                     if (n9 >= 0 && n9 < 128) {
                         n5 = cy2.a(n7, n9, n6);
-                        if (n5 == 0 || n5 == nq.K.bh) continue;
+                        if (n5 == 0 || n5 == HeadBanger1337.K.bh) continue;
                         bl2 = false;
                         continue;
                     }
@@ -42,10 +42,10 @@ extends js {
             return false;
         }
         n9 = cy2.a(n2, n3 - 1, n4);
-        if (n9 != nq.u.bh && n9 != nq.v.bh || n3 >= 128 - n10 - 1) {
+        if (n9 != HeadBanger1337.u.bh && n9 != HeadBanger1337.v.bh || n3 >= 128 - n10 - 1) {
             return false;
         }
-        cy2.a(n2, n3 - 1, n4, nq.v.bh);
+        cy2.a(n2, n3 - 1, n4, HeadBanger1337.v.bh);
         for (n8 = n3 - 3 + n10; n8 <= n3 + n10; ++n8) {
             n7 = n8 - (n3 + n10);
             n6 = 1 - n7 / 2;
@@ -53,15 +53,15 @@ extends js {
                 int n11 = n5 - n2;
                 for (int i2 = n4 - n6; i2 <= n4 + n6; ++i2) {
                     int n12 = i2 - n4;
-                    if (Math.abs(n11) == n6 && Math.abs(n12) == n6 && (random.nextInt(2) == 0 || n7 == 0) || nq.o[cy2.a(n5, n8, i2)]) continue;
-                    cy2.a(n5, n8, i2, nq.K.bh);
+                    if (Math.abs(n11) == n6 && Math.abs(n12) == n6 && (random.nextInt(2) == 0 || n7 == 0) || HeadBanger1337.o[cy2.a(n5, n8, i2)]) continue;
+                    cy2.a(n5, n8, i2, HeadBanger1337.K.bh);
                 }
             }
         }
         for (n8 = 0; n8 < n10; ++n8) {
             n7 = cy2.a(n2, n3 + n8, n4);
-            if (n7 != 0 && n7 != nq.K.bh) continue;
-            cy2.a(n2, n3 + n8, n4, nq.J.bh);
+            if (n7 != 0 && n7 != HeadBanger1337.K.bh) continue;
+            cy2.a(n2, n3 + n8, n4, HeadBanger1337.J.bh);
         }
         return true;
     }

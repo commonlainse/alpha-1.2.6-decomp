@@ -12,14 +12,14 @@ extends lw {
     private int h = 0;
     private boolean i = false;
     public int a = 0;
-    private hf j;
+    private Mob j;
     private int k;
     private int l = 0;
     public double b;
     public double c;
     public double d;
 
-    public az(cy cy2) {
+    public az(Session cy2) {
         super(cy2);
         this.a(1.0f, 1.0f);
     }
@@ -30,7 +30,7 @@ extends lw {
         return d2 < (d3 *= 64.0) * d3;
     }
 
-    public az(cy cy2, hf hf2, double d2, double d3, double d4) {
+    public az(Session cy2, Mob hf2, double d2, double d3, double d4) {
         super(cy2);
         this.j = hf2;
         this.a(1.0f, 1.0f);
@@ -40,7 +40,7 @@ extends lw {
         this.aB = 0.0;
         this.aA = 0.0;
         this.az = 0.0;
-        double d5 = fi.a((d2 += this.bd.nextGaussian() * 0.4) * d2 + (d3 += this.bd.nextGaussian() * 0.4) * d3 + (d4 += this.bd.nextGaussian() * 0.4) * d4);
+        double d5 = TrigLookup.a((d2 += this.bd.nextGaussian() * 0.4) * d2 + (d3 += this.bd.nextGaussian() * 0.4) * d3 + (d4 += this.bd.nextGaussian() * 0.4) * d4);
         this.b = d2 / d5 * 0.1;
         this.c = d3 / d5 * 0.1;
         this.d = d4 / d5 * 0.1;
@@ -77,13 +77,13 @@ extends lw {
             }
             ++this.l;
         }
-        aoclass ao2 = aoclass.b(this.aw, this.ax, this.ay);
-        aoclass ao3 = aoclass.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
+        Vector3D ao2 = Vector3D.b(this.aw, this.ax, this.ay);
+        Vector3D ao3 = Vector3D.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
         nx nx2 = this.as.a(ao2, ao3);
         ao2 = ao2.b(this.aw, this.ax, this.ay);
         ao3 = ao2.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
         if (nx2 != null) {
-            ao3 = ao2.b(nx2.f.a, nx2.f.b, nx2.f.c);
+            ao3 = ao2.b(nx2.f.x, nx2.f.y, nx2.f.z);
         }
         lw lw2 = null;
         List list = this.as.b(this, this.aG.a(this.az, this.aA, this.aB).b(1.0, 1.0, 1.0));
@@ -111,7 +111,7 @@ extends lw {
         this.aw += this.az;
         this.ax += this.aA;
         this.ay += this.aB;
-        float f3 = fi.a(this.az * this.az + this.aB * this.aB);
+        float f3 = TrigLookup.a(this.az * this.az + this.aB * this.aB);
         this.aC = (float)(Math.atan2(this.az, this.aB) * 180.0 / 3.1415927410125732);
         this.aD = (float)(Math.atan2(this.aA, f3) * 180.0 / 3.1415927410125732);
         while (this.aD - this.aF < -180.0f) {
@@ -147,23 +147,23 @@ extends lw {
     }
 
     @Override
-    public void a(iq iq2) {
-        iq2.a("xTile", (short)this.e);
-        iq2.a("yTile", (short)this.f);
-        iq2.a("zTile", (short)this.g);
-        iq2.a("inTile", (byte)this.h);
-        iq2.a("shake", (byte)this.a);
-        iq2.a("inGround", (byte)(this.i ? 1 : 0));
+    public void a(NBTCompoundTag iq2) {
+        iq2.storeShort("xTile", (short)this.e);
+        iq2.storeShort("yTile", (short)this.f);
+        iq2.storeShort("zTile", (short)this.g);
+        iq2.storeByte("inTile", (byte)this.h);
+        iq2.storeByte("shake", (byte)this.a);
+        iq2.storeByte("inGround", (byte)(this.i ? 1 : 0));
     }
 
     @Override
-    public void b(iq iq2) {
-        this.e = iq2.d("xTile");
-        this.f = iq2.d("yTile");
-        this.g = iq2.d("zTile");
-        this.h = iq2.c("inTile") & 0xFF;
-        this.a = iq2.c("shake") & 0xFF;
-        this.i = iq2.c("inGround") == 1;
+    public void b(NBTCompoundTag iq2) {
+        this.e = iq2.getShort("xTile");
+        this.f = iq2.getShort("yTile");
+        this.g = iq2.getShort("zTile");
+        this.h = iq2.getByte("inTile") & 0xFF;
+        this.a = iq2.getByte("shake") & 0xFF;
+        this.i = iq2.getByte("inGround") == 1;
     }
 
     @Override
@@ -180,11 +180,11 @@ extends lw {
     public boolean a(lw lw2, int n2) {
         this.M();
         if (lw2 != null) {
-            aoclass ao2 = lw2.I();
+            Vector3D ao2 = lw2.I();
             if (ao2 != null) {
-                this.az = ao2.a;
-                this.aA = ao2.b;
-                this.aB = ao2.c;
+                this.az = ao2.x;
+                this.aA = ao2.y;
+                this.aB = ao2.z;
                 this.b = this.az * 0.1;
                 this.c = this.aA * 0.1;
                 this.d = this.aB * 0.1;

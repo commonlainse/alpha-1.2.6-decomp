@@ -14,12 +14,12 @@ extends ob {
     @Override
     public int a(int n2, int n3) {
         if (n2 == 1) {
-            return nq.av.a(n2, n3);
+            return HeadBanger1337.av.a(n2, n3);
         }
         return super.a(n2, n3);
     }
 
-    private boolean a(cy cy2, int n2, int n3, int n4, boolean bl2) {
+    private boolean a(Session cy2, int n2, int n3, int n4, boolean bl2) {
         if (bl2) {
             b.add(new pn(n2, n3, n4, cy2.e));
         }
@@ -44,7 +44,7 @@ extends ob {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         if (cy2.e(n2, n3, n4) == 0) {
             super.e(cy2, n2, n3, n4);
         }
@@ -59,7 +59,7 @@ extends ob {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         if (this.a) {
             cy2.g(n2, n3 - 1, n4, this.bh);
             cy2.g(n2, n3 + 1, n4, this.bh);
@@ -91,7 +91,7 @@ extends ob {
         return n6 != 2 || n5 != 4;
     }
 
-    private boolean h(cy cy2, int n2, int n3, int n4) {
+    private boolean h(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         if (n5 == 5 && cy2.k(n2, n3 - 1, n4, 0)) {
             return true;
@@ -109,14 +109,14 @@ extends ob {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         boolean bl2 = this.h(cy2, n2, n3, n4);
         while (!b.isEmpty() && cy2.e - ((pn)boclass.b.get(0)).d > 100L) {
             b.remove(0);
         }
         if (this.a) {
             if (bl2) {
-                cy2.b(n2, n3, n4, nq.aP.bh, cy2.e(n2, n3, n4));
+                cy2.b(n2, n3, n4, HeadBanger1337.aP.bh, cy2.e(n2, n3, n4));
                 if (this.a(cy2, n2, n3, n4, true)) {
                     cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), "random.fizz", 0.5f, 2.6f + (cy2.l.nextFloat() - cy2.l.nextFloat()) * 0.8f);
                     for (int i2 = 0; i2 < 5; ++i2) {
@@ -128,18 +128,18 @@ extends ob {
                 }
             }
         } else if (!bl2 && !this.a(cy2, n2, n3, n4, false)) {
-            cy2.b(n2, n3, n4, nq.aQ.bh, cy2.e(n2, n3, n4));
+            cy2.b(n2, n3, n4, HeadBanger1337.aQ.bh, cy2.e(n2, n3, n4));
         }
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         super.a(cy2, n2, n3, n4, n5);
         cy2.h(n2, n3, n4, this.bh);
     }
 
     @Override
-    public boolean c(cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean c(Session cy2, int n2, int n3, int n4, int n5) {
         if (n5 == 0) {
             return this.c((pk)cy2, n2, n3, n4, n5);
         }
@@ -148,7 +148,7 @@ extends ob {
 
     @Override
     public int a(int n2, Random random) {
-        return nq.aQ.bh;
+        return HeadBanger1337.aQ.bh;
     }
 
     @Override
@@ -157,7 +157,7 @@ extends ob {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         if (!this.a) {
             return;
         }

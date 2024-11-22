@@ -18,8 +18,8 @@ public class mn {
     public static double d;
     public fu e;
     public ku f;
-    public cy g;
-    public eb h;
+    public Session g;
+    public Player h;
     public float i;
     public float j;
     public gq k;
@@ -28,29 +28,29 @@ public class mn {
     public double n;
 
     private mn() {
-        this.o.put(be.class, new ql());
-        this.o.put(op.class, new hp(new cj(), new cj(0.5f), 0.7f));
-        this.o.put(bx.class, new pr(new ia(), new cg(), 0.7f));
-        this.o.put(as.class, new nu(new el(), 0.7f));
-        this.o.put(ou.class, new fk(new mk(), 0.3f));
-        this.o.put(dq.class, new g());
-        this.o.put(dh.class, new m(new gu(), 0.5f));
-        this.o.put(nt.class, new m(new ck(), 0.5f));
-        this.o.put(ns.class, new ht(new ik(16), new ik(0), 0.25f));
-        this.o.put(eb.class, new ce());
-        this.o.put(ip.class, new pz(new ck(), 0.5f, 6.0f));
-        this.o.put(am.class, new jz());
-        this.o.put(hf.class, new ec(new dc(), 0.5f));
+        this.o.put(Spider.class, new ql());
+        this.o.put(Pig.class, new hp(new cj(), new cj(0.5f), 0.7f));
+        this.o.put(Sheep.class, new pr(new ia(), new cg(), 0.7f));
+        this.o.put(Cow.class, new nu(new el(), 0.7f));
+        this.o.put(Chicken.class, new fk(new mk(), 0.3f));
+        this.o.put(Creeper.class, new g());
+        this.o.put(Skeleton.class, new m(new gu(), 0.5f));
+        this.o.put(Zombie.class, new m(new ck(), 0.5f));
+        this.o.put(Slime.class, new ht(new ik(16), new ik(0), 0.25f));
+        this.o.put(Player.class, new Armor());
+        this.o.put(Giant.class, new pz(new ck(), 0.5f, 6.0f));
+        this.o.put(Ghast.class, new jz());
+        this.o.put(Mob.class, new ec(new dc(), 0.5f));
         this.o.put(lw.class, new hm());
-        this.o.put(kp.class, new cf());
-        this.o.put(lv.class, new hn());
-        this.o.put(at.class, new fb());
+        this.o.put(Painting.class, new cf());
+        this.o.put(Arrow.class, new hn());
+        this.o.put(Snowball.class, new fb());
         this.o.put(az.class, new gl());
-        this.o.put(eo.class, new af());
-        this.o.put(kr.class, new jb());
-        this.o.put(gb.class, new dy());
-        this.o.put(qd.class, new mi());
-        this.o.put(dp.class, new da());
+        this.o.put(DroppedItem.class, new af());
+        this.o.put(PrimedTNT.class, new jb());
+        this.o.put(FallingSand.class, new dy());
+        this.o.put(Minecart.class, new mi());
+        this.o.put(Boat.class, new da());
         this.o.put(hj.class, new jw());
         for (Object _aq2 : this.o.values()) {
             aq aq2 = (aq)_aq2;
@@ -71,7 +71,7 @@ public class mn {
         return this.a(lw2.getClass());
     }
 
-    public void a(cy cy2, fu fu2, ls ls2, eb eb2, gq gq2, float f2) {
+    public void a(Session cy2, fu fu2, ls ls2, Player eb2, gq gq2, float f2) {
         this.g = cy2;
         this.e = fu2;
         this.k = gq2;
@@ -102,7 +102,7 @@ public class mn {
         }
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         this.g = cy2;
     }
 

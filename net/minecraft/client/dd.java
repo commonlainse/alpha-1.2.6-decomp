@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class dd
-extends nq {
+extends HeadBanger1337 {
     protected dd(int n2) {
         super(n2, hb.c);
         this.bg = 59;
@@ -15,7 +15,7 @@ extends nq {
             return this.bg - 16;
         }
         if (n2 == 0) {
-            return nq.x.a(0);
+            return HeadBanger1337.x.a(0);
         }
         if (n2 == 2 || n2 == 4) {
             return this.bg + 1;
@@ -24,7 +24,7 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
         eb2.m();
         return true;
     }

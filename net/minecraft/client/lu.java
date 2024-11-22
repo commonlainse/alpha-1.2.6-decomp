@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class lu
-extends nq {
+extends HeadBanger1337 {
     private boolean a = true;
 
     public lu(int n2, int n3) {
@@ -19,7 +19,7 @@ extends nq {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -39,11 +39,11 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         return cy2.g(n2, n3 - 1, n4);
     }
 
-    private void h(cy cy2, int n2, int n3, int n4) {
+    private void h(Session cy2, int n2, int n3, int n4) {
         int n5;
         int n6;
         int n7;
@@ -124,7 +124,7 @@ extends nq {
         }
     }
 
-    private void i(cy cy2, int n2, int n3, int n4) {
+    private void i(Session cy2, int n2, int n3, int n4) {
         if (cy2.a(n2, n3, n4) != this.bh) {
             return;
         }
@@ -138,7 +138,7 @@ extends nq {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         super.e(cy2, n2, n3, n4);
         if (cy2.z) {
             return;
@@ -173,7 +173,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         super.b(cy2, n2, n3, n4);
         if (cy2.z) {
             return;
@@ -207,7 +207,7 @@ extends nq {
         }
     }
 
-    private int g(cy cy2, int n2, int n3, int n4, int n5) {
+    private int g(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.a(n2, n3, n4) != this.bh) {
             return n5;
         }
@@ -219,7 +219,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.z) {
             return;
         }
@@ -240,7 +240,7 @@ extends nq {
     }
 
     @Override
-    public boolean c(cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean c(Session cy2, int n2, int n3, int n4, int n5) {
         if (!this.a) {
             return false;
         }
@@ -298,7 +298,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         if (cy2.e(n2, n3, n4) > 0) {
             double d2 = (double)n2 + 0.5 + ((double)random.nextFloat() - 0.5) * 0.2;
             double d3 = (float)n3 + 0.0625f;
@@ -309,13 +309,13 @@ extends nq {
 
     public static boolean c(pk pk2, int n2, int n3, int n4) {
         int n5 = pk2.a(n2, n3, n4);
-        if (n5 == nq.av.bh) {
+        if (n5 == HeadBanger1337.av.bh) {
             return true;
         }
         if (n5 == 0) {
             return false;
         }
-        return nq.m[n5].e();
+        return HeadBanger1337.m[n5].e();
     }
 }
 

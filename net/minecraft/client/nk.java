@@ -51,15 +51,15 @@ public class nk {
             iOException.printStackTrace();
         }
         for (int i5 = 0; i5 < 256; ++i5) {
-            if (nq.m[i5] == null) continue;
-            this.g[i5 * 3 + 0] = nq.m[i5].a(1);
-            this.g[i5 * 3 + 1] = nq.m[i5].a(2);
-            this.g[i5 * 3 + 2] = nq.m[i5].a(3);
+            if (HeadBanger1337.m[i5] == null) continue;
+            this.g[i5 * 3 + 0] = HeadBanger1337.m[i5].a(1);
+            this.g[i5 * 3 + 1] = HeadBanger1337.m[i5].a(2);
+            this.g[i5 * 3 + 2] = HeadBanger1337.m[i5].a(3);
         }
     }
 
     public void a(kw kw2) {
-        cy cy2 = kw2.b;
+        Session cy2 = kw2.b;
         if (cy2 == null) {
             kw2.f = true;
             kw2.e = true;
@@ -91,14 +91,14 @@ public class nk {
                     int n9;
                     int n10 = n7 - n6 - i4 + 160 - 16;
                     if (n10 >= this.f[n8] && n10 >= this.f[n8 + 1]) continue;
-                    nq nq2 = nq.m[cy2.a(i3, i4, i2)];
+                    HeadBanger1337 nq2 = HeadBanger1337.m[cy2.a(i3, i4, i2)];
                     if (nq2 == null) {
                         bl2 = false;
                         continue;
                     }
                     if (nq2.bs == hb.f) {
                         int n11 = cy2.a(i3, i4 + 1, i2);
-                        if (n11 != 0 && nq.m[n11].bs == hb.f) continue;
+                        if (n11 != 0 && HeadBanger1337.m[n11].bs == hb.f) continue;
                         float f4 = (float)i4 / 127.0f * 0.6f + 0.4f;
                         float f5 = cy2.c(i3, i4 + 1, i2) * f4;
                         if (n10 < 0 || n10 >= 160) continue;

@@ -11,7 +11,7 @@ import java.util.List;
 import org.lwjgl.opengl.GL11;
 
 public class bw {
-    public cy a;
+    public Session a;
     private int C = -1;
     static private is D = is.a;
     public static int b = 0;
@@ -44,12 +44,12 @@ public class bw {
     public List B = new ArrayList();
     private List F;
 
-    public bw(cy cy2, List list, int n2, int n3, int n4, int n5, int n6) {
+    public bw(Session cy2, List list, int n2, int n3, int n4, int n5, int n6) {
         this.a = cy2;
         this.F = list;
         this.g = this.h = n5;
         this.f = this.h;
-        this.t = fi.c(this.f * this.f + this.g * this.g + this.h * this.h) / 2.0f;
+        this.t = TrigLookup.c(this.f * this.f + this.g * this.g + this.h * this.h) / 2.0f;
         this.C = n6;
         this.c = -999;
         this.a(n2, n3, n4);
@@ -113,9 +113,9 @@ public class bw {
             for (int i4 = n3; i4 < n6; ++i4) {
                 for (int i5 = n4; i5 < n7; ++i5) {
                     for (int i6 = n2; i6 < n5; ++i6) {
-                        nq nq2;
+                        HeadBanger1337 nq2;
                         int n9;
-                        ji ji2;
+                        TileEntityRegistry ji2;
                         int n10 = cs2.a(i6, i4, i5);
                         if (n10 <= 0) continue;
                         if (!bl4) {
@@ -130,10 +130,10 @@ public class bw {
                             D.b();
                             D.b((double)(-this.c), (double)(-this.d), (double)(-this.e));
                         }
-                        if (i3 == 0 && nq.p[n10] && gz.a.a(ji2 = cs2.b(i6, i4, i5))) {
+                        if (i3 == 0 && HeadBanger1337.p[n10] && gz.a.a(ji2 = cs2.b(i6, i4, i5))) {
                             this.B.add(ji2);
                         }
-                        if ((n9 = (nq2 = nq.m[n10]).c()) != i3) {
+                        if ((n9 = (nq2 = HeadBanger1337.m[n10]).c()) != i3) {
                             bl2 = true;
                             continue;
                         }

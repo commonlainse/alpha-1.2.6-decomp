@@ -17,17 +17,17 @@ extends dx {
     }
 
     @Override
-    public float a(fp fp2, nq nq2) {
+    public float a(Item fp2, HeadBanger1337 nq2) {
         return 1.5f;
     }
 
     @Override
-    public void a(fp fp2, hf hf2) {
+    public void a(Item fp2, Mob hf2) {
         fp2.b(1);
     }
 
     @Override
-    public void a(fp fp2, int n2, int n3, int n4, int n5) {
+    public void a(Item fp2, int n2, int n3, int n4, int n5) {
         fp2.b(2);
     }
 

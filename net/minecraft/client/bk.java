@@ -20,13 +20,13 @@ public class bk {
     public bk() {
     }
 
-    public void a(nq nq2, int n2, int n3, int n4, int n5) {
+    public void a(HeadBanger1337 nq2, int n2, int n3, int n4, int n5) {
         this.b = n5;
         this.a(nq2, n2, n3, n4);
         this.b = -1;
     }
 
-    public boolean a(nq nq2, int n2, int n3, int n4) {
+    public boolean a(HeadBanger1337 nq2, int n2, int n3, int n4) {
         int n5 = nq2.g();
         nq2.a(this.a, n2, n3, n4);
         if (n5 == 0) {
@@ -74,11 +74,11 @@ public class bk {
         return false;
     }
 
-    public boolean b(nq nq2, int n2, int n3, int n4) {
+    public boolean b(HeadBanger1337 nq2, int n2, int n3, int n4) {
         int n5 = this.a.e(n2, n3, n4);
         is is2 = is.a;
         float f2 = nq2.d(this.a, n2, n3, n4);
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f2 = 1.0f;
         }
         is2.a(f2, f2, f2);
@@ -99,7 +99,7 @@ public class bk {
         return true;
     }
 
-    public boolean c(nq nq2, int n2, int n3, int n4) {
+    public boolean c(HeadBanger1337 nq2, int n2, int n3, int n4) {
         boolean bl2;
         int n5 = this.a.e(n2, n3, n4);
         int n6 = n5 & 7;
@@ -107,7 +107,7 @@ public class bk {
         is is2 = is.a;
         boolean bl4 = bl2 = this.b >= 0;
         if (!bl2) {
-            this.b = nq.w.bg;
+            this.b = HeadBanger1337.w.bg;
         }
         float f2 = 0.25f;
         float f3 = 0.1875f;
@@ -130,7 +130,7 @@ public class bk {
             this.b = -1;
         }
         float f5 = nq2.d(this.a, n2, n3, n4);
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f5 = 1.0f;
         }
         is2.a(f5, f5, f5);
@@ -144,31 +144,31 @@ public class bk {
         float f7 = ((float)n8 + 15.99f) / 256.0f;
         float f8 = (float)n9 / 256.0f;
         float f9 = ((float)n9 + 15.99f) / 256.0f;
-        aoclass[] aoArray = new aoclass[8];
+        Vector3D[] aoArray = new Vector3D[8];
         float f10 = 0.0625f;
         float f11 = 0.0625f;
         float f12 = 0.625f;
-        aoArray[0] = aoclass.b(-f10, 0.0, -f11);
-        aoArray[1] = aoclass.b(f10, 0.0, -f11);
-        aoArray[2] = aoclass.b(f10, 0.0, f11);
-        aoArray[3] = aoclass.b(-f10, 0.0, f11);
-        aoArray[4] = aoclass.b(-f10, f12, -f11);
-        aoArray[5] = aoclass.b(f10, f12, -f11);
-        aoArray[6] = aoclass.b(f10, f12, f11);
-        aoArray[7] = aoclass.b(-f10, f12, f11);
+        aoArray[0] = Vector3D.b(-f10, 0.0, -f11);
+        aoArray[1] = Vector3D.b(f10, 0.0, -f11);
+        aoArray[2] = Vector3D.b(f10, 0.0, f11);
+        aoArray[3] = Vector3D.b(-f10, 0.0, f11);
+        aoArray[4] = Vector3D.b(-f10, f12, -f11);
+        aoArray[5] = Vector3D.b(f10, f12, -f11);
+        aoArray[6] = Vector3D.b(f10, f12, f11);
+        aoArray[7] = Vector3D.b(-f10, f12, f11);
         for (int i2 = 0; i2 < 8; ++i2) {
             if (bl3) {
-                aoArray[i2].c -= 0.0625;
+                aoArray[i2].z -= 0.0625;
                 aoArray[i2].a(0.69813174f);
             } else {
-                aoArray[i2].c += 0.0625;
+                aoArray[i2].z += 0.0625;
                 aoArray[i2].a(-0.69813174f);
             }
             if (n6 == 6) {
                 aoArray[i2].b(1.5707964f);
             }
             if (n6 < 5) {
-                aoArray[i2].b -= 0.375;
+                aoArray[i2].y -= 0.375;
                 aoArray[i2].a(1.5707964f);
                 if (n6 == 4) {
                     aoArray[i2].b(0.0f);
@@ -182,19 +182,19 @@ public class bk {
                 if (n6 == 1) {
                     aoArray[i2].b(-1.5707964f);
                 }
-                aoArray[i2].a += (double)n2 + 0.5;
-                aoArray[i2].b += (double)((float)n3 + 0.5f);
-                aoArray[i2].c += (double)n4 + 0.5;
+                aoArray[i2].x += (double)n2 + 0.5;
+                aoArray[i2].y += (double)((float)n3 + 0.5f);
+                aoArray[i2].z += (double)n4 + 0.5;
                 continue;
             }
-            aoArray[i2].a += (double)n2 + 0.5;
-            aoArray[i2].b += (double)((float)n3 + 0.125f);
-            aoArray[i2].c += (double)n4 + 0.5;
+            aoArray[i2].x += (double)n2 + 0.5;
+            aoArray[i2].y += (double)((float)n3 + 0.125f);
+            aoArray[i2].z += (double)n4 + 0.5;
         }
-        aoclass ao2 = null;
-        aoclass ao3 = null;
-        aoclass ao4 = null;
-        aoclass ao5 = null;
+        Vector3D ao2 = null;
+        Vector3D ao3 = null;
+        Vector3D ao4 = null;
+        Vector3D ao5 = null;
         for (int i3 = 0; i3 < 6; ++i3) {
             if (i3 == 0) {
                 f6 = (float)(n8 + 7) / 256.0f;
@@ -238,15 +238,15 @@ public class bk {
                 ao4 = aoArray[7];
                 ao5 = aoArray[4];
             }
-            is2.a(ao2.a, ao2.b, ao2.c, f6, f9);
-            is2.a(ao3.a, ao3.b, ao3.c, f7, f9);
-            is2.a(ao4.a, ao4.b, ao4.c, f7, f8);
-            is2.a(ao5.a, ao5.b, ao5.c, f6, f8);
+            is2.a(ao2.x, ao2.y, ao2.z, f6, f9);
+            is2.a(ao3.x, ao3.y, ao3.z, f7, f9);
+            is2.a(ao4.x, ao4.y, ao4.z, f7, f8);
+            is2.a(ao5.x, ao5.y, ao5.z, f6, f8);
         }
         return true;
     }
 
-    public boolean d(nq nq2, int n2, int n3, int n4) {
+    public boolean d(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         int n5 = nq2.a(0);
         if (this.b >= 0) {
@@ -261,7 +261,7 @@ public class bk {
         double d4 = (float)n7 / 256.0f;
         double d5 = ((float)n7 + 15.99f) / 256.0f;
         float f3 = 1.4f;
-        if (this.a.g(n2, n3 - 1, n4) || nq.ar.c(this.a, n2, n3 - 1, n4)) {
+        if (this.a.g(n2, n3 - 1, n4) || HeadBanger1337.ar.c(this.a, n2, n3 - 1, n4)) {
             double d6 = (double)n2 + 0.5 + 0.2;
             double d7 = (double)n2 + 0.5 - 0.2;
             double d8 = (double)n4 + 0.5 + 0.2;
@@ -333,7 +333,7 @@ public class bk {
                 d3 = d2;
                 d2 = d14;
             }
-            if (nq.ar.c(this.a, n2 - 1, n3, n4)) {
+            if (HeadBanger1337.ar.c(this.a, n2 - 1, n3, n4)) {
                 is2.a((float)n2 + f4, (float)n3 + f3 + f5, n4 + 1, d3, d4);
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 1, d3, d5);
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 0, d2, d5);
@@ -343,7 +343,7 @@ public class bk {
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 1, d3, d5);
                 is2.a((float)n2 + f4, (float)n3 + f3 + f5, n4 + 1, d3, d4);
             }
-            if (nq.ar.c(this.a, n2 + 1, n3, n4)) {
+            if (HeadBanger1337.ar.c(this.a, n2 + 1, n3, n4)) {
                 is2.a((float)(n2 + 1) - f4, (float)n3 + f3 + f5, n4 + 0, d2, d4);
                 is2.a(n2 + 1 - 0, (float)(n3 + 0) + f5, n4 + 0, d2, d5);
                 is2.a(n2 + 1 - 0, (float)(n3 + 0) + f5, n4 + 1, d3, d5);
@@ -353,7 +353,7 @@ public class bk {
                 is2.a(n2 + 1 - 0, (float)(n3 + 0) + f5, n4 + 0, d2, d5);
                 is2.a((float)(n2 + 1) - f4, (float)n3 + f3 + f5, n4 + 0, d2, d4);
             }
-            if (nq.ar.c(this.a, n2, n3, n4 - 1)) {
+            if (HeadBanger1337.ar.c(this.a, n2, n3, n4 - 1)) {
                 is2.a(n2 + 0, (float)n3 + f3 + f5, (float)n4 + f4, d3, d4);
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 0, d3, d5);
                 is2.a(n2 + 1, (float)(n3 + 0) + f5, n4 + 0, d2, d5);
@@ -363,7 +363,7 @@ public class bk {
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 0, d3, d5);
                 is2.a(n2 + 0, (float)n3 + f3 + f5, (float)n4 + f4, d3, d4);
             }
-            if (nq.ar.c(this.a, n2, n3, n4 + 1)) {
+            if (HeadBanger1337.ar.c(this.a, n2, n3, n4 + 1)) {
                 is2.a(n2 + 1, (float)n3 + f3 + f5, (float)(n4 + 1) - f4, d2, d4);
                 is2.a(n2 + 1, (float)(n3 + 0) + f5, n4 + 1 - 0, d2, d5);
                 is2.a(n2 + 0, (float)(n3 + 0) + f5, n4 + 1 - 0, d3, d5);
@@ -373,7 +373,7 @@ public class bk {
                 is2.a(n2 + 1, (float)(n3 + 0) + f5, n4 + 1 - 0, d2, d5);
                 is2.a(n2 + 1, (float)n3 + f3 + f5, (float)(n4 + 1) - f4, d2, d4);
             }
-            if (nq.ar.c(this.a, n2, n3 + 1, n4)) {
+            if (HeadBanger1337.ar.c(this.a, n2, n3 + 1, n4)) {
                 d14 = (double)n2 + 0.5 + 0.5;
                 double d15 = (double)n2 + 0.5 - 0.5;
                 double d16 = (double)n4 + 0.5 + 0.5;
@@ -419,7 +419,7 @@ public class bk {
         return true;
     }
 
-    public boolean e(nq nq2, int n2, int n3, int n4) {
+    public boolean e(HeadBanger1337 nq2, int n2, int n3, int n4) {
         boolean bl2;
         is is2 = is.a;
         int n5 = nq2.a(1, this.a.e(n2, n3, n4));
@@ -521,25 +521,25 @@ public class bk {
         d4 = (float)n7 / 256.0f;
         d5 = ((float)n7 + 15.99f) / 256.0f;
         if (!this.a.g(n2, n3 + 1, n4)) {
-            if (this.a.g(n2 - 1, n3, n4) && this.a.a(n2 - 1, n3 + 1, n4) == nq.av.bh) {
+            if (this.a.g(n2 - 1, n3, n4) && this.a.a(n2 - 1, n3 + 1, n4) == HeadBanger1337.av.bh) {
                 is2.a((float)n2 + f4, (float)(n3 + 1) + f3, (float)(n4 + 1) + f3, d3, d4);
                 is2.a((float)n2 + f4, (float)(n3 + 0) - f3, (float)(n4 + 1) + f3, d2, d4);
                 is2.a((float)n2 + f4, (float)(n3 + 0) - f3, (float)(n4 + 0) - f3, d2, d5);
                 is2.a((float)n2 + f4, (float)(n3 + 1) + f3, (float)(n4 + 0) - f3, d3, d5);
             }
-            if (this.a.g(n2 + 1, n3, n4) && this.a.a(n2 + 1, n3 + 1, n4) == nq.av.bh) {
+            if (this.a.g(n2 + 1, n3, n4) && this.a.a(n2 + 1, n3 + 1, n4) == HeadBanger1337.av.bh) {
                 is2.a((float)(n2 + 1) - f4, (float)(n3 + 0) - f3, (float)(n4 + 1) + f3, d2, d5);
                 is2.a((float)(n2 + 1) - f4, (float)(n3 + 1) + f3, (float)(n4 + 1) + f3, d3, d5);
                 is2.a((float)(n2 + 1) - f4, (float)(n3 + 1) + f3, (float)(n4 + 0) - f3, d3, d4);
                 is2.a((float)(n2 + 1) - f4, (float)(n3 + 0) - f3, (float)(n4 + 0) - f3, d2, d4);
             }
-            if (this.a.g(n2, n3, n4 - 1) && this.a.a(n2, n3 + 1, n4 - 1) == nq.av.bh) {
+            if (this.a.g(n2, n3, n4 - 1) && this.a.a(n2, n3 + 1, n4 - 1) == HeadBanger1337.av.bh) {
                 is2.a((float)(n2 + 1) + f3, (float)(n3 + 0) - f3, (float)n4 + f4, d2, d5);
                 is2.a((float)(n2 + 1) + f3, (float)(n3 + 1) + f3, (float)n4 + f4, d3, d5);
                 is2.a((float)(n2 + 0) - f3, (float)(n3 + 1) + f3, (float)n4 + f4, d3, d4);
                 is2.a((float)(n2 + 0) - f3, (float)(n3 + 0) - f3, (float)n4 + f4, d2, d4);
             }
-            if (this.a.g(n2, n3, n4 + 1) && this.a.a(n2, n3 + 1, n4 + 1) == nq.av.bh) {
+            if (this.a.g(n2, n3, n4 + 1) && this.a.a(n2, n3 + 1, n4 + 1) == HeadBanger1337.av.bh) {
                 is2.a((float)(n2 + 1) + f3, (float)(n3 + 1) + f3, (float)(n4 + 1) - f4, d3, d4);
                 is2.a((float)(n2 + 1) + f3, (float)(n3 + 0) - f3, (float)(n4 + 1) - f4, d2, d4);
                 is2.a((float)(n2 + 0) - f3, (float)(n3 + 0) - f3, (float)(n4 + 1) - f4, d2, d5);
@@ -549,7 +549,7 @@ public class bk {
         return true;
     }
 
-    public boolean f(nq nq2, int n2, int n3, int n4) {
+    public boolean f(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         int n5 = this.a.e(n2, n3, n4);
         int n6 = nq2.a(0, n5);
@@ -611,7 +611,7 @@ public class bk {
         return true;
     }
 
-    public boolean g(nq nq2, int n2, int n3, int n4) {
+    public boolean g(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         int n5 = nq2.a(0);
         if (this.b >= 0) {
@@ -655,7 +655,7 @@ public class bk {
         return true;
     }
 
-    public boolean h(nq nq2, int n2, int n3, int n4) {
+    public boolean h(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         float f2 = nq2.d(this.a, n2, n3, n4);
         is2.a(f2, f2, f2);
@@ -663,7 +663,7 @@ public class bk {
         return true;
     }
 
-    public boolean i(nq nq2, int n2, int n3, int n4) {
+    public boolean i(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         float f2 = nq2.d(this.a, n2, n3, n4);
         is2.a(f2, f2, f2);
@@ -671,7 +671,7 @@ public class bk {
         return true;
     }
 
-    public void a(nq nq2, double d2, double d3, double d4, double d5, double d6) {
+    public void a(HeadBanger1337 nq2, double d2, double d3, double d4, double d5, double d6) {
         is is2 = is.a;
         int n2 = nq2.a(0);
         if (this.b >= 0) {
@@ -715,7 +715,7 @@ public class bk {
         is2.a(d11, d3 + 1.0, d4 - d15, f3, f4);
     }
 
-    public void a(nq nq2, int n2, double d2, double d3, double d4) {
+    public void a(HeadBanger1337 nq2, int n2, double d2, double d3, double d4) {
         is is2 = is.a;
         int n3 = nq2.a(0, n2);
         if (this.b >= 0) {
@@ -749,7 +749,7 @@ public class bk {
         is2.a(d9, d3 + 1.0, d12, d6, d7);
     }
 
-    public void b(nq nq2, int n2, double d2, double d3, double d4) {
+    public void b(HeadBanger1337 nq2, int n2, double d2, double d3, double d4) {
         is is2 = is.a;
         int n3 = nq2.a(0, n2);
         if (this.b >= 0) {
@@ -803,7 +803,7 @@ public class bk {
         is2.a(d10, d3 + 1.0, d12, d6, d7);
     }
 
-    public boolean j(nq nq2, int n2, int n3, int n4) {
+    public boolean j(HeadBanger1337 nq2, int n2, int n3, int n4) {
         float f2;
         float f3;
         float f4;
@@ -846,8 +846,8 @@ public class bk {
                 d4 = (float)(n6 + 16) / 256.0f;
                 d5 = (float)(n5 + 16) / 256.0f;
             }
-            f4 = fi.a(f13) * 8.0f / 256.0f;
-            f3 = fi.b(f13) * 8.0f / 256.0f;
+            f4 = TrigLookup.a(f13) * 8.0f / 256.0f;
+            f3 = TrigLookup.b(f13) * 8.0f / 256.0f;
             f2 = nq2.d(this.a, n2, n3, n4);
             is2.a(f6 * f2, f6 * f2, f6 * f2);
             is2.a(n2 + 0, (float)n3 + f9, n4 + 0, d4 - (double)f3 - (double)f4, d5 - (double)f3 + (double)f4);
@@ -960,7 +960,7 @@ public class bk {
         return 1.0f - f2 / (float)n5;
     }
 
-    public void a(nq nq2, cy cy2, int n2, int n3, int n4) {
+    public void a(HeadBanger1337 nq2, Session cy2, int n2, int n3, int n4) {
         float f2 = 0.5f;
         float f3 = 1.0f;
         float f4 = 0.8f;
@@ -1007,7 +1007,7 @@ public class bk {
         is2.a();
     }
 
-    public boolean k(nq nq2, int n2, int n3, int n4) {
+    public boolean k(HeadBanger1337 nq2, int n2, int n3, int n4) {
         int n5 = nq2.b(this.a, n2, n3, n4);
         float f2 = (float)(n5 >> 16 & 0xFF) / 255.0f;
         float f3 = (float)(n5 >> 8 & 0xFF) / 255.0f;
@@ -1015,7 +1015,7 @@ public class bk {
         return this.a(nq2, n2, n3, n4, f2, f3, f4);
     }
 
-    public boolean a(nq nq2, int n2, int n3, int n4, float f2, float f3, float f4) {
+    public boolean a(HeadBanger1337 nq2, int n2, int n3, int n4, float f2, float f3, float f4) {
         float f5;
         is is2 = is.a;
         boolean bl2 = false;
@@ -1026,7 +1026,7 @@ public class bk {
         float f10 = f7 * f2;
         float f11 = f7 * f3;
         float f12 = f7 * f4;
-        if (nq2 == nq.u) {
+        if (nq2 == HeadBanger1337.u) {
             f4 = 1.0f;
             f3 = 1.0f;
             f2 = 1.0f;
@@ -1095,7 +1095,7 @@ public class bk {
         return bl2;
     }
 
-    public boolean l(nq nq2, int n2, int n3, int n4) {
+    public boolean l(HeadBanger1337 nq2, int n2, int n3, int n4) {
         int n5 = nq2.b(this.a, n2, n3, n4);
         float f2 = (float)(n5 >> 16 & 0xFF) / 255.0f;
         float f3 = (float)(n5 >> 8 & 0xFF) / 255.0f;
@@ -1103,7 +1103,7 @@ public class bk {
         return this.b(nq2, n2, n3, n4, f2, f3, f4);
     }
 
-    public boolean b(nq nq2, int n2, int n3, int n4, float f2, float f3, float f4) {
+    public boolean b(HeadBanger1337 nq2, int n2, int n3, int n4, float f2, float f3, float f4) {
         float f5;
         is is2 = is.a;
         boolean bl2 = false;
@@ -1187,7 +1187,7 @@ public class bk {
         return bl2;
     }
 
-    public boolean m(nq nq2, int n2, int n3, int n4) {
+    public boolean m(HeadBanger1337 nq2, int n2, int n3, int n4) {
         float f2;
         boolean bl2;
         boolean bl3 = false;
@@ -1240,7 +1240,7 @@ public class bk {
         return bl3;
     }
 
-    public boolean n(nq nq2, int n2, int n3, int n4) {
+    public boolean n(HeadBanger1337 nq2, int n2, int n3, int n4) {
         boolean bl2 = false;
         int n5 = this.a.e(n2, n3, n4);
         if (n5 == 0) {
@@ -1268,7 +1268,7 @@ public class bk {
         return bl2;
     }
 
-    public boolean o(nq nq2, int n2, int n3, int n4) {
+    public boolean o(HeadBanger1337 nq2, int n2, int n3, int n4) {
         is is2 = is.a;
         gv gv2 = (gv)nq2;
         boolean bl2 = false;
@@ -1281,7 +1281,7 @@ public class bk {
         if (gv2.bl > 0.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f2 * f7, f2 * f7, f2 * f7);
@@ -1291,7 +1291,7 @@ public class bk {
         if (gv2.bo < 1.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f3 * f7, f3 * f7, f3 * f7);
@@ -1301,7 +1301,7 @@ public class bk {
         if (gv2.bm > 0.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f4 * f7, f4 * f7, f4 * f7);
@@ -1317,7 +1317,7 @@ public class bk {
         if (gv2.bp < 1.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f4 * f7, f4 * f7, f4 * f7);
@@ -1333,7 +1333,7 @@ public class bk {
         if (gv2.bk > 0.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f5 * f7, f5 * f7, f5 * f7);
@@ -1349,7 +1349,7 @@ public class bk {
         if (gv2.bn < 1.0) {
             f7 = f6;
         }
-        if (nq.s[nq2.bh] > 0) {
+        if (HeadBanger1337.s[nq2.bh] > 0) {
             f7 = 1.0f;
         }
         is2.a(f5 * f7, f5 * f7, f5 * f7);
@@ -1364,7 +1364,7 @@ public class bk {
         return bl2;
     }
 
-    public void a(nq nq2, double d2, double d3, double d4, int n2) {
+    public void a(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         is is2 = is.a;
         if (this.b >= 0) {
             n2 = this.b;
@@ -1394,7 +1394,7 @@ public class bk {
         is2.a(d10, d11, d13, d6, d8);
     }
 
-    public void b(nq nq2, double d2, double d3, double d4, int n2) {
+    public void b(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         is is2 = is.a;
         if (this.b >= 0) {
             n2 = this.b;
@@ -1424,7 +1424,7 @@ public class bk {
         is2.a(d9, d11, d13, d5, d8);
     }
 
-    public void c(nq nq2, double d2, double d3, double d4, int n2) {
+    public void c(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         double d5;
         is is2 = is.a;
         if (this.b >= 0) {
@@ -1460,7 +1460,7 @@ public class bk {
         is2.a(d5, d11, d13, d7, d9);
     }
 
-    public void d(nq nq2, double d2, double d3, double d4, int n2) {
+    public void d(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         double d5;
         is is2 = is.a;
         if (this.b >= 0) {
@@ -1496,7 +1496,7 @@ public class bk {
         is2.a(d10, d12, d13, d7, d8);
     }
 
-    public void e(nq nq2, double d2, double d3, double d4, int n2) {
+    public void e(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         double d5;
         is is2 = is.a;
         if (this.b >= 0) {
@@ -1532,7 +1532,7 @@ public class bk {
         is2.a(d5, d10, d13, d7, d9);
     }
 
-    public void f(nq nq2, double d2, double d3, double d4, int n2) {
+    public void f(HeadBanger1337 nq2, double d2, double d3, double d4, int n2) {
         double d5;
         is is2 = is.a;
         if (this.b >= 0) {
@@ -1568,7 +1568,7 @@ public class bk {
         is2.a(d5, d11, d13, d6, d8);
     }
 
-    public void a(nq nq2, float f2) {
+    public void a(HeadBanger1337 nq2, float f2) {
         int n2 = nq2.g();
         is is2 = is.a;
         if (n2 == 0) {
@@ -1594,7 +1594,7 @@ public class bk {
         }
     }
 
-    public void a(nq nq2) {
+    public void a(HeadBanger1337 nq2) {
         int n2 = -1;
         is is2 = is.a;
         int n3 = nq2.g();

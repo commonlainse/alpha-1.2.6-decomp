@@ -6,11 +6,11 @@ public class fh
 extends pp {
     float a;
 
-    public fh(cy cy2, double d2, double d3, double d4) {
+    public fh(Session cy2, double d2, double d3, double d4) {
         this(cy2, d2, d3, d4, 1.0f);
     }
 
-    public fh(cy cy2, double d2, double d3, double d4, float f2) {
+    public fh(Session cy2, double d2, double d3, double d4, float f2) {
         super(cy2, d2, d3, d4, 0.0, 0.0, 0.0);
         this.az *= (double)0.1f;
         this.aA *= (double)0.1f;

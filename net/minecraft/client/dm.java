@@ -23,9 +23,9 @@ public class dm {
     private bt a(lw lw2, double d2, double d3, double d4, float f2) {
         this.b.a();
         this.c.a();
-        b b2 = this.a(fi.b(lw2.aG.a), fi.b(lw2.aG.b), fi.b(lw2.aG.c));
-        b b3 = this.a(fi.b(d2 - (double)(lw2.aP / 2.0f)), fi.b(d3), fi.b(d4 - (double)(lw2.aP / 2.0f)));
-        b b4 = new b(fi.d(lw2.aP + 1.0f), fi.d(lw2.aQ + 1.0f), fi.d(lw2.aP + 1.0f));
+        b b2 = this.a(TrigLookup.b(lw2.aG.a), TrigLookup.b(lw2.aG.b), TrigLookup.b(lw2.aG.c));
+        b b3 = this.a(TrigLookup.b(d2 - (double)(lw2.aP / 2.0f)), TrigLookup.b(d3), TrigLookup.b(d4 - (double)(lw2.aP / 2.0f)));
+        b b4 = new b(TrigLookup.d(lw2.aP + 1.0f), TrigLookup.d(lw2.aQ + 1.0f), TrigLookup.d(lw2.aP + 1.0f));
         bt bt2 = this.a(lw2, b2, b3, b4, f2);
         return bt2;
     }

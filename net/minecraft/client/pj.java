@@ -13,27 +13,27 @@ extends js {
     }
 
     @Override
-    public boolean a(cy cy2, Random random, int n2, int n3, int n4) {
-        if (cy2.a(n2, n3 + 1, n4) != nq.t.bh) {
+    public boolean a(Session cy2, Random random, int n2, int n3, int n4) {
+        if (cy2.a(n2, n3 + 1, n4) != HeadBanger1337.t.bh) {
             return false;
         }
-        if (cy2.a(n2, n3 - 1, n4) != nq.t.bh) {
+        if (cy2.a(n2, n3 - 1, n4) != HeadBanger1337.t.bh) {
             return false;
         }
-        if (cy2.a(n2, n3, n4) != 0 && cy2.a(n2, n3, n4) != nq.t.bh) {
+        if (cy2.a(n2, n3, n4) != 0 && cy2.a(n2, n3, n4) != HeadBanger1337.t.bh) {
             return false;
         }
         int n5 = 0;
-        if (cy2.a(n2 - 1, n3, n4) == nq.t.bh) {
+        if (cy2.a(n2 - 1, n3, n4) == HeadBanger1337.t.bh) {
             ++n5;
         }
-        if (cy2.a(n2 + 1, n3, n4) == nq.t.bh) {
+        if (cy2.a(n2 + 1, n3, n4) == HeadBanger1337.t.bh) {
             ++n5;
         }
-        if (cy2.a(n2, n3, n4 - 1) == nq.t.bh) {
+        if (cy2.a(n2, n3, n4 - 1) == HeadBanger1337.t.bh) {
             ++n5;
         }
-        if (cy2.a(n2, n3, n4 + 1) == nq.t.bh) {
+        if (cy2.a(n2, n3, n4 + 1) == HeadBanger1337.t.bh) {
             ++n5;
         }
         int n6 = 0;
@@ -52,7 +52,7 @@ extends js {
         if (n5 == 3 && n6 == 1) {
             cy2.d(n2, n3, n4, this.a);
             cy2.a = true;
-            nq.m[this.a].a(cy2, n2, n3, n4, random);
+            HeadBanger1337.m[this.a].a(cy2, n2, n3, n4, random);
             cy2.a = false;
         }
         return true;

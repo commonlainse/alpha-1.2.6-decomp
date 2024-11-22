@@ -8,10 +8,10 @@ import java.util.List;
 public class ax {
     protected List c = new ArrayList();
 
-    public void a(eb eb2) {
-        fo fo2 = eb2.e;
-        if (fo2.e != null) {
-            eb2.a(fo2.e);
+    public void a(Player eb2) {
+        Inventory fo2 = eb2.e;
+        if (fo2.holding != null) {
+            eb2.a(fo2.holding);
         }
     }
 

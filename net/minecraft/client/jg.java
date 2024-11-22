@@ -19,7 +19,7 @@ extends iv {
     }
 
     @Override
-    public void a(eb eb2) {
+    public void a(Player eb2) {
         eb2.aC = -180.0f;
     }
 
@@ -28,17 +28,17 @@ extends iv {
         int n6 = this.a.e.a(n2, n3, n4);
         int n7 = this.a.e.e(n2, n3, n4);
         boolean bl2 = super.b(n2, n3, n4, n5);
-        fp fp2 = this.a.g.w();
-        boolean bl3 = this.a.g.b(nq.m[n6]);
+        Item fp2 = this.a.g.w();
+        boolean bl3 = this.a.g.b(HeadBanger1337.m[n6]);
         if (fp2 != null) {
             fp2.a(n6, n2, n3, n4);
-            if (fp2.a == 0) {
+            if (fp2.count == 0) {
                 fp2.a(this.a.g);
                 this.a.g.x();
             }
         }
         if (bl2 && bl3) {
-            nq.m[n6].a_(this.a.e, n2, n3, n4, n7);
+            HeadBanger1337.m[n6].a_(this.a.e, n2, n3, n4, n7);
         }
         return bl2;
     }
@@ -47,9 +47,9 @@ extends iv {
     public void a(int n2, int n3, int n4, int n5) {
         int n6 = this.a.e.a(n2, n3, n4);
         if (n6 > 0 && this.f == 0.0f) {
-            nq.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
+            HeadBanger1337.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
         }
-        if (n6 > 0 && nq.m[n6].a(this.a.g) >= 1.0f) {
+        if (n6 > 0 && HeadBanger1337.m[n6].a(this.a.g) >= 1.0f) {
             this.b(n2, n3, n4, n5);
         }
     }
@@ -71,7 +71,7 @@ extends iv {
             if (n6 == 0) {
                 return;
             }
-            nq nq2 = nq.m[n6];
+            HeadBanger1337 nq2 = HeadBanger1337.m[n6];
             this.f += nq2.a(this.a.g);
             if (this.h % 4.0f == 0.0f && nq2 != null) {
                 this.a.A.b(nq2.bq.d(), (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f, (nq2.bq.b() + 1.0f) / 8.0f, nq2.bq.c() * 0.5f);
@@ -112,7 +112,7 @@ extends iv {
     }
 
     @Override
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         super.a(cy2);
     }
 

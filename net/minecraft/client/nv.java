@@ -11,7 +11,7 @@ extends dx {
     }
 
     @Override
-    public boolean a(fp fp2, eb eb2, cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         if (n5 == 0) {
             return false;
         }
@@ -33,16 +33,16 @@ extends dx {
         if (n5 == 5) {
             ++n2;
         }
-        if (!nq.aD.a(cy2, n2, n3, n4)) {
+        if (!HeadBanger1337.aD.a(cy2, n2, n3, n4)) {
             return false;
         }
         if (n5 == 1) {
-            cy2.b(n2, n3, n4, nq.aD.bh, fi.b((double)((eb2.aC + 180.0f) * 16.0f / 360.0f) + 0.5) & 0xF);
+            cy2.b(n2, n3, n4, HeadBanger1337.aD.bh, TrigLookup.b((double)((eb2.aC + 180.0f) * 16.0f / 360.0f) + 0.5) & 0xF);
         } else {
-            cy2.b(n2, n3, n4, nq.aI.bh, n5);
+            cy2.b(n2, n3, n4, HeadBanger1337.aI.bh, n5);
         }
-        --fp2.a;
-        qc qc2 = (qc)cy2.b(n2, n3, n4);
+        --fp2.count;
+        Sign qc2 = (Sign)cy2.b(n2, n3, n4);
         if (qc2 != null) {
             eb2.a(qc2);
         }

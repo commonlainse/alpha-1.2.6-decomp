@@ -4,12 +4,12 @@
 package net.minecraft.client;
 public class cb
 extends dx {
-    private nq[] bb;
+    private HeadBanger1337[] bb;
     private float bc = 4.0f;
     private int bd;
     protected int a;
 
-    public cb(int n2, int n3, int n4, nq[] nqArray) {
+    public cb(int n2, int n3, int n4, HeadBanger1337[] nqArray) {
         super(n2);
         this.a = n4;
         this.bb = nqArray;
@@ -23,7 +23,7 @@ extends dx {
     }
 
     @Override
-    public float a(fp fp2, nq nq2) {
+    public float a(Item fp2, HeadBanger1337 nq2) {
         for (int i2 = 0; i2 < this.bb.length; ++i2) {
             if (this.bb[i2] != nq2) continue;
             return this.bc;
@@ -32,12 +32,12 @@ extends dx {
     }
 
     @Override
-    public void a(fp fp2, hf hf2) {
+    public void a(Item fp2, Mob hf2) {
         fp2.b(2);
     }
 
     @Override
-    public void a(fp fp2, int n2, int n3, int n4, int n5) {
+    public void a(Item fp2, int n2, int n3, int n4, int n5) {
         fp2.b(1);
     }
 

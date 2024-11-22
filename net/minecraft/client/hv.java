@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Set;
 
 public class hv
-extends cy {
+extends Session {
     private LinkedList A = new LinkedList();
     private ib B;
     private nr C;
@@ -198,7 +198,7 @@ extends cy {
     }
 
     @Override
-    public void b(int n2, int n3, int n4, ji ji2) {
+    public void b(int n2, int n3, int n4, TileEntityRegistry ji2) {
         if (this.D) {
             return;
         }

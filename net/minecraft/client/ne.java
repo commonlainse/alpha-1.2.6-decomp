@@ -13,7 +13,7 @@ extends ex {
     private float l;
     private float m;
 
-    public ne(hi hi2, fp[] fpArray) {
+    public ne(hi hi2, Item[] fpArray) {
         int n2;
         int n3;
         this.f = true;

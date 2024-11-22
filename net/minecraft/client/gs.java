@@ -10,12 +10,12 @@ implements bd {
     private bd d;
     private ai e;
     private ha[] f = new ha[1024];
-    private cy g;
+    private Session g;
     int a = -999999999;
     int b = -999999999;
     private ha h;
 
-    public gs(cy cy2, ai ai2, bd bd2) {
+    public gs(Session cy2, ai ai2, bd bd2) {
         this.c = new ha(cy2, new byte[32768], 0, 0);
         this.c.q = true;
         this.c.p = true;

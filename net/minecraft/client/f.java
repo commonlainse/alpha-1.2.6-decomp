@@ -19,7 +19,7 @@ import org.lwjgl.opengl.GL11;
 public class f
 implements jv {
     public List a = new ArrayList();
-    private cy k;
+    private Session k;
     private fu l;
     private List m = new ArrayList();
     private bw[] n;
@@ -162,7 +162,7 @@ implements jv {
         is2.a();
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         if (this.k != null) {
             this.k.b(this);
         }
@@ -181,7 +181,7 @@ implements jv {
     public void a() {
         int n2;
         int n3;
-        nq.K.a(this.t.y.i);
+        HeadBanger1337.K.a(this.t.y.i);
         this.H = this.t.y.e;
         if (this.o != null) {
             for (n3 = 0; n3 < this.o.length; ++n3) {
@@ -229,13 +229,13 @@ implements jv {
         }
         if (this.k != null) {
             bq bq2 = this.t.g;
-            this.b(fi.b(bq2.aw), fi.b(bq2.ax), fi.b(bq2.ay));
+            this.b(TrigLookup.b(bq2.aw), TrigLookup.b(bq2.ax), TrigLookup.b(bq2.ay));
             Arrays.sort(this.n, new fx(bq2));
         }
         this.I = 2;
     }
 
-    public void a(aoclass ao2, qf qf2, float f2) {
+    public void a(Vector3D ao2, qf qf2, float f2) {
         int n2;
         if (this.I > 0) {
             --this.I;
@@ -262,7 +262,7 @@ implements jv {
             mn.a.a(lw2, f2);
         }
         for (n2 = 0; n2 < this.a.size(); ++n2) {
-            gz.a.a((ji)this.a.get(n2), f2);
+            gz.a.a((TileEntityRegistry)this.a.get(n2), f2);
         }
     }
 
@@ -328,7 +328,7 @@ implements jv {
         }
     }
 
-    public int a(eb eb2, int n2, double d2) {
+    public int a(Player eb2, int n2, double d2) {
         if (this.t.y.e != this.H) {
             this.a();
         }
@@ -349,7 +349,7 @@ implements jv {
             this.f = eb2.aw;
             this.g = eb2.ax;
             this.h = eb2.ay;
-            this.b(fi.b(eb2.aw), fi.b(eb2.ax), fi.b(eb2.ay));
+            this.b(TrigLookup.b(eb2.aw), TrigLookup.b(eb2.ax), TrigLookup.b(eb2.ay));
             Arrays.sort(this.n, new fx(eb2));
         }
         int n3 = 0;
@@ -387,7 +387,7 @@ implements jv {
                     if (!this.n[i3].o) {
                         this.n[i3].x = true;
                     }
-                    if (!this.n[i3].o || this.n[i3].y || this.x % (n6 = (int)(1.0f + (f5 = fi.c(this.n[i3].a(eb2))) / 128.0f)) != i3 % n6) continue;
+                    if (!this.n[i3].o || this.n[i3].y || this.x % (n6 = (int)(1.0f + (f5 = TrigLookup.c(this.n[i3].a(eb2))) / 128.0f)) != i3 % n6) continue;
                     bw bw2 = this.n[i3];
                     float f6 = (float)((double)bw2.i - d3);
                     float f7 = (float)((double)bw2.j - d4);
@@ -497,10 +497,10 @@ implements jv {
             return;
         }
         GL11.glDisable(3553);
-        aoclass ao2 = this.k.a((lw)this.t.g, f2);
-        float f5 = (float)ao2.a;
-        float f6 = (float)ao2.b;
-        float f7 = (float)ao2.c;
+        Vector3D ao2 = this.k.a((lw)this.t.g, f2);
+        float f5 = (float)ao2.x;
+        float f6 = (float)ao2.y;
+        float f7 = (float)ao2.z;
         if (this.t.y.g) {
             float f8 = (f5 * 30.0f + f6 * 59.0f + f7 * 11.0f) / 100.0f;
             float f9 = (f5 * 30.0f + f6 * 70.0f) / 100.0f;
@@ -534,8 +534,8 @@ implements jv {
             is2.a(fArray[0], fArray[1], fArray[2], 0.0f);
             for (int i2 = 0; i2 <= n2; ++i2) {
                 f3 = (float)i2 * (float)Math.PI * 2.0f / (float)n2;
-                float f10 = fi.a(f3);
-                float f11 = fi.b(f3);
+                float f10 = TrigLookup.a(f3);
+                float f11 = TrigLookup.b(f3);
                 is2.a((double)(f10 * 120.0f), (double)(f11 * 120.0f), (double)(-f11 * 40.0f * fArray[3]));
             }
             is2.a();
@@ -603,10 +603,10 @@ implements jv {
         GL11.glBindTexture(3553, (int)this.l.a("/environment/clouds.png"));
         GL11.glEnable(3042);
         GL11.glBlendFunc(770, 771);
-        aoclass ao2 = this.k.c(f2);
-        float f5 = (float)ao2.a;
-        float f6 = (float)ao2.b;
-        float f7 = (float)ao2.c;
+        Vector3D ao2 = this.k.c(f2);
+        float f5 = (float)ao2.x;
+        float f6 = (float)ao2.y;
+        float f7 = (float)ao2.z;
         if (this.t.y.g) {
             f3 = (f5 * 30.0f + f6 * 59.0f + f7 * 11.0f) / 100.0f;
             float f8 = (f5 * 30.0f + f6 * 70.0f) / 100.0f;
@@ -618,8 +618,8 @@ implements jv {
         f3 = 4.8828125E-4f;
         double d2 = this.t.g.at + (this.t.g.aw - this.t.g.at) * (double)f2 + (double)(((float)this.x + f2) * 0.03f);
         double d3 = this.t.g.av + (this.t.g.ay - this.t.g.av) * (double)f2;
-        int n4 = fi.b(d2 / 2048.0);
-        int n5 = fi.b(d3 / 2048.0);
+        int n4 = TrigLookup.b(d2 / 2048.0);
+        int n5 = TrigLookup.b(d3 / 2048.0);
         float f10 = 120.0f - f4 + 0.33f;
         float f11 = (float)((d2 -= (double)(n4 * 2048)) * (double)f3);
         float f12 = (float)((d3 -= (double)(n5 * 2048)) * (double)f3);
@@ -651,17 +651,17 @@ implements jv {
         double d2 = (this.t.g.at + (this.t.g.aw - this.t.g.at) * (double)f2 + (double)(((float)this.x + f2) * 0.03f)) / (double)f7;
         double d3 = (this.t.g.av + (this.t.g.ay - this.t.g.av) * (double)f2) / (double)f7 + (double)0.33f;
         float f9 = 108.0f - f6 + 0.33f;
-        int n2 = fi.b(d2 / 2048.0);
-        int n3 = fi.b(d3 / 2048.0);
+        int n2 = TrigLookup.b(d2 / 2048.0);
+        int n3 = TrigLookup.b(d3 / 2048.0);
         d2 -= (double)(n2 * 2048);
         d3 -= (double)(n3 * 2048);
         GL11.glBindTexture(3553, (int)this.l.a("/environment/clouds.png"));
         GL11.glEnable(3042);
         GL11.glBlendFunc(770, 771);
-        aoclass ao2 = this.k.c(f2);
-        float f10 = (float)ao2.a;
-        float f11 = (float)ao2.b;
-        float f12 = (float)ao2.c;
+        Vector3D ao2 = this.k.c(f2);
+        float f10 = (float)ao2.x;
+        float f11 = (float)ao2.y;
+        float f12 = (float)ao2.z;
         if (this.t.y.g) {
             f5 = (f10 * 30.0f + f11 * 59.0f + f12 * 11.0f) / 100.0f;
             f4 = (f10 * 30.0f + f11 * 70.0f) / 100.0f;
@@ -673,10 +673,10 @@ implements jv {
         f5 = (float)(d2 * 0.0);
         f4 = (float)(d3 * 0.0);
         f3 = 0.00390625f;
-        f5 = (float)fi.b(d2) * f3;
-        f4 = (float)fi.b(d3) * f3;
-        float f13 = (float)(d2 - (double)fi.b(d2));
-        float f14 = (float)(d3 - (double)fi.b(d3));
+        f5 = (float)TrigLookup.b(d2) * f3;
+        f4 = (float)TrigLookup.b(d3) * f3;
+        float f13 = (float)(d2 - (double)TrigLookup.b(d2));
+        float f14 = (float)(d3 - (double)TrigLookup.b(d3));
         int n4 = 8;
         int n5 = 3;
         float f15 = 9.765625E-4f;
@@ -758,7 +758,7 @@ implements jv {
         GL11.glEnable(2884);
     }
 
-    public boolean a(eb eb2, boolean bl2) {
+    public boolean a(Player eb2, boolean bl2) {
         Collections.sort(this.m, new ho(eb2));
         int n2 = this.m.size() - 1;
         int n3 = this.m.size();
@@ -776,12 +776,12 @@ implements jv {
         return this.m.size() == 0;
     }
 
-    public void a(eb eb2, nx nx2, int n2, fp fp2, float f2) {
+    public void a(Player eb2, nx nx2, int n2, Item fp2, float f2) {
         is is2 = is.a;
         GL11.glEnable(3042);
         GL11.glEnable(3008);
         GL11.glBlendFunc(770, 1);
-        GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)((fi.a((float)System.currentTimeMillis() / 100.0f) * 0.2f + 0.4f) * 0.5f));
+        GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)((TrigLookup.a((float)System.currentTimeMillis() / 100.0f) * 0.2f + 0.4f) * 0.5f));
         if (n2 == 0) {
             if (this.i > 0.0f) {
                 GL11.glBlendFunc(774, 768);
@@ -790,7 +790,7 @@ implements jv {
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
                 GL11.glPushMatrix();
                 int n4 = this.k.a(nx2.b, nx2.c, nx2.d);
-                nq nq2 = n4 > 0 ? nq.m[n4] : null;
+                HeadBanger1337 nq2 = n4 > 0 ? HeadBanger1337.m[n4] : null;
                 GL11.glDisable(3008);
                 GL11.glPolygonOffset(-3.0f, -3.0f);
                 GL11.glEnable(32823);
@@ -801,7 +801,7 @@ implements jv {
                 is2.b(-d2, -d3, -d4);
                 is2.c();
                 if (nq2 == null) {
-                    nq2 = nq.t;
+                    nq2 = HeadBanger1337.t;
                 }
                 this.u.a(nq2, nx2.b, nx2.c, nx2.d, 240 + (int)(this.i * 10.0f));
                 is2.a();
@@ -814,8 +814,8 @@ implements jv {
             }
         } else if (fp2 != null) {
             GL11.glBlendFunc(770, 771);
-            float f3 = fi.a((float)System.currentTimeMillis() / 100.0f) * 0.2f + 0.8f;
-            GL11.glColor4f((float)f3, (float)f3, (float)f3, (float)(fi.a((float)System.currentTimeMillis() / 200.0f) * 0.2f + 0.5f));
+            float f3 = TrigLookup.a((float)System.currentTimeMillis() / 100.0f) * 0.2f + 0.8f;
+            GL11.glColor4f((float)f3, (float)f3, (float)f3, (float)(TrigLookup.a((float)System.currentTimeMillis() / 200.0f) * 0.2f + 0.5f));
             int n5 = this.l.a("/terrain.png");
             GL11.glBindTexture(3553, (int)n5);
             int n6 = nx2.b;
@@ -844,7 +844,7 @@ implements jv {
         GL11.glDisable(3008);
     }
 
-    public void b(eb eb2, nx nx2, int n2, fp fp2, float f2) {
+    public void b(Player eb2, nx nx2, int n2, Item fp2, float f2) {
         if (n2 == 0 && nx2.a == 0) {
             GL11.glEnable(3042);
             GL11.glBlendFunc(770, 771);
@@ -855,11 +855,11 @@ implements jv {
             float f3 = 0.002f;
             int n3 = this.k.a(nx2.b, nx2.c, nx2.d);
             if (n3 > 0) {
-                nq.m[n3].a((pk)this.k, nx2.b, nx2.c, nx2.d);
+                HeadBanger1337.m[n3].a((pk)this.k, nx2.b, nx2.c, nx2.d);
                 double d2 = eb2.aV + (eb2.aw - eb2.aV) * (double)f2;
                 double d3 = eb2.aW + (eb2.ax - eb2.aW) * (double)f2;
                 double d4 = eb2.aX + (eb2.ay - eb2.aX) * (double)f2;
-                this.a(nq.m[n3].f(this.k, nx2.b, nx2.c, nx2.d).b(f3, f3, f3).c(-d2, -d3, -d4));
+                this.a(HeadBanger1337.m[n3].f(this.k, nx2.b, nx2.c, nx2.d).b(f3, f3, f3).c(-d2, -d3, -d4));
             }
             GL11.glDepthMask((boolean)true);
             GL11.glEnable(3553);
@@ -896,12 +896,12 @@ implements jv {
     }
 
     public void a(int n2, int n3, int n4, int n5, int n6, int n7) {
-        int n8 = fi.a(n2, 16);
-        int n9 = fi.a(n3, 16);
-        int n10 = fi.a(n4, 16);
-        int n11 = fi.a(n5, 16);
-        int n12 = fi.a(n6, 16);
-        int n13 = fi.a(n7, 16);
+        int n8 = TrigLookup.a(n2, 16);
+        int n9 = TrigLookup.a(n3, 16);
+        int n10 = TrigLookup.a(n4, 16);
+        int n11 = TrigLookup.a(n5, 16);
+        int n12 = TrigLookup.a(n6, 16);
+        int n13 = TrigLookup.a(n7, 16);
         for (int i2 = n8; i2 <= n11; ++i2) {
             int n14 = i2 % this.p;
             if (n14 < 0) {
@@ -1024,7 +1024,7 @@ implements jv {
     }
 
     @Override
-    public void a(int n2, int n3, int n4, ji ji2) {
+    public void a(int n2, int n3, int n4, TileEntityRegistry ji2) {
     }
 }
 

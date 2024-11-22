@@ -10,11 +10,11 @@ extends dx {
     }
 
     @Override
-    public fp a(fp fp2, cy cy2, eb eb2) {
+    public Item a(Item fp2, Session cy2, Player eb2) {
         if (eb2.e.b(dx.j.aW)) {
             cy2.a((lw)eb2, "random.bow", 1.0f, 1.0f / (b.nextFloat() * 0.4f + 0.8f));
             if (!cy2.z) {
-                cy2.a(new lv(cy2, eb2));
+                cy2.a(new Arrow(cy2, eb2));
             }
         }
         return fp2;

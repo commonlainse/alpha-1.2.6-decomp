@@ -8,7 +8,7 @@ public class dl {
     protected int a = 8;
     protected Random b = new Random();
 
-    public void a(bd bd2, cy cy2, int n2, int n3, byte[] byArray) {
+    public void a(bd bd2, Session cy2, int n2, int n3, byte[] byArray) {
         int n4 = this.a;
         this.b.setSeed(cy2.u);
         long l2 = this.b.nextLong() / 2L * 2L + 1L;
@@ -21,7 +21,7 @@ public class dl {
         }
     }
 
-    protected void a(cy cy2, int n2, int n3, int n4, int n5, byte[] byArray) {
+    protected void a(Session cy2, int n2, int n3, int n4, int n5, byte[] byArray) {
     }
 }
 

@@ -7,11 +7,11 @@ import java.io.IOException;
 public class cu
 implements bd {
     private ha[] b = new ha[256];
-    private cy c;
+    private Session c;
     private ai d;
     byte[] a = new byte[32768];
 
-    public cu(cy cy2, ai ai2) {
+    public cu(Session cy2, ai ai2) {
         this.c = cy2;
         this.d = ai2;
     }

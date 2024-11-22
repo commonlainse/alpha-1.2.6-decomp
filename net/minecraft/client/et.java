@@ -10,7 +10,7 @@ extends ad {
     private byte[][] h = new byte[32][1024];
 
     public et() {
-        super(nq.be.bg);
+        super(HeadBanger1337.be.bg);
         Random random = new Random(100L);
         for (int i2 = 0; i2 < 32; ++i2) {
             for (int i3 = 0; i3 < 16; ++i3) {
@@ -36,7 +36,7 @@ extends ad {
                         }
                         float f7 = f5 * f5 + f6 * f6;
                         float f8 = (float)Math.atan2(f6, f5) + ((float)i2 / 32.0f * (float)Math.PI * 2.0f - f7 * 10.0f + (float)(n2 * 2)) * (float)(n2 * 2 - 1);
-                        f8 = (fi.a(f8) + 1.0f) / 2.0f;
+                        f8 = (TrigLookup.a(f8) + 1.0f) / 2.0f;
                         f2 += (f8 /= f7 + 1.0f) * 0.5f;
                     }
                     n2 = (int)((f2 += random.nextFloat() * 0.1f) * 100.0f + 155.0f);

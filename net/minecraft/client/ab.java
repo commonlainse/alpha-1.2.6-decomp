@@ -18,7 +18,7 @@ public class ab {
     /*
      * WARNING - Removed try catching itself - possible behaviour change.
      */
-    public static iq a(InputStream inputStream) throws IOException {
+    public static NBTCompoundTag a(InputStream inputStream) throws IOException {
         try (DataInputStream dataInputStream = new DataInputStream(new GZIPInputStream(inputStream));){
             return ab.a((DataInput)dataInputStream);
         }
@@ -27,7 +27,7 @@ public class ab {
     /*
      * WARNING - Removed try catching itself - possible behaviour change.
      */
-    public static void a(iq iq2, OutputStream outputStream) throws IOException {
+    public static void a(NBTCompoundTag iq2, OutputStream outputStream) throws IOException {
         try (DataOutputStream dataOutputStream = new DataOutputStream(new GZIPOutputStream(outputStream));){
             ab.a(iq2, (DataOutput)dataOutputStream);
         }
@@ -36,9 +36,9 @@ public class ab {
     /*
      * WARNING - Removed try catching itself - possible behaviour change.
      */
-    public static iq a(byte[] byArray) throws IOException {
+    public static NBTCompoundTag a(byte[] byArray) throws IOException {
         try (DataInputStream dataInputStream = new DataInputStream(new GZIPInputStream(new ByteArrayInputStream(byArray)));){
-            iq iq2 = ab.a((DataInput)dataInputStream);
+            NBTCompoundTag iq2 = ab.a((DataInput)dataInputStream);
             return iq2;
         }
     }
@@ -46,23 +46,23 @@ public class ab {
     /*
      * WARNING - Removed try catching itself - possible behaviour change.
      */
-    public static byte[] a(iq iq2) throws IOException {
+    public static byte[] a(NBTCompoundTag iq2) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try (DataOutputStream dataOutputStream = new DataOutputStream(new GZIPOutputStream(byteArrayOutputStream));){
         }
         return byteArrayOutputStream.toByteArray();
     }
 
-    public static iq a(DataInput dataInput) throws IOException {
-        fd fd2 = fd.b(dataInput);
-        if (fd2 instanceof iq) {
-            return (iq)fd2;
+    public static NBTCompoundTag a(DataInput dataInput) throws IOException {
+        NBTTag fd2 = NBTTag.read(dataInput);
+        if (fd2 instanceof NBTCompoundTag) {
+            return (NBTCompoundTag)fd2;
         }
         throw new IOException("Root tag must be a named compound tag");
     }
 
-    public static void a(iq iq2, DataOutput dataOutput) throws IOException {
-        fd.a(iq2, dataOutput);
+    public static void a(NBTCompoundTag iq2, DataOutput dataOutput) throws IOException {
+        NBTTag.serialize(iq2, dataOutput);
     }
 }
 

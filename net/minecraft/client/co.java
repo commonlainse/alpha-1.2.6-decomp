@@ -162,14 +162,14 @@ public class co {
         return this;
     }
 
-    public boolean a(aoclass ao2) {
-        if (ao2.a <= this.a || ao2.a >= this.d) {
+    public boolean a(Vector3D ao2) {
+        if (ao2.x <= this.a || ao2.x >= this.d) {
             return false;
         }
-        if (ao2.b <= this.b || ao2.b >= this.e) {
+        if (ao2.y <= this.b || ao2.y >= this.e) {
             return false;
         }
-        return !(ao2.c <= this.c) && !(ao2.c >= this.f);
+        return !(ao2.z <= this.c) && !(ao2.z >= this.f);
     }
 
     public double b() {
@@ -183,13 +183,13 @@ public class co {
         return co.b(this.a, this.b, this.c, this.d, this.e, this.f);
     }
 
-    public nx a(aoclass ao2, aoclass ao3) {
-        aoclass ao4 = ao2.a(ao3, this.a);
-        aoclass ao5 = ao2.a(ao3, this.d);
-        aoclass ao6 = ao2.b(ao3, this.b);
-        aoclass ao7 = ao2.b(ao3, this.e);
-        aoclass ao8 = ao2.c(ao3, this.c);
-        aoclass ao9 = ao2.c(ao3, this.f);
+    public nx a(Vector3D ao2, Vector3D ao3) {
+        Vector3D ao4 = ao2.a(ao3, this.a);
+        Vector3D ao5 = ao2.a(ao3, this.d);
+        Vector3D ao6 = ao2.b(ao3, this.b);
+        Vector3D ao7 = ao2.b(ao3, this.e);
+        Vector3D ao8 = ao2.c(ao3, this.c);
+        Vector3D ao9 = ao2.c(ao3, this.f);
         if (!this.b(ao4)) {
             ao4 = null;
         }
@@ -208,7 +208,7 @@ public class co {
         if (!this.d(ao9)) {
             ao9 = null;
         }
-        aoclass ao10 = null;
+        Vector3D ao10 = null;
         if (ao4 != null && (ao10 == null || ao2.d(ao4) < ao2.d(ao10))) {
             ao10 = ao4;
         }
@@ -252,25 +252,25 @@ public class co {
         return new nx(0, 0, 0, n2, ao10);
     }
 
-    private boolean b(aoclass ao2) {
+    private boolean b(Vector3D ao2) {
         if (ao2 == null) {
             return false;
         }
-        return ao2.b >= this.b && ao2.b <= this.e && ao2.c >= this.c && ao2.c <= this.f;
+        return ao2.y >= this.b && ao2.y <= this.e && ao2.z >= this.c && ao2.z <= this.f;
     }
 
-    private boolean c(aoclass ao2) {
+    private boolean c(Vector3D ao2) {
         if (ao2 == null) {
             return false;
         }
-        return ao2.a >= this.a && ao2.a <= this.d && ao2.c >= this.c && ao2.c <= this.f;
+        return ao2.x >= this.a && ao2.x <= this.d && ao2.z >= this.c && ao2.z <= this.f;
     }
 
-    private boolean d(aoclass ao2) {
+    private boolean d(Vector3D ao2) {
         if (ao2 == null) {
             return false;
         }
-        return ao2.a >= this.a && ao2.a <= this.d && ao2.b >= this.b && ao2.b <= this.e;
+        return ao2.x >= this.a && ao2.x <= this.d && ao2.y >= this.b && ao2.y <= this.e;
     }
 
     public void b(co co2) {

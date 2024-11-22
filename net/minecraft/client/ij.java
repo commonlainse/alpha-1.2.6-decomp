@@ -47,10 +47,10 @@ extends gm {
         this.d.d = -(f6 / 57.295776f);
         this.d.e = f5 / 57.295776f;
         this.e.d = 1.5707964f;
-        this.f.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
-        this.g.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
-        this.h.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
-        this.i.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
+        this.f.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
+        this.g.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.h.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.i.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
     }
 }
 

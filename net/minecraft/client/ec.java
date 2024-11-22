@@ -21,7 +21,7 @@ extends aq {
         this.f = gm2;
     }
 
-    public void a(hf hf2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Mob hf2, double d2, double d3, double d4, float f2, float f3) {
         GL11.glPushMatrix();
         GL11.glDisable(2884);
         this.e.k = this.c(hf2, f3);
@@ -39,7 +39,7 @@ extends aq {
             GL11.glRotatef((float)(180.0f - f5), 0.0f, 1.0f, 0.0f);
             if (hf2.O > 0) {
                 f4 = ((float)hf2.O + f3 - 1.0f) / 20.0f * 1.6f;
-                if ((f4 = fi.c(f4)) > 1.0f) {
+                if ((f4 = TrigLookup.c(f4)) > 1.0f) {
                     f4 = 1.0f;
                 }
                 GL11.glRotatef((float)(f4 * this.a(hf2)), 0.0f, 0.0f, 1.0f);
@@ -108,35 +108,35 @@ extends aq {
         GL11.glPopMatrix();
     }
 
-    protected float c(hf hf2, float f2) {
+    protected float c(Mob hf2, float f2) {
         return hf2.d(f2);
     }
 
-    protected float d(hf hf2, float f2) {
+    protected float d(Mob hf2, float f2) {
         return (float)hf2.be + f2;
     }
 
-    protected void b(hf hf2, float f2) {
+    protected void b(Mob hf2, float f2) {
     }
 
-    protected boolean a(hf hf2, int n2) {
+    protected boolean a(Mob hf2, int n2) {
         return false;
     }
 
-    protected float a(hf hf2) {
+    protected float a(Mob hf2) {
         return 90.0f;
     }
 
-    protected int a(hf hf2, float f2, float f3) {
+    protected int a(Mob hf2, float f2, float f3) {
         return 0;
     }
 
-    protected void a(hf hf2, float f2) {
+    protected void a(Mob hf2, float f2) {
     }
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((hf)lw2, d2, d3, d4, f2, f3);
+        this.a((Mob)lw2, d2, d3, d4, f2, f3);
     }
 }
 

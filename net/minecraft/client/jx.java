@@ -11,12 +11,12 @@ public class jx
 extends fr {
     private kx b = new kx();
 
-    public void a(qc qc2, double d2, double d3, double d4, float f2) {
+    public void a(Sign qc2, double d2, double d3, double d4, float f2) {
         float f3;
-        nq nq2 = qc2.g();
+        HeadBanger1337 nq2 = qc2.g();
         GL11.glPushMatrix();
         float f4 = 0.6666667f;
-        if (nq2 == nq.aD) {
+        if (nq2 == HeadBanger1337.aD) {
             GL11.glTranslatef((float)((float)d2 + 0.5f), (float)((float)d3 + 0.75f * f4), (float)((float)d4 + 0.5f));
             float f5 = (float)(qc2.f() * 360) / 16.0f;
             GL11.glRotatef((float)(-f5), 0.0f, 1.0f, 0.0f);
@@ -65,8 +65,8 @@ extends fr {
     }
 
     @Override
-    public void a(ji ji2, double d2, double d3, double d4, float f2) {
-        this.a((qc)ji2, d2, d3, d4, f2);
+    public void a(TileEntityRegistry ji2, double d2, double d3, double d4, float f2) {
+        this.a((Sign)ji2, d2, d3, d4, f2);
     }
 }
 

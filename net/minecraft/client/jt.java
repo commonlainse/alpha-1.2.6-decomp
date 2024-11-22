@@ -12,13 +12,13 @@ extends iv {
     }
 
     @Override
-    public void b(eb eb2) {
+    public void b(Player eb2) {
         for (int i2 = 0; i2 < 9; ++i2) {
-            if (eb2.e.a[i2] == null) {
-                this.a.g.e.a[i2] = new fp(((nq)ea.a.get((int)i2)).bh);
+            if (eb2.e.storage[i2] == null) {
+                this.a.g.e.storage[i2] = new Item(((HeadBanger1337)ea.a.get((int)i2)).bh);
                 continue;
             }
-            this.a.g.e.a[i2].a = 1;
+            this.a.g.e.storage[i2].count = 1;
         }
     }
 
@@ -28,7 +28,7 @@ extends iv {
     }
 
     @Override
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         super.a(cy2);
     }
 

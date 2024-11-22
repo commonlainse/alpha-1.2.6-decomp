@@ -15,7 +15,7 @@ extends ad {
     private double j;
 
     public ae(Minecraft minecraft) {
-        super(dx.aO.a((fp)null));
+        super(dx.aO.a((Item)null));
         this.g = minecraft;
         this.f = 1;
         try {

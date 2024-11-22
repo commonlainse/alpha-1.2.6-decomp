@@ -5,7 +5,7 @@ package net.minecraft.client;
 public interface pk {
     public int a(int var1, int var2, int var3);
 
-    public ji b(int var1, int var2, int var3);
+    public TileEntityRegistry b(int var1, int var2, int var3);
 
     public float c(int var1, int var2, int var3);
 

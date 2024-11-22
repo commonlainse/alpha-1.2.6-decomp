@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class ps
-extends eb {
+extends Player {
     private int b;
     private double c;
     private double d;
@@ -12,9 +12,9 @@ extends eb {
     private double bz;
     float a = 0.0f;
 
-    public ps(cy cy2, String string) {
+    public ps(Session cy2, String string) {
         super(cy2);
-        this.l = string;
+        this.name = string;
         this.aO = 0.0f;
         this.aZ = 0.0f;
         if (string != null && string.length() > 0) {
@@ -47,7 +47,7 @@ extends eb {
         this.V = this.W;
         double d2 = this.aw - this.at;
         double d3 = this.ay - this.av;
-        float f2 = fi.a(d2 * d2 + d3 * d3) * 4.0f;
+        float f2 = TrigLookup.a(d2 * d2 + d3 * d3) * 4.0f;
         if (f2 > 1.0f) {
             f2 = 1.0f;
         }
@@ -80,7 +80,7 @@ extends eb {
             this.c(this.aC, this.aD);
         }
         this.h = this.i;
-        float f2 = fi.a(this.az * this.az + this.aB * this.aB);
+        float f2 = TrigLookup.a(this.az * this.az + this.aB * this.aB);
         float f3 = (float)Math.atan(-this.aA * (double)0.2f) * 15.0f;
         if (f2 > 0.1f) {
             f2 = 0.1f;

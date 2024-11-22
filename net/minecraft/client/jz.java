@@ -13,8 +13,8 @@ extends ec {
         super(new hc(), 0.5f);
     }
 
-    protected void a(am am2, float f2) {
-        am am3 = am2;
+    protected void a(Ghast am2, float f2) {
+        Ghast am3 = am2;
         float f3 = ((float)am3.e + (float)(am3.f - am3.e) * f2) / 20.0f;
         if (f3 < 0.0f) {
             f3 = 0.0f;
@@ -27,8 +27,8 @@ extends ec {
     }
 
     @Override
-    protected void a(hf hf2, float f2) {
-        this.a((am)hf2, f2);
+    protected void a(Mob hf2, float f2) {
+        this.a((Ghast)hf2, f2);
     }
 }
 

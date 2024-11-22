@@ -14,11 +14,11 @@ extends ec {
         this.a(new lm());
     }
 
-    protected float a(be be2) {
+    protected float a(Spider be2) {
         return 180.0f;
     }
 
-    protected boolean a(be be2, int n2) {
+    protected boolean a(Spider be2, int n2) {
         if (n2 != 0) {
             return false;
         }
@@ -35,13 +35,13 @@ extends ec {
     }
 
     @Override
-    protected float a(hf hf2) {
-        return this.a((be)hf2);
+    protected float a(Mob hf2) {
+        return this.a((Spider)hf2);
     }
 
     @Override
-    protected boolean a(hf hf2, int n2) {
-        return this.a((be)hf2, n2);
+    protected boolean a(Mob hf2, int n2) {
+        return this.a((Spider)hf2, n2);
     }
 }
 

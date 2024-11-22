@@ -9,7 +9,7 @@ import java.util.List;
 
 public class en {
     static private final en a = new en();
-    private List b = new ArrayList();
+    private List recipes = new ArrayList();
 
     public static final en a() {
         return a;
@@ -22,52 +22,52 @@ public class en {
         new iw().a(this);
         new gf().a(this);
         new o().a(this);
-        this.a(new fp(dx.aI, 3), "###", Character.valueOf('#'), dx.aH);
-        this.a(new fp(dx.aJ, 1), "#", "#", "#", Character.valueOf('#'), dx.aI);
-        this.a(new fp(nq.aZ, 2), "###", "###", Character.valueOf('#'), dx.B);
-        this.a(new fp(nq.aY, 1), "###", "#X#", "###", Character.valueOf('#'), nq.x, Character.valueOf('X'), dx.l);
-        this.a(new fp(nq.an, 1), "###", "XXX", "###", Character.valueOf('#'), nq.x, Character.valueOf('X'), dx.aJ);
-        this.a(new fp(nq.aU, 1), "##", "##", Character.valueOf('#'), dx.aB);
-        this.a(new fp(nq.aW, 1), "##", "##", Character.valueOf('#'), dx.aG);
-        this.a(new fp(nq.al, 1), "##", "##", Character.valueOf('#'), dx.aF);
-        this.a(new fp(nq.bd, 1), "###", "###", "###", Character.valueOf('#'), dx.aR);
-        this.a(new fp(nq.ab, 1), "###", "###", "###", Character.valueOf('#'), dx.I);
-        this.a(new fp(nq.am, 1), "X#X", "#X#", "X#X", Character.valueOf('X'), dx.K, Character.valueOf('#'), nq.E);
-        this.a(new fp(nq.ak, 3), "###", Character.valueOf('#'), nq.w);
-        this.a(new fp(nq.aF, 1), "# #", "###", "# #", Character.valueOf('#'), dx.B);
-        this.a(new fp(dx.at, 1), "##", "##", "##", Character.valueOf('#'), nq.x);
-        this.a(new fp(dx.az, 1), "##", "##", "##", Character.valueOf('#'), dx.m);
-        this.a(new fp(dx.as, 1), "###", "###", " X ", Character.valueOf('#'), nq.x, Character.valueOf('X'), dx.B);
-        this.a(new fp(nq.x, 4), "#", Character.valueOf('#'), nq.J);
-        this.a(new fp(dx.B, 4), "#", "#", Character.valueOf('#'), nq.x);
-        this.a(new fp(nq.aq, 4), "X", "#", Character.valueOf('X'), dx.k, Character.valueOf('#'), dx.B);
-        this.a(new fp(dx.C, 4), "# #", " # ", Character.valueOf('#'), nq.x);
-        this.a(new fp(nq.aG, 16), "X X", "X#X", "X X", Character.valueOf('X'), dx.m, Character.valueOf('#'), dx.B);
-        this.a(new fp(dx.ax, 1), "# #", "###", Character.valueOf('#'), dx.m);
-        this.a(new fp(nq.bf, 1), "A", "B", Character.valueOf('A'), nq.ba, Character.valueOf('B'), nq.aq);
-        this.a(new fp(dx.aL, 1), "A", "B", Character.valueOf('A'), nq.au, Character.valueOf('B'), dx.ax);
-        this.a(new fp(dx.aM, 1), "A", "B", Character.valueOf('A'), nq.aB, Character.valueOf('B'), dx.ax);
-        this.a(new fp(dx.aC, 1), "# #", "###", Character.valueOf('#'), nq.x);
-        this.a(new fp(dx.au, 1), "# #", " # ", Character.valueOf('#'), dx.m);
-        this.a(new fp(dx.g, 1), "A ", " B", Character.valueOf('A'), dx.m, Character.valueOf('B'), dx.an);
-        this.a(new fp(dx.S, 1), "###", Character.valueOf('#'), dx.R);
-        this.a(new fp(nq.at, 4), "#  ", "## ", "###", Character.valueOf('#'), nq.x);
-        this.a(new fp(dx.aP, 1), "  #", " #X", "# X", Character.valueOf('#'), dx.B, Character.valueOf('X'), dx.I);
-        this.a(new fp(nq.aH, 4), "#  ", "## ", "###", Character.valueOf('#'), nq.w);
-        this.a(new fp(dx.aq, 1), "###", "#X#", "###", Character.valueOf('#'), dx.B, Character.valueOf('X'), nq.ab);
-        this.a(new fp(dx.ar, 1), "###", "#X#", "###", Character.valueOf('#'), nq.ah, Character.valueOf('X'), dx.h);
-        this.a(new fp(nq.aJ, 1), "X", "#", Character.valueOf('#'), nq.w, Character.valueOf('X'), dx.B);
-        this.a(new fp(nq.aQ, 1), "X", "#", Character.valueOf('#'), dx.B, Character.valueOf('X'), dx.aA);
-        this.a(new fp(dx.aQ, 1), " # ", "#X#", " # ", Character.valueOf('#'), dx.n, Character.valueOf('X'), dx.aA);
-        this.a(new fp(dx.aO, 1), " # ", "#X#", " # ", Character.valueOf('#'), dx.m, Character.valueOf('X'), dx.aA);
-        this.a(new fp(nq.aR, 1), "#", "#", Character.valueOf('#'), nq.t);
-        this.a(new fp(nq.aK, 1), "###", Character.valueOf('#'), nq.t);
-        this.a(new fp(nq.aM, 1), "###", Character.valueOf('#'), nq.x);
-        Collections.sort(this.b, new gr(this));
-        System.out.println(this.b.size() + " recipes");
+        this.a(new Item(dx.aI, 3), "###", Character.valueOf('#'), dx.aH);
+        this.a(new Item(dx.aJ, 1), "#", "#", "#", Character.valueOf('#'), dx.aI);
+        this.a(new Item(HeadBanger1337.aZ, 2), "###", "###", Character.valueOf('#'), dx.B);
+        this.a(new Item(HeadBanger1337.aY, 1), "###", "#X#", "###", Character.valueOf('#'), HeadBanger1337.x, Character.valueOf('X'), dx.l);
+        this.a(new Item(HeadBanger1337.an, 1), "###", "XXX", "###", Character.valueOf('#'), HeadBanger1337.x, Character.valueOf('X'), dx.aJ);
+        this.a(new Item(HeadBanger1337.aU, 1), "##", "##", Character.valueOf('#'), dx.aB);
+        this.a(new Item(HeadBanger1337.aW, 1), "##", "##", Character.valueOf('#'), dx.aG);
+        this.a(new Item(HeadBanger1337.al, 1), "##", "##", Character.valueOf('#'), dx.aF);
+        this.a(new Item(HeadBanger1337.bd, 1), "###", "###", "###", Character.valueOf('#'), dx.aR);
+        this.a(new Item(HeadBanger1337.ab, 1), "###", "###", "###", Character.valueOf('#'), dx.I);
+        this.a(new Item(HeadBanger1337.am, 1), "X#X", "#X#", "X#X", Character.valueOf('X'), dx.K, Character.valueOf('#'), HeadBanger1337.E);
+        this.a(new Item(HeadBanger1337.ak, 3), "###", Character.valueOf('#'), HeadBanger1337.w);
+        this.a(new Item(HeadBanger1337.aF, 1), "# #", "###", "# #", Character.valueOf('#'), dx.B);
+        this.a(new Item(dx.at, 1), "##", "##", "##", Character.valueOf('#'), HeadBanger1337.x);
+        this.a(new Item(dx.az, 1), "##", "##", "##", Character.valueOf('#'), dx.m);
+        this.a(new Item(dx.as, 1), "###", "###", " X ", Character.valueOf('#'), HeadBanger1337.x, Character.valueOf('X'), dx.B);
+        this.a(new Item(HeadBanger1337.x, 4), "#", Character.valueOf('#'), HeadBanger1337.J);
+        this.a(new Item(dx.B, 4), "#", "#", Character.valueOf('#'), HeadBanger1337.x);
+        this.a(new Item(HeadBanger1337.aq, 4), "X", "#", Character.valueOf('X'), dx.k, Character.valueOf('#'), dx.B);
+        this.a(new Item(dx.C, 4), "# #", " # ", Character.valueOf('#'), HeadBanger1337.x);
+        this.a(new Item(HeadBanger1337.aG, 16), "X X", "X#X", "X X", Character.valueOf('X'), dx.m, Character.valueOf('#'), dx.B);
+        this.a(new Item(dx.ax, 1), "# #", "###", Character.valueOf('#'), dx.m);
+        this.a(new Item(HeadBanger1337.bf, 1), "A", "B", Character.valueOf('A'), HeadBanger1337.ba, Character.valueOf('B'), HeadBanger1337.aq);
+        this.a(new Item(dx.aL, 1), "A", "B", Character.valueOf('A'), HeadBanger1337.au, Character.valueOf('B'), dx.ax);
+        this.a(new Item(dx.aM, 1), "A", "B", Character.valueOf('A'), HeadBanger1337.aB, Character.valueOf('B'), dx.ax);
+        this.a(new Item(dx.aC, 1), "# #", "###", Character.valueOf('#'), HeadBanger1337.x);
+        this.a(new Item(dx.au, 1), "# #", " # ", Character.valueOf('#'), dx.m);
+        this.a(new Item(dx.g, 1), "A ", " B", Character.valueOf('A'), dx.m, Character.valueOf('B'), dx.an);
+        this.a(new Item(dx.S, 1), "###", Character.valueOf('#'), dx.R);
+        this.a(new Item(HeadBanger1337.at, 4), "#  ", "## ", "###", Character.valueOf('#'), HeadBanger1337.x);
+        this.a(new Item(dx.aP, 1), "  #", " #X", "# X", Character.valueOf('#'), dx.B, Character.valueOf('X'), dx.I);
+        this.a(new Item(HeadBanger1337.aH, 4), "#  ", "## ", "###", Character.valueOf('#'), HeadBanger1337.w);
+        this.a(new Item(dx.aq, 1), "###", "#X#", "###", Character.valueOf('#'), dx.B, Character.valueOf('X'), HeadBanger1337.ab);
+        this.a(new Item(dx.ar, 1), "###", "#X#", "###", Character.valueOf('#'), HeadBanger1337.ah, Character.valueOf('X'), dx.h);
+        this.a(new Item(HeadBanger1337.aJ, 1), "X", "#", Character.valueOf('#'), HeadBanger1337.w, Character.valueOf('X'), dx.B);
+        this.a(new Item(HeadBanger1337.aQ, 1), "X", "#", Character.valueOf('#'), dx.B, Character.valueOf('X'), dx.aA);
+        this.a(new Item(dx.aQ, 1), " # ", "#X#", " # ", Character.valueOf('#'), dx.n, Character.valueOf('X'), dx.aA);
+        this.a(new Item(dx.aO, 1), " # ", "#X#", " # ", Character.valueOf('#'), dx.m, Character.valueOf('X'), dx.aA);
+        this.a(new Item(HeadBanger1337.aR, 1), "#", "#", Character.valueOf('#'), HeadBanger1337.t);
+        this.a(new Item(HeadBanger1337.aK, 1), "###", Character.valueOf('#'), HeadBanger1337.t);
+        this.a(new Item(HeadBanger1337.aM, 1), "###", Character.valueOf('#'), HeadBanger1337.x);
+        Collections.sort(this.recipes, new gr(this));
+        System.out.println(this.recipes.size() + " recipes");
     }
 
-    void a(fp fp2, Object ... objectArray) {
+    void a(Item fp2, Object ... objectArray) {
         Object object;
         String string = "";
         int n2 = 0;
@@ -95,8 +95,8 @@ public class en {
             int n5 = 0;
             if (objectArray[n2 + 1] instanceof dx) {
                 n5 = ((dx)objectArray[n2 + 1]).aW;
-            } else if (objectArray[n2 + 1] instanceof nq) {
-                n5 = ((nq)objectArray[n2 + 1]).bh;
+            } else if (objectArray[n2 + 1] instanceof HeadBanger1337) {
+                n5 = ((HeadBanger1337)objectArray[n2 + 1]).bh;
             }
             HashMap _object = (HashMap)object;
             _object.put(c2, n5);
@@ -108,12 +108,12 @@ public class en {
             HashMap _object = (HashMap)object;
             nArray[i3] = _object.containsKey(Character.valueOf(c3)) ? (Integer)_object.get(Character.valueOf(c3)) : -1;
         }
-        this.b.add(new cd(n3, n4, nArray, fp2));
+        this.recipes.add(new cd(n3, n4, nArray, fp2));
     }
 
-    public fp a(int[] nArray) {
-        for (int i2 = 0; i2 < this.b.size(); ++i2) {
-            cd cd2 = (cd)this.b.get(i2);
+    public Item a(int[] nArray) {
+        for (int i2 = 0; i2 < this.recipes.size(); ++i2) {
+            cd cd2 = (cd)this.recipes.get(i2);
             if (!cd2.a(nArray)) continue;
             return cd2.b(nArray);
         }

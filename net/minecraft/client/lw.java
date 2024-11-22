@@ -12,7 +12,7 @@ public abstract class lw {
     public boolean ap = false;
     public lw aq;
     public lw ar;
-    public cy as;
+    public Session as;
     public double at;
     public double au;
     public double av;
@@ -74,7 +74,7 @@ public abstract class lw {
     public boolean bv;
     public boolean bw;
 
-    public lw(cy cy2) {
+    public lw(Session cy2) {
         this.as = cy2;
         this.b(0.0, 0.0, 0.0);
     }
@@ -162,12 +162,12 @@ public abstract class lw {
             if (!this.bi && !this.c) {
                 float f2;
                 float f3;
-                float f4 = fi.a(this.az * this.az * (double)0.2f + this.aA * this.aA + this.aB * this.aB * (double)0.2f) * 0.2f;
+                float f4 = TrigLookup.a(this.az * this.az * (double)0.2f + this.aA * this.aA + this.aB * this.aB * (double)0.2f) * 0.2f;
                 if (f4 > 1.0f) {
                     f4 = 1.0f;
                 }
                 this.as.a(this, "random.splash", f4, 1.0f + (this.bd.nextFloat() - this.bd.nextFloat()) * 0.4f);
-                float f5 = fi.b(this.aG.b);
+                float f5 = TrigLookup.b(this.aG.b);
                 int n2 = 0;
                 while ((float)n2 < 1.0f + this.aP * 20.0f) {
                     f3 = (this.bd.nextFloat() * 2.0f - 1.0f) * this.aP;
@@ -360,35 +360,35 @@ public abstract class lw {
         double d14 = this.aw - d6;
         d5 = this.ay - d7;
         if (this.aT && !bl2) {
-            this.aS = (float)((double)this.aS + (double)fi.a(d14 * d14 + d5 * d5) * 0.6);
-            int n6 = fi.b(this.aw);
-            n2 = fi.b(this.ax - (double)0.2f - (double)this.aO);
-            int n7 = fi.b(this.ay);
+            this.aS = (float)((double)this.aS + (double)TrigLookup.a(d14 * d14 + d5 * d5) * 0.6);
+            int n6 = TrigLookup.b(this.aw);
+            n2 = TrigLookup.b(this.ax - (double)0.2f - (double)this.aO);
+            int n7 = TrigLookup.b(this.ay);
             n3 = this.as.a(n6, n2, n7);
             if (this.aS > (float)this.b && n3 > 0) {
                 ++this.b;
-                bi bi2 = nq.m[n3].bq;
-                if (this.as.a(n6, n2 + 1, n7) == nq.aS.bh) {
-                    bi2 = nq.aS.bq;
+                bi bi2 = HeadBanger1337.m[n3].bq;
+                if (this.as.a(n6, n2 + 1, n7) == HeadBanger1337.aS.bh) {
+                    bi2 = HeadBanger1337.aS.bq;
                     this.as.a(this, bi2.d(), bi2.b() * 0.15f, bi2.c());
-                } else if (!nq.m[n3].bs.d()) {
+                } else if (!HeadBanger1337.m[n3].bs.d()) {
                     this.as.a(this, bi2.d(), bi2.b() * 0.15f, bi2.c());
                 }
-                nq.m[n3].b(this.as, n6, n2, n7, this);
+                HeadBanger1337.m[n3].b(this.as, n6, n2, n7, this);
             }
         }
-        int n8 = fi.b(this.aG.a);
-        n2 = fi.b(this.aG.b);
-        int n9 = fi.b(this.aG.c);
-        n3 = fi.b(this.aG.d);
-        int n10 = fi.b(this.aG.e);
-        int n11 = fi.b(this.aG.f);
+        int n8 = TrigLookup.b(this.aG.a);
+        n2 = TrigLookup.b(this.aG.b);
+        int n9 = TrigLookup.b(this.aG.c);
+        n3 = TrigLookup.b(this.aG.d);
+        int n10 = TrigLookup.b(this.aG.e);
+        int n11 = TrigLookup.b(this.aG.f);
         for (int i2 = n8; i2 <= n3; ++i2) {
             for (int i3 = n2; i3 <= n10; ++i3) {
                 for (int i4 = n9; i4 <= n11; ++i4) {
                     int n12 = this.as.a(i2, i3, i4);
                     if (n12 <= 0) continue;
-                    nq.m[n12].a(this.as, i2, i3, i4, this);
+                    HeadBanger1337.m[n12].a(this.as, i2, i3, i4, this);
                 }
             }
         }
@@ -447,9 +447,9 @@ public abstract class lw {
         int n2;
         int n3;
         double d2 = this.ax + (double)this.v();
-        int n4 = fi.b(this.aw);
-        int n5 = this.as.a(n4, n3 = fi.d(fi.b(d2)), n2 = fi.b(this.ay));
-        if (n5 != 0 && nq.m[n5].bs == hb2) {
+        int n4 = TrigLookup.b(this.aw);
+        int n5 = this.as.a(n4, n3 = TrigLookup.d(TrigLookup.b(d2)), n2 = TrigLookup.b(this.ay));
+        if (n5 != 0 && HeadBanger1337.m[n5].bs == hb2) {
             float f2 = ld.b(this.as.e(n4, n3, n2)) - 0.11111111f;
             float f3 = (float)(n3 + 1) - f2;
             return d2 < (double)f3;
@@ -466,7 +466,7 @@ public abstract class lw {
     }
 
     public void a(float f2, float f3, float f4) {
-        float f5 = fi.c(f2 * f2 + f3 * f3);
+        float f5 = TrigLookup.c(f2 * f2 + f3 * f3);
         if (f5 < 0.01f) {
             return;
         }
@@ -474,21 +474,21 @@ public abstract class lw {
             f5 = 1.0f;
         }
         f5 = f4 / f5;
-        float f6 = fi.a(this.aC * (float)Math.PI / 180.0f);
-        float f7 = fi.b(this.aC * (float)Math.PI / 180.0f);
+        float f6 = TrigLookup.a(this.aC * (float)Math.PI / 180.0f);
+        float f7 = TrigLookup.b(this.aC * (float)Math.PI / 180.0f);
         this.az += (double)((f2 *= f5) * f7 - (f3 *= f5) * f6);
         this.aB += (double)(f3 * f7 + f2 * f6);
     }
 
     public float a(float f2) {
-        int n2 = fi.b(this.aw);
+        int n2 = TrigLookup.b(this.aw);
         double d2 = (this.aG.e - this.aG.b) * 0.66;
-        int n3 = fi.b(this.ax - (double)this.aO + d2);
-        int n4 = fi.b(this.ay);
+        int n3 = TrigLookup.b(this.ax - (double)this.aO + d2);
+        int n4 = TrigLookup.b(this.ay);
         return this.as.c(n2, n3, n4);
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         this.as = cy2;
     }
 
@@ -523,7 +523,7 @@ public abstract class lw {
         float f2 = (float)(this.aw - lw2.aw);
         float f3 = (float)(this.ax - lw2.ax);
         float f4 = (float)(this.ay - lw2.ay);
-        return fi.c(f2 * f2 + f3 * f3 + f4 * f4);
+        return TrigLookup.c(f2 * f2 + f3 * f3 + f4 * f4);
     }
 
     public double e(double d2, double d3, double d4) {
@@ -537,7 +537,7 @@ public abstract class lw {
         double d5 = this.aw - d2;
         double d6 = this.ax - d3;
         double d7 = this.ay - d4;
-        return fi.a(d5 * d5 + d6 * d6 + d7 * d7);
+        return TrigLookup.a(d5 * d5 + d6 * d6 + d7 * d7);
     }
 
     public double f(lw lw2) {
@@ -547,7 +547,7 @@ public abstract class lw {
         return d2 * d2 + d3 * d3 + d4 * d4;
     }
 
-    public void b(eb eb2) {
+    public void b(Player eb2) {
     }
 
     public void g(lw lw2) {
@@ -556,9 +556,9 @@ public abstract class lw {
         }
         double d2 = lw2.aw - this.aw;
         double d3 = lw2.ay - this.ay;
-        double d4 = fi.a(d2, d3);
+        double d4 = TrigLookup.a(d2, d3);
         if (d4 >= (double)0.01f) {
-            d4 = fi.a(d4);
+            d4 = TrigLookup.a(d4);
             d2 /= d4;
             d3 /= d4;
             double d5 = 1.0 / d4;
@@ -600,10 +600,10 @@ public abstract class lw {
     public void c(lw lw2, int n2) {
     }
 
-    public boolean a(aoclass ao2) {
-        double d2 = this.aw - ao2.a;
-        double d3 = this.ax - ao2.b;
-        double d4 = this.ay - ao2.c;
+    public boolean a(Vector3D ao2) {
+        double d2 = this.aw - ao2.x;
+        double d3 = this.ax - ao2.y;
+        double d4 = this.ay - ao2.z;
         double d5 = d2 * d2 + d3 * d3 + d4 * d4;
         return this.a(d5);
     }
@@ -617,71 +617,71 @@ public abstract class lw {
         return null;
     }
 
-    public boolean c(iq iq2) {
+    public boolean c(NBTCompoundTag iq2) {
         String string = this.N();
         if (this.aN || string == null) {
             return false;
         }
-        iq2.a("id", string);
+        iq2.storeString("id", string);
         this.d(iq2);
         return true;
     }
 
-    public void d(iq iq2) {
-        iq2.a("Pos", this.a(new double[]{this.aw, this.ax, this.ay}));
-        iq2.a("Motion", this.a(new double[]{this.az, this.aA, this.aB}));
-        iq2.a("Rotation", this.a(new float[]{this.aC, this.aD}));
-        iq2.a("FallDistance", this.aU);
-        iq2.a("Fire", (short)this.bg);
-        iq2.a("Air", (short)this.bk);
-        iq2.a("OnGround", this.aH);
+    public void d(NBTCompoundTag iq2) {
+        iq2.storeTag("Pos", this.a(new double[]{this.aw, this.ax, this.ay}));
+        iq2.storeTag("Motion", this.a(new double[]{this.az, this.aA, this.aB}));
+        iq2.storeTag("Rotation", this.a(new float[]{this.aC, this.aD}));
+        iq2.storeFloat("FallDistance", this.aU);
+        iq2.storeShort("Fire", (short)this.bg);
+        iq2.storeShort("Air", (short)this.bk);
+        iq2.storeBoolean("OnGround", this.aH);
         this.a(iq2);
     }
 
-    public void e(iq iq2) {
-        ly ly2 = iq2.l("Pos");
-        ly ly3 = iq2.l("Motion");
-        ly ly4 = iq2.l("Rotation");
+    public void e(NBTCompoundTag iq2) {
+        NBTListTag ly2 = iq2.getListTag("Pos");
+        NBTListTag ly3 = iq2.getListTag("Motion");
+        NBTListTag ly4 = iq2.getListTag("Rotation");
         this.b(0.0, 0.0, 0.0);
-        this.az = ((mh)ly3.a(0)).a;
-        this.aA = ((mh)ly3.a(1)).a;
-        this.aB = ((mh)ly3.a(2)).a;
-        this.aV = this.aw = ((mh)ly2.a(0)).a;
+        this.az = ((NBTDoubleTag)ly3.a(0)).a;
+        this.aA = ((NBTDoubleTag)ly3.a(1)).a;
+        this.aB = ((NBTDoubleTag)ly3.a(2)).a;
+        this.aV = this.aw = ((NBTDoubleTag)ly2.a(0)).a;
         this.at = this.aw;
-        this.aW = this.ax = ((mh)ly2.a(1)).a;
+        this.aW = this.ax = ((NBTDoubleTag)ly2.a(1)).a;
         this.au = this.ax;
-        this.aX = this.ay = ((mh)ly2.a(2)).a;
+        this.aX = this.ay = ((NBTDoubleTag)ly2.a(2)).a;
         this.av = this.ay;
-        this.aE = this.aC = ((h)ly4.a(0)).a;
-        this.aF = this.aD = ((h)ly4.a(1)).a;
-        this.aU = iq2.g("FallDistance");
-        this.bg = iq2.d("Fire");
-        this.bk = iq2.d("Air");
-        this.aH = iq2.m("OnGround");
+        this.aE = this.aC = ((NBTFloatTag)ly4.a(0)).a;
+        this.aF = this.aD = ((NBTFloatTag)ly4.a(1)).a;
+        this.aU = iq2.getFloat("FallDistance");
+        this.bg = iq2.getShort("Fire");
+        this.bk = iq2.getShort("Air");
+        this.aH = iq2.isTrue("OnGround");
         this.b(this.aw, this.ax, this.ay);
         this.b(iq2);
     }
 
     protected final String N() {
-        return fq.b(this);
+        return EntityRegistry.b(this);
     }
 
-    protected abstract void b(iq var1);
+    protected abstract void b(NBTCompoundTag var1);
 
-    protected abstract void a(iq var1);
+    protected abstract void a(NBTCompoundTag var1);
 
-    protected ly a(double ... dArray) {
-        ly ly2 = new ly();
+    protected NBTListTag a(double ... dArray) {
+        NBTListTag ly2 = new NBTListTag();
         for (double d2 : dArray) {
-            ly2.a(new mh(d2));
+            ly2.a(new NBTDoubleTag(d2));
         }
         return ly2;
     }
 
-    protected ly a(float ... fArray) {
-        ly ly2 = new ly();
+    protected NBTListTag a(float ... fArray) {
+        NBTListTag ly2 = new NBTListTag();
         for (float f2 : fArray) {
-            ly2.a(new h(f2));
+            ly2.a(new NBTFloatTag(f2));
         }
         return ly2;
     }
@@ -690,12 +690,12 @@ public abstract class lw {
         return this.aQ / 2.0f;
     }
 
-    public eo b(int n2, int n3) {
+    public DroppedItem b(int n2, int n3) {
         return this.a(n2, n3, 0.0f);
     }
 
-    public eo a(int n2, int n3, float f2) {
-        eo eo2 = new eo(this.as, this.aw, this.ax + (double)f2, this.ay, new fp(n2, n3));
+    public DroppedItem a(int n2, int n3, float f2) {
+        DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax + (double)f2, this.ay, new Item(n2, n3));
         eo2.c = 10;
         this.as.a(eo2);
         return eo2;
@@ -706,13 +706,13 @@ public abstract class lw {
     }
 
     public boolean O() {
-        int n2 = fi.b(this.aw);
-        int n3 = fi.b(this.ax + (double)this.v());
-        int n4 = fi.b(this.ay);
+        int n2 = TrigLookup.b(this.aw);
+        int n3 = TrigLookup.b(this.ax + (double)this.v());
+        int n4 = TrigLookup.b(this.ay);
         return this.as.g(n2, n3, n4);
     }
 
-    public boolean a(eb eb2) {
+    public boolean a(Player eb2) {
         return false;
     }
 
@@ -813,7 +813,7 @@ public abstract class lw {
         return 0.1f;
     }
 
-    public aoclass I() {
+    public Vector3D I() {
         return null;
     }
 

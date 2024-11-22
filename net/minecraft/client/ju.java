@@ -30,13 +30,13 @@ extends dl {
         int n7 = random.nextInt(n5 / 2) + n5 / 4;
         boolean bl3 = bl2 = random.nextInt(6) == 0;
         while (n4 < n5) {
-            double d8 = 1.5 + (double)(fi.a((float)n4 * (float)Math.PI / (float)n5) * f2 * 1.0f);
+            double d8 = 1.5 + (double)(TrigLookup.a((float)n4 * (float)Math.PI / (float)n5) * f2 * 1.0f);
             double d9 = d8 * d5;
-            float f7 = fi.b(f4);
-            float f8 = fi.a(f4);
-            d2 += (double)(fi.b(f3) * f7);
+            float f7 = TrigLookup.b(f4);
+            float f8 = TrigLookup.a(f4);
+            d2 += (double)(TrigLookup.b(f3) * f7);
             d3 += (double)f8;
-            d4 += (double)(fi.a(f3) * f7);
+            d4 += (double)(TrigLookup.a(f3) * f7);
             f4 = bl2 ? (f4 *= 0.92f) : (f4 *= 0.7f);
             f4 += f6 * 0.1f;
             f3 += f5 * 0.1f;
@@ -60,12 +60,12 @@ extends dl {
                 if (!(d2 < d6 - 16.0 - d8 * 2.0 || d4 < d7 - 16.0 - d8 * 2.0 || d2 > d6 + 16.0 + d8 * 2.0 || d4 > d7 + 16.0 + d8 * 2.0)) {
                     int n8;
                     int n9;
-                    int n10 = fi.b(d2 - d8) - n2 * 16 - 1;
-                    int n11 = fi.b(d2 + d8) - n2 * 16 + 1;
-                    int n12 = fi.b(d3 - d9) - 1;
-                    int n13 = fi.b(d3 + d9) + 1;
-                    int n14 = fi.b(d4 - d8) - n3 * 16 - 1;
-                    int n15 = fi.b(d4 + d8) - n3 * 16 + 1;
+                    int n10 = TrigLookup.b(d2 - d8) - n2 * 16 - 1;
+                    int n11 = TrigLookup.b(d2 + d8) - n2 * 16 + 1;
+                    int n12 = TrigLookup.b(d3 - d9) - 1;
+                    int n13 = TrigLookup.b(d3 + d9) + 1;
+                    int n14 = TrigLookup.b(d4 - d8) - n3 * 16 - 1;
+                    int n15 = TrigLookup.b(d4 + d8) - n3 * 16 + 1;
                     if (n10 < 0) {
                         n10 = 0;
                     }
@@ -90,7 +90,7 @@ extends dl {
                             for (int i3 = n13 + 1; !bl4 && i3 >= n12 - 1; --i3) {
                                 n8 = (n9 * 16 + i2) * 128 + i3;
                                 if (i3 < 0 || i3 >= 128) continue;
-                                if (byArray[n8] == nq.C.bh || byArray[n8] == nq.D.bh) {
+                                if (byArray[n8] == HeadBanger1337.C.bh || byArray[n8] == HeadBanger1337.D.bh) {
                                     bl4 = true;
                                 }
                                 if (i3 == n12 - 1 || n9 == n10 || n9 == n11 - 1 || i2 == n14 || i2 == n15 - 1) continue;
@@ -107,7 +107,7 @@ extends dl {
                                 for (int i4 = n13 - 1; i4 >= n12; --i4) {
                                     byte by2;
                                     double d16 = ((double)i4 + 0.5 - d3) / d9;
-                                    if (d16 > -0.7 && d14 * d14 + d16 * d16 + d15 * d15 < 1.0 && ((by2 = byArray[n16]) == nq.bb.bh || by2 == nq.v.bh || by2 == nq.u.bh)) {
+                                    if (d16 > -0.7 && d14 * d14 + d16 * d16 + d15 * d15 < 1.0 && ((by2 = byArray[n16]) == HeadBanger1337.bb.bh || by2 == HeadBanger1337.v.bh || by2 == HeadBanger1337.u.bh)) {
                                         byArray[n16] = 0;
                                     }
                                     --n16;
@@ -123,7 +123,7 @@ extends dl {
     }
 
     @Override
-    protected void a(cy cy2, int n2, int n3, int n4, int n5, byte[] byArray) {
+    protected void a(Session cy2, int n2, int n3, int n4, int n5, byte[] byArray) {
         int n6 = this.b.nextInt(this.b.nextInt(this.b.nextInt(10) + 1) + 1);
         if (this.b.nextInt(5) != 0) {
             n6 = 0;

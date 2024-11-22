@@ -22,9 +22,9 @@ extends gk {
 
     public ky(lw lw2) {
         this.a = lw2.an;
-        this.b = fi.b(lw2.aw * 32.0);
-        this.c = fi.b(lw2.ax * 32.0);
-        this.d = fi.b(lw2.ay * 32.0);
+        this.b = TrigLookup.b(lw2.aw * 32.0);
+        this.c = TrigLookup.b(lw2.ax * 32.0);
+        this.d = TrigLookup.b(lw2.ay * 32.0);
         this.e = (byte)(lw2.aC * 256.0f / 360.0f);
         this.f = (byte)(lw2.aD * 256.0f / 360.0f);
     }

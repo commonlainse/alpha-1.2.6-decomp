@@ -12,22 +12,22 @@ public class cf
 extends aq {
     private Random a = new Random();
 
-    public void a(kp kp2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Painting kp2, double d2, double d3, double d4, float f2, float f3) {
         this.a.setSeed(187L);
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
         GL11.glRotatef((float)f2, 0.0f, 1.0f, 0.0f);
         GL11.glEnable(32826);
         this.a("/art/kz.png");
-        fl fl2 = kp2.b;
+        Paintings fl2 = kp2.b;
         float f4 = 0.0625f;
         GL11.glScalef((float)f4, (float)f4, (float)f4);
-        this.a(kp2, fl2.z, fl2.A, fl2.B, fl2.C);
+        this.a(kp2, fl2.width, fl2.height, fl2.x, fl2.y);
         GL11.glDisable(32826);
         GL11.glPopMatrix();
     }
 
-    private void a(kp kp2, int n2, int n3, int n4, int n5) {
+    private void a(Painting kp2, int n2, int n3, int n4, int n5) {
         float f2 = (float)(-n2) / 2.0f;
         float f3 = (float)(-n3) / 2.0f;
         float f4 = -0.5f;
@@ -92,21 +92,21 @@ extends aq {
         }
     }
 
-    private void a(kp kp2, float f2, float f3) {
-        int n2 = fi.b(kp2.aw);
-        int n3 = fi.b(kp2.ax + (double)(f3 / 16.0f));
-        int n4 = fi.b(kp2.ay);
+    private void a(Painting kp2, float f2, float f3) {
+        int n2 = TrigLookup.b(kp2.aw);
+        int n3 = TrigLookup.b(kp2.ax + (double)(f3 / 16.0f));
+        int n4 = TrigLookup.b(kp2.ay);
         if (kp2.a == 0) {
-            n2 = fi.b(kp2.aw + (double)(f2 / 16.0f));
+            n2 = TrigLookup.b(kp2.aw + (double)(f2 / 16.0f));
         }
         if (kp2.a == 1) {
-            n4 = fi.b(kp2.ay - (double)(f2 / 16.0f));
+            n4 = TrigLookup.b(kp2.ay - (double)(f2 / 16.0f));
         }
         if (kp2.a == 2) {
-            n2 = fi.b(kp2.aw - (double)(f2 / 16.0f));
+            n2 = TrigLookup.b(kp2.aw - (double)(f2 / 16.0f));
         }
         if (kp2.a == 3) {
-            n4 = fi.b(kp2.ay + (double)(f2 / 16.0f));
+            n4 = TrigLookup.b(kp2.ay + (double)(f2 / 16.0f));
         }
         float f4 = this.b.g.c(n2, n3, n4);
         GL11.glColor3f((float)f4, (float)f4, (float)f4);
@@ -114,7 +114,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((kp)lw2, d2, d3, d4, f2, f3);
+        this.a((Painting)lw2, d2, d3, d4, f2, f3);
     }
 }
 

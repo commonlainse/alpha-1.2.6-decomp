@@ -13,12 +13,12 @@ public class u
 extends fr {
     private Map b = new HashMap();
 
-    public void a(bl bl2, double d2, double d3, double d4, float f2) {
+    public void a(MobSpawner bl2, double d2, double d3, double d4, float f2) {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2 + 0.5f), (float)((float)d3), (float)((float)d4 + 0.5f));
         lw lw2 = (lw)this.b.get(bl2.b);
         if (lw2 == null) {
-            lw2 = fq.a(bl2.b, null);
+            lw2 = EntityRegistry.a(bl2.b, null);
             this.b.put(bl2.b, lw2);
         }
         if (lw2 != null) {
@@ -36,8 +36,8 @@ extends fr {
     }
 
     @Override
-    public void a(ji ji2, double d2, double d3, double d4, float f2) {
-        this.a((bl)ji2, d2, d3, d4, f2);
+    public void a(TileEntityRegistry ji2, double d2, double d3, double d4, float f2) {
+        this.a((MobSpawner)ji2, d2, d3, d4, f2);
     }
 }
 

@@ -3,8 +3,8 @@
  */
 package net.minecraft.client;
 public class ot
-extends hf {
-    public ot(cy cy2) {
+extends Mob {
+    public ot(Session cy2) {
         super(cy2);
     }
 
@@ -30,9 +30,9 @@ extends hf {
             float f4 = 0.91f;
             if (this.aH) {
                 f4 = 0.54600006f;
-                int n2 = this.as.a(fi.b(this.aw), fi.b(this.aG.b) - 1, fi.b(this.ay));
+                int n2 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n2 > 0) {
-                    f4 = nq.m[n2].bt * 0.91f;
+                    f4 = HeadBanger1337.m[n2].bt * 0.91f;
                 }
             }
             float f5 = 0.16277136f / (f4 * f4 * f4);
@@ -40,9 +40,9 @@ extends hf {
             f4 = 0.91f;
             if (this.aH) {
                 f4 = 0.54600006f;
-                int n3 = this.as.a(fi.b(this.aw), fi.b(this.aG.b) - 1, fi.b(this.ay));
+                int n3 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n3 > 0) {
-                    f4 = nq.m[n3].bt * 0.91f;
+                    f4 = HeadBanger1337.m[n3].bt * 0.91f;
                 }
             }
             this.d(this.az, this.aA, this.aB);
@@ -53,7 +53,7 @@ extends hf {
         this.V = this.W;
         double d2 = this.aw - this.at;
         double d3 = this.ay - this.av;
-        float f6 = fi.a(d2 * d2 + d3 * d3) * 4.0f;
+        float f6 = TrigLookup.a(d2 * d2 + d3 * d3) * 4.0f;
         if (f6 > 1.0f) {
             f6 = 1.0f;
         }

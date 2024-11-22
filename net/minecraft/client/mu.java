@@ -42,26 +42,26 @@ implements ai {
     }
 
     @Override
-    public ha a(cy cy2, int n2, int n3) {
+    public ha a(Session cy2, int n2, int n3) {
         File file = this.a(n2, n3);
         if (file != null && file.exists()) {
             try {
                 FileInputStream fileInputStream = new FileInputStream(file);
-                iq iq2 = ab.a(fileInputStream);
-                if (!iq2.b("Level")) {
+                NBTCompoundTag iq2 = ab.a(fileInputStream);
+                if (!iq2.has("Level")) {
                     System.out.println("Chunk file at " + n2 + "," + n3 + " is missing level data, skipping");
                     return null;
                 }
-                if (!iq2.k("Level").b("Blocks")) {
+                if (!iq2.getCompoundTag("Level").has("Blocks")) {
                     System.out.println("Chunk file at " + n2 + "," + n3 + " is missing block data, skipping");
                     return null;
                 }
-                ha ha2 = mu.a(cy2, iq2.k("Level"));
+                ha ha2 = mu.a(cy2, iq2.getCompoundTag("Level"));
                 if (!ha2.a(n2, n3)) {
                     System.out.println("Chunk file at " + n2 + "," + n3 + " is in the wrong location; relocating. (Expected " + n2 + ", " + n3 + ", got " + ha2.j + ", " + ha2.k + ")");
-                    iq2.a("xPos", n2);
-                    iq2.a("zPos", n3);
-                    ha2 = mu.a(cy2, iq2.k("Level"));
+                    iq2.storeInt("xPos", n2);
+                    iq2.storeInt("zPos", n3);
+                    ha2 = mu.a(cy2, iq2.getCompoundTag("Level"));
                 }
                 return ha2;
             }
@@ -73,7 +73,7 @@ implements ai {
     }
 
     @Override
-    public void a(cy cy2, ha ha2) {
+    public void a(Session cy2, ha ha2) {
         cy2.n();
         File file = this.a(ha2.j, ha2.k);
         if (file.exists()) {
@@ -82,9 +82,9 @@ implements ai {
         try {
             File file2 = new File(this.a, "tmp_chunk.dat");
             FileOutputStream fileOutputStream = new FileOutputStream(file2);
-            iq iq2 = new iq();
-            iq iq3 = new iq();
-            iq2.a("Level", (fd)iq3);
+            NBTCompoundTag iq2 = new NBTCompoundTag();
+            NBTCompoundTag iq3 = new NBTCompoundTag();
+            iq2.storeTag("Level", (NBTTag)iq3);
             this.a(ha2, cy2, iq3);
             ab.a(iq2, fileOutputStream);
             fileOutputStream.close();
@@ -99,51 +99,51 @@ implements ai {
         }
     }
 
-    public void a(ha ha2, cy cy2, iq iq2) {
-        iq iq3;
+    public void a(ha ha2, Session cy2, NBTCompoundTag iq2) {
+        NBTCompoundTag iq3;
         cy2.n();
-        iq2.a("xPos", ha2.j);
-        iq2.a("zPos", ha2.k);
-        iq2.a("LastUpdate", cy2.e);
-        iq2.a("Blocks", ha2.b);
-        iq2.a("Data", ha2.e.a);
-        iq2.a("SkyLight", ha2.f.a);
-        iq2.a("BlockLight", ha2.g.a);
-        iq2.a("HeightMap", ha2.h);
-        iq2.a("TerrainPopulated", ha2.n);
+        iq2.storeInt("xPos", ha2.j);
+        iq2.storeInt("zPos", ha2.k);
+        iq2.storeLong("LastUpdate", cy2.e);
+        iq2.storeByteArray("Blocks", ha2.b);
+        iq2.storeByteArray("Data", ha2.e.a);
+        iq2.storeByteArray("SkyLight", ha2.f.a);
+        iq2.storeByteArray("BlockLight", ha2.g.a);
+        iq2.storeByteArray("HeightMap", ha2.h);
+        iq2.storeBoolean("TerrainPopulated", ha2.n);
         ha2.r = false;
-        ly ly2 = new ly();
+        NBTListTag ly2 = new NBTListTag();
         for (int i2 = 0; i2 < ha2.m.length; ++i2) {
             for (Object object : ha2.m[i2]) {
                 ha2.r = true;
-                iq3 = new iq();
+                iq3 = new NBTCompoundTag();
                 if (!((lw)object).c(iq3)) continue;
                 ly2.a(iq3);
             }
         }
-        iq2.a("Entities", ly2);
-        ly ly3 = new ly();
+        iq2.storeTag("Entities", ly2);
+        NBTListTag ly3 = new NBTListTag();
         for (Object object : ha2.l.values()) {
-            iq3 = new iq();
-            ((ji)object).b(iq3);
+            iq3 = new NBTCompoundTag();
+            ((TileEntityRegistry)object).b(iq3);
             ly3.a(iq3);
         }
-        iq2.a("TileEntities", ly3);
+        iq2.storeTag("TileEntities", ly3);
     }
 
-    public static ha a(cy cy2, iq iq2) {
-        ly ly2;
+    public static ha a(Session cy2, NBTCompoundTag iq2) {
+        NBTListTag ly2;
         Object object;
-        ly ly3;
-        int n2 = iq2.e("xPos");
-        int n3 = iq2.e("zPos");
+        NBTListTag ly3;
+        int n2 = iq2.getInt("xPos");
+        int n3 = iq2.getInt("zPos");
         ha ha2 = new ha(cy2, n2, n3);
-        ha2.b = iq2.j("Blocks");
-        ha2.e = new oo(iq2.j("Data"));
-        ha2.f = new oo(iq2.j("SkyLight"));
-        ha2.g = new oo(iq2.j("BlockLight"));
-        ha2.h = iq2.j("HeightMap");
-        ha2.n = iq2.m("TerrainPopulated");
+        ha2.b = iq2.getByteArray("Blocks");
+        ha2.e = new oo(iq2.getByteArray("Data"));
+        ha2.f = new oo(iq2.getByteArray("SkyLight"));
+        ha2.g = new oo(iq2.getByteArray("BlockLight"));
+        ha2.h = iq2.getByteArray("HeightMap");
+        ha2.n = iq2.isTrue("TerrainPopulated");
         if (!ha2.e.a()) {
             ha2.e = new oo(ha2.b.length);
         }
@@ -156,19 +156,19 @@ implements ai {
             ha2.g = new oo(ha2.b.length);
             ha2.a();
         }
-        if ((ly3 = iq2.l("Entities")) != null) {
+        if ((ly3 = iq2.getListTag("Entities")) != null) {
             for (int i2 = 0; i2 < ly3.c(); ++i2) {
-                iq iq3 = (iq)ly3.a(i2);
-                object = fq.a(iq3, cy2);
+                NBTCompoundTag iq3 = (NBTCompoundTag)ly3.a(i2);
+                object = EntityRegistry.a(iq3, cy2);
                 ha2.r = true;
                 if (object == null) continue;
                 ha2.a((lw)object);
             }
         }
-        if ((ly2 = iq2.l("TileEntities")) != null) {
+        if ((ly2 = iq2.getListTag("TileEntities")) != null) {
             for (int i3 = 0; i3 < ly2.c(); ++i3) {
-                object = (iq)ly2.a(i3);
-                ji ji2 = ji.c((iq)object);
+                object = (NBTCompoundTag)ly2.a(i3);
+                TileEntityRegistry ji2 = TileEntityRegistry.c((NBTCompoundTag)object);
                 if (ji2 == null) continue;
                 ha2.a(ji2);
             }
@@ -185,7 +185,7 @@ implements ai {
     }
 
     @Override
-    public void b(cy cy2, ha ha2) {
+    public void b(Session cy2, ha ha2) {
     }
 }
 

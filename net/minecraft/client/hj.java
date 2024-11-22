@@ -12,7 +12,7 @@ extends lw {
     private int g = 0;
     private boolean h = false;
     public int a = 0;
-    public eb b;
+    public Player b;
     private int i;
     private int j = 0;
     private int k = 0;
@@ -27,7 +27,7 @@ extends lw {
     private double s;
     private double t;
 
-    public hj(cy cy2) {
+    public hj(Session cy2) {
         super(cy2);
         this.a(0.25f, 0.25f);
     }
@@ -38,31 +38,31 @@ extends lw {
         return d2 < (d3 *= 64.0) * d3;
     }
 
-    public hj(cy cy2, double d2, double d3, double d4) {
+    public hj(Session cy2, double d2, double d3, double d4) {
         this(cy2);
         this.b(d2, d3, d4);
     }
 
-    public hj(cy cy2, eb eb2) {
+    public hj(Session cy2, Player eb2) {
         super(cy2);
         this.b = eb2;
         this.b.n = this;
         this.a(0.25f, 0.25f);
         this.c(eb2.aw, eb2.ax + 1.62 - (double)eb2.aO, eb2.ay, eb2.aC, eb2.aD);
-        this.aw -= (double)(fi.b(this.aC / 180.0f * (float)Math.PI) * 0.16f);
+        this.aw -= (double)(TrigLookup.b(this.aC / 180.0f * (float)Math.PI) * 0.16f);
         this.ax -= (double)0.1f;
-        this.ay -= (double)(fi.a(this.aC / 180.0f * (float)Math.PI) * 0.16f);
+        this.ay -= (double)(TrigLookup.a(this.aC / 180.0f * (float)Math.PI) * 0.16f);
         this.b(this.aw, this.ax, this.ay);
         this.aO = 0.0f;
         float f2 = 0.4f;
-        this.az = -fi.a(this.aC / 180.0f * (float)Math.PI) * fi.b(this.aD / 180.0f * (float)Math.PI) * f2;
-        this.aB = fi.b(this.aC / 180.0f * (float)Math.PI) * fi.b(this.aD / 180.0f * (float)Math.PI) * f2;
-        this.aA = -fi.a(this.aD / 180.0f * (float)Math.PI) * f2;
+        this.az = -TrigLookup.a(this.aC / 180.0f * (float)Math.PI) * TrigLookup.b(this.aD / 180.0f * (float)Math.PI) * f2;
+        this.aB = TrigLookup.b(this.aC / 180.0f * (float)Math.PI) * TrigLookup.b(this.aD / 180.0f * (float)Math.PI) * f2;
+        this.aA = -TrigLookup.a(this.aD / 180.0f * (float)Math.PI) * f2;
         this.a(this.az, this.aA, this.aB, 1.5f, 1.0f);
     }
 
     public void a(double d2, double d3, double d4, float f2, float f3) {
-        float f4 = fi.a(d2 * d2 + d3 * d3 + d4 * d4);
+        float f4 = TrigLookup.a(d2 * d2 + d3 * d3 + d4 * d4);
         d2 /= (double)f4;
         d3 /= (double)f4;
         d4 /= (double)f4;
@@ -72,7 +72,7 @@ extends lw {
         this.az = d2 *= (double)f2;
         this.aA = d3 *= (double)f2;
         this.aB = d4 *= (double)f2;
-        float f5 = fi.a(d2 * d2 + d4 * d4);
+        float f5 = TrigLookup.a(d2 * d2 + d4 * d4);
         this.aE = this.aC = (float)(Math.atan2(d2, d4) * 180.0 / 3.1415927410125732);
         this.aF = this.aD = (float)(Math.atan2(d3, f5) * 180.0 / 3.1415927410125732);
         this.i = 0;
@@ -125,7 +125,7 @@ extends lw {
                 }
             }
             if (!this.as.z) {
-                fp fp2 = this.b.w();
+                Item fp2 = this.b.w();
                 if (this.b.aN || !this.b.E() || fp2 == null || fp2.a() != dx.aP || this.f(this.b) > 1024.0) {
                     this.J();
                     this.b.n = null;
@@ -164,13 +164,13 @@ extends lw {
             }
             ++this.j;
         }
-        aoclass ao2 = aoclass.b(this.aw, this.ax, this.ay);
-        aoclass ao3 = aoclass.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
+        Vector3D ao2 = Vector3D.b(this.aw, this.ax, this.ay);
+        Vector3D ao3 = Vector3D.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
         nx nx2 = this.as.a(ao2, ao3);
-        ao2 = aoclass.b(this.aw, this.ax, this.ay);
-        ao3 = aoclass.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
+        ao2 = Vector3D.b(this.aw, this.ax, this.ay);
+        ao3 = Vector3D.b(this.aw + this.az, this.ax + this.aA, this.ay + this.aB);
         if (nx2 != null) {
-            ao3 = aoclass.b(nx2.f.a, nx2.f.b, nx2.f.c);
+            ao3 = Vector3D.b(nx2.f.x, nx2.f.y, nx2.f.z);
         }
         lw lw2 = null;
         List list = this.as.b(this, this.aG.a(this.az, this.aA, this.aB).b(1.0, 1.0, 1.0));
@@ -201,7 +201,7 @@ extends lw {
             return;
         }
         this.d(this.az, this.aA, this.aB);
-        float f3 = fi.a(this.az * this.az + this.aB * this.aB);
+        float f3 = TrigLookup.a(this.az * this.az + this.aB * this.aB);
         this.aC = (float)(Math.atan2(this.az, this.aB) * 180.0 / 3.1415927410125732);
         this.aD = (float)(Math.atan2(this.aA, f3) * 180.0 / 3.1415927410125732);
         while (this.aD - this.aF < -180.0f) {
@@ -239,7 +239,7 @@ extends lw {
                 this.k = this.bd.nextInt(30) + 10;
                 this.aA -= (double)0.2f;
                 this.as.a(this, "random.splash", 0.25f, 1.0f + (this.bd.nextFloat() - this.bd.nextFloat()) * 0.4f);
-                float f6 = fi.b(this.aG.b);
+                float f6 = TrigLookup.b(this.aG.b);
                 int n4 = 0;
                 while ((float)n4 < 1.0f + this.aP * 20.0f) {
                     f5 = (this.bd.nextFloat() * 2.0f - 1.0f) * this.aP;
@@ -272,23 +272,23 @@ extends lw {
     }
 
     @Override
-    public void a(iq iq2) {
-        iq2.a("xTile", (short)this.d);
-        iq2.a("yTile", (short)this.e);
-        iq2.a("zTile", (short)this.f);
-        iq2.a("inTile", (byte)this.g);
-        iq2.a("shake", (byte)this.a);
-        iq2.a("inGround", (byte)(this.h ? 1 : 0));
+    public void a(NBTCompoundTag iq2) {
+        iq2.storeShort("xTile", (short)this.d);
+        iq2.storeShort("yTile", (short)this.e);
+        iq2.storeShort("zTile", (short)this.f);
+        iq2.storeByte("inTile", (byte)this.g);
+        iq2.storeByte("shake", (byte)this.a);
+        iq2.storeByte("inGround", (byte)(this.h ? 1 : 0));
     }
 
     @Override
-    public void b(iq iq2) {
-        this.d = iq2.d("xTile");
-        this.e = iq2.d("yTile");
-        this.f = iq2.d("zTile");
-        this.g = iq2.c("inTile") & 0xFF;
-        this.a = iq2.c("shake") & 0xFF;
-        this.h = iq2.c("inGround") == 1;
+    public void b(NBTCompoundTag iq2) {
+        this.d = iq2.getShort("xTile");
+        this.e = iq2.getShort("yTile");
+        this.f = iq2.getShort("zTile");
+        this.g = iq2.getByte("inTile") & 0xFF;
+        this.a = iq2.getByte("shake") & 0xFF;
+        this.h = iq2.getByte("inGround") == 1;
     }
 
     @Override
@@ -302,21 +302,21 @@ extends lw {
             double d2 = this.b.aw - this.aw;
             double d3 = this.b.ax - this.ax;
             double d4 = this.b.ay - this.ay;
-            double d5 = fi.a(d2 * d2 + d3 * d3 + d4 * d4);
+            double d5 = TrigLookup.a(d2 * d2 + d3 * d3 + d4 * d4);
             double d6 = 0.1;
             this.c.az += d2 * d6;
-            this.c.aA += d3 * d6 + (double)fi.a(d5) * 0.08;
+            this.c.aA += d3 * d6 + (double)TrigLookup.a(d5) * 0.08;
             this.c.aB += d4 * d6;
             n2 = 3;
         } else if (this.k > 0) {
-            eo eo2 = new eo(this.as, this.aw, this.ax, this.ay, new fp(dx.aS.aW));
+            DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax, this.ay, new Item(dx.aS.aW));
             double d7 = this.b.aw - this.aw;
             double d8 = this.b.ax - this.ax;
             double d9 = this.b.ay - this.ay;
-            double d10 = fi.a(d7 * d7 + d8 * d8 + d9 * d9);
+            double d10 = TrigLookup.a(d7 * d7 + d8 * d8 + d9 * d9);
             double d11 = 0.1;
             eo2.az = d7 * d11;
-            eo2.aA = d8 * d11 + (double)fi.a(d10) * 0.08;
+            eo2.aA = d8 * d11 + (double)TrigLookup.a(d10) * 0.08;
             eo2.aB = d9 * d11;
             this.as.a(eo2);
             n2 = 1;

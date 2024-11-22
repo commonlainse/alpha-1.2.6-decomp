@@ -17,19 +17,19 @@ extends ec {
     }
 
     @Override
-    protected void b(hf hf2, float f2) {
-        fp fp2 = hf2.l();
+    protected void b(Mob hf2, float f2) {
+        Item fp2 = hf2.l();
         if (fp2 != null) {
             GL11.glPushMatrix();
             this.a.d.b(0.0625f);
             GL11.glTranslatef(-0.0625f, 0.4375f, 0.0625f);
-            if (fp2.c < 256 && bk.a(nq.m[fp2.c].g())) {
+            if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
                 float f3 = 0.5f;
                 GL11.glTranslatef(0.0f, 0.1875f, -0.3125f);
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);
                 GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
                 GL11.glScalef((float)(f3 *= 0.75f), (float)(-f3), (float)f3);
-            } else if (dx.c[fp2.c].a()) {
+            } else if (dx.c[fp2.id].a()) {
                 float f4 = 0.625f;
                 GL11.glTranslatef(0.0f, 0.1875f, 0.0f);
                 GL11.glScalef((float)f4, (float)(-f4), (float)f4);

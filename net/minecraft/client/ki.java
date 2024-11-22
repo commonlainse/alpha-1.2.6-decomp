@@ -4,9 +4,9 @@
 package net.minecraft.client;
 public class ki
 extends pp {
-    private nq a;
+    private HeadBanger1337 a;
 
-    public ki(cy cy2, double d2, double d3, double d4, double d5, double d6, double d7, nq nq2) {
+    public ki(Session cy2, double d2, double d3, double d4, double d5, double d6, double d7, HeadBanger1337 nq2) {
         super(cy2, d2, d3, d4, d5, d6, d7);
         this.a = nq2;
         this.b = nq2.bg;
@@ -18,7 +18,7 @@ extends pp {
     }
 
     public ki a(int n2, int n3, int n4) {
-        if (this.a == nq.u) {
+        if (this.a == HeadBanger1337.u) {
             return this;
         }
         int n5 = this.a.b((pk)this.as, n2, n3, n4);

@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class an
-extends nq {
+extends HeadBanger1337 {
     private boolean a;
 
     public an(int n2, int n3, boolean bl2) {
@@ -22,34 +22,34 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public void b(Session cy2, int n2, int n3, int n4, Player eb2) {
         this.h(cy2, n2, n3, n4);
         super.b(cy2, n2, n3, n4, eb2);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void b(Session cy2, int n2, int n3, int n4, lw lw2) {
         this.h(cy2, n2, n3, n4);
         super.b(cy2, n2, n3, n4, lw2);
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
         this.h(cy2, n2, n3, n4);
         return super.a(cy2, n2, n3, n4, eb2);
     }
 
-    private void h(cy cy2, int n2, int n3, int n4) {
+    private void h(Session cy2, int n2, int n3, int n4) {
         this.i(cy2, n2, n3, n4);
-        if (this.bh == nq.aN.bh) {
-            cy2.d(n2, n3, n4, nq.aO.bh);
+        if (this.bh == HeadBanger1337.aN.bh) {
+            cy2.d(n2, n3, n4, HeadBanger1337.aO.bh);
         }
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
-        if (this.bh == nq.aO.bh) {
-            cy2.d(n2, n3, n4, nq.aN.bh);
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
+        if (this.bh == HeadBanger1337.aO.bh) {
+            cy2.d(n2, n3, n4, HeadBanger1337.aN.bh);
         }
     }
 
@@ -64,13 +64,13 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         if (this.a) {
             this.i(cy2, n2, n3, n4);
         }
     }
 
-    private void i(cy cy2, int n2, int n3, int n4) {
+    private void i(Session cy2, int n2, int n3, int n4) {
         Random random = cy2.l;
         double d2 = 0.0625;
         for (int i2 = 0; i2 < 6; ++i2) {

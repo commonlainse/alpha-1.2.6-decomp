@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class jf
-extends nq {
+extends HeadBanger1337 {
     protected jf(int n2, int n3) {
         super(n2, n3, hb.b);
     }

@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.io.File;
 
 public class oz {
-    public cy a;
+    public Session a;
     public po b;
     public boolean c = false;
     public boolean d = false;
@@ -14,7 +14,7 @@ public class oz {
     public int g = 0;
     private float[] h = new float[4];
 
-    public final void a(cy cy2) {
+    public final void a(Session cy2) {
         this.a = cy2;
         this.a();
         this.b();
@@ -42,7 +42,7 @@ public class oz {
 
     public boolean a(int n2, int n3) {
         int n4 = this.a.a(n2, n3);
-        return n4 == nq.E.bh;
+        return n4 == HeadBanger1337.E.bh;
     }
 
     public float a(long l2, float f2) {
@@ -63,10 +63,10 @@ public class oz {
     public float[] b(float f2, float f3) {
         float f4;
         float f5 = 0.4f;
-        float f6 = fi.b(f2 * (float)Math.PI * 2.0f) - 0.0f;
+        float f6 = TrigLookup.b(f2 * (float)Math.PI * 2.0f) - 0.0f;
         if (f6 >= -0.0f - f5 && f6 <= -0.0f + f5) {
             float f7 = (f6 - -0.0f) / f5 * 0.5f + 0.5f;
-            float f8 = 1.0f - (1.0f - fi.a(f7 * (float)Math.PI)) * 0.99f;
+            float f8 = 1.0f - (1.0f - TrigLookup.a(f7 * (float)Math.PI)) * 0.99f;
             f8 *= f8;
             this.h[0] = f7 * 0.3f + 0.7f;
             this.h[1] = f7 * f7 * 0.7f + 0.2f;
@@ -77,8 +77,8 @@ public class oz {
         return null;
     }
 
-    public aoclass a(float f2, float f3) {
-        float f4 = fi.b(f2 * (float)Math.PI * 2.0f) * 2.0f + 0.5f;
+    public Vector3D a(float f2, float f3) {
+        float f4 = TrigLookup.b(f2 * (float)Math.PI * 2.0f) * 2.0f + 0.5f;
         if (f4 < 0.0f) {
             f4 = 0.0f;
         }
@@ -88,7 +88,7 @@ public class oz {
         float f5 = 0.7529412f;
         float f6 = 0.84705883f;
         float f7 = 1.0f;
-        return aoclass.b(f5 *= f4 * 0.94f + 0.06f, f6 *= f4 * 0.94f + 0.06f, f7 *= f4 * 0.91f + 0.09f);
+        return Vector3D.b(f5 *= f4 * 0.94f + 0.06f, f6 *= f4 * 0.94f + 0.06f, f7 *= f4 * 0.91f + 0.09f);
     }
 
     public boolean d() {

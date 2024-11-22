@@ -23,7 +23,7 @@ extends iv {
     }
 
     @Override
-    public void a(eb eb2) {
+    public void a(Player eb2) {
         eb2.aC = -180.0f;
     }
 
@@ -33,10 +33,10 @@ extends iv {
         int n6 = this.a.e.a(n2, n3, n4);
         int n7 = this.a.e.e(n2, n3, n4);
         boolean bl2 = super.b(n2, n3, n4, n5);
-        fp fp2 = this.a.g.w();
+        Item fp2 = this.a.g.w();
         if (fp2 != null) {
             fp2.a(n6, n2, n3, n4);
-            if (fp2.a == 0) {
+            if (fp2.count == 0) {
                 fp2.a(this.a.g);
                 this.a.g.x();
             }
@@ -50,9 +50,9 @@ extends iv {
         this.k.a((gk)new gc(0, n2, n3, n4, n5));
         int n6 = this.a.e.a(n2, n3, n4);
         if (n6 > 0 && this.f == 0.0f) {
-            nq.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
+            HeadBanger1337.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
         }
-        if (n6 > 0 && nq.m[n6].a(this.a.g) >= 1.0f) {
+        if (n6 > 0 && HeadBanger1337.m[n6].a(this.a.g) >= 1.0f) {
             this.b(n2, n3, n4, n5);
         }
     }
@@ -82,7 +82,7 @@ extends iv {
             if (n6 == 0) {
                 return;
             }
-            nq nq2 = nq.m[n6];
+            HeadBanger1337 nq2 = HeadBanger1337.m[n6];
             this.f += nq2.a(this.a.g);
             if (this.h % 4.0f == 0.0f && nq2 != null) {
                 this.a.A.b(nq2.bq.d(), (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f, (nq2.bq.b() + 1.0f) / 8.0f, nq2.bq.c() * 0.5f);
@@ -123,7 +123,7 @@ extends iv {
     }
 
     @Override
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         super.a(cy2);
     }
 
@@ -135,10 +135,10 @@ extends iv {
     }
 
     private void e() {
-        fp fp2 = this.a.g.e.a();
+        Item fp2 = this.a.g.e.a();
         int n2 = 0;
         if (fp2 != null) {
-            n2 = fp2.c;
+            n2 = fp2.id;
         }
         if (n2 != this.l) {
             this.l = n2;
@@ -147,33 +147,33 @@ extends iv {
     }
 
     @Override
-    public boolean a(eb eb2, cy cy2, fp fp2, int n2, int n3, int n4, int n5) {
+    public boolean a(Player eb2, Session cy2, Item fp2, int n2, int n3, int n4, int n5) {
         this.e();
-        this.k.a((gk)new ed(fp2 != null ? fp2.c : -1, n2, n3, n4, n5));
+        this.k.a((gk)new ed(fp2 != null ? fp2.id : -1, n2, n3, n4, n5));
         return super.a(eb2, cy2, fp2, n2, n3, n4, n5);
     }
 
     @Override
-    public boolean a(eb eb2, cy cy2, fp fp2) {
+    public boolean a(Player eb2, Session cy2, Item fp2) {
         this.e();
-        this.k.a((gk)new ed(fp2 != null ? fp2.c : -1, -1, -1, -1, 255));
+        this.k.a((gk)new ed(fp2 != null ? fp2.id : -1, -1, -1, -1, 255));
         return super.a(eb2, cy2, fp2);
     }
 
     @Override
-    public eb b(cy cy2) {
+    public Player b(Session cy2) {
         return new mp(this.a, cy2, this.a.i, this.k);
     }
 
     @Override
-    public void b(eb eb2, lw lw2) {
+    public void b(Player eb2, lw lw2) {
         this.e();
         this.k.a((gk)new a(eb2.an, lw2.an, 1));
         eb2.c(lw2);
     }
 
     @Override
-    public void a(eb eb2, lw lw2) {
+    public void a(Player eb2, lw lw2) {
         this.e();
         this.k.a((gk)new a(eb2.an, lw2.an, 0));
         eb2.a_(lw2);

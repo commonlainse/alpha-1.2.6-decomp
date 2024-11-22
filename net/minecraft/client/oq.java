@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class oq
 implements hi {
-    private fp[] a = new fp[1];
+    private Item[] a = new Item[1];
 
     @Override
     public int c() {
@@ -12,7 +12,7 @@ implements hi {
     }
 
     @Override
-    public fp c(int n2) {
+    public Item c(int n2) {
         return this.a[n2];
     }
 
@@ -22,9 +22,9 @@ implements hi {
     }
 
     @Override
-    public fp a(int n2, int n3) {
+    public Item a(int n2, int n3) {
         if (this.a[n2] != null) {
-            fp fp2 = this.a[n2];
+            Item fp2 = this.a[n2];
             this.a[n2] = null;
             return fp2;
         }
@@ -32,7 +32,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, fp fp2) {
+    public void a(int n2, Item fp2) {
         this.a[n2] = fp2;
     }
 

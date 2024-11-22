@@ -16,8 +16,8 @@ extends oz {
     }
 
     @Override
-    public aoclass a(float f2, float f3) {
-        return aoclass.b(0.2f, 0.03f, 0.03f);
+    public Vector3D a(float f2, float f3) {
+        return Vector3D.b(0.2f, 0.03f, 0.03f);
     }
 
     @Override
@@ -44,13 +44,13 @@ extends oz {
     @Override
     public boolean a(int n2, int n3) {
         int n4 = this.a.a(n2, n3);
-        if (n4 == nq.z.bh) {
+        if (n4 == HeadBanger1337.z.bh) {
             return false;
         }
         if (n4 == 0) {
             return false;
         }
-        return nq.o[n4];
+        return HeadBanger1337.o[n4];
     }
 
     @Override

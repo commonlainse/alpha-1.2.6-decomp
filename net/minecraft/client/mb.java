@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class mb
-extends nq {
-    private nq a;
+extends HeadBanger1337 {
+    private HeadBanger1337 a;
 
-    protected mb(int n2, nq nq2) {
+    protected mb(int n2, HeadBanger1337 nq2) {
         super(n2, nq2.bg, nq2.bs);
         this.a = nq2;
         this.c(nq2.bi);
@@ -23,7 +23,7 @@ extends nq {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return super.d(cy2, n2, n3, n4);
     }
 
@@ -48,7 +48,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, co co2, ArrayList arrayList) {
+    public void a(Session cy2, int n2, int n3, int n4, co co2, ArrayList arrayList) {
         int n5 = cy2.e(n2, n3, n4);
         if (n5 == 0) {
             this.a(0.0f, 0.0f, 0.0f, 0.5f, 0.5f, 1.0f);
@@ -75,17 +75,17 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         this.a.b(cy2, n2, n3, n4, random);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public void b(Session cy2, int n2, int n3, int n4, Player eb2) {
         this.a.b(cy2, n2, n3, n4, eb2);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, int n5) {
+    public void b(Session cy2, int n2, int n3, int n4, int n5) {
         this.a.b(cy2, n2, n3, n4, n5);
     }
 
@@ -135,12 +135,12 @@ extends nq {
     }
 
     @Override
-    public co f(cy cy2, int n2, int n3, int n4) {
+    public co f(Session cy2, int n2, int n3, int n4) {
         return this.a.f(cy2, n2, n3, n4);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, lw lw2, aoclass ao2) {
+    public void a(Session cy2, int n2, int n3, int n4, lw lw2, Vector3D ao2) {
         this.a.a(cy2, n2, n3, n4, lw2, ao2);
     }
 
@@ -155,54 +155,54 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         return this.a.a(cy2, n2, n3, n4);
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         this.a(cy2, n2, n3, n4, 0);
         this.a.e(cy2, n2, n3, n4);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         this.a.b(cy2, n2, n3, n4);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5, float f2) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5, float f2) {
         this.a.a(cy2, n2, n3, n4, n5, f2);
     }
 
     @Override
-    public void b_(cy cy2, int n2, int n3, int n4, int n5) {
+    public void b_(Session cy2, int n2, int n3, int n4, int n5) {
         this.a.b_(cy2, n2, n3, n4, n5);
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void b(Session cy2, int n2, int n3, int n4, lw lw2) {
         this.a.b(cy2, n2, n3, n4, lw2);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         this.a.a(cy2, n2, n3, n4, random);
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
         return this.a.a(cy2, n2, n3, n4, eb2);
     }
 
     @Override
-    public void c(cy cy2, int n2, int n3, int n4) {
+    public void c(Session cy2, int n2, int n3, int n4) {
         this.a.c(cy2, n2, n3, n4);
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, hf hf2) {
-        int n5 = fi.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
+    public void a(Session cy2, int n2, int n3, int n4, Mob hf2) {
+        int n5 = TrigLookup.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
         if (n5 == 0) {
             cy2.b(n2, n3, n4, 2);
         }

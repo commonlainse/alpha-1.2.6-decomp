@@ -13,8 +13,8 @@ extends dx {
     }
 
     @Override
-    public fp a(fp fp2, cy cy2, eb eb2) {
-        --fp2.a;
+    public Item a(Item fp2, Session cy2, Player eb2) {
+        --fp2.count;
         eb2.c(this.a);
         return fp2;
     }

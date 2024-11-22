@@ -7,9 +7,9 @@ implements pk {
     private int a;
     private int b;
     private ha[][] c;
-    private cy d;
+    private Session d;
 
-    public cs(cy cy2, int n2, int n3, int n4, int n5, int n6, int n7) {
+    public cs(Session cy2, int n2, int n3, int n4, int n5, int n6, int n7) {
         this.d = cy2;
         this.a = n2 >> 4;
         this.b = n4 >> 4;
@@ -37,7 +37,7 @@ implements pk {
     }
 
     @Override
-    public ji b(int n2, int n3, int n4) {
+    public TileEntityRegistry b(int n2, int n3, int n4) {
         int n5 = (n2 >> 4) - this.a;
         int n6 = (n4 >> 4) - this.b;
         return this.c[n5][n6].d(n2 & 0xF, n3, n4 & 0xF);
@@ -57,7 +57,7 @@ implements pk {
         if (n2 < -32000000 || n4 < -32000000 || n2 >= 32000000 || n4 > 32000000) {
             return 15;
         }
-        if (bl2 && ((n5 = this.a(n2, n3, n4)) == nq.ak.bh || n5 == nq.aA.bh)) {
+        if (bl2 && ((n5 = this.a(n2, n3, n4)) == HeadBanger1337.ak.bh || n5 == HeadBanger1337.aA.bh)) {
             int n6 = this.a(n2, n3 + 1, n4, false);
             int n7 = this.a(n2 + 1, n3, n4, false);
             int n8 = this.a(n2 - 1, n3, n4, false);
@@ -111,12 +111,12 @@ implements pk {
         if (n5 == 0) {
             return hb.a;
         }
-        return nq.m[n5].bs;
+        return HeadBanger1337.m[n5].bs;
     }
 
     @Override
     public boolean g(int n2, int n3, int n4) {
-        nq nq2 = nq.m[this.a(n2, n3, n4)];
+        HeadBanger1337 nq2 = HeadBanger1337.m[this.a(n2, n3, n4)];
         if (nq2 == null) {
             return false;
         }

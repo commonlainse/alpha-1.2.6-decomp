@@ -8,7 +8,7 @@ public class fe
 extends js {
     static final byte[] a = new byte[]{2, 0, 0, 1, 2, 1};
     Random b = new Random();
-    cy c;
+    Session c;
     int[] d = new int[]{0, 0, 0};
     int e = 0;
     int f;
@@ -150,9 +150,9 @@ extends js {
         int[] nArray4 = new int[]{0, 0, 0};
         int n6 = nArray3[n3] + n5;
         for (int i2 = 0; i2 != n6; i2 += n5) {
-            nArray4[n3] = fi.b((double)(nArray[n3] + i2) + 0.5);
-            nArray4[by2] = fi.b((double)nArray[by2] + (double)i2 * d2 + 0.5);
-            nArray4[by3] = fi.b((double)nArray[by3] + (double)i2 * d3 + 0.5);
+            nArray4[n3] = TrigLookup.b((double)(nArray[n3] + i2) + 0.5);
+            nArray4[by2] = TrigLookup.b((double)nArray[by2] + (double)i2 * d2 + 0.5);
+            nArray4[by3] = TrigLookup.b((double)nArray[by3] + (double)i2 * d3 + 0.5);
             this.c.a(nArray4[0], nArray4[1], nArray4[2], n2);
         }
     }
@@ -266,7 +266,7 @@ extends js {
     }
 
     @Override
-    public boolean a(cy cy2, Random random, int n2, int n3, int n4) {
+    public boolean a(Session cy2, Random random, int n2, int n3, int n4) {
         this.c = cy2;
         long l2 = random.nextLong();
         this.b.setSeed(l2);

@@ -18,7 +18,7 @@ extends lw {
     public static double m;
     public static double n;
 
-    public pp(cy cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
+    public pp(Session cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
         super(cy2);
         this.a(0.2f, 0.2f);
         this.aO = this.aQ / 2.0f;
@@ -30,7 +30,7 @@ extends lw {
         this.aA = d6 + (double)((float)(Math.random() * 2.0 - 1.0) * 0.4f);
         this.aB = d7 + (double)((float)(Math.random() * 2.0 - 1.0) * 0.4f);
         float f2 = (float)(Math.random() + Math.random() + 1.0) * 0.15f;
-        float f3 = fi.a(this.az * this.az + this.aA * this.aA + this.aB * this.aB);
+        float f3 = TrigLookup.a(this.az * this.az + this.aA * this.aA + this.aB * this.aB);
         this.az = this.az / (double)f3 * (double)f2 * (double)0.4f;
         this.aA = this.aA / (double)f3 * (double)f2 * (double)0.4f + (double)0.1f;
         this.aB = this.aB / (double)f3 * (double)f2 * (double)0.4f;
@@ -96,11 +96,11 @@ extends lw {
     }
 
     @Override
-    public void a(iq iq2) {
+    public void a(NBTCompoundTag iq2) {
     }
 
     @Override
-    public void b(iq iq2) {
+    public void b(NBTCompoundTag iq2) {
     }
 }
 

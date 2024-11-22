@@ -23,7 +23,7 @@ extends il {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         if (this != null) {
             return;
         }
@@ -32,7 +32,7 @@ extends il {
         super.a(cy2, n2, n3, n4, n5);
     }
 
-    public void f(cy cy2, int n2, int n3, int n4, int n5) {
+    public void f(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.a(n2, n3, n4) != this.bh) {
             return;
         }
@@ -43,7 +43,7 @@ extends il {
         this.h(cy2, n2, n3, n4);
     }
 
-    public void h(cy cy2, int n2, int n3, int n4) {
+    public void h(Session cy2, int n2, int n3, int n4) {
         if (this != null) {
             return;
         }
@@ -75,10 +75,10 @@ extends il {
         }
     }
 
-    private int g(cy cy2, int n2, int n3, int n4, int n5) {
+    private int g(Session cy2, int n2, int n3, int n4, int n5) {
         int n6;
         int n7 = cy2.a(n2, n3, n4);
-        if (n7 == nq.J.bh) {
+        if (n7 == HeadBanger1337.J.bh) {
             return 16;
         }
         if (n7 == this.bh && (n6 = cy2.e(n2, n3, n4)) != 0 && n6 > n5) {
@@ -88,7 +88,7 @@ extends il {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         if (this != null) {
             return;
         }
@@ -103,7 +103,7 @@ extends il {
         }
     }
 
-    private void i(cy cy2, int n2, int n3, int n4) {
+    private void i(Session cy2, int n2, int n3, int n4) {
         this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
         cy2.d(n2, n3, n4, 0);
     }
@@ -115,7 +115,7 @@ extends il {
 
     @Override
     public int a(int n2, Random random) {
-        return nq.y.bh;
+        return HeadBanger1337.y.bh;
     }
 
     @Override
@@ -129,7 +129,7 @@ extends il {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void b(Session cy2, int n2, int n3, int n4, lw lw2) {
         super.b(cy2, n2, n3, n4, lw2);
     }
 }

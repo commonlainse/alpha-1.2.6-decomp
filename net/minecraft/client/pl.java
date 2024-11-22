@@ -3,13 +3,13 @@
  */
 package net.minecraft.client;
 public class pl
-extends nq {
+extends HeadBanger1337 {
     protected pl(int n2, int n3) {
         super(n2, n3, hb.n);
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -29,7 +29,7 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         if (cy2.g(n2 - 1, n3, n4)) {
             return true;
         }
@@ -46,7 +46,7 @@ extends nq {
     }
 
     @Override
-    public void d(cy cy2, int n2, int n3, int n4, int n5) {
+    public void d(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         int n7 = n6 & 8;
         n6 &= 7;
@@ -69,7 +69,7 @@ extends nq {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         if (cy2.g(n2 - 1, n3, n4)) {
             cy2.b(n2, n3, n4, 1);
         } else if (cy2.g(n2 + 1, n3, n4)) {
@@ -85,7 +85,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         if (this.h(cy2, n2, n3, n4)) {
             int n6 = cy2.e(n2, n3, n4) & 7;
             boolean bl2 = false;
@@ -111,7 +111,7 @@ extends nq {
         }
     }
 
-    private boolean h(cy cy2, int n2, int n3, int n4) {
+    private boolean h(Session cy2, int n2, int n3, int n4) {
         if (!this.a(cy2, n2, n3, n4)) {
             this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
             cy2.d(n2, n3, n4, 0);
@@ -139,12 +139,12 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public void b(Session cy2, int n2, int n3, int n4, Player eb2) {
         this.a(cy2, n2, n3, n4, eb2);
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
         if (cy2.z) {
             return true;
         }
@@ -170,7 +170,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         if ((n5 & 8) > 0) {
             cy2.g(n2, n3, n4, this.bh);
@@ -196,7 +196,7 @@ extends nq {
     }
 
     @Override
-    public boolean c(cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean c(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         if ((n6 & 8) == 0) {
             return false;

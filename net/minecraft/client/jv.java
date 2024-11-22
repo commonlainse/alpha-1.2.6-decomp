@@ -19,6 +19,6 @@ public interface jv {
 
     public void a(String var1, int var2, int var3, int var4);
 
-    public void a(int var1, int var2, int var3, ji var4);
+    public void a(int var1, int var2, int var3, TileEntityRegistry var4);
 }
 

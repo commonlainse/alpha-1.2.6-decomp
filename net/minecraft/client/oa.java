@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class oa
-extends nq {
+extends HeadBanger1337 {
     protected oa(int n2) {
         super(n2, hb.b);
         this.bg = 87;
@@ -15,7 +15,7 @@ extends nq {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return co.b(n2 + 0, n3 + 0, n4 + 0, n2 + 1, n3 + 1, n4 + 1);
     }
 
@@ -41,7 +41,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         if (random.nextInt(5) == 0) {
             if (this.i(cy2, n2, n3, n4)) {
                 cy2.b(n2, n3, n4, 7);
@@ -50,31 +50,31 @@ extends nq {
                 if (n5 > 0) {
                     cy2.b(n2, n3, n4, n5 - 1);
                 } else if (!this.h(cy2, n2, n3, n4)) {
-                    cy2.d(n2, n3, n4, nq.v.bh);
+                    cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
                 }
             }
         }
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void b(Session cy2, int n2, int n3, int n4, lw lw2) {
         if (cy2.l.nextInt(4) == 0) {
-            cy2.d(n2, n3, n4, nq.v.bh);
+            cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
         }
     }
 
-    private boolean h(cy cy2, int n2, int n3, int n4) {
+    private boolean h(Session cy2, int n2, int n3, int n4) {
         int n5 = 0;
         for (int i2 = n2 - n5; i2 <= n2 + n5; ++i2) {
             for (int i3 = n4 - n5; i3 <= n4 + n5; ++i3) {
-                if (cy2.a(i2, n3 + 1, i3) != nq.az.bh) continue;
+                if (cy2.a(i2, n3 + 1, i3) != HeadBanger1337.az.bh) continue;
                 return true;
             }
         }
         return false;
     }
 
-    private boolean i(cy cy2, int n2, int n3, int n4) {
+    private boolean i(Session cy2, int n2, int n3, int n4) {
         for (int i2 = n2 - 4; i2 <= n2 + 4; ++i2) {
             for (int i3 = n3; i3 <= n3 + 1; ++i3) {
                 for (int i4 = n4 - 4; i4 <= n4 + 4; ++i4) {
@@ -87,17 +87,17 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         super.a(cy2, n2, n3, n4, n5);
         hb hb2 = cy2.f(n2, n3 + 1, n4);
         if (hb2.a()) {
-            cy2.d(n2, n3, n4, nq.v.bh);
+            cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
         }
     }
 
     @Override
     public int a(int n2, Random random) {
-        return nq.v.a(0, random);
+        return HeadBanger1337.v.a(0, random);
     }
 }
 

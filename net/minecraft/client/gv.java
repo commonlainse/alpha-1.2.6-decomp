@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class gv
-extends nq {
+extends HeadBanger1337 {
     protected gv(int n2, hb hb2) {
         super(n2, hb2);
         this.bg = 97;
@@ -50,13 +50,13 @@ extends nq {
     }
 
     @Override
-    public co f(cy cy2, int n2, int n3, int n4) {
+    public co f(Session cy2, int n2, int n3, int n4) {
         this.a((pk)cy2, n2, n3, n4);
         return super.f(cy2, n2, n3, n4);
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         this.a((pk)cy2, n2, n3, n4);
         return super.d(cy2, n2, n3, n4);
     }
@@ -84,12 +84,12 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public void b(Session cy2, int n2, int n3, int n4, Player eb2) {
         this.a(cy2, n2, n3, n4, eb2);
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
         if (this.bs == hb.e) {
             return true;
         }
@@ -113,7 +113,7 @@ extends nq {
         return true;
     }
 
-    public void a(cy cy2, int n2, int n3, int n4, boolean bl2) {
+    public void a(Session cy2, int n2, int n3, int n4, boolean bl2) {
         boolean bl3;
         int n5 = cy2.e(n2, n3, n4);
         if ((n5 & 8) != 0) {
@@ -139,13 +139,13 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         if ((n6 & 8) != 0) {
             if (cy2.a(n2, n3 - 1, n4) != this.bh) {
                 cy2.d(n2, n3, n4, 0);
             }
-            if (n5 > 0 && nq.m[n5].e()) {
+            if (n5 > 0 && HeadBanger1337.m[n5].e()) {
                 this.a(cy2, n2, n3 - 1, n4, n5);
             }
         } else {
@@ -163,7 +163,7 @@ extends nq {
             }
             if (bl2) {
                 this.b_(cy2, n2, n3, n4, n6);
-            } else if (n5 > 0 && nq.m[n5].e()) {
+            } else if (n5 > 0 && HeadBanger1337.m[n5].e()) {
                 boolean bl3 = cy2.o(n2, n3, n4) || cy2.o(n2, n3 + 1, n4);
                 this.a(cy2, n2, n3, n4, bl3);
             }
@@ -182,7 +182,7 @@ extends nq {
     }
 
     @Override
-    public nx a(cy cy2, int n2, int n3, int n4, aoclass ao2, aoclass ao3) {
+    public nx a(Session cy2, int n2, int n3, int n4, Vector3D ao2, Vector3D ao3) {
         this.a((pk)cy2, n2, n3, n4);
         return super.a(cy2, n2, n3, n4, ao2, ao3);
     }
@@ -195,7 +195,7 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         if (n3 >= 127) {
             return false;
         }

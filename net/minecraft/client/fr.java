@@ -5,7 +5,7 @@ package net.minecraft.client;
 public abstract class fr {
     protected gz a;
 
-    public abstract void a(ji var1, double var2, double var4, double var6, float var8);
+    public abstract void a(TileEntityRegistry var1, double var2, double var4, double var6, float var8);
 
     protected void a(String string) {
         fu fu2 = this.a.e;

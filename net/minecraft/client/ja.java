@@ -14,7 +14,7 @@ extends ld {
         super(n2, hb2);
     }
 
-    private void j(cy cy2, int n2, int n3, int n4) {
+    private void j(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         cy2.a(n2, n3, n4, this.bh + 1, n5);
         cy2.b(n2, n3, n4, n2, n3, n4);
@@ -22,7 +22,7 @@ extends ld {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         int n5;
         int n6 = this.h(cy2, n2, n3, n4);
         int n7 = 1;
@@ -100,21 +100,21 @@ extends ld {
         }
     }
 
-    private void g(cy cy2, int n2, int n3, int n4, int n5) {
+    private void g(Session cy2, int n2, int n3, int n4, int n5) {
         if (this.m(cy2, n2, n3, n4)) {
             int n6 = cy2.a(n2, n3, n4);
             if (n6 > 0) {
                 if (this.bs == hb.g) {
                     this.i(cy2, n2, n3, n4);
                 } else {
-                    nq.m[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
+                    HeadBanger1337.m[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
                 }
             }
             cy2.b(n2, n3, n4, this.bh, n5);
         }
     }
 
-    private int a(cy cy2, int n2, int n3, int n4, int n5, int n6) {
+    private int a(Session cy2, int n2, int n3, int n4, int n5, int n6) {
         int n7 = 1000;
         for (int i2 = 0; i2 < 4; ++i2) {
             int n8;
@@ -144,7 +144,7 @@ extends ld {
         return n7;
     }
 
-    private boolean[] k(cy cy2, int n2, int n3, int n4) {
+    private boolean[] k(Session cy2, int n2, int n3, int n4) {
         int n5;
         int n6;
         for (n6 = 0; n6 < 4; ++n6) {
@@ -178,19 +178,19 @@ extends ld {
         return this.b;
     }
 
-    private boolean l(cy cy2, int n2, int n3, int n4) {
+    private boolean l(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4);
-        if (n5 == nq.aE.bh || n5 == nq.aL.bh || n5 == nq.aD.bh || n5 == nq.aF.bh || n5 == nq.aX.bh) {
+        if (n5 == HeadBanger1337.aE.bh || n5 == HeadBanger1337.aL.bh || n5 == HeadBanger1337.aD.bh || n5 == HeadBanger1337.aF.bh || n5 == HeadBanger1337.aX.bh) {
             return true;
         }
         if (n5 == 0) {
             return false;
         }
-        hb hb2 = nq.m[n5].bs;
+        hb hb2 = HeadBanger1337.m[n5].bs;
         return hb2.a();
     }
 
-    protected int f(cy cy2, int n2, int n3, int n4, int n5) {
+    protected int f(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = this.h(cy2, n2, n3, n4);
         if (n6 < 0) {
             return n5;
@@ -204,7 +204,7 @@ extends ld {
         return n5 < 0 || n6 < n5 ? n6 : n5;
     }
 
-    private boolean m(cy cy2, int n2, int n3, int n4) {
+    private boolean m(Session cy2, int n2, int n3, int n4) {
         hb hb2 = cy2.f(n2, n3, n4);
         if (hb2 == this.bs) {
             return false;
@@ -216,7 +216,7 @@ extends ld {
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         super.e(cy2, n2, n3, n4);
         if (cy2.a(n2, n3, n4) == this.bh) {
             cy2.h(n2, n3, n4, this.bh);

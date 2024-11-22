@@ -10,7 +10,7 @@ import org.lwjgl.opengl.GL11;
 
 public class ku {
     private Minecraft a;
-    private fp b = null;
+    private Item b = null;
     private float c = 0.0f;
     private float d = 0.0f;
     private bk e = new bk();
@@ -19,17 +19,17 @@ public class ku {
         this.a = minecraft;
     }
 
-    public void a(fp fp2) {
+    public void a(Item fp2) {
         GL11.glPushMatrix();
-        if (fp2.c < 256 && bk.a(nq.m[fp2.c].g())) {
+        if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
             GL11.glBindTexture(3553, (int)this.a.n.a("/terrain.png"));
-            this.e.a(nq.m[fp2.c]);
+            this.e.a(HeadBanger1337.m[fp2.id]);
         } else {
             float f2;
             float f3;
             float f4;
             int n2;
-            if (fp2.c < 256) {
+            if (fp2.id < 256) {
                 GL11.glBindTexture(3553, (int)this.a.n.a("/terrain.png"));
             } else {
                 GL11.glBindTexture(3553, (int)this.a.n.a("/gui/items.png"));
@@ -125,25 +125,25 @@ public class ku {
         GL11.glRotatef((float)(bq2.aE + (bq2.aC - bq2.aE) * f2), 0.0f, 1.0f, 0.0f);
         lclass.b();
         GL11.glPopMatrix();
-        float f4 = this.a.e.c(fi.b(bq2.aw), fi.b(bq2.ax), fi.b(bq2.ay));
+        float f4 = this.a.e.c(TrigLookup.b(bq2.aw), TrigLookup.b(bq2.ax), TrigLookup.b(bq2.ay));
         GL11.glColor4f((float)f4, (float)f4, (float)f4, 1.0f);
-        fp fp2 = this.b;
+        Item fp2 = this.b;
         if (bq2.n != null) {
-            fp2 = new fp(dx.B.aW);
+            fp2 = new Item(dx.B.aW);
         }
         if (fp2 != null) {
             GL11.glPushMatrix();
             float f5 = 0.8f;
             float f6 = bq2.d(f2);
-            float f7 = fi.a(f6 * (float)Math.PI);
-            float f8 = fi.a(fi.c(f6) * (float)Math.PI);
-            GL11.glTranslatef((float)(-f8 * 0.4f), (float)(fi.a(fi.c(f6) * (float)Math.PI * 2.0f) * 0.2f), (float)(-f7 * 0.2f));
+            float f7 = TrigLookup.a(f6 * (float)Math.PI);
+            float f8 = TrigLookup.a(TrigLookup.c(f6) * (float)Math.PI);
+            GL11.glTranslatef((float)(-f8 * 0.4f), (float)(TrigLookup.a(TrigLookup.c(f6) * (float)Math.PI * 2.0f) * 0.2f), (float)(-f7 * 0.2f));
             GL11.glTranslatef((float)(0.7f * f5), (float)(-0.65f * f5 - (1.0f - f3) * 0.6f), (float)(-0.9f * f5));
             GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
             GL11.glEnable(32826);
             f6 = bq2.d(f2);
-            f7 = fi.a(f6 * f6 * (float)Math.PI);
-            f8 = fi.a(fi.c(f6) * (float)Math.PI);
+            f7 = TrigLookup.a(f6 * f6 * (float)Math.PI);
+            f8 = TrigLookup.a(TrigLookup.c(f6) * (float)Math.PI);
             GL11.glRotatef((float)(-f7 * 20.0f), 0.0f, 1.0f, 0.0f);
             GL11.glRotatef((float)(-f8 * 20.0f), 0.0f, 0.0f, 1.0f);
             GL11.glRotatef((float)(-f8 * 80.0f), 1.0f, 0.0f, 0.0f);
@@ -158,15 +158,15 @@ public class ku {
             GL11.glPushMatrix();
             float f9 = 0.8f;
             float f10 = bq2.d(f2);
-            float f11 = fi.a(f10 * (float)Math.PI);
-            float f12 = fi.a(fi.c(f10) * (float)Math.PI);
-            GL11.glTranslatef((float)(-f12 * 0.3f), (float)(fi.a(fi.c(f10) * (float)Math.PI * 2.0f) * 0.4f), (float)(-f11 * 0.4f));
+            float f11 = TrigLookup.a(f10 * (float)Math.PI);
+            float f12 = TrigLookup.a(TrigLookup.c(f10) * (float)Math.PI);
+            GL11.glTranslatef((float)(-f12 * 0.3f), (float)(TrigLookup.a(TrigLookup.c(f10) * (float)Math.PI * 2.0f) * 0.4f), (float)(-f11 * 0.4f));
             GL11.glTranslatef((float)(0.8f * f9), (float)(-0.75f * f9 - (1.0f - f3) * 0.6f), (float)(-0.9f * f9));
             GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
             GL11.glEnable(32826);
             f10 = bq2.d(f2);
-            f11 = fi.a(f10 * f10 * (float)Math.PI);
-            f12 = fi.a(fi.c(f10) * (float)Math.PI);
+            f11 = TrigLookup.a(f10 * f10 * (float)Math.PI);
+            f12 = TrigLookup.a(TrigLookup.c(f10) * (float)Math.PI);
             GL11.glRotatef((float)(f12 * 70.0f), 0.0f, 1.0f, 0.0f);
             GL11.glRotatef((float)(-f11 * 20.0f), 0.0f, 0.0f, 1.0f);
             GL11.glBindTexture(3553, (int)this.a.n.a(this.a.g.bl, this.a.g.A()));
@@ -177,7 +177,7 @@ public class ku {
             GL11.glScalef(1.0f, 1.0f, 1.0f);
             GL11.glTranslatef(5.6f, 0.0f, 0.0f);
             aq aq2 = mn.a.a(this.a.g);
-            ce ce2 = (ce)aq2;
+            Armor ce2 = (Armor)aq2;
             f12 = 1.0f;
             GL11.glScalef((float)f12, (float)f12, (float)f12);
             ce2.b();
@@ -196,14 +196,14 @@ public class ku {
             this.d(f2);
         }
         if (this.a.g.O()) {
-            n2 = fi.b(this.a.g.aw);
-            int n3 = fi.b(this.a.g.ax);
-            int n4 = fi.b(this.a.g.ay);
+            n2 = TrigLookup.b(this.a.g.aw);
+            int n3 = TrigLookup.b(this.a.g.ax);
+            int n4 = TrigLookup.b(this.a.g.ay);
             int n5 = this.a.n.a("/terrain.png");
             GL11.glBindTexture(3553, (int)n5);
             int n6 = this.a.e.a(n2, n3, n4);
-            if (nq.m[n6] != null) {
-                this.a(f2, nq.m[n6].a(2));
+            if (HeadBanger1337.m[n6] != null) {
+                this.a(f2, HeadBanger1337.m[n6].a(2));
             }
         }
         if (this.a.g.a(hb.f)) {
@@ -274,7 +274,7 @@ public class ku {
         float f3 = 1.0f;
         for (int i2 = 0; i2 < 2; ++i2) {
             GL11.glPushMatrix();
-            int n2 = nq.ar.bg + i2 * 16;
+            int n2 = HeadBanger1337.ar.bg + i2 * 16;
             int n3 = (n2 & 0xF) << 4;
             int n4 = n2 & 0xF0;
             float f4 = (float)n3 / 256.0f;
@@ -304,8 +304,8 @@ public class ku {
         float f2;
         this.d = this.c;
         bq bq2 = this.a.g;
-        fp fp2 = bq2.e.a();
-        fp fp3 = fp2;
+        Item fp2 = bq2.e.a();
+        Item fp3 = fp2;
         float f3 = fp3 == this.b ? 1.0f : 0.0f;
         float f4 = f3 - this.c;
         if (f4 < -0.4f) {

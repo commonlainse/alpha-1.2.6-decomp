@@ -20,11 +20,11 @@ public class bt {
         return this.c >= this.b.length;
     }
 
-    public aoclass a(lw lw2) {
+    public Vector3D a(lw lw2) {
         double d2 = (double)this.b[this.c].a + (double)((int)(lw2.aP + 1.0f)) * 0.5;
         double d3 = this.b[this.c].b;
         double d4 = (double)this.b[this.c].c + (double)((int)(lw2.aP + 1.0f)) * 0.5;
-        return aoclass.b(d2, d3, d4);
+        return Vector3D.b(d2, d3, d4);
     }
 }
 

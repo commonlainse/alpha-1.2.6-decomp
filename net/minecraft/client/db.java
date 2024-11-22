@@ -6,7 +6,7 @@ public class db
 extends pp {
     private float a;
 
-    public db(cy cy2, double d2, double d3, double d4) {
+    public db(Session cy2, double d2, double d3, double d4) {
         super(cy2, d2, d3, d4, 0.0, 0.0, 0.0);
         this.az *= (double)0.8f;
         this.aA *= (double)0.8f;

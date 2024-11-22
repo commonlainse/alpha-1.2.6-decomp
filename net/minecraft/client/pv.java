@@ -12,11 +12,11 @@ import org.lwjgl.opengl.GL11;
 public class pv
 extends bp {
     protected String a = "Edit sign message:";
-    private qc h;
+    private Sign h;
     private int i;
     private int j = 0;
 
-    public pv(qc qc2) {
+    public pv(Sign qc2) {
         this.h = qc2;
     }
 
@@ -74,8 +74,8 @@ extends bp {
         float f3 = 93.75f;
         GL11.glScalef((float)(-f3), (float)(-f3), (float)(-f3));
         GL11.glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
-        nq nq2 = this.h.g();
-        if (nq2 == nq.aD) {
+        HeadBanger1337 nq2 = this.h.g();
+        if (nq2 == HeadBanger1337.aD) {
             float f4 = (float)(this.h.f() * 360) / 16.0f;
             GL11.glRotatef((float)f4, 0.0f, 1.0f, 0.0f);
             GL11.glTranslatef(0.0f, 0.3125f, 0.0f);

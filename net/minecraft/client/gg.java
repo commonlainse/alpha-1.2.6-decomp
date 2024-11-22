@@ -22,16 +22,16 @@ public class gg {
     public byte o;
     public byte p;
     public int q;
-    protected Class[] r;
-    protected Class[] s;
+    protected Class[] monsters;
+    protected Class[] creatures;
     static private gg[] t = new gg[4096];
 
     public gg() {
-        this.o = (byte)nq.u.bh;
-        this.p = (byte)nq.v.bh;
+        this.o = (byte)HeadBanger1337.u.bh;
+        this.p = (byte)HeadBanger1337.v.bh;
         this.q = 5169201;
-        this.r = new Class[]{be.class, nt.class, dh.class, dq.class};
-        this.s = new Class[]{bx.class, op.class, ou.class, as.class};
+        this.monsters = new Class[]{Spider.class, Zombie.class, Skeleton.class, Creeper.class};
+        this.creatures = new Class[]{Sheep.class, Pig.class, Chicken.class, Cow.class};
     }
 
     public static void a() {
@@ -40,8 +40,8 @@ public class gg {
                 gg.t[i2 + i3 * 64] = gg.a((float)i2 / 63.0f, (float)i3 / 63.0f);
             }
         }
-        gg.h.o = gg.h.p = (byte)nq.E.bh;
-        gg.j.o = gg.j.p = (byte)nq.E.bh;
+        gg.h.o = gg.h.p = (byte)HeadBanger1337.E.bh;
+        gg.j.o = gg.j.p = (byte)HeadBanger1337.E.bh;
     }
 
     protected gg b() {
@@ -116,10 +116,10 @@ public class gg {
 
     public Class[] a(gy gy2) {
         if (gy2 == gy.monster) {
-            return this.r;
+            return this.monsters;
         }
         if (gy2 == gy.creature) {
-            return this.s;
+            return this.creatures;
         }
         return null;
     }

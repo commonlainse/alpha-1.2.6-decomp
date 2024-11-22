@@ -16,7 +16,7 @@ public class po {
     protected po() {
     }
 
-    public po(cy cy2) {
+    public po(Session cy2) {
         this.e = new ng(new Random(cy2.u * 9871L), 4);
         this.f = new ng(new Random(cy2.u * 39811L), 4);
         this.g = new ng(new Random(cy2.u * 543321L), 2);

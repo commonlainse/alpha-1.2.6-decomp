@@ -11,7 +11,7 @@ extends fy {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -38,15 +38,15 @@ extends fy {
         return false;
     }
 
-    public boolean a_(cy cy2, int n2, int n3, int n4) {
+    public boolean a_(Session cy2, int n2, int n3, int n4) {
         int n5;
         int n6;
         int n7 = 0;
         int n8 = 0;
-        if (cy2.a(n2 - 1, n3, n4) == nq.ap.bh || cy2.a(n2 + 1, n3, n4) == nq.ap.bh) {
+        if (cy2.a(n2 - 1, n3, n4) == HeadBanger1337.ap.bh || cy2.a(n2 + 1, n3, n4) == HeadBanger1337.ap.bh) {
             n7 = 1;
         }
-        if (cy2.a(n2, n3, n4 - 1) == nq.ap.bh || cy2.a(n2, n3, n4 + 1) == nq.ap.bh) {
+        if (cy2.a(n2, n3, n4 - 1) == HeadBanger1337.ap.bh || cy2.a(n2, n3, n4 + 1) == HeadBanger1337.ap.bh) {
             n8 = 1;
         }
         System.out.println(n7 + ", " + n8);
@@ -63,14 +63,14 @@ extends fy {
                 boolean bl3 = bl2 = n6 == -1 || n6 == 2 || n5 == -1 || n5 == 3;
                 if (!(n6 != -1 && n6 != 2 || n5 != -1 && n5 != 3)) continue;
                 int n9 = cy2.a(n2 + n7 * n6, n3 + n5, n4 + n8 * n6);
-                if (!(bl2 ? n9 != nq.ap.bh : n9 != 0 && n9 != nq.ar.bh)) continue;
+                if (!(bl2 ? n9 != HeadBanger1337.ap.bh : n9 != 0 && n9 != HeadBanger1337.ar.bh)) continue;
                 return false;
             }
         }
         cy2.i = true;
         for (n6 = 0; n6 < 2; ++n6) {
             for (n5 = 0; n5 < 3; ++n5) {
-                cy2.d(n2 + n7 * n6, n3 + n5, n4 + n8 * n6, nq.be.bh);
+                cy2.d(n2 + n7 * n6, n3 + n5, n4 + n8 * n6, HeadBanger1337.be.bh);
             }
         }
         cy2.i = false;
@@ -78,7 +78,7 @@ extends fy {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         boolean bl2;
         int n6;
         int n7 = 0;
@@ -91,13 +91,13 @@ extends fy {
         while (cy2.a(n2, n9 - 1, n4) == this.bh) {
             --n9;
         }
-        if (cy2.a(n2, n9 - 1, n4) != nq.ap.bh) {
+        if (cy2.a(n2, n9 - 1, n4) != HeadBanger1337.ap.bh) {
             cy2.d(n2, n3, n4, 0);
             return;
         }
         for (n6 = 1; n6 < 4 && cy2.a(n2, n9 + n6, n4) == this.bh; ++n6) {
         }
-        if (n6 != 3 || cy2.a(n2, n9 + n6, n4) != nq.ap.bh) {
+        if (n6 != 3 || cy2.a(n2, n9 + n6, n4) != HeadBanger1337.ap.bh) {
             cy2.d(n2, n3, n4, 0);
             return;
         }
@@ -107,7 +107,7 @@ extends fy {
             cy2.d(n2, n3, n4, 0);
             return;
         }
-        if (!(cy2.a(n2 + n7, n3, n4 + n8) == nq.ap.bh && cy2.a(n2 - n7, n3, n4 - n8) == this.bh || cy2.a(n2 - n7, n3, n4 - n8) == nq.ap.bh && cy2.a(n2 + n7, n3, n4 + n8) == this.bh)) {
+        if (!(cy2.a(n2 + n7, n3, n4 + n8) == HeadBanger1337.ap.bh && cy2.a(n2 - n7, n3, n4 - n8) == this.bh || cy2.a(n2 - n7, n3, n4 - n8) == HeadBanger1337.ap.bh && cy2.a(n2 + n7, n3, n4 + n8) == this.bh)) {
             cy2.d(n2, n3, n4, 0);
             return;
         }
@@ -129,7 +129,7 @@ extends fy {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void a(Session cy2, int n2, int n3, int n4, lw lw2) {
         if (cy2.z) {
             return;
         }
@@ -137,7 +137,7 @@ extends fy {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         if (random.nextInt(100) == 0) {
             cy2.a((double)n2 + 0.5, (double)n3 + 0.5, (double)n4 + 0.5, "portal.portal", 1.0f, random.nextFloat() * 0.4f + 0.8f);
         }

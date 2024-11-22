@@ -63,8 +63,8 @@ extends gm {
         this.h.d = this.a.d;
         this.h.e = this.a.e;
         this.b.d = 1.5707964f;
-        this.c.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
-        this.d.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.c.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
+        this.d.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
         this.e.f = f4;
         this.f.f = -f4;
     }

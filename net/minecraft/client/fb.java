@@ -9,12 +9,12 @@ import org.lwjgl.opengl.GL11;
 
 public class fb
 extends aq {
-    public void a(at at2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Snowball at2, double d2, double d3, double d4, float f2, float f3) {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
         GL11.glEnable(32826);
         GL11.glScalef(0.5f, 0.5f, 0.5f);
-        int n2 = dx.aB.a((fp)null);
+        int n2 = dx.aB.a((Item)null);
         this.a("/gui/items.png");
         is is2 = is.a;
         float f4 = (float)(n2 % 16 * 16 + 0) / 256.0f;
@@ -39,7 +39,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((at)lw2, d2, d3, d4, f2, f3);
+        this.a((Snowball)lw2, d2, d3, d4, f2, f3);
     }
 }
 

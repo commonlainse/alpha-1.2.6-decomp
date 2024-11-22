@@ -45,7 +45,7 @@ public class kb {
 
     public void a() {
         this.n = this.o;
-        float f2 = this.h.e.c(fi.b(this.h.g.aw), fi.b(this.h.g.ax), fi.b(this.h.g.ay));
+        float f2 = this.h.e.c(TrigLookup.b(this.h.g.aw), TrigLookup.b(this.h.g.ax), TrigLookup.b(this.h.g.ay));
         float f3 = (float)(3 - this.h.y.e) / 3.0f;
         float f4 = f2 * (1.0f - f3) + f3;
         this.o += (f4 - this.o) * 0.1f;
@@ -63,7 +63,7 @@ public class kb {
         double d2 = this.h.b.b();
         this.h.x = this.h.g.a(d2, f2);
         double d3 = d2;
-        aoclass ao2 = this.h.g.e(f2);
+        Vector3D ao2 = this.h.g.e(f2);
         if (this.h.x != null) {
             d3 = this.h.x.f.c(ao2);
         }
@@ -76,11 +76,11 @@ public class kb {
             }
             d2 = d3;
         }
-        aoclass ao3 = this.h.g.f(f2);
-        aoclass ao4 = ao2.c(ao3.a * d2, ao3.b * d2, ao3.c * d2);
+        Vector3D ao3 = this.h.g.f(f2);
+        Vector3D ao4 = ao2.c(ao3.x * d2, ao3.y * d2, ao3.z * d2);
         this.k = null;
         float f3 = 1.0f;
-        List list = this.h.e.b(this.h.g, this.h.g.aG.a(ao3.a * d2, ao3.b * d2, ao3.c * d2).b(f3, f3, f3));
+        List list = this.h.e.b(this.h.g, this.h.g.aG.a(ao3.x * d2, ao3.y * d2, ao3.z * d2).b(f3, f3, f3));
         double d4 = 0.0;
         for (int i2 = 0; i2 < list.size(); ++i2) {
             double d5;
@@ -129,7 +129,7 @@ public class kb {
             return;
         }
         f4 /= (float)bq2.M;
-        f4 = fi.a(f4 * f4 * f4 * f4 * (float)Math.PI);
+        f4 = TrigLookup.a(f4 * f4 * f4 * f4 * (float)Math.PI);
         f3 = bq2.N;
         GL11.glRotatef((float)(-f3), 0.0f, 1.0f, 0.0f);
         GL11.glRotatef((float)(-f4 * 14.0f), 0.0f, 0.0f, 1.0f);
@@ -145,9 +145,9 @@ public class kb {
         float f4 = bq2.aS + f3 * f2;
         float f5 = bq2.h + (bq2.i - bq2.h) * f2;
         float f6 = bq2.Q + (bq2.R - bq2.Q) * f2;
-        GL11.glTranslatef((float)(fi.a(f4 * (float)Math.PI) * f5 * 0.5f), (float)(-Math.abs(fi.b(f4 * (float)Math.PI) * f5)), 0.0f);
-        GL11.glRotatef((float)(fi.a(f4 * (float)Math.PI) * f5 * 3.0f), 0.0f, 0.0f, 1.0f);
-        GL11.glRotatef((float)(Math.abs(fi.b(f4 * (float)Math.PI + 0.2f) * f5) * 5.0f), 1.0f, 0.0f, 0.0f);
+        GL11.glTranslatef((float)(TrigLookup.a(f4 * (float)Math.PI) * f5 * 0.5f), (float)(-Math.abs(TrigLookup.b(f4 * (float)Math.PI) * f5)), 0.0f);
+        GL11.glRotatef((float)(TrigLookup.a(f4 * (float)Math.PI) * f5 * 3.0f), 0.0f, 0.0f, 1.0f);
+        GL11.glRotatef((float)(Math.abs(TrigLookup.b(f4 * (float)Math.PI + 0.2f) * f5) * 5.0f), 1.0f, 0.0f, 0.0f);
         GL11.glRotatef((float)f6, 1.0f, 0.0f, 0.0f);
     }
 
@@ -164,16 +164,16 @@ public class kb {
                 f4 += 180.0f;
                 d5 += 2.0;
             }
-            double d6 = (double)(-fi.a(f3 / 180.0f * (float)Math.PI) * fi.b(f4 / 180.0f * (float)Math.PI)) * d5;
-            double d7 = (double)(fi.b(f3 / 180.0f * (float)Math.PI) * fi.b(f4 / 180.0f * (float)Math.PI)) * d5;
-            double d8 = (double)(-fi.a(f4 / 180.0f * (float)Math.PI)) * d5;
+            double d6 = (double)(-TrigLookup.a(f3 / 180.0f * (float)Math.PI) * TrigLookup.b(f4 / 180.0f * (float)Math.PI)) * d5;
+            double d7 = (double)(TrigLookup.b(f3 / 180.0f * (float)Math.PI) * TrigLookup.b(f4 / 180.0f * (float)Math.PI)) * d5;
+            double d8 = (double)(-TrigLookup.a(f4 / 180.0f * (float)Math.PI)) * d5;
             for (int i2 = 0; i2 < 8; ++i2) {
                 double d9;
                 nx nx2;
                 float f5 = (i2 & 1) * 2 - 1;
                 float f6 = (i2 >> 1 & 1) * 2 - 1;
                 float f7 = (i2 >> 2 & 1) * 2 - 1;
-                if ((nx2 = this.h.e.a(aoclass.b(d2 + (double)(f5 *= 0.1f), d3 + (double)(f6 *= 0.1f), d4 + (double)(f7 *= 0.1f)), aoclass.b(d2 - d6 + (double)f5 + (double)f7, d3 - d8 + (double)f6, d4 - d7 + (double)f7))) == null || !((d9 = nx2.f.c(aoclass.b(d2, d3, d4))) < d5)) continue;
+                if ((nx2 = this.h.e.a(Vector3D.b(d2 + (double)(f5 *= 0.1f), d3 + (double)(f6 *= 0.1f), d4 + (double)(f7 *= 0.1f)), Vector3D.b(d2 - d6 + (double)f5 + (double)f7, d3 - d8 + (double)f6, d4 - d7 + (double)f7))) == null || !((d9 = nx2.f.c(Vector3D.b(d2, d3, d4))) < d5)) continue;
                 d5 = d9;
             }
             if (Keyboard.isKeyDown(59)) {
@@ -395,10 +395,10 @@ public class kb {
             return;
         }
         bq bq2 = this.h.g;
-        cy cy2 = this.h.e;
-        int n2 = fi.b(bq2.aw);
-        int n3 = fi.b(bq2.ax);
-        int n4 = fi.b(bq2.ay);
+        Session cy2 = this.h.e;
+        int n2 = TrigLookup.b(bq2.aw);
+        int n3 = TrigLookup.b(bq2.ax);
+        int n4 = TrigLookup.b(bq2.ay);
         int n5 = 16;
         for (int i2 = 0; i2 < 150; ++i2) {
             int n6 = n2 + this.m.nextInt(n5) - this.m.nextInt(n5);
@@ -409,7 +409,7 @@ public class kb {
             float f2 = this.m.nextFloat();
             float f3 = this.m.nextFloat();
             if (n9 <= 0) continue;
-            this.h.h.a(new pc(cy2, (float)n6 + f2, (double)((float)n8 + 0.1f) - nq.m[n9].bl, (float)n7 + f3));
+            this.h.h.a(new pc(cy2, (float)n6 + f2, (double)((float)n8 + 0.1f) - HeadBanger1337.m[n9].bl, (float)n7 + f3));
         }
     }
 
@@ -427,18 +427,18 @@ public class kb {
     }
 
     private void h(float f2) {
-        cy cy2 = this.h.e;
+        Session cy2 = this.h.e;
         bq bq2 = this.h.g;
         float f3 = 1.0f / (float)(4 - this.h.y.e);
         f3 = 1.0f - (float)Math.pow(f3, 0.25);
-        aoclass ao2 = cy2.a((lw)this.h.g, f2);
-        float f4 = (float)ao2.a;
-        float f5 = (float)ao2.b;
-        float f6 = (float)ao2.c;
-        aoclass ao3 = cy2.d(f2);
-        this.e = (float)ao3.a;
-        this.f = (float)ao3.b;
-        this.g = (float)ao3.c;
+        Vector3D ao2 = cy2.a((lw)this.h.g, f2);
+        float f4 = (float)ao2.x;
+        float f5 = (float)ao2.y;
+        float f6 = (float)ao2.z;
+        Vector3D ao3 = cy2.d(f2);
+        this.e = (float)ao3.x;
+        this.f = (float)ao3.y;
+        this.g = (float)ao3.z;
         this.e += (f4 - this.e) * f3;
         this.f += (f5 - this.f) * f3;
         this.g += (f6 - this.g) * f3;

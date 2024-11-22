@@ -11,7 +11,7 @@ extends dx {
     }
 
     @Override
-    public boolean a(fp fp2, eb eb2, cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         int n6;
         if (n5 == 0) {
             --n3;
@@ -33,7 +33,7 @@ extends dx {
         }
         if ((n6 = cy2.a(n2, n3, n4)) == 0) {
             cy2.a((double)n2 + 0.5, (double)n3 + 0.5, (double)n4 + 0.5, "fire.ignite", 1.0f, b.nextFloat() * 0.4f + 0.8f);
-            cy2.d(n2, n3, n4, nq.ar.bh);
+            cy2.d(n2, n3, n4, HeadBanger1337.ar.bh);
         }
         fp2.b(1);
         return true;

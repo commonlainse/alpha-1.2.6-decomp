@@ -25,7 +25,7 @@ public class b {
         float f2 = b2.a - this.a;
         float f3 = b2.b - this.b;
         float f4 = b2.c - this.c;
-        return fi.c(f2 * f2 + f3 * f3 + f4 * f4);
+        return TrigLookup.c(f2 * f2 + f3 * f3 + f4 * f4);
     }
 
     public boolean equals(Object object) {

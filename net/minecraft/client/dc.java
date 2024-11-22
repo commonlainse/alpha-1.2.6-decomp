@@ -66,12 +66,12 @@ extends gm {
         this.a.d = f6 / 57.295776f;
         this.b.e = this.a.e;
         this.b.d = this.a.d;
-        this.d.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 2.0f * f3 * 0.5f;
-        this.e.d = fi.b(f2 * 0.6662f) * 2.0f * f3 * 0.5f;
+        this.d.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 2.0f * f3 * 0.5f;
+        this.e.d = TrigLookup.b(f2 * 0.6662f) * 2.0f * f3 * 0.5f;
         this.d.f = 0.0f;
         this.e.f = 0.0f;
-        this.f.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
-        this.g.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.f.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
+        this.g.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
         this.f.e = 0.0f;
         this.g.e = 0.0f;
         if (this.l) {
@@ -92,11 +92,11 @@ extends gm {
         this.e.e = 0.0f;
         if (this.k > -9990.0f) {
             float f8 = this.k;
-            this.c.e = fi.a(fi.c(f8) * (float)Math.PI * 2.0f) * 0.2f;
-            this.d.c = fi.a(this.c.e) * 5.0f;
-            this.d.a = -fi.b(this.c.e) * 5.0f;
-            this.e.c = -fi.a(this.c.e) * 5.0f;
-            this.e.a = fi.b(this.c.e) * 5.0f;
+            this.c.e = TrigLookup.a(TrigLookup.c(f8) * (float)Math.PI * 2.0f) * 0.2f;
+            this.d.c = TrigLookup.a(this.c.e) * 5.0f;
+            this.d.a = -TrigLookup.b(this.c.e) * 5.0f;
+            this.e.c = -TrigLookup.a(this.c.e) * 5.0f;
+            this.e.a = TrigLookup.b(this.c.e) * 5.0f;
             this.d.e += this.c.e;
             this.e.e += this.c.e;
             this.e.d += this.c.e;
@@ -104,11 +104,11 @@ extends gm {
             f8 *= f8;
             f8 *= f8;
             f8 = 1.0f - f8;
-            float f9 = fi.a(f8 * (float)Math.PI);
-            float f10 = fi.a(this.k * (float)Math.PI) * -(this.a.d - 0.7f) * 0.75f;
+            float f9 = TrigLookup.a(f8 * (float)Math.PI);
+            float f10 = TrigLookup.a(this.k * (float)Math.PI) * -(this.a.d - 0.7f) * 0.75f;
             this.d.d = (float)((double)this.d.d - ((double)f9 * 1.2 + (double)f10));
             this.d.e += this.c.e * 2.0f;
-            this.d.f = fi.a(this.k * (float)Math.PI) * -0.4f;
+            this.d.f = TrigLookup.a(this.k * (float)Math.PI) * -0.4f;
         }
         if (this.j) {
             this.c.d = 0.5f;
@@ -129,10 +129,10 @@ extends gm {
             this.g.b = 12.0f;
             this.a.b = 0.0f;
         }
-        this.d.f += fi.b(f4 * 0.09f) * 0.05f + 0.05f;
-        this.e.f -= fi.b(f4 * 0.09f) * 0.05f + 0.05f;
-        this.d.d += fi.a(f4 * 0.067f) * 0.05f;
-        this.e.d -= fi.a(f4 * 0.067f) * 0.05f;
+        this.d.f += TrigLookup.b(f4 * 0.09f) * 0.05f + 0.05f;
+        this.e.f -= TrigLookup.b(f4 * 0.09f) * 0.05f + 0.05f;
+        this.d.d += TrigLookup.a(f4 * 0.067f) * 0.05f;
+        this.e.d -= TrigLookup.a(f4 * 0.067f) * 0.05f;
     }
 }
 

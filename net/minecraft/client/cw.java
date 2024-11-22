@@ -17,7 +17,7 @@ extends cn {
 
     @Override
     public int a(int n2, Random random) {
-        return nq.ap.bh;
+        return HeadBanger1337.ap.bh;
     }
 }
 

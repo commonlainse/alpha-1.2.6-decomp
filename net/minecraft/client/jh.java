@@ -29,7 +29,7 @@ extends le {
     public void a(boolean bl2, int n2) {
         if (bl2) {
             File file = Minecraft.b();
-            cy.b(file, this.d(n2));
+            Session.b(file, this.d(n2));
         }
         this.b.a(this.a);
     }

@@ -30,7 +30,7 @@ Runnable {
     private int a = 0;
     private int b = 2;
     private boolean c = true;
-    private cy d;
+    private Session d;
     private File e;
     private boolean f = true;
     private List g = Collections.synchronizedList(new LinkedList());
@@ -79,27 +79,27 @@ Runnable {
         return file;
     }
 
-    private static fw getOperatingSystem() {
+    private static OperatingSystems getOperatingSystem() {
         String string = System.getProperty("os.name").toLowerCase();
         if (string.contains("win")) {
-            return fw.windows; // originally c
+            return OperatingSystems.windows; // originally c
         }
         if (string.contains("mac")) {
-            return fw.macos; // originally d
+            return OperatingSystems.macos; // originally d
         }
         if (string.contains("solaris")) {
-            return fw.solaris; // originally b
+            return OperatingSystems.solaris; // originally b
         }
         if (string.contains("sunos")) {
-            return fw.solaris; // originally b
+            return OperatingSystems.solaris; // originally b
         }
         if (string.contains("linux")) {
-            return fw.linux; // originally a
+            return OperatingSystems.linux; // originally a
         }
         if (string.contains("unix")) {
-            return fw.linux; // originally a
+            return OperatingSystems.linux; // originally a
         }
-        return fw.unknown; // originally e
+        return OperatingSystems.unknown; // originally e
     }
 
     public ah() {

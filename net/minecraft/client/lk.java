@@ -11,18 +11,18 @@ extends dx {
     }
 
     @Override
-    public void b(fp fp2, hf hf2) {
-        if (hf2 instanceof op) {
-            op op2 = (op)hf2;
+    public void b(Item fp2, Mob hf2) {
+        if (hf2 instanceof Pig) {
+            Pig op2 = (Pig)hf2;
             if (!op2.a) {
                 op2.a = true;
-                --fp2.a;
+                --fp2.count;
             }
         }
     }
 
     @Override
-    public void a(fp fp2, hf hf2) {
+    public void a(Item fp2, Mob hf2) {
         this.b(fp2, hf2);
     }
 }

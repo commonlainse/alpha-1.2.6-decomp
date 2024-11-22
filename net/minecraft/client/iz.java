@@ -11,7 +11,7 @@ extends ad {
     private int k = 0;
 
     public iz() {
-        super(nq.A.bg + 1);
+        super(HeadBanger1337.A.bg + 1);
         this.e = 2;
     }
 

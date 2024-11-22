@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class bh
 extends pp {
-    public bh(cy cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
+    public bh(Session cy2, double d2, double d3, double d4, double d5, double d6, double d7) {
         super(cy2, d2, d3, d4, d5, d6, d7);
         this.i = 1.0f;
         this.j = 1.0f;
@@ -28,7 +28,7 @@ extends pp {
         this.az *= (double)0.85f;
         this.aA *= (double)0.85f;
         this.aB *= (double)0.85f;
-        if (this.as.f(fi.b(this.aw), fi.b(this.ax), fi.b(this.ay)) != hb.f) {
+        if (this.as.f(TrigLookup.b(this.aw), TrigLookup.b(this.ax), TrigLookup.b(this.ay)) != hb.f) {
             this.J();
         }
         if (this.f-- <= 0) {

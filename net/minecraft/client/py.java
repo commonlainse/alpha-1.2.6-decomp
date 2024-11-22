@@ -14,18 +14,18 @@ extends gk {
     public int b;
     public int c;
     public byte[] d;
-    public iq e;
+    public NBTCompoundTag e;
 
     public py() {
         this.j = true;
     }
 
-    public py(int n2, int n3, int n4, ji ji2) {
+    public py(int n2, int n3, int n4, TileEntityRegistry ji2) {
         this.j = true;
         this.a = n2;
         this.b = n3;
         this.c = n4;
-        this.e = new iq();
+        this.e = new NBTCompoundTag();
         ji2.b(this.e);
         try {
             this.d = ab.a(this.e);

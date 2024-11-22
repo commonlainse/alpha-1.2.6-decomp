@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class il
-extends nq {
+extends HeadBanger1337 {
     protected boolean a;
 
     protected il(int n2, int n3, hb hb2, boolean bl2) {

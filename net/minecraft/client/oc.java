@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class oc {
-    private cy b;
+    private Session b;
     private int c;
     private int d;
     private int e;
@@ -14,7 +14,7 @@ class oc {
     private List g = new ArrayList();
     final jn a;
 
-    public oc(jn jn2, cy cy2, int n2, int n3, int n4) {
+    public oc(jn jn2, Session cy2, int n2, int n3, int n4) {
         this.a = jn2;
         this.b = cy2;
         this.c = n2;

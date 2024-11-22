@@ -15,7 +15,7 @@ extends aq {
         this.c = 0.5f;
     }
 
-    public void a(kr kr2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(PrimedTNT kr2, double d2, double d3, double d4, float f2, float f3) {
         float f4;
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
@@ -34,14 +34,14 @@ extends aq {
         }
         f4 = (1.0f - ((float)kr2.a - f3 + 1.0f) / 100.0f) * 0.8f;
         this.a("/terrain.png");
-        this.a.a(nq.am);
+        this.a.a(HeadBanger1337.am);
         if (kr2.a / 5 % 2 == 0) {
             GL11.glDisable(3553);
             GL11.glDisable(2896);
             GL11.glEnable(3042);
             GL11.glBlendFunc(770, 772);
             GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)f4);
-            this.a.a(nq.am);
+            this.a.a(HeadBanger1337.am);
             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
             GL11.glDisable(3042);
             GL11.glEnable(2896);
@@ -52,7 +52,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((kr)lw2, d2, d3, d4, f2, f3);
+        this.a((PrimedTNT)lw2, d2, d3, d4, f2, f3);
     }
 }
 

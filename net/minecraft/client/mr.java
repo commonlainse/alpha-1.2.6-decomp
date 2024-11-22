@@ -12,11 +12,11 @@ extends ok {
 
     @Override
     protected boolean b(int n2) {
-        return nq.o[n2];
+        return HeadBanger1337.o[n2];
     }
 
     @Override
-    public boolean g(cy cy2, int n2, int n3, int n4) {
+    public boolean g(Session cy2, int n2, int n3, int n4) {
         return cy2.j(n2, n3, n4) <= 13 && this.b(cy2.a(n2, n3 - 1, n4));
     }
 }

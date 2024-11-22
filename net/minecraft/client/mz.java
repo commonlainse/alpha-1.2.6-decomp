@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.io.File;
 
 class mz
-extends cy {
+extends Session {
     final ah A;
 
     mz(ah ah2, File file, String string) {

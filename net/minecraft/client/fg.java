@@ -53,10 +53,10 @@ extends gm {
     public void a(float f2, float f3, float f4, float f5, float f6, float f7) {
         this.a.e = f5 / 57.295776f;
         this.a.d = f6 / 57.295776f;
-        this.d.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
-        this.e.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
-        this.f.d = fi.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
-        this.g.d = fi.b(f2 * 0.6662f) * 1.4f * f3;
+        this.d.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
+        this.e.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.f.d = TrigLookup.b(f2 * 0.6662f + (float)Math.PI) * 1.4f * f3;
+        this.g.d = TrigLookup.b(f2 * 0.6662f) * 1.4f * f3;
     }
 }
 

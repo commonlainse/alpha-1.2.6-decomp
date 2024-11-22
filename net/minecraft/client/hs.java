@@ -22,16 +22,16 @@ extends gk {
     public hs() {
     }
 
-    public hs(eb eb2) {
+    public hs(Player eb2) {
         this.a = eb2.an;
-        this.b = eb2.l;
-        this.c = fi.b(eb2.aw * 32.0);
-        this.d = fi.b(eb2.ax * 32.0);
-        this.e = fi.b(eb2.ay * 32.0);
+        this.b = eb2.name;
+        this.c = TrigLookup.b(eb2.aw * 32.0);
+        this.d = TrigLookup.b(eb2.ax * 32.0);
+        this.e = TrigLookup.b(eb2.ay * 32.0);
         this.f = (byte)(eb2.aC * 256.0f / 360.0f);
         this.g = (byte)(eb2.aD * 256.0f / 360.0f);
-        fp fp2 = eb2.e.a();
-        this.h = fp2 == null ? 0 : fp2.c;
+        Item fp2 = eb2.e.a();
+        this.h = fp2 == null ? 0 : fp2.id;
     }
 
     @Override

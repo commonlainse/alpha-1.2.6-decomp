@@ -20,12 +20,12 @@ extends lh {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
     @Override
-    public co f(cy cy2, int n2, int n3, int n4) {
+    public co f(Session cy2, int n2, int n3, int n4) {
         this.a((pk)cy2, n2, n3, n4);
         return super.f(cy2, n2, n3, n4);
     }
@@ -72,9 +72,9 @@ extends lh {
     }
 
     @Override
-    protected ji a_() {
+    protected TileEntityRegistry a_() {
         try {
-            return (ji)this.a.newInstance();
+            return (TileEntityRegistry)this.a.newInstance();
         }
         catch (Exception exception) {
             throw new RuntimeException(exception);
@@ -87,7 +87,7 @@ extends lh {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         boolean bl2 = false;
         if (this.b) {
             if (!cy2.f(n2, n3 - 1, n4).a()) {

@@ -19,13 +19,13 @@ extends bp {
     public void a() {
         File file = Minecraft.b();
         for (int i2 = 0; i2 < 5; ++i2) {
-            iq iq2 = cy.a(file, "World" + (i2 + 1));
+            NBTCompoundTag iq2 = Session.a(file, "World" + (i2 + 1));
             if (iq2 == null) {
                 this.e.add(new gh(i2, this.c / 2 - 100, this.d / 6 + 24 * i2, "- empty -"));
                 continue;
             }
             String string = "World " + (i2 + 1);
-            long l2 = iq2.f("SizeOnDisk");
+            long l2 = iq2.getLong("SizeOnDisk");
             string = string + " (" + (float)(l2 / 1024L * 100L / 1024L) / 100.0f + " MB)";
             this.e.add(new gh(i2, this.c / 2 - 100, this.d / 6 + 24 * i2, string));
         }
@@ -34,7 +34,7 @@ extends bp {
 
     protected String d(int n2) {
         File file = Minecraft.b();
-        return cy.a(file, "World" + n2) != null ? "World" + n2 : null;
+        return Session.a(file, "World" + n2) != null ? "World" + n2 : null;
     }
 
     public void j() {

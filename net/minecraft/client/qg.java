@@ -100,7 +100,7 @@ public class qg {
         }
     }
 
-    public void a(hf hf2, float f2) {
+    public void a(Mob hf2, float f2) {
         if (!g || this.f.b == 0.0f) {
             return;
         }
@@ -111,8 +111,8 @@ public class qg {
         double d2 = hf2.at + (hf2.aw - hf2.at) * (double)f2;
         double d3 = hf2.au + (hf2.ax - hf2.au) * (double)f2;
         double d4 = hf2.av + (hf2.ay - hf2.av) * (double)f2;
-        float f4 = fi.b(-f3 * ((float)Math.PI / 180) - (float)Math.PI);
-        float f5 = fi.a(-f3 * ((float)Math.PI / 180) - (float)Math.PI);
+        float f4 = TrigLookup.b(-f3 * ((float)Math.PI / 180) - (float)Math.PI);
+        float f5 = TrigLookup.a(-f3 * ((float)Math.PI / 180) - (float)Math.PI);
         float f6 = -f5;
         float f7 = 0.0f;
         float f8 = -f4;

@@ -9,7 +9,7 @@ import org.lwjgl.opengl.GL11;
 
 public class hn
 extends aq {
-    public void a(lv lv2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Arrow lv2, double d2, double d3, double d4, float f2, float f3) {
         this.a("/item/arrows.png");
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
@@ -29,7 +29,7 @@ extends aq {
         GL11.glEnable(32826);
         float f13 = (float)lv2.a - f3;
         if (f13 > 0.0f) {
-            float f14 = -fi.a(f13 * 3.0f) * f13;
+            float f14 = -TrigLookup.a(f13 * 3.0f) * f13;
             GL11.glRotatef((float)f14, 0.0f, 0.0f, 1.0f);
         }
         GL11.glRotatef(45.0f, 1.0f, 0.0f, 0.0f);
@@ -65,7 +65,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((lv)lw2, d2, d3, d4, f2, f3);
+        this.a((Arrow)lw2, d2, d3, d4, f2, f3);
     }
 }
 

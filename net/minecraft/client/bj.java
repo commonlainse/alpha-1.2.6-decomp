@@ -20,7 +20,7 @@ extends dx {
     }
 
     @Override
-    public fp a(fp fp2, cy cy2, eb eb2) {
+    public Item a(Item fp2, Session cy2, Player eb2) {
         if (eb2.n != null) {
             int n2 = eb2.n.k();
             fp2.b(n2);

@@ -16,31 +16,31 @@ extends aq {
         this.a = new im();
     }
 
-    public void a(qd qd2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Minecart qd2, double d2, double d3, double d4, float f2, float f3) {
         GL11.glPushMatrix();
         double d5 = qd2.aV + (qd2.aw - qd2.aV) * (double)f3;
         double d6 = qd2.aW + (qd2.ax - qd2.aW) * (double)f3;
         double d7 = qd2.aX + (qd2.ay - qd2.aX) * (double)f3;
         double d8 = 0.3f;
-        aoclass ao2 = qd2.h(d5, d6, d7);
+        Vector3D ao2 = qd2.h(d5, d6, d7);
         float f4 = qd2.aF + (qd2.aD - qd2.aF) * f3;
         if (ao2 != null) {
-            aoclass ao3 = qd2.a(d5, d6, d7, d8);
-            aoclass ao4 = qd2.a(d5, d6, d7, -d8);
+            Vector3D ao3 = qd2.a(d5, d6, d7, d8);
+            Vector3D ao4 = qd2.a(d5, d6, d7, -d8);
             if (ao3 == null) {
                 ao3 = ao2;
             }
             if (ao4 == null) {
                 ao4 = ao2;
             }
-            d2 += ao2.a - d5;
-            d3 += (ao3.b + ao4.b) / 2.0 - d6;
-            d4 += ao2.c - d7;
-            aoclass ao5 = ao4.c(-ao3.a, -ao3.b, -ao3.c);
+            d2 += ao2.x - d5;
+            d3 += (ao3.y + ao4.y) / 2.0 - d6;
+            d4 += ao2.z - d7;
+            Vector3D ao5 = ao4.c(-ao3.x, -ao3.y, -ao3.z);
             if (ao5.c() != 0.0) {
                 ao5 = ao5.b();
-                f2 = (float)(Math.atan2(ao5.c, ao5.a) * 180.0 / Math.PI);
-                f4 = (float)(Math.atan(ao5.b) * 73.0);
+                f2 = (float)(Math.atan2(ao5.z, ao5.x) * 180.0 / Math.PI);
+                f4 = (float)(Math.atan(ao5.y) * 73.0);
             }
         }
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
@@ -52,7 +52,7 @@ extends aq {
             f6 = 0.0f;
         }
         if (f5 > 0.0f) {
-            GL11.glRotatef((float)(fi.a(f5) * f5 * f6 / 10.0f * (float)qd2.c), 1.0f, 0.0f, 0.0f);
+            GL11.glRotatef((float)(TrigLookup.a(f5) * f5 * f6 / 10.0f * (float)qd2.c), 1.0f, 0.0f, 0.0f);
         }
         if (qd2.d != 0) {
             this.a("/terrain.png");
@@ -61,9 +61,9 @@ extends aq {
             GL11.glTranslatef(0.0f, 0.3125f, 0.0f);
             GL11.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
             if (qd2.d == 1) {
-                new bk().a(nq.au);
+                new bk().a(HeadBanger1337.au);
             } else if (qd2.d == 2) {
-                new bk().a(nq.aB);
+                new bk().a(HeadBanger1337.aB);
             }
             GL11.glRotatef(-90.0f, 0.0f, 1.0f, 0.0f);
             GL11.glTranslatef(0.0f, -0.3125f, 0.0f);
@@ -77,7 +77,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((qd)lw2, d2, d3, d4, f2, f3);
+        this.a((Minecart)lw2, d2, d3, d4, f2, f3);
     }
 }
 

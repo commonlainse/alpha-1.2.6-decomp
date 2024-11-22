@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ap
-extends nq {
+extends HeadBanger1337 {
     private lg a;
 
     protected ap(int n2, int n3, lg lg2) {
@@ -23,7 +23,7 @@ extends nq {
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         return null;
     }
 
@@ -38,16 +38,16 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         return cy2.g(n2, n3 - 1, n4);
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         boolean bl2 = false;
         if (!cy2.g(n2, n3 - 1, n4)) {
             bl2 = true;
@@ -59,7 +59,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, Random random) {
+    public void a(Session cy2, int n2, int n3, int n4, Random random) {
         if (cy2.z) {
             return;
         }
@@ -70,7 +70,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, lw lw2) {
+    public void a(Session cy2, int n2, int n3, int n4, lw lw2) {
         if (cy2.z) {
             return;
         }
@@ -80,7 +80,7 @@ extends nq {
         this.h(cy2, n2, n3, n4);
     }
 
-    private void h(cy cy2, int n2, int n3, int n4) {
+    private void h(Session cy2, int n2, int n3, int n4) {
         boolean bl2 = cy2.e(n2, n3, n4) == 1;
         boolean bl3 = false;
         float f2 = 0.125f;
@@ -89,10 +89,10 @@ extends nq {
             list = cy2.b(null, co.b((float)n2 + f2, n3, (float)n4 + f2, (float)(n2 + 1) - f2, (double)n3 + 0.25, (float)(n4 + 1) - f2));
         }
         if (this.a == lg.mobs /*originally b*/) {
-            list = cy2.a(hf.class, co.b((float)n2 + f2, n3, (float)n4 + f2, (float)(n2 + 1) - f2, (double)n3 + 0.25, (float)(n4 + 1) - f2));
+            list = cy2.a(Mob.class, co.b((float)n2 + f2, n3, (float)n4 + f2, (float)(n2 + 1) - f2, (double)n3 + 0.25, (float)(n4 + 1) - f2));
         }
         if (this.a == lg.players /*originally c*/) {
-            list = cy2.a(eb.class, co.b((float)n2 + f2, n3, (float)n4 + f2, (float)(n2 + 1) - f2, (double)n3 + 0.25, (float)(n4 + 1) - f2));
+            list = cy2.a(Player.class, co.b((float)n2 + f2, n3, (float)n4 + f2, (float)(n2 + 1) - f2, (double)n3 + 0.25, (float)(n4 + 1) - f2));
         }
         if (list.size() > 0) {
             bl3 = true;
@@ -117,7 +117,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         if (n5 > 0) {
             cy2.g(n2, n3, n4, this.bh);
@@ -143,7 +143,7 @@ extends nq {
     }
 
     @Override
-    public boolean c(cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean c(Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.e(n2, n3, n4) == 0) {
             return false;
         }

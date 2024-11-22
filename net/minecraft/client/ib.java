@@ -51,7 +51,7 @@ extends mo {
         double d2 = (double)id2.b / 32.0;
         double d3 = (double)id2.c / 32.0;
         double d4 = (double)id2.d / 32.0;
-        eo eo2 = new eo(this.f, d2, d3, d4, new fp(id2.h, id2.i));
+        DroppedItem eo2 = new DroppedItem(this.f, d2, d3, d4, new Item(id2.h, id2.i));
         eo2.az = (double)id2.e / 128.0;
         eo2.aA = (double)id2.f / 128.0;
         eo2.aB = (double)id2.g / 128.0;
@@ -68,28 +68,28 @@ extends mo {
         double d4 = (double)lz2.d / 32.0;
         lw lw2 = null;
         if (lz2.e == 10) {
-            lw2 = new qd(this.f, d2, d3, d4, 0);
+            lw2 = new Minecart(this.f, d2, d3, d4, 0);
         }
         if (lz2.e == 11) {
-            lw2 = new qd(this.f, d2, d3, d4, 1);
+            lw2 = new Minecart(this.f, d2, d3, d4, 1);
         }
         if (lz2.e == 12) {
-            lw2 = new qd(this.f, d2, d3, d4, 2);
+            lw2 = new Minecart(this.f, d2, d3, d4, 2);
         }
         if (lz2.e == 90) {
             lw2 = new hj(this.f, d2, d3, d4);
         }
         if (lz2.e == 60) {
-            lw2 = new lv(this.f, d2, d3, d4);
+            lw2 = new Arrow(this.f, d2, d3, d4);
         }
         if (lz2.e == 61) {
-            lw2 = new at(this.f, d2, d3, d4);
+            lw2 = new Snowball(this.f, d2, d3, d4);
         }
         if (lz2.e == 1) {
-            lw2 = new dp(this.f, d2, d3, d4);
+            lw2 = new Boat(this.f, d2, d3, d4);
         }
         if (lz2.e == 50) {
-            lw2 = new kr(this.f, d2, d3, d4);
+            lw2 = new PrimedTNT(this.f, d2, d3, d4);
         }
         if (lw2 != null) {
             lw2.br = lz2.b;
@@ -123,7 +123,7 @@ extends mo {
         ps2.bs = hs2.d;
         ps2.bt = hs2.e;
         int n2 = hs2.h;
-        ps2.e.a[ps2.e.d] = n2 == 0 ? null : new fp(n2);
+        ps2.e.storage[ps2.e.d] = n2 == 0 ? null : new Item(n2);
         ps2.b(d2, d3, d4, f2, f3);
         this.f.a(hs2.a, ps2);
     }
@@ -241,7 +241,7 @@ extends mo {
     public void a(qi qi2) {
         this.d.a("Got kicked");
         this.c = true;
-        this.e.a((cy)null);
+        this.e.a((Session)null);
         this.e.a(new ct("Disconnected by server", qi2.a));
     }
 
@@ -251,7 +251,7 @@ extends mo {
             return;
         }
         this.c = true;
-        this.e.a((cy)null);
+        this.e.a((Session)null);
         this.e.a(new ct("Connection lost", string));
     }
 
@@ -265,7 +265,7 @@ extends mo {
     @Override
     public void a(bu bu2) {
         lw lw2 = this.a(bu2.a);
-        hf hf2 = (hf)this.a(bu2.b);
+        Mob hf2 = (Mob)this.a(bu2.b);
         if (hf2 == null) {
             hf2 = this.e.g;
         }
@@ -282,9 +282,9 @@ extends mo {
         if (lw2 == null) {
             return;
         }
-        eb eb2 = (eb)lw2;
+        Player eb2 = (Player)lw2;
         int n2 = eq2.b;
-        eb2.e.a[eb2.e.d] = n2 == 0 ? null : new fp(n2);
+        eb2.e.storage[eb2.e.d] = n2 == 0 ? null : new Item(n2);
     }
 
     @Override
@@ -299,7 +299,7 @@ extends mo {
             return;
         }
         if (ii2.b == 1) {
-            eb eb2 = (eb)lw2;
+            Player eb2 = (Player)lw2;
             eb2.z();
         } else if (ii2.b == 100) {
             lw2.bu = true;
@@ -320,7 +320,7 @@ extends mo {
 
     @Override
     public void a(mt mt2) {
-        this.e.g.e.a(new fp(mt2.a, mt2.b, mt2.c));
+        this.e.g.e.a(new Item(mt2.a, mt2.b, mt2.c));
     }
 
     @Override
@@ -358,7 +358,7 @@ extends mo {
         double d4 = (double)fv2.e / 32.0;
         float f2 = (float)(fv2.f * 360) / 256.0f;
         float f3 = (float)(fv2.g * 360) / 256.0f;
-        hf hf2 = (hf)fq.a(fv2.b, this.e.e);
+        Mob hf2 = (Mob)EntityRegistry.a(fv2.b, this.e.e);
         hf2.br = fv2.c;
         hf2.bs = fv2.d;
         hf2.bt = fv2.e;
@@ -377,7 +377,7 @@ extends mo {
     public void a(p p2) {
         bq bq2 = this.e.g;
         if (p2.a == -1) {
-            bq2.e.a = p2.b;
+            bq2.e.storage = p2.b;
         }
         if (p2.a == -2) {
             bq2.e.c = p2.b;
@@ -389,16 +389,16 @@ extends mo {
 
     @Override
     public void a(py py2) {
-        if (py2.e.e("x") != py2.a) {
+        if (py2.e.getInt("x") != py2.a) {
             return;
         }
-        if (py2.e.e("y") != py2.b) {
+        if (py2.e.getInt("y") != py2.b) {
             return;
         }
-        if (py2.e.e("z") != py2.c) {
+        if (py2.e.getInt("z") != py2.c) {
             return;
         }
-        ji ji2 = this.f.b(py2.a, py2.b, py2.c);
+        TileEntityRegistry ji2 = this.f.b(py2.a, py2.b, py2.c);
         if (ji2 != null) {
             try {
                 ji2.a(py2.e);

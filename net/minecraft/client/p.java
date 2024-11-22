@@ -11,14 +11,14 @@ import java.util.logging.Logger;
 public class p
 extends gk {
     public int a;
-    public fp[] b;
+    public Item[] b;
 
     public p() {
     }
 
-    public p(int n2, fp[] fpArray) {
+    public p(int n2, Item[] fpArray) {
         this.a = n2;
-        this.b = new fp[fpArray.length];
+        this.b = new Item[fpArray.length];
         for (int i2 = 0; i2 < this.b.length; ++i2) {
             this.b[i2] = fpArray[i2] == null ? null : fpArray[i2].e();
         }
@@ -29,13 +29,13 @@ extends gk {
         try {
             this.a = dataInputStream.readInt();
             int n2 = dataInputStream.readShort();
-            this.b = new fp[n2];
+            this.b = new Item[n2];
             for (int i2 = 0; i2 < n2; ++i2) {
                 short s2 = dataInputStream.readShort();
                 if (s2 < 0) continue;
                 byte by2 = dataInputStream.readByte();
                 short s3 = dataInputStream.readShort();
-                this.b[i2] = new fp(s2, by2, s3);
+                this.b[i2] = new Item(s2, by2, s3);
             }
         } catch (IOException ex) {
             Logger.getLogger(p.class.getName()).log(Level.SEVERE, null, ex);
@@ -52,9 +52,9 @@ extends gk {
                     dataOutputStream.writeShort(-1);
                     continue;
                 }
-                dataOutputStream.writeShort((short)this.b[i2].c);
-                dataOutputStream.writeByte((byte)this.b[i2].a);
-                dataOutputStream.writeShort((short)this.b[i2].d);
+                dataOutputStream.writeShort((short)this.b[i2].id);
+                dataOutputStream.writeByte((byte)this.b[i2].count);
+                dataOutputStream.writeShort((short)this.b[i2].damage);
             }
         } catch (IOException ex) {
             Logger.getLogger(p.class.getName()).log(Level.SEVERE, null, ex);

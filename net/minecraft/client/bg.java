@@ -8,20 +8,20 @@ import java.util.Set;
 public final class bg {
     static private Set a = new HashSet<qm>();
 
-    protected static on a(cy cy2, int n2, int n3) {
+    protected static on a(Session cy2, int n2, int n3) {
         int n4 = n2 + cy2.l.nextInt(16);
         int n5 = cy2.l.nextInt(128);
         int n6 = n3 + cy2.l.nextInt(16);
         return new on(n4, n5, n6);
     }
 
-    public static final int a(cy cy2) {
+    public static final int a(Session cy2) {
         int n2;
         a.clear();
         for (n2 = 0; n2 < cy2.d.size(); ++n2) {
-            eb eb2 = (eb)cy2.d.get(n2);
-            int n3 = fi.b(eb2.aw / 16.0);
-            int n4 = fi.b(eb2.ay / 16.0);
+            Player eb2 = (Player)cy2.d.get(n2);
+            int n3 = TrigLookup.b(eb2.aw / 16.0);
+            int n4 = TrigLookup.b(eb2.ay / 16.0);
             int n5 = 8;
             for (int i2 = -n5; i2 <= n5; ++i2) {
                 for (int i3 = -n5; i3 <= n5; ++i3) {
@@ -51,7 +51,7 @@ public final class bg {
                     int n13 = n9;
                     int n14 = 6;
                     for (int i6 = 0; i6 < 4; ++i6) {
-                        hf hf2;
+                        Mob hf2;
                         float f2;
                         float f3;
                         float f4;
@@ -61,7 +61,7 @@ public final class bg {
                         float f8;
                         if (!cy2.g(n11 += cy2.l.nextInt(n14) - cy2.l.nextInt(n14), (n12 += cy2.l.nextInt(1) - cy2.l.nextInt(1)) - 1, n13 += cy2.l.nextInt(n14) - cy2.l.nextInt(n14)) || cy2.g(n11, n12, n13) || cy2.f(n11, n12, n13).d() || cy2.g(n11, n12 + 1, n13) || cy2.a(f8 = (float)n11 + 0.5f, f7 = (float)n12, (double)(f6 = (float)n13 + 0.5f), 24.0) != null || (f5 = (f4 = f8 - (float)cy2.m) * f4 + (f3 = f7 - (float)cy2.n) * f3 + (f2 = f6 - (float)cy2.o) * f2) < 576.0f) continue;
                         try {
-                            hf2 = (hf)classArray[n6].getConstructor(cy.class).newInstance(cy2);
+                            hf2 = (Mob)classArray[n6].getConstructor(Session.class).newInstance(cy2);
                         }
                         catch (Exception exception) {
                             exception.printStackTrace();
@@ -71,8 +71,8 @@ public final class bg {
                         if (hf2.a()) {
                             ++n10;
                             cy2.a(hf2);
-                            if (hf2 instanceof be && cy2.l.nextInt(100) == 0) {
-                                dh dh2 = new dh(cy2);
+                            if (hf2 instanceof Spider && cy2.l.nextInt(100) == 0) {
+                                Skeleton dh2 = new Skeleton(cy2);
                                 dh2.c(f8, f7, f6, hf2.aC, 0.0f);
                                 cy2.a(dh2);
                                 dh2.h(hf2);

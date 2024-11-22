@@ -21,7 +21,7 @@ extends Minecraft {
     public void a(hr hr2) {
         this.a.removeAll();
         this.a.setLayout(new BorderLayout());
-        this.a.add((Component)new av(hr2), "Center");
+        this.a.add((Component)new CrashDialog(hr2), "Center");
         this.a.validate();
     }
 }

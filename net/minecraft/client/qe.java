@@ -10,8 +10,8 @@ extends dx {
     }
 
     @Override
-    public boolean a(fp fp2, eb eb2, cy cy2, int n2, int n3, int n4, int n5) {
-        kp kp2;
+    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
+        Painting kp2;
         if (n5 == 0) {
             return false;
         }
@@ -28,9 +28,9 @@ extends dx {
         if (n5 == 5) {
             n6 = 3;
         }
-        if ((kp2 = new kp(cy2, n2, n3, n4, n6)).k()) {
+        if ((kp2 = new Painting(cy2, n2, n3, n4, n6)).k()) {
             cy2.a(kp2);
-            --fp2.a;
+            --fp2.count;
         }
         return true;
     }

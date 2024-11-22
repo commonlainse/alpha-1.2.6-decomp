@@ -17,34 +17,34 @@ public class ea {
     }
 
     static {
-        a.add(nq.t);
-        a.add(nq.w);
-        a.add(nq.al);
-        a.add(nq.v);
-        a.add(nq.x);
-        a.add(nq.J);
-        a.add(nq.K);
-        a.add(nq.aq);
-        a.add(nq.ak);
-        a.add(nq.M);
-        a.add(nq.ao);
-        a.add(nq.y);
-        a.add(nq.ad);
-        a.add(nq.ae);
-        a.add(nq.af);
-        a.add(nq.ag);
-        a.add(nq.E);
-        a.add(nq.F);
-        a.add(nq.L);
-        a.add(nq.ab);
-        a.add(nq.I);
-        a.add(nq.H);
-        a.add(nq.G);
-        a.add(nq.ai);
-        a.add(nq.ah);
-        a.add(nq.an);
-        a.add(nq.am);
-        a.add(nq.ap);
+        a.add(HeadBanger1337.t);
+        a.add(HeadBanger1337.w);
+        a.add(HeadBanger1337.al);
+        a.add(HeadBanger1337.v);
+        a.add(HeadBanger1337.x);
+        a.add(HeadBanger1337.J);
+        a.add(HeadBanger1337.K);
+        a.add(HeadBanger1337.aq);
+        a.add(HeadBanger1337.ak);
+        a.add(HeadBanger1337.M);
+        a.add(HeadBanger1337.ao);
+        a.add(HeadBanger1337.y);
+        a.add(HeadBanger1337.ad);
+        a.add(HeadBanger1337.ae);
+        a.add(HeadBanger1337.af);
+        a.add(HeadBanger1337.ag);
+        a.add(HeadBanger1337.E);
+        a.add(HeadBanger1337.F);
+        a.add(HeadBanger1337.L);
+        a.add(HeadBanger1337.ab);
+        a.add(HeadBanger1337.I);
+        a.add(HeadBanger1337.H);
+        a.add(HeadBanger1337.G);
+        a.add(HeadBanger1337.ai);
+        a.add(HeadBanger1337.ah);
+        a.add(HeadBanger1337.an);
+        a.add(HeadBanger1337.am);
+        a.add(HeadBanger1337.ap);
         System.out.println(a.size());
     }
 }

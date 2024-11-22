@@ -28,7 +28,7 @@ extends bp {
             if (this.b.j()) {
                 this.b.e.m();
             }
-            this.b.a((cy)null);
+            this.b.a((Session)null);
             this.b.a(new dj());
         }
         if (gh2.f == 4) {
@@ -50,7 +50,7 @@ extends bp {
         boolean bl3 = bl2 = !this.b.e.a(this.a++);
         if (bl2 || this.h < 20) {
             float f3 = ((float)(this.h % 10) + f2) / 10.0f;
-            f3 = fi.a(f3 * (float)Math.PI * 2.0f) * 0.2f + 0.8f;
+            f3 = TrigLookup.a(f3 * (float)Math.PI * 2.0f) * 0.2f + 0.8f;
             int n4 = (int)(255.0f * f3);
             this.b(this.g, "Saving level..", 8, this.d - 16, n4 << 16 | n4 << 8 | n4);
         }

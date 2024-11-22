@@ -21,12 +21,12 @@ extends gk {
     public fv() {
     }
 
-    public fv(hf hf2) {
+    public fv(Mob hf2) {
         this.a = hf2.an;
-        this.b = (byte)fq.a(hf2);
-        this.c = fi.b(hf2.aw * 32.0);
-        this.d = fi.b(hf2.ax * 32.0);
-        this.e = fi.b(hf2.ay * 32.0);
+        this.b = (byte)EntityRegistry.a(hf2);
+        this.c = TrigLookup.b(hf2.aw * 32.0);
+        this.d = TrigLookup.b(hf2.ax * 32.0);
+        this.e = TrigLookup.b(hf2.ay * 32.0);
         this.f = (byte)(hf2.aC * 256.0f / 360.0f);
         this.g = (byte)(hf2.aD * 256.0f / 360.0f);
     }

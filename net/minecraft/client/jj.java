@@ -9,9 +9,9 @@ import org.lwjgl.opengl.GL11;
 
 public class jj
 extends ex {
-    private lt j;
+    private Furnace j;
 
-    public jj(fo fo2, lt lt2) {
+    public jj(Inventory fo2, Furnace lt2) {
         int n2;
         this.j = lt2;
         this.i.add(new of(this, lt2, 0, 56, 17));

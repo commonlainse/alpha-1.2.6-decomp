@@ -4,13 +4,13 @@
 package net.minecraft.client;
 public class jo
 extends pp {
-    public jo(cy cy2, double d2, double d3, double d4, dx dx2) {
+    public jo(Session cy2, double d2, double d3, double d4, dx dx2) {
         super(cy2, d2, d3, d4, 0.0, 0.0, 0.0);
-        this.b = dx2.a((fp)null);
+        this.b = dx2.a((Item)null);
         this.k = 1.0f;
         this.j = 1.0f;
         this.i = 1.0f;
-        this.h = nq.aU.br;
+        this.h = HeadBanger1337.aU.br;
         this.g /= 2.0f;
     }
 

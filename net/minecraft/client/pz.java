@@ -16,13 +16,13 @@ extends ec {
         this.a = f3;
     }
 
-    protected void a(ip ip2, float f2) {
+    protected void a(Giant ip2, float f2) {
         GL11.glScalef((float)this.a, (float)this.a, (float)this.a);
     }
 
     @Override
-    protected void a(hf hf2, float f2) {
-        this.a((ip)hf2, f2);
+    protected void a(Mob hf2, float f2) {
+        this.a((Giant)hf2, f2);
     }
 }
 

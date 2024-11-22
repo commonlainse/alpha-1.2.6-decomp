@@ -14,7 +14,7 @@ implements bd {
     private nf m;
     public nf a;
     public nf b;
-    private cy n;
+    private Session n;
     private double[] o;
     private double[] p = new double[256];
     private double[] q = new double[256];
@@ -26,7 +26,7 @@ implements bd {
     double[] f;
     double[] g;
 
-    public kj(cy cy2, long l2) {
+    public kj(Session cy2, long l2) {
         this.n = cy2;
         this.h = new Random(l2);
         this.i = new nf(this.h, 16);
@@ -72,10 +72,10 @@ implements bd {
                             for (int i7 = 0; i7 < 4; ++i7) {
                                 int n11 = 0;
                                 if (i4 * 8 + i5 < n5) {
-                                    n11 = nq.D.bh;
+                                    n11 = HeadBanger1337.D.bh;
                                 }
                                 if (d17 > 0.0) {
-                                    n11 = nq.bb.bh;
+                                    n11 = HeadBanger1337.bb.bh;
                                 }
                                 byArray[n9] = (byte)n11;
                                 n9 += n10;
@@ -106,16 +106,16 @@ implements bd {
                 boolean bl3 = this.q[i2 + i3 * 16] + this.h.nextDouble() * 0.2 > 0.0;
                 int n5 = (int)(this.r[i2 + i3 * 16] / 3.0 + 3.0 + this.h.nextDouble() * 0.25);
                 int n6 = -1;
-                byte by2 = (byte)nq.bb.bh;
-                byte by3 = (byte)nq.bb.bh;
+                byte by2 = (byte)HeadBanger1337.bb.bh;
+                byte by3 = (byte)HeadBanger1337.bb.bh;
                 for (int i4 = 127; i4 >= 0; --i4) {
                     int n7 = (i2 * 16 + i3) * 128 + i4;
                     if (i4 >= 127 - this.h.nextInt(5)) {
-                        byArray[n7] = (byte)nq.z.bh;
+                        byArray[n7] = (byte)HeadBanger1337.z.bh;
                         continue;
                     }
                     if (i4 <= 0 + this.h.nextInt(5)) {
-                        byArray[n7] = (byte)nq.z.bh;
+                        byArray[n7] = (byte)HeadBanger1337.z.bh;
                         continue;
                     }
                     byte by4 = byArray[n7];
@@ -123,29 +123,29 @@ implements bd {
                         n6 = -1;
                         continue;
                     }
-                    if (by4 != nq.bb.bh) continue;
+                    if (by4 != HeadBanger1337.bb.bh) continue;
                     if (n6 == -1) {
                         if (n5 <= 0) {
                             by2 = 0;
-                            by3 = (byte)nq.bb.bh;
+                            by3 = (byte)HeadBanger1337.bb.bh;
                         } else if (i4 >= n4 - 4 && i4 <= n4 + 1) {
-                            by2 = (byte)nq.bb.bh;
-                            by3 = (byte)nq.bb.bh;
+                            by2 = (byte)HeadBanger1337.bb.bh;
+                            by3 = (byte)HeadBanger1337.bb.bh;
                             if (bl3) {
-                                by2 = (byte)nq.F.bh;
+                                by2 = (byte)HeadBanger1337.F.bh;
                             }
                             if (bl3) {
-                                by3 = (byte)nq.bb.bh;
+                                by3 = (byte)HeadBanger1337.bb.bh;
                             }
                             if (bl2) {
-                                by2 = (byte)nq.bc.bh;
+                                by2 = (byte)HeadBanger1337.bc.bh;
                             }
                             if (bl2) {
-                                by3 = (byte)nq.bc.bh;
+                                by3 = (byte)HeadBanger1337.bc.bh;
                             }
                         }
                         if (i4 < n4 && by2 == 0) {
-                            by2 = (byte)nq.D.bh;
+                            by2 = (byte)HeadBanger1337.D.bh;
                         }
                         n6 = n5;
                         if (i4 >= n4 - 1) {
@@ -279,7 +279,7 @@ implements bd {
             n7 = n9 + this.h.nextInt(16) + 8;
             n6 = this.h.nextInt(120) + 4;
             n5 = n10 + this.h.nextInt(16) + 8;
-            new kf(nq.C.bh).a(this.n, this.h, n7, n6, n5);
+            new kf(HeadBanger1337.C.bh).a(this.n, this.h, n7, n6, n5);
         }
         n8 = this.h.nextInt(this.h.nextInt(10) + 1) + 1;
         for (n7 = 0; n7 < n8; ++n7) {
@@ -305,13 +305,13 @@ implements bd {
             n7 = n9 + this.h.nextInt(16) + 8;
             n6 = this.h.nextInt(128);
             n5 = n10 + this.h.nextInt(16) + 8;
-            new aj(nq.af.bh).a(this.n, this.h, n7, n6, n5);
+            new aj(HeadBanger1337.af.bh).a(this.n, this.h, n7, n6, n5);
         }
         if (this.h.nextInt(1) == 0) {
             n7 = n9 + this.h.nextInt(16) + 8;
             n6 = this.h.nextInt(128);
             n5 = n10 + this.h.nextInt(16) + 8;
-            new aj(nq.ag.bh).a(this.n, this.h, n7, n6, n5);
+            new aj(HeadBanger1337.ag.bh).a(this.n, this.h, n7, n6, n5);
         }
         dw.a = false;
     }

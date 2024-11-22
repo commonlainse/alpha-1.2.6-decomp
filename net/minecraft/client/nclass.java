@@ -21,7 +21,7 @@ extends cc {
     }
 
     private void a(float[][] fArray, int n2) {
-        float f2 = fi.c(fArray[n2][0] * fArray[n2][0] + fArray[n2][1] * fArray[n2][1] + fArray[n2][2] * fArray[n2][2]);
+        float f2 = TrigLookup.c(fArray[n2][0] * fArray[n2][0] + fArray[n2][1] * fArray[n2][1] + fArray[n2][2] * fArray[n2][2]);
         float[] fArray2 = fArray[n2];
         fArray2[0] = fArray2[0] / f2;
         float[] fArray3 = fArray[n2];

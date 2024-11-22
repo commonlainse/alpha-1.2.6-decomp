@@ -39,17 +39,17 @@ extends aq {
         if (hj2.b != null) {
             float f11 = (hj2.b.aE + (hj2.b.aC - hj2.b.aE) * f3) * (float)Math.PI / 180.0f;
             float f12 = (hj2.b.aF + (hj2.b.aD - hj2.b.aF) * f3) * (float)Math.PI / 180.0f;
-            double d5 = fi.a(f11);
-            double d6 = fi.b(f11);
-            double d7 = fi.a(f12);
-            double d8 = fi.b(f12);
+            double d5 = TrigLookup.a(f11);
+            double d6 = TrigLookup.b(f11);
+            double d7 = TrigLookup.a(f12);
+            double d8 = TrigLookup.b(f12);
             double d9 = hj2.b.at + (hj2.b.aw - hj2.b.at) * (double)f3 - d6 * 0.7 - d5 * 0.5 * d8;
             double d10 = hj2.b.au + (hj2.b.ax - hj2.b.au) * (double)f3 - d7 * 0.5;
             double d11 = hj2.b.av + (hj2.b.ay - hj2.b.av) * (double)f3 - d5 * 0.7 + d6 * 0.5 * d8;
             if (this.b.k.y) {
                 f11 = (hj2.b.t + (hj2.b.s - hj2.b.t) * f3) * (float)Math.PI / 180.0f;
-                d5 = fi.a(f11);
-                d6 = fi.b(f11);
+                d5 = TrigLookup.a(f11);
+                d6 = TrigLookup.b(f11);
                 d9 = hj2.b.at + (hj2.b.aw - hj2.b.at) * (double)f3 - d6 * 0.35 - d5 * 0.85;
                 d10 = hj2.b.au + (hj2.b.ax - hj2.b.au) * (double)f3 - 0.45;
                 d11 = hj2.b.av + (hj2.b.ay - hj2.b.av) * (double)f3 - d5 * 0.35 + d6 * 0.85;

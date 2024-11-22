@@ -16,7 +16,7 @@ extends aq {
         this.a = new cv();
     }
 
-    public void a(dp dp2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(Boat dp2, double d2, double d3, double d4, float f2, float f3) {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
         GL11.glRotatef((float)(180.0f - f2), 0.0f, 1.0f, 0.0f);
@@ -26,7 +26,7 @@ extends aq {
             f5 = 0.0f;
         }
         if (f4 > 0.0f) {
-            GL11.glRotatef((float)(fi.a(f4) * f4 * f5 / 10.0f * (float)dp2.c), 1.0f, 0.0f, 0.0f);
+            GL11.glRotatef((float)(TrigLookup.a(f4) * f4 * f5 / 10.0f * (float)dp2.c), 1.0f, 0.0f, 0.0f);
         }
         this.a("/terrain.png");
         float f6 = 0.75f;
@@ -40,7 +40,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((dp)lw2, d2, d3, d4, f2, f3);
+        this.a((Boat)lw2, d2, d3, d4, f2, f3);
     }
 }
 

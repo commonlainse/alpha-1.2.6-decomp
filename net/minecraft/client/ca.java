@@ -5,13 +5,13 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class ca
-extends nq {
+extends HeadBanger1337 {
     protected ca(int n2, int n3) {
         super(n2, n3, hb.n);
     }
 
     @Override
-    public co d(cy cy2, int n2, int n3, int n4) {
+    public co d(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         float f2 = 0.125f;
         if (n5 == 2) {
@@ -30,7 +30,7 @@ extends nq {
     }
 
     @Override
-    public co f(cy cy2, int n2, int n3, int n4) {
+    public co f(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
         float f2 = 0.125f;
         if (n5 == 2) {
@@ -64,7 +64,7 @@ extends nq {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4) {
+    public boolean a(Session cy2, int n2, int n3, int n4) {
         if (cy2.g(n2 - 1, n3, n4)) {
             return true;
         }
@@ -78,7 +78,7 @@ extends nq {
     }
 
     @Override
-    public void d(cy cy2, int n2, int n3, int n4, int n5) {
+    public void d(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         if ((n6 == 0 || n5 == 2) && cy2.g(n2, n3, n4 + 1)) {
             n6 = 2;
@@ -96,7 +96,7 @@ extends nq {
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, int n5) {
+    public void a(Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.e(n2, n3, n4);
         boolean bl2 = false;
         if (n6 == 2 && cy2.g(n2, n3, n4 + 1)) {

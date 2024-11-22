@@ -23,13 +23,13 @@ extends gk {
     public id() {
     }
 
-    public id(eo eo2) {
+    public id(DroppedItem eo2) {
         this.a = eo2.an;
-        this.h = eo2.a.c;
-        this.i = eo2.a.a;
-        this.b = fi.b(eo2.aw * 32.0);
-        this.c = fi.b(eo2.ax * 32.0);
-        this.d = fi.b(eo2.ay * 32.0);
+        this.h = eo2.a.id;
+        this.i = eo2.a.count;
+        this.b = TrigLookup.b(eo2.aw * 32.0);
+        this.c = TrigLookup.b(eo2.ax * 32.0);
+        this.d = TrigLookup.b(eo2.ay * 32.0);
         this.e = (byte)(eo2.az * 128.0);
         this.f = (byte)(eo2.aA * 128.0);
         this.g = (byte)(eo2.aB * 128.0);

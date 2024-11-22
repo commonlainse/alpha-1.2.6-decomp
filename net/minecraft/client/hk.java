@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class hk
-extends nq {
+extends HeadBanger1337 {
     public hk(int n2, int n3, hb hb2) {
         super(n2, n3, hb2);
     }

@@ -10,7 +10,7 @@ extends bp {
     private boolean h = false;
 
     public og(Minecraft minecraft, String string, int n2) {
-        minecraft.a((cy)null);
+        minecraft.a((Session)null);
         new oy(this, minecraft, string, n2).start();
     }
 

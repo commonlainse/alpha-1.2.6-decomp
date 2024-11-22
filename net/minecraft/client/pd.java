@@ -3,14 +3,14 @@
  */
 package net.minecraft.client;
 public class pd
-extends nq {
+extends HeadBanger1337 {
     protected pd(int n2) {
         super(n2, hb.j);
         this.bg = 48;
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         int n5 = 2;
         for (int i2 = n2 - n5; i2 <= n2 + n5; ++i2) {
             for (int i3 = n3 - n5; i3 <= n3 + n5; ++i3) {
@@ -22,7 +22,7 @@ extends nq {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4) {
+    public void b(Session cy2, int n2, int n3, int n4) {
         int n5 = 2;
         for (int i2 = n2 - n5; i2 <= n2 + n5; ++i2) {
             for (int i3 = n3 - n5; i3 <= n3 + n5; ++i3) {

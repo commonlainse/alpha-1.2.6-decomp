@@ -18,29 +18,29 @@ extends aq {
         this.d = 0.75f;
     }
 
-    public void a(eo eo2, double d2, double d3, double d4, float f2, float f3) {
+    public void a(DroppedItem eo2, double d2, double d3, double d4, float f2, float f3) {
         this.e.setSeed(187L);
-        fp fp2 = eo2.a;
+        Item fp2 = eo2.a;
         GL11.glPushMatrix();
-        float f4 = fi.a(((float)eo2.b + f3) / 10.0f + eo2.d) * 0.1f + 0.1f;
+        float f4 = TrigLookup.a(((float)eo2.b + f3) / 10.0f + eo2.d) * 0.1f + 0.1f;
         float f5 = (((float)eo2.b + f3) / 20.0f + eo2.d) * 57.295776f;
         int n2 = 1;
-        if (eo2.a.a > 1) {
+        if (eo2.a.count > 1) {
             n2 = 2;
         }
-        if (eo2.a.a > 5) {
+        if (eo2.a.count > 5) {
             n2 = 3;
         }
-        if (eo2.a.a > 20) {
+        if (eo2.a.count > 20) {
             n2 = 4;
         }
         GL11.glTranslatef((float)((float)d2), (float)((float)d3 + f4), (float)((float)d4));
         GL11.glEnable(32826);
-        if (fp2.c < 256 && bk.a(nq.m[fp2.c].g())) {
+        if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
             GL11.glRotatef((float)f5, 0.0f, 1.0f, 0.0f);
             this.a("/terrain.png");
             float f6 = 0.25f;
-            if (!nq.m[fp2.c].b() && fp2.c != nq.ak.bh) {
+            if (!HeadBanger1337.m[fp2.id].b() && fp2.id != HeadBanger1337.ak.bh) {
                 f6 = 0.5f;
             }
             GL11.glScalef((float)f6, (float)f6, (float)f6);
@@ -52,13 +52,13 @@ extends aq {
                     float f9 = (this.e.nextFloat() * 2.0f - 1.0f) * 0.2f / f6;
                     GL11.glTranslatef((float)f7, (float)f8, (float)f9);
                 }
-                this.a.a(nq.m[fp2.c]);
+                this.a.a(HeadBanger1337.m[fp2.id]);
                 GL11.glPopMatrix();
             }
         } else {
             GL11.glScalef(0.5f, 0.5f, 0.5f);
             int n3 = fp2.b();
-            if (fp2.c < 256) {
+            if (fp2.id < 256) {
                 this.a("/terrain.png");
             } else {
                 this.a("/gui/items.png");
@@ -94,14 +94,14 @@ extends aq {
         GL11.glPopMatrix();
     }
 
-    public void a(ls ls2, fu fu2, fp fp2, int n2, int n3) {
+    public void a(ls ls2, fu fu2, Item fp2, int n2, int n3) {
         if (fp2 == null) {
             return;
         }
-        if (fp2.c < 256 && bk.a(nq.m[fp2.c].g())) {
-            int n4 = fp2.c;
+        if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
+            int n4 = fp2.id;
             fu2.b(fu2.a("/terrain.png"));
-            nq nq2 = nq.m[n4];
+            HeadBanger1337 nq2 = HeadBanger1337.m[n4];
             GL11.glPushMatrix();
             GL11.glTranslatef((float)(n2 - 2), (float)(n3 + 3), 0.0f);
             GL11.glScalef(10.0f, 10.0f, 10.0f);
@@ -114,7 +114,7 @@ extends aq {
             GL11.glPopMatrix();
         } else if (fp2.b() >= 0) {
             GL11.glDisable(2896);
-            if (fp2.c < 256) {
+            if (fp2.id < 256) {
                 fu2.b(fu2.a("/terrain.png"));
             } else {
                 fu2.b(fu2.a("/gui/items.png"));
@@ -125,21 +125,21 @@ extends aq {
         GL11.glEnable(2884);
     }
 
-    public void b(ls ls2, fu fu2, fp fp2, int n2, int n3) {
+    public void b(ls ls2, fu fu2, Item fp2, int n2, int n3) {
         if (fp2 == null) {
             return;
         }
-        if (fp2.a > 1) {
-            String string = "" + fp2.a;
+        if (fp2.count > 1) {
+            String string = "" + fp2.count;
             GL11.glDisable(2896);
             GL11.glDisable(2929);
             ls2.a(string, n2 + 19 - 2 - ls2.a(string), n3 + 6 + 3, 0xFFFFFF);
             GL11.glEnable(2896);
             GL11.glEnable(2929);
         }
-        if (fp2.d > 0) {
-            int n4 = 13 - fp2.d * 13 / fp2.d();
-            int n5 = 255 - fp2.d * 255 / fp2.d();
+        if (fp2.damage > 0) {
+            int n4 = 13 - fp2.damage * 13 / fp2.d();
+            int n5 = 255 - fp2.damage * 255 / fp2.d();
             GL11.glDisable(2896);
             GL11.glDisable(2929);
             GL11.glDisable(3553);
@@ -181,7 +181,7 @@ extends aq {
 
     @Override
     public void a(lw lw2, double d2, double d3, double d4, float f2, float f3) {
-        this.a((eo)lw2, d2, d3, d4, f2, f3);
+        this.a((DroppedItem)lw2, d2, d3, d4, f2, f3);
     }
 }
 

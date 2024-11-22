@@ -27,13 +27,13 @@ public class lclass {
         float f2 = 0.4f;
         float f3 = 0.6f;
         float f4 = 0.0f;
-        aoclass ao2 = aoclass.b(0.2f, 1.0, -0.7f).b();
-        GL11.glLight(16384, 4611, (FloatBuffer)lclass.a(ao2.a, ao2.b, ao2.c, 0.0));
+        Vector3D ao2 = Vector3D.b(0.2f, 1.0, -0.7f).b();
+        GL11.glLight(16384, 4611, (FloatBuffer)lclass.a(ao2.x, ao2.y, ao2.z, 0.0));
         GL11.glLight(16384, 4609, (FloatBuffer)lclass.a(f3, f3, f3, 1.0f));
         GL11.glLight(16384, 4608, (FloatBuffer)lclass.a(0.0f, 0.0f, 0.0f, 1.0f));
         GL11.glLight(16384, 4610, (FloatBuffer)lclass.a(f4, f4, f4, 1.0f));
         ao2 = ao2.b(-0.2f, 1.0, 0.7f).b();
-        GL11.glLight(16385, 4611, (FloatBuffer)lclass.a(ao2.a, ao2.b, ao2.c, 0.0));
+        GL11.glLight(16385, 4611, (FloatBuffer)lclass.a(ao2.x, ao2.y, ao2.z, 0.0));
         GL11.glLight(16385, 4609, (FloatBuffer)lclass.a(f3, f3, f3, 1.0f));
         GL11.glLight(16385, 4608, (FloatBuffer)lclass.a(0.0f, 0.0f, 0.0f, 1.0f));
         GL11.glLight(16385, 4610, (FloatBuffer)lclass.a(f4, f4, f4, 1.0f));

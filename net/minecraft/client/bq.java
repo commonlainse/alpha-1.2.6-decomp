@@ -5,7 +5,7 @@ package net.minecraft.client;
 import net.minecraft.client.Minecraft;
 
 public class bq
-extends eb {
+extends Player {
     public nn a;
     private Minecraft bx;
     public int b = 20;
@@ -13,7 +13,7 @@ extends eb {
     public float c;
     public float d;
 
-    public bq(Minecraft minecraft, cy cy2, ea ea2, int n2) {
+    public bq(Minecraft minecraft, Session cy2, ea ea2, int n2) {
         super(cy2);
         this.bx = minecraft;
         this.m = n2;
@@ -21,7 +21,7 @@ extends eb {
             this.bl = "http://www.minecraft.net/skin/" + ea2.b + ".png";
             System.out.println("Loading texture " + this.bl);
         }
-        this.l = ea2.b;
+        this.name = ea2.b;
     }
 
     @Override
@@ -74,15 +74,15 @@ extends eb {
     }
 
     @Override
-    public void a(iq iq2) {
+    public void a(NBTCompoundTag iq2) {
         super.a(iq2);
-        iq2.a("Score", this.g);
+        iq2.storeInt("Score", this.g);
     }
 
     @Override
-    public void b(iq iq2) {
+    public void b(NBTCompoundTag iq2) {
         super.b(iq2);
-        this.g = iq2.e("Score");
+        this.g = iq2.getInt("Score");
     }
 
     @Override
@@ -91,7 +91,7 @@ extends eb {
     }
 
     @Override
-    public void a(qc qc2) {
+    public void a(Sign qc2) {
         this.bx.a(new pv(qc2));
     }
 
@@ -101,7 +101,7 @@ extends eb {
     }
 
     @Override
-    public void a(lt lt2) {
+    public void a(Furnace lt2) {
         this.bx.a(new jj(this.e, lt2));
     }
 
@@ -119,10 +119,10 @@ extends eb {
         if (lw2.a(this)) {
             return;
         }
-        fp fp2 = this.w();
-        if (fp2 != null && lw2 instanceof hf) {
-            fp2.b((hf)lw2);
-            if (fp2.a <= 0) {
+        Item fp2 = this.w();
+        if (fp2 != null && lw2 instanceof Mob) {
+            fp2.b((Mob)lw2);
+            if (fp2.count <= 0) {
                 fp2.a(this);
                 this.x();
             }

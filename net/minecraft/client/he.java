@@ -45,7 +45,7 @@ extends nn {
     }
 
     @Override
-    public void a(eb eb2) {
+    public void a(Player eb2) {
         this.a = 0.0f;
         this.b = 0.0f;
         if (this.f[0]) {

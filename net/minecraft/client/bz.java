@@ -11,12 +11,12 @@ import java.util.Random;
 import org.lwjgl.opengl.GL11;
 
 public class bz {
-    protected cy a;
+    protected Session a;
     private List[] b = new List[4];
     private fu c;
     private Random d = new Random();
 
-    public bz(cy cy2, fu fu2) {
+    public bz(Session cy2, fu fu2) {
         if (cy2 != null) {
             this.a = cy2;
         }
@@ -43,11 +43,11 @@ public class bz {
     }
 
     public void a(lw lw2, float f2) {
-        float f3 = fi.b(lw2.aC * (float)Math.PI / 180.0f);
-        float f4 = fi.a(lw2.aC * (float)Math.PI / 180.0f);
-        float f5 = -f4 * fi.a(lw2.aD * (float)Math.PI / 180.0f);
-        float f6 = f3 * fi.a(lw2.aD * (float)Math.PI / 180.0f);
-        float f7 = fi.b(lw2.aD * (float)Math.PI / 180.0f);
+        float f3 = TrigLookup.b(lw2.aC * (float)Math.PI / 180.0f);
+        float f4 = TrigLookup.a(lw2.aC * (float)Math.PI / 180.0f);
+        float f5 = -f4 * TrigLookup.a(lw2.aD * (float)Math.PI / 180.0f);
+        float f6 = f3 * TrigLookup.a(lw2.aD * (float)Math.PI / 180.0f);
+        float f7 = TrigLookup.b(lw2.aD * (float)Math.PI / 180.0f);
         pp.l = lw2.aV + (lw2.aw - lw2.aV) * (double)f2;
         pp.m = lw2.aW + (lw2.ax - lw2.aW) * (double)f2;
         pp.n = lw2.aX + (lw2.ay - lw2.aX) * (double)f2;
@@ -86,7 +86,7 @@ public class bz {
         }
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         this.a = cy2;
         for (int i2 = 0; i2 < 4; ++i2) {
             this.b[i2].clear();
@@ -98,7 +98,7 @@ public class bz {
         if (n5 == 0) {
             return;
         }
-        nq nq2 = nq.m[n5];
+        HeadBanger1337 nq2 = HeadBanger1337.m[n5];
         int n6 = 4;
         for (int i2 = 0; i2 < n6; ++i2) {
             for (int i3 = 0; i3 < n6; ++i3) {
@@ -117,7 +117,7 @@ public class bz {
         if (n6 == 0) {
             return;
         }
-        nq nq2 = nq.m[n6];
+        HeadBanger1337 nq2 = HeadBanger1337.m[n6];
         float f2 = 0.1f;
         double d2 = (double)n2 + this.d.nextDouble() * (nq2.bn - nq2.bk - (double)(f2 * 2.0f)) + (double)f2 + nq2.bk;
         double d3 = (double)n3 + this.d.nextDouble() * (nq2.bo - nq2.bl - (double)(f2 * 2.0f)) + (double)f2 + nq2.bl;

@@ -16,31 +16,31 @@ extends lh {
 
     @Override
     public int a(int n2, Random random) {
-        return nq.aB.bh;
+        return HeadBanger1337.aB.bh;
     }
 
     @Override
-    public void e(cy cy2, int n2, int n3, int n4) {
+    public void e(Session cy2, int n2, int n3, int n4) {
         super.e(cy2, n2, n3, n4);
         this.h(cy2, n2, n3, n4);
     }
 
-    private void h(cy cy2, int n2, int n3, int n4) {
+    private void h(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4 - 1);
         int n6 = cy2.a(n2, n3, n4 + 1);
         int n7 = cy2.a(n2 - 1, n3, n4);
         int n8 = cy2.a(n2 + 1, n3, n4);
         int n9 = 3;
-        if (nq.o[n5] && !nq.o[n6]) {
+        if (HeadBanger1337.o[n5] && !HeadBanger1337.o[n6]) {
             n9 = 3;
         }
-        if (nq.o[n6] && !nq.o[n5]) {
+        if (HeadBanger1337.o[n6] && !HeadBanger1337.o[n5]) {
             n9 = 2;
         }
-        if (nq.o[n7] && !nq.o[n8]) {
+        if (HeadBanger1337.o[n7] && !HeadBanger1337.o[n8]) {
             n9 = 5;
         }
-        if (nq.o[n8] && !nq.o[n7]) {
+        if (HeadBanger1337.o[n8] && !HeadBanger1337.o[n7]) {
             n9 = 4;
         }
         cy2.b(n2, n3, n4, n9);
@@ -49,10 +49,10 @@ extends lh {
     @Override
     public int a(pk pk2, int n2, int n3, int n4, int n5) {
         if (n5 == 1) {
-            return nq.t.bg;
+            return HeadBanger1337.t.bg;
         }
         if (n5 == 0) {
-            return nq.t.bg;
+            return HeadBanger1337.t.bg;
         }
         int n6 = pk2.e(n2, n3, n4);
         if (n5 != n6) {
@@ -65,7 +65,7 @@ extends lh {
     }
 
     @Override
-    public void b(cy cy2, int n2, int n3, int n4, Random random) {
+    public void b(Session cy2, int n2, int n3, int n4, Random random) {
         if (!this.a) {
             return;
         }
@@ -93,10 +93,10 @@ extends lh {
     @Override
     public int a(int n2) {
         if (n2 == 1) {
-            return nq.t.bh;
+            return HeadBanger1337.t.bh;
         }
         if (n2 == 0) {
-            return nq.t.bh;
+            return HeadBanger1337.t.bh;
         }
         if (n2 == 3) {
             return this.bg - 1;
@@ -105,32 +105,32 @@ extends lh {
     }
 
     @Override
-    public boolean a(cy cy2, int n2, int n3, int n4, eb eb2) {
-        lt lt2 = (lt)cy2.b(n2, n3, n4);
+    public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {
+        Furnace lt2 = (Furnace)cy2.b(n2, n3, n4);
         eb2.a(lt2);
         return true;
     }
 
-    public static void a(boolean bl2, cy cy2, int n2, int n3, int n4) {
+    public static void a(boolean bl2, Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.e(n2, n3, n4);
-        ji ji2 = cy2.b(n2, n3, n4);
+        TileEntityRegistry ji2 = cy2.b(n2, n3, n4);
         if (bl2) {
-            cy2.d(n2, n3, n4, nq.aC.bh);
+            cy2.d(n2, n3, n4, HeadBanger1337.aC.bh);
         } else {
-            cy2.d(n2, n3, n4, nq.aB.bh);
+            cy2.d(n2, n3, n4, HeadBanger1337.aB.bh);
         }
         cy2.b(n2, n3, n4, n5);
         cy2.a(n2, n3, n4, ji2);
     }
 
     @Override
-    protected ji a_() {
-        return new lt();
+    protected TileEntityRegistry a_() {
+        return new Furnace();
     }
 
     @Override
-    public void a(cy cy2, int n2, int n3, int n4, hf hf2) {
-        int n5 = fi.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
+    public void a(Session cy2, int n2, int n3, int n4, Mob hf2) {
+        int n5 = TrigLookup.b((double)(hf2.aC * 4.0f / 360.0f) + 0.5) & 3;
         if (n5 == 0) {
             cy2.b(n2, n3, n4, 2);
         }

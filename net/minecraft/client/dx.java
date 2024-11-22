@@ -46,7 +46,7 @@ public class dx {
     public static dx N = new gt(36, 2).a(130);
     public static dx O = new gt(37, 3).a(131);
     public static dx P = new gt(38, 1).a(132);
-    public static dx Q = new la(39, nq.az.bh).a(9);
+    public static dx Q = new la(39, HeadBanger1337.az.bh).a(9);
     public static dx R = new dx(40).a(25);
     public static dx S = new qk(41, 5).a(41);
     public static dx T = new oj(42, 0, 0, 0).a(0);
@@ -77,8 +77,8 @@ public class dx {
     public static dx as = new nv(67).a(42);
     public static dx at = new eu(68, hb.c).a(43);
     public static dx au = new ag(69, 0).a(74);
-    public static dx av = new ag(70, nq.A.bh).a(75);
-    public static dx aw = new ag(71, nq.C.bh).a(76);
+    public static dx av = new ag(70, HeadBanger1337.A.bh).a(75);
+    public static dx aw = new ag(71, HeadBanger1337.C.bh).a(76);
     public static dx ax = new lb(72, 0).a(135);
     public static dx ay = new lk(73).a(104);
     public static dx az = new eu(74, hb.e).a(44);
@@ -89,7 +89,7 @@ public class dx {
     public static dx aE = new ag(79, -1).a(77);
     public static dx aF = new dx(80).a(22);
     public static dx aG = new dx(81).a(57);
-    public static dx aH = new hh(82, nq.aX).a(27);
+    public static dx aH = new hh(82, HeadBanger1337.aX).a(27);
     public static dx aI = new dx(83).a(58);
     public static dx aJ = new dx(84).a(59);
     public static dx aK = new dx(85).a(30);
@@ -123,19 +123,19 @@ public class dx {
         return this;
     }
 
-    public int a(fp fp2) {
+    public int a(Item fp2) {
         return this.aZ;
     }
 
-    public boolean a(fp fp2, eb eb2, cy cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         return false;
     }
 
-    public float a(fp fp2, nq nq2) {
+    public float a(Item fp2, HeadBanger1337 nq2) {
         return 1.0f;
     }
 
-    public fp a(fp fp2, cy cy2, eb eb2) {
+    public Item a(Item fp2, Session cy2, Player eb2) {
         return fp2;
     }
 
@@ -147,21 +147,21 @@ public class dx {
         return this.aY;
     }
 
-    public void a(fp fp2, hf hf2) {
+    public void a(Item fp2, Mob hf2) {
     }
 
-    public void a(fp fp2, int n2, int n3, int n4, int n5) {
+    public void a(Item fp2, int n2, int n3, int n4, int n5) {
     }
 
     public int a(lw lw2) {
         return 1;
     }
 
-    public boolean a(nq nq2) {
+    public boolean a(HeadBanger1337 nq2) {
         return false;
     }
 
-    public void b(fp fp2, hf hf2) {
+    public void b(Item fp2, Mob hf2) {
     }
 
     public dx e() {

@@ -7,7 +7,7 @@ import java.util.Random;
 public class cp
 extends js {
     @Override
-    public boolean a(cy cy2, Random random, int n2, int n3, int n4) {
+    public boolean a(Session cy2, Random random, int n2, int n3, int n4) {
         int n5;
         int n6;
         int n7;
@@ -43,10 +43,10 @@ extends js {
                         }
                         if (!cy2.f(n7, n6, n5).a()) continue;
                         if (n6 == n3 - 1 && random.nextInt(4) != 0) {
-                            cy2.d(n7, n6, n5, nq.ao.bh);
+                            cy2.d(n7, n6, n5, HeadBanger1337.ao.bh);
                             continue;
                         }
-                        cy2.d(n7, n6, n5, nq.w.bh);
+                        cy2.d(n7, n6, n5, HeadBanger1337.w.bh);
                         continue;
                     }
                     cy2.d(n7, n6, n5, 0);
@@ -73,53 +73,53 @@ extends js {
                     ++n14;
                 }
                 if (n14 != 1) continue;
-                cy2.d(n5, n13, n12, nq.au.bh);
-                ga ga2 = (ga)cy2.b(n5, n13, n12);
+                cy2.d(n5, n13, n12, HeadBanger1337.au.bh);
+                Chest ga2 = (Chest)cy2.b(n5, n13, n12);
                 for (int i2 = 0; i2 < 8; ++i2) {
-                    fp fp2 = this.a(random);
+                    Item fp2 = this.a(random);
                     if (fp2 == null) continue;
                     ga2.a(random.nextInt(ga2.c()), fp2);
                 }
                 continue block6;
             }
         }
-        cy2.d(n2, n3, n4, nq.as.bh);
-        bl bl2 = (bl)cy2.b(n2, n3, n4);
+        cy2.d(n2, n3, n4, HeadBanger1337.as.bh);
+        MobSpawner bl2 = (MobSpawner)cy2.b(n2, n3, n4);
         bl2.b = this.b(random);
         return true;
     }
 
-    private fp a(Random random) {
+    private Item a(Random random) {
         int n2 = random.nextInt(11);
         if (n2 == 0) {
-            return new fp(dx.ay);
+            return new Item(dx.ay);
         }
         if (n2 == 1) {
-            return new fp(dx.m, random.nextInt(4) + 1);
+            return new Item(dx.m, random.nextInt(4) + 1);
         }
         if (n2 == 2) {
-            return new fp(dx.S);
+            return new Item(dx.S);
         }
         if (n2 == 3) {
-            return new fp(dx.R, random.nextInt(4) + 1);
+            return new Item(dx.R, random.nextInt(4) + 1);
         }
         if (n2 == 4) {
-            return new fp(dx.K, random.nextInt(4) + 1);
+            return new Item(dx.K, random.nextInt(4) + 1);
         }
         if (n2 == 5) {
-            return new fp(dx.I, random.nextInt(4) + 1);
+            return new Item(dx.I, random.nextInt(4) + 1);
         }
         if (n2 == 6) {
-            return new fp(dx.au);
+            return new Item(dx.au);
         }
         if (n2 == 7 && random.nextInt(100) == 0) {
-            return new fp(dx.ar);
+            return new Item(dx.ar);
         }
         if (n2 == 8 && random.nextInt(2) == 0) {
-            return new fp(dx.aA, random.nextInt(4) + 1);
+            return new Item(dx.aA, random.nextInt(4) + 1);
         }
         if (n2 == 9 && random.nextInt(10) == 0) {
-            return new fp(dx.c[dx.aU.aW + random.nextInt(2)]);
+            return new Item(dx.c[dx.aU.aW + random.nextInt(2)]);
         }
         return null;
     }

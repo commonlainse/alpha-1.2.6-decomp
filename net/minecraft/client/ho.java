@@ -6,9 +6,9 @@ import java.util.Comparator;
 
 public class ho
 implements Comparator {
-    private eb a;
+    private Player a;
 
-    public ho(eb eb2) {
+    public ho(Player eb2) {
         this.a = eb2;
     }
 

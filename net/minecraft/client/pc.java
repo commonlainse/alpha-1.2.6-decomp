@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class pc
 extends pp {
-    public pc(cy cy2, double d2, double d3, double d4) {
+    public pc(Session cy2, double d2, double d3, double d4) {
         super(cy2, d2, d3, d4, 0.0, 0.0, 0.0);
         this.az *= (double)0.3f;
         this.aA = (float)Math.random() * 0.2f + 0.1f;
@@ -45,7 +45,7 @@ extends pp {
             this.az *= (double)0.7f;
             this.aB *= (double)0.7f;
         }
-        if (((hb2 = this.as.f(fi.b(this.aw), fi.b(this.ax), fi.b(this.ay))).d() || hb2.a()) && this.ax < (d2 = (double)((float)(fi.b(this.ax) + 1) - ld.b(this.as.e(fi.b(this.aw), fi.b(this.ax), fi.b(this.ay)))))) {
+        if (((hb2 = this.as.f(TrigLookup.b(this.aw), TrigLookup.b(this.ax), TrigLookup.b(this.ay))).d() || hb2.a()) && this.ax < (d2 = (double)((float)(TrigLookup.b(this.ax) + 1) - ld.b(this.as.e(TrigLookup.b(this.aw), TrigLookup.b(this.ax), TrigLookup.b(this.ay)))))) {
             this.J();
         }
     }

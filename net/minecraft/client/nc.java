@@ -31,18 +31,18 @@ public class nc {
     }
 
     public void a(is is2, float f2) {
-        aoclass ao2 = this.a[1].a.a(this.a[0].a);
-        aoclass ao3 = this.a[1].a.a(this.a[2].a);
-        aoclass ao4 = ao3.b(ao2).b();
+        Vector3D ao2 = this.a[1].a.a(this.a[0].a);
+        Vector3D ao3 = this.a[1].a.a(this.a[2].a);
+        Vector3D ao4 = ao3.b(ao2).b();
         is2.b();
         if (this.c) {
-            is2.b(-((float)ao4.a), -((float)ao4.b), -((float)ao4.c));
+            is2.b(-((float)ao4.x), -((float)ao4.y), -((float)ao4.z));
         } else {
-            is2.b((float)ao4.a, (float)ao4.b, (float)ao4.c);
+            is2.b((float)ao4.x, (float)ao4.y, (float)ao4.z);
         }
         for (int i2 = 0; i2 < 4; ++i2) {
             ew ew2 = this.a[i2];
-            is2.a((float)ew2.a.a * f2, (float)ew2.a.b * f2, (float)ew2.a.c * f2, ew2.b, ew2.c);
+            is2.a((float)ew2.a.x * f2, (float)ew2.a.y * f2, (float)ew2.a.z * f2, ew2.b, ew2.c);
         }
         is2.a();
     }

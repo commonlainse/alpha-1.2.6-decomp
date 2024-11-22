@@ -14,7 +14,7 @@ extends dx {
     }
 
     @Override
-    public fp a(fp fp2, cy cy2, eb eb2) {
+    public Item a(Item fp2, Session cy2, Player eb2) {
         float f2;
         float f3;
         float f4;
@@ -26,11 +26,11 @@ extends dx {
         double d3 = eb2.at + (eb2.aw - eb2.at) * (double)f6;
         double d4 = eb2.au + (eb2.ax - eb2.au) * (double)f6 + 1.62 - (double)eb2.aO;
         double d5 = eb2.av + (eb2.ay - eb2.av) * (double)f6;
-        aoclass ao2 = aoclass.b(d3, d4, d5);
-        float f9 = fi.b(-f8 * ((float)Math.PI / 180) - (float)Math.PI);
-        float f10 = fi.a(-f8 * ((float)Math.PI / 180) - (float)Math.PI);
-        float f11 = f10 * (f5 = -fi.b(-f7 * ((float)Math.PI / 180)));
-        aoclass ao3 = ao2.c((double)f11 * 5.0, (double)(f4 = (f3 = fi.a(-f7 * ((float)Math.PI / 180)))) * 5.0, (double)(f2 = f9 * f5) * 5.0);
+        Vector3D ao2 = Vector3D.b(d3, d4, d5);
+        float f9 = TrigLookup.b(-f8 * ((float)Math.PI / 180) - (float)Math.PI);
+        float f10 = TrigLookup.a(-f8 * ((float)Math.PI / 180) - (float)Math.PI);
+        float f11 = f10 * (f5 = -TrigLookup.b(-f7 * ((float)Math.PI / 180)));
+        Vector3D ao3 = ao2.c((double)f11 * 5.0, (double)(f4 = (f3 = TrigLookup.a(-f7 * ((float)Math.PI / 180)))) * 5.0, (double)(f2 = f9 * f5) * 5.0);
         nx nx2 = cy2.a(ao2, ao3, this.a == 0);
         if (nx2 == null) {
             return fp2;
@@ -45,15 +45,15 @@ extends dx {
             if (this.a == 0) {
                 if (cy2.f(n2, n3, n4) == hb.f && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new fp(dx.av);
+                    return new Item(dx.av);
                 }
                 if (cy2.f(n2, n3, n4) == hb.g && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new fp(dx.aw);
+                    return new Item(dx.aw);
                 }
             } else {
                 if (this.a < 0) {
-                    return new fp(dx.au);
+                    return new Item(dx.au);
                 }
                 if (nx2.e == 0) {
                     --n3;
@@ -74,7 +74,7 @@ extends dx {
                     ++n2;
                 }
                 if (cy2.a(n2, n3, n4) == 0 || !cy2.f(n2, n3, n4).a()) {
-                    if (cy2.q.d && this.a == nq.A.bh) {
+                    if (cy2.q.d && this.a == HeadBanger1337.A.bh) {
                         cy2.a(d3 + 0.5, d4 + 0.5, d5 + 0.5, "random.fizz", 0.5f, 2.6f + (cy2.l.nextFloat() - cy2.l.nextFloat()) * 0.8f);
                         for (int i2 = 0; i2 < 8; ++i2) {
                             cy2.a("largesmoke", (double)n2 + Math.random(), (double)n3 + Math.random(), (double)n4 + Math.random(), 0.0, 0.0, 0.0);
@@ -82,11 +82,11 @@ extends dx {
                     } else {
                         cy2.b(n2, n3, n4, this.a, 0);
                     }
-                    return new fp(dx.au);
+                    return new Item(dx.au);
                 }
             }
-        } else if (this.a == 0 && nx2.g instanceof as) {
-            return new fp(dx.aE);
+        } else if (this.a == 0 && nx2.g instanceof Cow) {
+            return new Item(dx.aE);
         }
         return fp2;
     }

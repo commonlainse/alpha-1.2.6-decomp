@@ -9,7 +9,7 @@ public class nn {
     public boolean d = false;
     public boolean e = false;
 
-    public void a(eb eb2) {
+    public void a(Player eb2) {
     }
 
     public void a() {

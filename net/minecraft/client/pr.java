@@ -9,14 +9,14 @@ extends ec {
         this.a(gm3);
     }
 
-    protected boolean a(bx bx2, int n2) {
+    protected boolean a(Sheep bx2, int n2) {
         this.a("/mob/sheep_fur.png");
         return n2 == 0 && !bx2.a;
     }
 
     @Override
-    protected boolean a(hf hf2, int n2) {
-        return this.a((bx)hf2, n2);
+    protected boolean a(Mob hf2, int n2) {
+        return this.a((Sheep)hf2, n2);
     }
 }
 
