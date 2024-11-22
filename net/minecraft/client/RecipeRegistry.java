@@ -7,15 +7,15 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class en {
-    static private final en a = new en();
+public class RecipeRegistry {
+    static private final RecipeRegistry a = new RecipeRegistry();
     private List recipes = new ArrayList();
 
-    public static final en a() {
+    public static final RecipeRegistry a() {
         return a;
     }
 
-    private en() {
+    private RecipeRegistry() {
         new eg().a(this);
         new pa().a(this);
         new mv().a(this);
@@ -108,12 +108,12 @@ public class en {
             HashMap _object = (HashMap)object;
             nArray[i3] = _object.containsKey(Character.valueOf(c3)) ? (Integer)_object.get(Character.valueOf(c3)) : -1;
         }
-        this.recipes.add(new cd(n3, n4, nArray, fp2));
+        this.recipes.add(new Recipe(n3, n4, nArray, fp2));
     }
 
     public Item a(int[] nArray) {
         for (int i2 = 0; i2 < this.recipes.size(); ++i2) {
-            cd cd2 = (cd)this.recipes.get(i2);
+            Recipe cd2 = (Recipe)this.recipes.get(i2);
             if (!cd2.a(nArray)) continue;
             return cd2.b(nArray);
         }

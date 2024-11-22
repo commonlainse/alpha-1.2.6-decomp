@@ -38,7 +38,7 @@ implements Runnable {
     public int d;
     private bm O;
     private kc P = new kc(20.0f);
-    public cy e;
+    public Session e;
     public f f;
     public bq g;
     public bz h;
@@ -52,7 +52,7 @@ implements Runnable {
     public bp p = null;
     public hu q = new hu(this);
     public kb r = new kb(this);
-    private bn Q;
+    private ResourcesDownloader Q;
     private int R = 0;
     private int S = 0;
     private int T;
@@ -186,7 +186,7 @@ implements Runnable {
         GL11.glViewport(0, 0, (int)this.c, (int)this.d);
         this.h = new bz(this.e, this.n);
         try {
-            this.Q = new bn(this.D, this);
+            this.Q = new ResourcesDownloader(this.D, this);
             this.Q.start();
         }
         catch (Exception exception) {
@@ -322,7 +322,7 @@ implements Runnable {
         if (bp2 == null && this.e == null) {
             bp2 = new dj();
         } else if (bp2 == null && this.g.J <= 0) {
-            bp2 = new bb();
+            bp2 = new GameOverScreen();
         }
         this.p = bp2;
         if (bp2 != null) {
@@ -365,7 +365,7 @@ implements Runnable {
         }
         try {
             System.out.println("Stopping!");
-            this.a((cy)null);
+            this.a((Session)null);
             try {
                 ds.a();
             }
@@ -401,7 +401,7 @@ implements Runnable {
             int n2 = 0;
             while (this.H && (this.z == null || this.z.isActive())) {
                 co.a();
-                aoclass.a();
+                Vector3D.a();
                 if (this.k == null && Display.isCloseRequested()) {
                     this.d();
                 }
@@ -421,7 +421,7 @@ implements Runnable {
                     }
                     catch (np np2) {
                         this.e = null;
-                        this.a((cy)null);
+                        this.a((Session)null);
                         this.a(new kh());
                     }
                 }
@@ -631,7 +631,7 @@ implements Runnable {
     }
 
     private void a(int n2) {
-        fp fp2;
+        Item fp2;
         if (n2 == 0 && this.S > 0) {
             return;
         }
@@ -655,16 +655,16 @@ implements Runnable {
             int n4 = this.x.c;
             int n5 = this.x.d;
             int n6 = this.x.e;
-            nq nq2 = nq.m[this.e.a(n3, n4, n5)];
+            HeadBanger1337 nq2 = HeadBanger1337.m[this.e.a(n3, n4, n5)];
             if (n2 == 0) {
                 this.e.i(n3, n4, n5, this.x.e);
-                if (nq2 != nq.z || this.g.f >= 100) {
+                if (nq2 != HeadBanger1337.z || this.g.f >= 100) {
                     this.b.a(n3, n4, n5, this.x.e);
                 }
             } else {
                 int n7;
-                fp fp3 = this.g.e.a();
-                int n8 = n7 = fp3 != null ? fp3.a : 0;
+                Item fp3 = this.g.e.a();
+                int n8 = n7 = fp3 != null ? fp3.count : 0;
                 if (this.b.a(this.g, this.e, fp3, n3, n4, n5, n6)) {
                     bl2 = false;
                     this.g.z();
@@ -672,9 +672,9 @@ implements Runnable {
                 if (fp3 == null) {
                     return;
                 }
-                if (fp3.a == 0) {
-                    this.g.e.a[this.g.e.d] = null;
-                } else if (fp3.a != n7) {
+                if (fp3.count == 0) {
+                    this.g.e.storage[this.g.e.d] = null;
+                } else if (fp3.count != n7) {
                     this.r.a.b();
                 }
             }
@@ -752,14 +752,14 @@ implements Runnable {
     private void t() {
         if (this.x != null) {
             int n2 = this.e.a(this.x.b, this.x.c, this.x.d);
-            if (n2 == nq.u.bh) {
-                n2 = nq.v.bh;
+            if (n2 == HeadBanger1337.u.bh) {
+                n2 = HeadBanger1337.v.bh;
             }
-            if (n2 == nq.aj.bh) {
-                n2 = nq.ak.bh;
+            if (n2 == HeadBanger1337.aj.bh) {
+                n2 = HeadBanger1337.ak.bh;
             }
-            if (n2 == nq.z.bh) {
-                n2 = nq.t.bh;
+            if (n2 == HeadBanger1337.z.bh) {
+                n2 = HeadBanger1337.t.bh;
             }
             this.g.e.a(n2, this.b instanceof jt);
         }
@@ -894,7 +894,7 @@ implements Runnable {
                 this.e.i();
             }
             if (!this.m && this.e != null) {
-                this.e.m(fi.b(this.g.aw), fi.b(this.g.ax), fi.b(this.g.ay));
+                this.e.m(TrigLookup.b(this.g.aw), TrigLookup.b(this.g.ax), TrigLookup.b(this.g.ay));
             }
             if (!this.m) {
                 this.h.a();
@@ -915,9 +915,9 @@ implements Runnable {
     }
 
     public void b(String string) {
-        this.a((cy)null);
+        this.a((Session)null);
         System.gc();
-        cy cy2 = new cy(new File(Minecraft.b(), "saves"), string);
+        Session cy2 = new Session(new File(Minecraft.b(), "saves"), string);
         if (cy2.p) {
             this.a(cy2, "Generating level");
         } else {
@@ -935,12 +935,12 @@ implements Runnable {
         if (this.g.m == -1) {
             this.g.c(d2 /= d4, this.g.ax, d3 /= d4, this.g.aC, this.g.aD);
             this.e.a((lw)this.g, false);
-            cy cy2 = new cy(this.e, new om());
+            Session cy2 = new Session(this.e, new om());
             this.a(cy2, "Entering the Nether", this.g);
         } else {
             this.g.c(d2 *= d4, this.g.ax, d3 *= d4, this.g.aC, this.g.aD);
             this.e.a((lw)this.g, false);
-            cy cy3 = new cy(this.e, new oz());
+            Session cy3 = new Session(this.e, new oz());
             this.a(cy3, "Leaving the Nether", this.g);
         }
         this.g.as = this.e;
@@ -949,15 +949,15 @@ implements Runnable {
         new no().a(this.e, this.g);
     }
 
-    public void a(cy cy2) {
+    public void a(Session cy2) {
         this.a(cy2, "");
     }
 
-    public void a(cy cy2, String string) {
+    public void a(Session cy2, String string) {
         this.a(cy2, string, null);
     }
 
-    public void a(cy cy2, String string, eb eb2) {
+    public void a(Session cy2, String string, Player eb2) {
         this.q.a(string);
         this.q.d("");
         this.A.a(null, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
@@ -1087,7 +1087,7 @@ implements Runnable {
         this.g.an = n2;
         this.b.b(this.g);
         this.d("Respawning");
-        if (this.p instanceof bb) {
+        if (this.p instanceof GameOverScreen) {
             this.a((bp)null);
         }
     }

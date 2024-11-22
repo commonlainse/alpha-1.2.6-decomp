@@ -25,7 +25,7 @@ extends ax {
                 nArray[i2 + i3 * 3] = n2;
             }
         }
-        this.b.a(0, en.a().a(nArray));
+        this.b.a(0, RecipeRegistry.a().a(nArray));
     }
 
     @Override

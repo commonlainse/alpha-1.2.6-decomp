@@ -47,8 +47,8 @@ extends nb {
         if (this.g.y.i) {
             this.a(this.g.g.a(f2), n7, n8);
         }
-        fp fp2 = this.g.g.e.d(3);
-        if (!this.g.y.y && fp2 != null && fp2.c == nq.ba.bh) {
+        Item fp2 = this.g.g.e.d(3);
+        if (!this.g.y.y && fp2 != null && fp2.id == HeadBanger1337.ba.bh) {
             this.a(n7, n8);
         }
         if ((f3 = this.g.g.d + (this.g.g.c - this.g.g.d) * f2) > 0.0f) {
@@ -56,7 +56,7 @@ extends nb {
         }
         GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
         GL11.glBindTexture(3553, (int)this.g.n.a("/gui/gui.png"));
-        fo fo2 = this.g.g.e;
+        Inventory fo2 = this.g.g.e;
         this.k = -90.0f;
         this.b(n7 / 2 - 91, n8 - 22, 0, 0, 182, 22);
         this.b(n7 / 2 - 91 - 1 + fo2.d * 20, n8 - 22 - 1, 0, 22, 24, 22);
@@ -268,10 +268,10 @@ extends nb {
         GL11.glBlendFunc(770, 771);
         GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)f2);
         GL11.glBindTexture(3553, (int)this.g.n.a("/terrain.png"));
-        float f3 = (float)(nq.be.bg % 16) / 16.0f;
-        float f4 = (float)(nq.be.bg / 16) / 16.0f;
-        float f5 = (float)(nq.be.bg % 16 + 1) / 16.0f;
-        float f6 = (float)(nq.be.bg / 16 + 1) / 16.0f;
+        float f3 = (float)(HeadBanger1337.be.bg % 16) / 16.0f;
+        float f4 = (float)(HeadBanger1337.be.bg / 16) / 16.0f;
+        float f5 = (float)(HeadBanger1337.be.bg % 16 + 1) / 16.0f;
+        float f6 = (float)(HeadBanger1337.be.bg / 16 + 1) / 16.0f;
         is is2 = is.a;
         is2.b();
         is2.a(0.0, n3, -90.0, f3, f6);
@@ -286,11 +286,11 @@ extends nb {
     }
 
     private void a(int n2, int n3, int n4, float f2) {
-        fp fp2 = this.g.g.e.a[n2];
+        Item fp2 = this.g.g.e.storage[n2];
         if (fp2 == null) {
             return;
         }
-        float f3 = (float)fp2.b - 0.4f;
+        float f3 = (float)fp2.probablyCooldown - 0.4f;
         if (f3 > 0.0f) {
             GL11.glPushMatrix();
             float f4 = 1.0f + f3 / 5.0f;

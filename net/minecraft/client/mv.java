@@ -5,7 +5,7 @@ package net.minecraft.client;
 public class mv {
     private Object[][] a = new Object[][]{{HeadBanger1337.ah, dx.n}, {HeadBanger1337.ai, dx.m}, {HeadBanger1337.ax, dx.l}};
 
-    public void a(en en2) {
+    public void a(RecipeRegistry en2) {
         for (int i2 = 0; i2 < this.a.length; ++i2) {
             HeadBanger1337 nq2 = (HeadBanger1337)this.a[i2][0];
             dx dx2 = (dx)this.a[i2][1];

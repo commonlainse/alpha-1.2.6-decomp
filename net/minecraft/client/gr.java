@@ -6,13 +6,13 @@ import java.util.Comparator;
 
 class gr
 implements Comparator {
-    final en a;
+    final RecipeRegistry a;
 
-    gr(en en2) {
+    gr(RecipeRegistry en2) {
         this.a = en2;
     }
 
-    public int a(cd cd2, cd cd3) {
+    public int a(Recipe cd2, Recipe cd3) {
         if (cd3.a() < cd2.a()) {
             return -1;
         }
@@ -23,7 +23,7 @@ implements Comparator {
     }
 
     public int compare(Object object, Object object2) {
-        return this.a((cd)object, (cd)object2);
+        return this.a((Recipe)object, (Recipe)object2);
     }
 }
 

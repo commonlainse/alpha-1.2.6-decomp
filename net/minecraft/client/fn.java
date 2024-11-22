@@ -17,7 +17,7 @@ extends ax {
                 nArray[n2] = fp2 == null ? -1 : fp2.id;
             }
         }
-        this.b.a(0, en.a().a(nArray));
+        this.b.a(0, RecipeRegistry.a().a(nArray));
     }
 
     @Override

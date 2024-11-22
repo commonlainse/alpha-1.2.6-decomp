@@ -2,14 +2,14 @@
  * Decompiled with CFR 0.152.
  */
 package net.minecraft.client;
-public class cd {
+public class Recipe {
     private int b;
     private int c;
     private int[] d;
     private Item e;
     public final int a;
 
-    public cd(int n2, int n3, int[] nArray, Item fp2) {
+    public Recipe(int n2, int n3, int[] nArray, Item fp2) {
         this.a = fp2.id;
         this.b = n2;
         this.c = n3;
