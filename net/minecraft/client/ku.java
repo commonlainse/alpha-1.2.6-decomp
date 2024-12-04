@@ -10,7 +10,7 @@ import org.lwjgl.opengl.GL11;
 
 public class ku {
     private Minecraft a;
-    private Item b = null;
+    private InventoryItem b = null;
     private float c = 0.0f;
     private float d = 0.0f;
     private bk e = new bk();
@@ -19,7 +19,7 @@ public class ku {
         this.a = minecraft;
     }
 
-    public void a(Item fp2) {
+    public void a(InventoryItem fp2) {
         GL11.glPushMatrix();
         if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
             GL11.glBindTexture(3553, (int)this.a.n.a("/terrain.png"));
@@ -127,9 +127,9 @@ public class ku {
         GL11.glPopMatrix();
         float f4 = this.a.e.c(TrigLookup.b(bq2.aw), TrigLookup.b(bq2.ax), TrigLookup.b(bq2.ay));
         GL11.glColor4f((float)f4, (float)f4, (float)f4, 1.0f);
-        Item fp2 = this.b;
+        InventoryItem fp2 = this.b;
         if (bq2.n != null) {
-            fp2 = new Item(ItemRegistry.B.id);
+            fp2 = new InventoryItem(Item.B.id);
         }
         if (fp2 != null) {
             GL11.glPushMatrix();
@@ -304,8 +304,8 @@ public class ku {
         float f2;
         this.d = this.c;
         bq bq2 = this.a.g;
-        Item fp2 = bq2.e.a();
-        Item fp3 = fp2;
+        InventoryItem fp2 = bq2.e.a();
+        InventoryItem fp3 = fp2;
         float f3 = fp3 == this.b ? 1.0f : 0.0f;
         float f4 = f3 - this.c;
         if (f4 < -0.4f) {

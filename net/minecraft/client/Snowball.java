@@ -207,7 +207,7 @@ extends lw {
 
     @Override
     public void b(Player eb2) {
-        if (this.f && this.g == eb2 && this.a <= 0 && eb2.e.a(new Item(ItemRegistry.j.id, 1))) {
+        if (this.f && this.g == eb2 && this.a <= 0 && eb2.e.a(new InventoryItem(Item.j.id, 1))) {
             this.as.a(this, "random.pop", 0.2f, ((this.bd.nextFloat() - this.bd.nextFloat()) * 0.7f + 1.0f) * 2.0f);
             eb2.b((lw)this, 1);
             this.J();

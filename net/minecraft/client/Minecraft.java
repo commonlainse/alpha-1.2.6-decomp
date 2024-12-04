@@ -631,7 +631,7 @@ implements Runnable {
     }
 
     private void a(int n2) {
-        Item fp2;
+        InventoryItem fp2;
         if (n2 == 0 && this.S > 0) {
             return;
         }
@@ -663,7 +663,7 @@ implements Runnable {
                 }
             } else {
                 int n7;
-                Item fp3 = this.g.e.a();
+                InventoryItem fp3 = this.g.e.a();
                 int n8 = n7 = fp3 != null ? fp3.count : 0;
                 if (this.b.a(this.g, this.e, fp3, n3, n4, n5, n6)) {
                     bl2 = false;

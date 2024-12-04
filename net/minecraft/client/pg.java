@@ -33,7 +33,7 @@ extends iv {
         int n6 = this.a.e.a(n2, n3, n4);
         int n7 = this.a.e.e(n2, n3, n4);
         boolean bl2 = super.b(n2, n3, n4, n5);
-        Item fp2 = this.a.g.w();
+        InventoryItem fp2 = this.a.g.w();
         if (fp2 != null) {
             fp2.a(n6, n2, n3, n4);
             if (fp2.count == 0) {
@@ -135,7 +135,7 @@ extends iv {
     }
 
     private void e() {
-        Item fp2 = this.a.g.e.a();
+        InventoryItem fp2 = this.a.g.e.a();
         int n2 = 0;
         if (fp2 != null) {
             n2 = fp2.id;
@@ -147,14 +147,14 @@ extends iv {
     }
 
     @Override
-    public boolean a(Player eb2, Session cy2, Item fp2, int n2, int n3, int n4, int n5) {
+    public boolean a(Player eb2, Session cy2, InventoryItem fp2, int n2, int n3, int n4, int n5) {
         this.e();
         this.k.a((gk)new ed(fp2 != null ? fp2.id : -1, n2, n3, n4, n5));
         return super.a(eb2, cy2, fp2, n2, n3, n4, n5);
     }
 
     @Override
-    public boolean a(Player eb2, Session cy2, Item fp2) {
+    public boolean a(Player eb2, Session cy2, InventoryItem fp2) {
         this.e();
         this.k.a((gk)new ed(fp2 != null ? fp2.id : -1, -1, -1, -1, 255));
         return super.a(eb2, cy2, fp2);

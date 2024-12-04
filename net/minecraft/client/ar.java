@@ -12,7 +12,7 @@ extends of {
     }
 
     @Override
-    public boolean a(Item fp2) {
+    public boolean a(InventoryItem fp2) {
         return false;
     }
 

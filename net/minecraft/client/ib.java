@@ -51,7 +51,7 @@ extends mo {
         double d2 = (double)id2.b / 32.0;
         double d3 = (double)id2.c / 32.0;
         double d4 = (double)id2.d / 32.0;
-        DroppedItem eo2 = new DroppedItem(this.f, d2, d3, d4, new Item(id2.h, id2.i));
+        DroppedItem eo2 = new DroppedItem(this.f, d2, d3, d4, new InventoryItem(id2.h, id2.i));
         eo2.az = (double)id2.e / 128.0;
         eo2.aA = (double)id2.f / 128.0;
         eo2.aB = (double)id2.g / 128.0;
@@ -123,7 +123,7 @@ extends mo {
         ps2.bs = hs2.d;
         ps2.bt = hs2.e;
         int n2 = hs2.h;
-        ps2.e.storage[ps2.e.d] = n2 == 0 ? null : new Item(n2);
+        ps2.e.storage[ps2.e.d] = n2 == 0 ? null : new InventoryItem(n2);
         ps2.b(d2, d3, d4, f2, f3);
         this.f.a(hs2.a, ps2);
     }
@@ -284,7 +284,7 @@ extends mo {
         }
         Player eb2 = (Player)lw2;
         int n2 = eq2.b;
-        eb2.e.storage[eb2.e.d] = n2 == 0 ? null : new Item(n2);
+        eb2.e.storage[eb2.e.d] = n2 == 0 ? null : new InventoryItem(n2);
     }
 
     @Override
@@ -320,7 +320,7 @@ extends mo {
 
     @Override
     public void a(mt mt2) {
-        this.e.g.e.a(new Item(mt2.a, mt2.b, mt2.c));
+        this.e.g.e.a(new InventoryItem(mt2.a, mt2.b, mt2.c));
     }
 
     @Override

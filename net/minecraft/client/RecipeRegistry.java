@@ -22,52 +22,52 @@ public class RecipeRegistry {
         new iw().a(this);
         new gf().a(this);
         new o().a(this);
-        this.a(new Item(ItemRegistry.aI, 3), "###", Character.valueOf('#'), ItemRegistry.aH);
-        this.a(new Item(ItemRegistry.aJ, 1), "#", "#", "#", Character.valueOf('#'), ItemRegistry.aI);
-        this.a(new Item(Block.aZ, 2), "###", "###", Character.valueOf('#'), ItemRegistry.B);
-        this.a(new Item(Block.aY, 1), "###", "#X#", "###", Character.valueOf('#'), Block.x, Character.valueOf('X'), ItemRegistry.l);
-        this.a(new Item(Block.an, 1), "###", "XXX", "###", Character.valueOf('#'), Block.x, Character.valueOf('X'), ItemRegistry.aJ);
-        this.a(new Item(Block.aU, 1), "##", "##", Character.valueOf('#'), ItemRegistry.aB);
-        this.a(new Item(Block.aW, 1), "##", "##", Character.valueOf('#'), ItemRegistry.aG);
-        this.a(new Item(Block.al, 1), "##", "##", Character.valueOf('#'), ItemRegistry.aF);
-        this.a(new Item(Block.bd, 1), "###", "###", "###", Character.valueOf('#'), ItemRegistry.aR);
-        this.a(new Item(Block.ab, 1), "###", "###", "###", Character.valueOf('#'), ItemRegistry.I);
-        this.a(new Item(Block.am, 1), "X#X", "#X#", "X#X", Character.valueOf('X'), ItemRegistry.K, Character.valueOf('#'), Block.E);
-        this.a(new Item(Block.ak, 3), "###", Character.valueOf('#'), Block.w);
-        this.a(new Item(Block.aF, 1), "# #", "###", "# #", Character.valueOf('#'), ItemRegistry.B);
-        this.a(new Item(ItemRegistry.at, 1), "##", "##", "##", Character.valueOf('#'), Block.x);
-        this.a(new Item(ItemRegistry.az, 1), "##", "##", "##", Character.valueOf('#'), ItemRegistry.m);
-        this.a(new Item(ItemRegistry.as, 1), "###", "###", " X ", Character.valueOf('#'), Block.x, Character.valueOf('X'), ItemRegistry.B);
-        this.a(new Item(Block.x, 4), "#", Character.valueOf('#'), Block.J);
-        this.a(new Item(ItemRegistry.B, 4), "#", "#", Character.valueOf('#'), Block.x);
-        this.a(new Item(Block.aq, 4), "X", "#", Character.valueOf('X'), ItemRegistry.k, Character.valueOf('#'), ItemRegistry.B);
-        this.a(new Item(ItemRegistry.C, 4), "# #", " # ", Character.valueOf('#'), Block.x);
-        this.a(new Item(Block.aG, 16), "X X", "X#X", "X X", Character.valueOf('X'), ItemRegistry.m, Character.valueOf('#'), ItemRegistry.B);
-        this.a(new Item(ItemRegistry.ax, 1), "# #", "###", Character.valueOf('#'), ItemRegistry.m);
-        this.a(new Item(Block.bf, 1), "A", "B", Character.valueOf('A'), Block.ba, Character.valueOf('B'), Block.aq);
-        this.a(new Item(ItemRegistry.aL, 1), "A", "B", Character.valueOf('A'), Block.au, Character.valueOf('B'), ItemRegistry.ax);
-        this.a(new Item(ItemRegistry.aM, 1), "A", "B", Character.valueOf('A'), Block.aB, Character.valueOf('B'), ItemRegistry.ax);
-        this.a(new Item(ItemRegistry.aC, 1), "# #", "###", Character.valueOf('#'), Block.x);
-        this.a(new Item(ItemRegistry.au, 1), "# #", " # ", Character.valueOf('#'), ItemRegistry.m);
-        this.a(new Item(ItemRegistry.g, 1), "A ", " B", Character.valueOf('A'), ItemRegistry.m, Character.valueOf('B'), ItemRegistry.an);
-        this.a(new Item(ItemRegistry.S, 1), "###", Character.valueOf('#'), ItemRegistry.R);
-        this.a(new Item(Block.at, 4), "#  ", "## ", "###", Character.valueOf('#'), Block.x);
-        this.a(new Item(ItemRegistry.aP, 1), "  #", " #X", "# X", Character.valueOf('#'), ItemRegistry.B, Character.valueOf('X'), ItemRegistry.I);
-        this.a(new Item(Block.aH, 4), "#  ", "## ", "###", Character.valueOf('#'), Block.w);
-        this.a(new Item(ItemRegistry.aq, 1), "###", "#X#", "###", Character.valueOf('#'), ItemRegistry.B, Character.valueOf('X'), Block.ab);
-        this.a(new Item(ItemRegistry.ar, 1), "###", "#X#", "###", Character.valueOf('#'), Block.ah, Character.valueOf('X'), ItemRegistry.h);
-        this.a(new Item(Block.aJ, 1), "X", "#", Character.valueOf('#'), Block.w, Character.valueOf('X'), ItemRegistry.B);
-        this.a(new Item(Block.aQ, 1), "X", "#", Character.valueOf('#'), ItemRegistry.B, Character.valueOf('X'), ItemRegistry.aA);
-        this.a(new Item(ItemRegistry.aQ, 1), " # ", "#X#", " # ", Character.valueOf('#'), ItemRegistry.n, Character.valueOf('X'), ItemRegistry.aA);
-        this.a(new Item(ItemRegistry.aO, 1), " # ", "#X#", " # ", Character.valueOf('#'), ItemRegistry.m, Character.valueOf('X'), ItemRegistry.aA);
-        this.a(new Item(Block.aR, 1), "#", "#", Character.valueOf('#'), Block.t);
-        this.a(new Item(Block.aK, 1), "###", Character.valueOf('#'), Block.t);
-        this.a(new Item(Block.aM, 1), "###", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Item.aI, 3), "###", Character.valueOf('#'), Item.aH);
+        this.a(new InventoryItem(Item.aJ, 1), "#", "#", "#", Character.valueOf('#'), Item.aI);
+        this.a(new InventoryItem(Block.aZ, 2), "###", "###", Character.valueOf('#'), Item.B);
+        this.a(new InventoryItem(Block.aY, 1), "###", "#X#", "###", Character.valueOf('#'), Block.x, Character.valueOf('X'), Item.l);
+        this.a(new InventoryItem(Block.an, 1), "###", "XXX", "###", Character.valueOf('#'), Block.x, Character.valueOf('X'), Item.aJ);
+        this.a(new InventoryItem(Block.aU, 1), "##", "##", Character.valueOf('#'), Item.aB);
+        this.a(new InventoryItem(Block.aW, 1), "##", "##", Character.valueOf('#'), Item.aG);
+        this.a(new InventoryItem(Block.al, 1), "##", "##", Character.valueOf('#'), Item.aF);
+        this.a(new InventoryItem(Block.bd, 1), "###", "###", "###", Character.valueOf('#'), Item.aR);
+        this.a(new InventoryItem(Block.ab, 1), "###", "###", "###", Character.valueOf('#'), Item.I);
+        this.a(new InventoryItem(Block.am, 1), "X#X", "#X#", "X#X", Character.valueOf('X'), Item.K, Character.valueOf('#'), Block.E);
+        this.a(new InventoryItem(Block.ak, 3), "###", Character.valueOf('#'), Block.w);
+        this.a(new InventoryItem(Block.aF, 1), "# #", "###", "# #", Character.valueOf('#'), Item.B);
+        this.a(new InventoryItem(Item.at, 1), "##", "##", "##", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Item.az, 1), "##", "##", "##", Character.valueOf('#'), Item.m);
+        this.a(new InventoryItem(Item.as, 1), "###", "###", " X ", Character.valueOf('#'), Block.x, Character.valueOf('X'), Item.B);
+        this.a(new InventoryItem(Block.x, 4), "#", Character.valueOf('#'), Block.J);
+        this.a(new InventoryItem(Item.B, 4), "#", "#", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Block.aq, 4), "X", "#", Character.valueOf('X'), Item.k, Character.valueOf('#'), Item.B);
+        this.a(new InventoryItem(Item.C, 4), "# #", " # ", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Block.aG, 16), "X X", "X#X", "X X", Character.valueOf('X'), Item.m, Character.valueOf('#'), Item.B);
+        this.a(new InventoryItem(Item.ax, 1), "# #", "###", Character.valueOf('#'), Item.m);
+        this.a(new InventoryItem(Block.bf, 1), "A", "B", Character.valueOf('A'), Block.ba, Character.valueOf('B'), Block.aq);
+        this.a(new InventoryItem(Item.aL, 1), "A", "B", Character.valueOf('A'), Block.au, Character.valueOf('B'), Item.ax);
+        this.a(new InventoryItem(Item.aM, 1), "A", "B", Character.valueOf('A'), Block.aB, Character.valueOf('B'), Item.ax);
+        this.a(new InventoryItem(Item.aC, 1), "# #", "###", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Item.au, 1), "# #", " # ", Character.valueOf('#'), Item.m);
+        this.a(new InventoryItem(Item.g, 1), "A ", " B", Character.valueOf('A'), Item.m, Character.valueOf('B'), Item.an);
+        this.a(new InventoryItem(Item.S, 1), "###", Character.valueOf('#'), Item.R);
+        this.a(new InventoryItem(Block.at, 4), "#  ", "## ", "###", Character.valueOf('#'), Block.x);
+        this.a(new InventoryItem(Item.aP, 1), "  #", " #X", "# X", Character.valueOf('#'), Item.B, Character.valueOf('X'), Item.I);
+        this.a(new InventoryItem(Block.aH, 4), "#  ", "## ", "###", Character.valueOf('#'), Block.w);
+        this.a(new InventoryItem(Item.aq, 1), "###", "#X#", "###", Character.valueOf('#'), Item.B, Character.valueOf('X'), Block.ab);
+        this.a(new InventoryItem(Item.ar, 1), "###", "#X#", "###", Character.valueOf('#'), Block.ah, Character.valueOf('X'), Item.h);
+        this.a(new InventoryItem(Block.aJ, 1), "X", "#", Character.valueOf('#'), Block.w, Character.valueOf('X'), Item.B);
+        this.a(new InventoryItem(Block.aQ, 1), "X", "#", Character.valueOf('#'), Item.B, Character.valueOf('X'), Item.aA);
+        this.a(new InventoryItem(Item.aQ, 1), " # ", "#X#", " # ", Character.valueOf('#'), Item.n, Character.valueOf('X'), Item.aA);
+        this.a(new InventoryItem(Item.aO, 1), " # ", "#X#", " # ", Character.valueOf('#'), Item.m, Character.valueOf('X'), Item.aA);
+        this.a(new InventoryItem(Block.aR, 1), "#", "#", Character.valueOf('#'), Block.t);
+        this.a(new InventoryItem(Block.aK, 1), "###", Character.valueOf('#'), Block.t);
+        this.a(new InventoryItem(Block.aM, 1), "###", Character.valueOf('#'), Block.x);
         Collections.sort(this.recipes, new gr(this));
         System.out.println(this.recipes.size() + " recipes");
     }
 
-    void a(Item fp2, Object ... objectArray) {
+    void a(InventoryItem fp2, Object ... objectArray) {
         Object object;
         String string = "";
         int n2 = 0;
@@ -93,8 +93,8 @@ public class RecipeRegistry {
         while (n2 < objectArray.length) {
             Character c2 = (Character)objectArray[n2];
             int n5 = 0;
-            if (objectArray[n2 + 1] instanceof ItemRegistry) {
-                n5 = ((ItemRegistry)objectArray[n2 + 1]).id;
+            if (objectArray[n2 + 1] instanceof Item) {
+                n5 = ((Item)objectArray[n2 + 1]).id;
             } else if (objectArray[n2 + 1] instanceof Block) {
                 n5 = ((Block)objectArray[n2 + 1]).bh;
             }
@@ -111,7 +111,7 @@ public class RecipeRegistry {
         this.recipes.add(new Recipe(n3, n4, nArray, fp2));
     }
 
-    public Item a(int[] nArray) {
+    public InventoryItem a(int[] nArray) {
         for (int i2 = 0; i2 < this.recipes.size(); ++i2) {
             Recipe cd2 = (Recipe)this.recipes.get(i2);
             if (!cd2.a(nArray)) continue;

@@ -44,9 +44,9 @@ public class iv {
         return 5.0f;
     }
 
-    public boolean a(Player eb2, Session cy2, Item fp2) {
+    public boolean a(Player eb2, Session cy2, InventoryItem fp2) {
         int n2 = fp2.count;
-        Item fp3 = fp2.a(cy2, eb2);
+        InventoryItem fp3 = fp2.a(cy2, eb2);
         if (fp3 != fp2 || fp3 != null && fp3.count != n2) {
             eb2.e.storage[eb2.e.d] = fp3;
             if (fp3.count == 0) {
@@ -70,7 +70,7 @@ public class iv {
     public void b(Player eb2) {
     }
 
-    public boolean a(Player eb2, Session cy2, Item fp2, int n2, int n3, int n4, int n5) {
+    public boolean a(Player eb2, Session cy2, InventoryItem fp2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
         if (n6 > 0 && Block.m[n6].a(cy2, n2, n3, n4, eb2)) {
             return true;

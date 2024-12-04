@@ -5,7 +5,7 @@ package net.minecraft.client;
 public class Chest
 extends TileEntityRegistry
 implements hi {
-    private Item[] storage = new Item[36];
+    private InventoryItem[] storage = new InventoryItem[36];
 
     @Override
     public int c() {
@@ -13,20 +13,20 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
+    public InventoryItem c(int n2) {
         return this.storage[n2];
     }
 
     @Override
-    public Item a(int n2, int n3) {
+    public InventoryItem a(int n2, int n3) {
         if (this.storage[n2] != null) {
             if (this.storage[n2].count <= n3) {
-                Item fp2 = this.storage[n2];
+                InventoryItem fp2 = this.storage[n2];
                 this.storage[n2] = null;
                 this.h();
                 return fp2;
             }
-            Item fp3 = this.storage[n2].a(n3);
+            InventoryItem fp3 = this.storage[n2].a(n3);
             if (this.storage[n2].count == 0) {
                 this.storage[n2] = null;
             }
@@ -37,7 +37,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
+    public void a(int n2, InventoryItem fp2) {
         this.storage[n2] = fp2;
         if (fp2 != null && fp2.count > this.o_()) {
             fp2.count = this.o_();
@@ -54,12 +54,12 @@ implements hi {
     public void a(NBTCompoundTag iq2) {
         super.a(iq2);
         NBTListTag ly2 = iq2.getListTag("Items");
-        this.storage = new Item[this.c()];
+        this.storage = new InventoryItem[this.c()];
         for (int i2 = 0; i2 < ly2.c(); ++i2) {
             NBTCompoundTag iq3 = (NBTCompoundTag)ly2.a(i2);
             int n2 = iq3.getByte("Slot") & 0xFF;
             if (n2 < 0 || n2 >= this.storage.length) continue;
-            this.storage[n2] = new Item(iq3);
+            this.storage[n2] = new InventoryItem(iq3);
         }
     }
 

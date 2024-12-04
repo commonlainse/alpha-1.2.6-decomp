@@ -47,7 +47,7 @@ extends nb {
         if (this.g.y.i) {
             this.a(this.g.g.a(f2), n7, n8);
         }
-        Item fp2 = this.g.g.e.d(3);
+        InventoryItem fp2 = this.g.g.e.d(3);
         if (!this.g.y.y && fp2 != null && fp2.id == Block.ba.bh) {
             this.a(n7, n8);
         }
@@ -286,7 +286,7 @@ extends nb {
     }
 
     private void a(int n2, int n3, int n4, float f2) {
-        Item fp2 = this.g.g.e.storage[n2];
+        InventoryItem fp2 = this.g.g.e.storage[n2];
         if (fp2 == null) {
             return;
         }

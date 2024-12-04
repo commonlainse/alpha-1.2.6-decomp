@@ -715,7 +715,7 @@ extends lw {
         return 4;
     }
 
-    public Item l() {
+    public InventoryItem l() {
         return null;
     }
 

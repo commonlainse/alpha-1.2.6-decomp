@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class kg
-extends ItemRegistry {
+extends Item {
     private int a;
 
     public kg(int n2, int n3) {
@@ -17,17 +17,17 @@ extends ItemRegistry {
     }
 
     @Override
-    public float a(Item fp2, Block nq2) {
+    public float a(InventoryItem fp2, Block nq2) {
         return 1.5f;
     }
 
     @Override
-    public void a(Item fp2, Mob hf2) {
+    public void a(InventoryItem fp2, Mob hf2) {
         fp2.b(1);
     }
 
     @Override
-    public void a(Item fp2, int n2, int n3, int n4, int n5) {
+    public void a(InventoryItem fp2, int n2, int n3, int n4, int n5) {
         fp2.b(2);
     }
 

@@ -9,9 +9,9 @@ extends qk {
     }
 
     @Override
-    public Item a(Item fp2, Session cy2, Player eb2) {
+    public InventoryItem a(InventoryItem fp2, Session cy2, Player eb2) {
         super.a(fp2, cy2, eb2);
-        return new Item(ItemRegistry.C);
+        return new InventoryItem(Item.C);
     }
 }
 

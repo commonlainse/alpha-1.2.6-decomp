@@ -44,14 +44,14 @@ extends Creature {
 
     @Override
     protected int g_() {
-        return ItemRegistry.aD.id;
+        return Item.aD.id;
     }
 
     @Override
     public boolean a(Player eb2) {
-        Item fp2 = eb2.e.a();
-        if (fp2 != null && fp2.id == ItemRegistry.au.id) {
-            eb2.e.a(eb2.e.d, new Item(ItemRegistry.aE));
+        InventoryItem fp2 = eb2.e.a();
+        if (fp2 != null && fp2.id == Item.au.id) {
+            eb2.e.a(eb2.e.d, new InventoryItem(Item.aE));
             return true;
         }
         return false;

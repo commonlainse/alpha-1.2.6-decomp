@@ -103,7 +103,7 @@ extends lw {
         if (this.c++ == 100 && !this.k()) {
             this.c = 0;
             this.J();
-            this.as.a(new DroppedItem(this.as, this.aw, this.ax, this.ay, new Item(ItemRegistry.aq)));
+            this.as.a(new DroppedItem(this.as, this.aw, this.ax, this.ay, new InventoryItem(Item.aq)));
         }
     }
 
@@ -154,7 +154,7 @@ extends lw {
     public boolean a(lw lw2, int n2) {
         this.J();
         this.M();
-        this.as.a(new DroppedItem(this.as, this.aw, this.ax, this.ay, new Item(ItemRegistry.aq)));
+        this.as.a(new DroppedItem(this.as, this.aw, this.ax, this.ay, new InventoryItem(Item.aq)));
         return true;
     }
 

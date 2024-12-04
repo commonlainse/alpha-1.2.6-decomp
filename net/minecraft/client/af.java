@@ -20,7 +20,7 @@ extends aq {
 
     public void a(DroppedItem eo2, double d2, double d3, double d4, float f2, float f3) {
         this.e.setSeed(187L);
-        Item fp2 = eo2.a;
+        InventoryItem fp2 = eo2.a;
         GL11.glPushMatrix();
         float f4 = TrigLookup.a(((float)eo2.b + f3) / 10.0f + eo2.d) * 0.1f + 0.1f;
         float f5 = (((float)eo2.b + f3) / 20.0f + eo2.d) * 57.295776f;
@@ -94,7 +94,7 @@ extends aq {
         GL11.glPopMatrix();
     }
 
-    public void a(ls ls2, fu fu2, Item fp2, int n2, int n3) {
+    public void a(ls ls2, fu fu2, InventoryItem fp2, int n2, int n3) {
         if (fp2 == null) {
             return;
         }
@@ -125,7 +125,7 @@ extends aq {
         GL11.glEnable(2884);
     }
 
-    public void b(ls ls2, fu fu2, Item fp2, int n2, int n3) {
+    public void b(ls ls2, fu fu2, InventoryItem fp2, int n2, int n3) {
         if (fp2 == null) {
             return;
         }

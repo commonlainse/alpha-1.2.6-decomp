@@ -695,7 +695,7 @@ public abstract class lw {
     }
 
     public DroppedItem a(int n2, int n3, float f2) {
-        DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax + (double)f2, this.ay, new Item(n2, n3));
+        DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax + (double)f2, this.ay, new InventoryItem(n2, n3));
         eo2.c = 10;
         this.as.a(eo2);
         return eo2;

@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class bj
-extends ItemRegistry {
+extends Item {
     public bj(int n2) {
         super(n2);
         this.aY = 64;
@@ -20,7 +20,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public Item a(Item fp2, Session cy2, Player eb2) {
+    public InventoryItem a(InventoryItem fp2, Session cy2, Player eb2) {
         if (eb2.n != null) {
             int n2 = eb2.n.k();
             fp2.b(n2);

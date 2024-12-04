@@ -13,7 +13,7 @@ extends ax {
         for (int i2 = 0; i2 < 3; ++i2) {
             for (int i3 = 0; i3 < 3; ++i3) {
                 int n2 = i2 + i3 * 3;
-                Item fp2 = this.a.c(n2);
+                InventoryItem fp2 = this.a.c(n2);
                 nArray[n2] = fp2 == null ? -1 : fp2.id;
             }
         }
@@ -24,7 +24,7 @@ extends ax {
     public void a(Player eb2) {
         super.a(eb2);
         for (int i2 = 0; i2 < 9; ++i2) {
-            Item fp2 = this.a.c(i2);
+            InventoryItem fp2 = this.a.c(i2);
             if (fp2 == null) continue;
             eb2.a(fp2);
         }

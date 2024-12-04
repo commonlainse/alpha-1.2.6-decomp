@@ -25,7 +25,7 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
+    public InventoryItem c(int n2) {
         if (n2 >= this.b.c()) {
             return this.c.c(n2 - this.b.c());
         }
@@ -33,7 +33,7 @@ implements hi {
     }
 
     @Override
-    public Item a(int n2, int n3) {
+    public InventoryItem a(int n2, int n3) {
         if (n2 >= this.b.c()) {
             return this.c.a(n2 - this.b.c(), n3);
         }
@@ -41,7 +41,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
+    public void a(int n2, InventoryItem fp2) {
         if (n2 >= this.b.c()) {
             this.c.a(n2 - this.b.c(), fp2);
         } else {

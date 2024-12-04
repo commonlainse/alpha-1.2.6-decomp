@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class pw
-extends ItemRegistry {
+extends Item {
     public pw(int n2) {
         super(n2);
         this.aX = 1;
@@ -11,7 +11,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(InventoryItem fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         int n6;
         if (n5 == 0) {
             --n3;

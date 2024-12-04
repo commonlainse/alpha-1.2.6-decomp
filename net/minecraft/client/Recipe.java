@@ -6,10 +6,10 @@ public class Recipe {
     private int b;
     private int c;
     private int[] d;
-    private Item e;
+    private InventoryItem e;
     public final int a;
 
-    public Recipe(int n2, int n3, int[] nArray, Item fp2) {
+    public Recipe(int n2, int n3, int[] nArray, InventoryItem fp2) {
         this.a = fp2.id;
         this.b = n2;
         this.c = n3;
@@ -46,8 +46,8 @@ public class Recipe {
         return true;
     }
 
-    public Item b(int[] nArray) {
-        return new Item(this.e.id, this.e.count);
+    public InventoryItem b(int[] nArray) {
+        return new InventoryItem(this.e.id, this.e.count);
     }
 
     public int a() {

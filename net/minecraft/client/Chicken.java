@@ -42,7 +42,7 @@ extends Creature {
         this.b += this.f * 2.0f;
         if (!this.as.z && --this.i <= 0) {
             this.as.a(this, "mob.chickenplop", 1.0f, (this.bd.nextFloat() - this.bd.nextFloat()) * 0.2f + 1.0f);
-            this.b(ItemRegistry.aN.id, 1);
+            this.b(Item.aN.id, 1);
             this.i = this.bd.nextInt(6000) + 6000;
         }
     }
@@ -78,7 +78,7 @@ extends Creature {
 
     @Override
     protected int g_() {
-        return ItemRegistry.J.id;
+        return Item.J.id;
     }
 }
 

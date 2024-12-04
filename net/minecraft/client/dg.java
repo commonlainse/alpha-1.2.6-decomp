@@ -26,12 +26,12 @@ extends Block {
     public void e(Session cy2, int n2, int n3, int n4, int n5) {
         cy2.a((String)null, n2, n3, n4);
         cy2.b(n2, n3, n4, 0);
-        int n6 = ItemRegistry.aU.id + n5 - 1;
+        int n6 = Item.aU.id + n5 - 1;
         float f2 = 0.7f;
         double d2 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.5;
         double d3 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.2 + 0.6;
         double d4 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.5;
-        DroppedItem eo2 = new DroppedItem(cy2, (double)n2 + d2, (double)n3 + d3, (double)n4 + d4, new Item(n6));
+        DroppedItem eo2 = new DroppedItem(cy2, (double)n2 + d2, (double)n3 + d3, (double)n4 + d4, new InventoryItem(n6));
         eo2.c = 10;
         cy2.a(eo2);
     }

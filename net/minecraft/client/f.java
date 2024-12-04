@@ -776,7 +776,7 @@ implements jv {
         return this.m.size() == 0;
     }
 
-    public void a(Player eb2, nx nx2, int n2, Item fp2, float f2) {
+    public void a(Player eb2, nx nx2, int n2, InventoryItem fp2, float f2) {
         is is2 = is.a;
         GL11.glEnable(3042);
         GL11.glEnable(3008);
@@ -844,7 +844,7 @@ implements jv {
         GL11.glDisable(3008);
     }
 
-    public void b(Player eb2, nx nx2, int n2, Item fp2, float f2) {
+    public void b(Player eb2, nx nx2, int n2, InventoryItem fp2, float f2) {
         if (n2 == 0 && nx2.a == 0) {
             GL11.glEnable(3042);
             GL11.glBlendFunc(770, 771);
@@ -992,9 +992,9 @@ implements jv {
         } else if (string == "reddust") {
             this.t.h.a(new fh(this.k, d2, d3, d4));
         } else if (string == "snowballpoof") {
-            this.t.h.a(new jo(this.k, d2, d3, d4, ItemRegistry.aB));
+            this.t.h.a(new jo(this.k, d2, d3, d4, Item.aB));
         } else if (string == "slime") {
-            this.t.h.a(new jo(this.k, d2, d3, d4, ItemRegistry.aK));
+            this.t.h.a(new jo(this.k, d2, d3, d4, Item.aK));
         }
     }
 

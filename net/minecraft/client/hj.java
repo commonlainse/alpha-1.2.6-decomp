@@ -125,8 +125,8 @@ extends lw {
                 }
             }
             if (!this.as.z) {
-                Item fp2 = this.b.w();
-                if (this.b.aN || !this.b.E() || fp2 == null || fp2.a() != ItemRegistry.aP || this.f(this.b) > 1024.0) {
+                InventoryItem fp2 = this.b.w();
+                if (this.b.aN || !this.b.E() || fp2 == null || fp2.a() != Item.aP || this.f(this.b) > 1024.0) {
                     this.J();
                     this.b.n = null;
                     return;
@@ -309,7 +309,7 @@ extends lw {
             this.c.aB += d4 * d6;
             n2 = 3;
         } else if (this.k > 0) {
-            DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax, this.ay, new Item(ItemRegistry.aS.id));
+            DroppedItem eo2 = new DroppedItem(this.as, this.aw, this.ax, this.ay, new InventoryItem(Item.aS.id));
             double d7 = this.b.aw - this.aw;
             double d8 = this.b.ax - this.ax;
             double d9 = this.b.ay - this.ay;

@@ -3,14 +3,14 @@
  */
 package net.minecraft.client;
 public class nw
-extends ItemRegistry {
+extends Item {
     public nw(int n2) {
         super(n2);
         this.aX = 1;
     }
 
     @Override
-    public Item a(Item fp2, Session cy2, Player eb2) {
+    public InventoryItem a(InventoryItem fp2, Session cy2, Player eb2) {
         float f2;
         float f3;
         float f4;

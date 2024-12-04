@@ -119,7 +119,7 @@ extends Player {
         if (lw2.a(this)) {
             return;
         }
-        Item fp2 = this.w();
+        InventoryItem fp2 = this.w();
         if (fp2 != null && lw2 instanceof Mob) {
             fp2.b((Mob)lw2);
             if (fp2.count <= 0) {

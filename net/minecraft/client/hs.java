@@ -30,7 +30,7 @@ extends gk {
         this.e = TrigLookup.b(eb2.ay * 32.0);
         this.f = (byte)(eb2.aC * 256.0f / 360.0f);
         this.g = (byte)(eb2.aD * 256.0f / 360.0f);
-        Item fp2 = eb2.e.a();
+        InventoryItem fp2 = eb2.e.a();
         this.h = fp2 == null ? 0 : fp2.id;
     }
 

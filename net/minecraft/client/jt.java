@@ -15,7 +15,7 @@ extends iv {
     public void b(Player eb2) {
         for (int i2 = 0; i2 < 9; ++i2) {
             if (eb2.e.storage[i2] == null) {
-                this.a.g.e.storage[i2] = new Item(((Block)ea.a.get((int)i2)).bh);
+                this.a.g.e.storage[i2] = new InventoryItem(((Block)ea.a.get((int)i2)).bh);
                 continue;
             }
             this.a.g.e.storage[i2].count = 1;

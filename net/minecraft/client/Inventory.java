@@ -4,19 +4,19 @@
 package net.minecraft.client;
 public class Inventory
 implements hi {
-    public Item[] storage = new Item[37];
-    public Item[] b = new Item[4];
-    public Item[] c = new Item[4];
+    public InventoryItem[] storage = new InventoryItem[37];
+    public InventoryItem[] b = new InventoryItem[4];
+    public InventoryItem[] c = new InventoryItem[4];
     public int d = 0;
     private Player owner;
-    public Item holding;
+    public InventoryItem holding;
     public boolean f = false;
 
     public Inventory(Player eb2) {
         this.owner = eb2;
     }
 
-    public Item a() {
+    public InventoryItem a() {
         return this.storage[this.d];
     }
 
@@ -78,7 +78,7 @@ implements hi {
             return n3;
         }
         if (this.storage[n5] == null) {
-            this.storage[n5] = new Item(n2, 0);
+            this.storage[n5] = new InventoryItem(n2, 0);
         }
         if ((n4 = n3) > this.storage[n5].c() - this.storage[n5].count) {
             n4 = this.storage[n5].c() - this.storage[n5].count;
@@ -112,7 +112,7 @@ implements hi {
         return true;
     }
 
-    public boolean a(Item fp2) {
+    public boolean a(InventoryItem fp2) {
         int n2;
         if (fp2.damage == 0) {
             fp2.count = this.b(fp2.id, fp2.count);
@@ -129,19 +129,19 @@ implements hi {
     }
 
     @Override
-    public Item a(int n2, int n3) {
-        Item[] fpArray = this.storage;
+    public InventoryItem a(int n2, int n3) {
+        InventoryItem[] fpArray = this.storage;
         if (n2 >= this.storage.length) {
             fpArray = this.b;
             n2 -= this.storage.length;
         }
         if (fpArray[n2] != null) {
             if (fpArray[n2].count <= n3) {
-                Item fp2 = fpArray[n2];
+                InventoryItem fp2 = fpArray[n2];
                 fpArray[n2] = null;
                 return fp2;
             }
-            Item fp3 = fpArray[n2].a(n3);
+            InventoryItem fp3 = fpArray[n2].a(n3);
             if (fpArray[n2].count == 0) {
                 fpArray[n2] = null;
             }
@@ -151,8 +151,8 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
-        Item[] fpArray = this.storage;
+    public void a(int n2, InventoryItem fp2) {
+        InventoryItem[] fpArray = this.storage;
         if (n2 >= fpArray.length) {
             n2 -= fpArray.length;
             fpArray = this.b;
@@ -200,20 +200,20 @@ implements hi {
     }
 
     public void b(NBTListTag ly2) {
-        this.storage = new Item[36];
-        this.b = new Item[4];
-        this.c = new Item[4];
+        this.storage = new InventoryItem[36];
+        this.b = new InventoryItem[4];
+        this.c = new InventoryItem[4];
         for (int i2 = 0; i2 < ly2.c(); ++i2) {
             NBTCompoundTag iq2 = (NBTCompoundTag)ly2.a(i2);
             int n2 = iq2.getByte("Slot") & 0xFF;
             if (n2 >= 0 && n2 < this.storage.length) {
-                this.storage[n2] = new Item(iq2);
+                this.storage[n2] = new InventoryItem(iq2);
             }
             if (n2 >= 80 && n2 < this.c.length + 80) {
-                this.c[n2 - 80] = new Item(iq2);
+                this.c[n2 - 80] = new InventoryItem(iq2);
             }
             if (n2 < 100 || n2 >= this.b.length + 100) continue;
-            this.b[n2 - 100] = new Item(iq2);
+            this.b[n2 - 100] = new InventoryItem(iq2);
         }
     }
 
@@ -223,8 +223,8 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
-        Item[] fpArray = this.storage;
+    public InventoryItem c(int n2) {
+        InventoryItem[] fpArray = this.storage;
         if (n2 >= fpArray.length) {
             n2 -= fpArray.length;
             fpArray = this.b;
@@ -247,7 +247,7 @@ implements hi {
     }
 
     public int a(lw lw2) {
-        Item fp2 = this.c(this.d);
+        InventoryItem fp2 = this.c(this.d);
         if (fp2 != null) {
             return fp2.a(lw2);
         }
@@ -258,14 +258,14 @@ implements hi {
         if (nq2.bs != hb.d && nq2.bs != hb.e && nq2.bs != hb.t && nq2.bs != hb.s) {
             return true;
         }
-        Item fp2 = this.c(this.d);
+        InventoryItem fp2 = this.c(this.d);
         if (fp2 != null) {
             return fp2.b(nq2);
         }
         return false;
     }
 
-    public Item d(int n2) {
+    public InventoryItem d(int n2) {
         return this.b[n2];
     }
 
@@ -335,7 +335,7 @@ implements hi {
         return true;
     }
 
-    private boolean a(Item fp2, Item fp3) {
+    private boolean a(InventoryItem fp2, InventoryItem fp3) {
         if (fp2 == null && fp3 == null) {
             return true;
         }

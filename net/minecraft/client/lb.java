@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class lb
-extends ItemRegistry {
+extends Item {
     public int a;
 
     public lb(int n2, int n3) {
@@ -13,7 +13,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(InventoryItem fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
         if (n6 == Block.aG.bh) {
             if (!cy2.z) {

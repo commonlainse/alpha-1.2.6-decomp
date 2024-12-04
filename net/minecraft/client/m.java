@@ -18,7 +18,7 @@ extends ec {
 
     @Override
     protected void b(Mob hf2, float f2) {
-        Item fp2 = hf2.l();
+        InventoryItem fp2 = hf2.l();
         if (fp2 != null) {
             GL11.glPushMatrix();
             this.a.d.b(0.0625f);
@@ -29,7 +29,7 @@ extends ec {
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);
                 GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
                 GL11.glScalef((float)(f3 *= 0.75f), (float)(-f3), (float)f3);
-            } else if (ItemRegistry.c[fp2.id].a()) {
+            } else if (Item.c[fp2.id].a()) {
                 float f4 = 0.625f;
                 GL11.glTranslatef(0.0f, 0.1875f, 0.0f);
                 GL11.glScalef((float)f4, (float)(-f4), (float)f4);

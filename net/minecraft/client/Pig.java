@@ -51,7 +51,7 @@ extends Creature {
 
     @Override
     protected int g_() {
-        return ItemRegistry.ao.id;
+        return Item.ao.id;
     }
 }
 

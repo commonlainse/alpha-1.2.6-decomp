@@ -19,7 +19,7 @@ extends of {
     }
 
     @Override
-    public boolean a(Item fp2) {
+    public boolean a(InventoryItem fp2) {
         if (fp2.a() instanceof oj) {
             return ((oj)fp2.a()).bb == this.c;
         }

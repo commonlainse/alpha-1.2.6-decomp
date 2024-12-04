@@ -95,7 +95,7 @@ extends Monster {
     public void b(lw lw2) {
         super.b(lw2);
         if (lw2 instanceof Skeleton) {
-            this.b(ItemRegistry.aU.id + this.bd.nextInt(2), 1);
+            this.b(Item.aU.id + this.bd.nextInt(2), 1);
         }
     }
 
@@ -121,7 +121,7 @@ extends Monster {
 
     @Override
     protected int g_() {
-        return ItemRegistry.K.id;
+        return Item.K.id;
     }
 }
 

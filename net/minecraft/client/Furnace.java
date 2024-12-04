@@ -5,7 +5,7 @@ package net.minecraft.client;
 public class Furnace
 extends TileEntityRegistry
 implements hi {
-    private Item[] a = new Item[3];
+    private InventoryItem[] a = new InventoryItem[3];
     private int burnTime = 0;
     private int c = 0;
     private int cookTime = 0;
@@ -16,19 +16,19 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
+    public InventoryItem c(int n2) {
         return this.a[n2];
     }
 
     @Override
-    public Item a(int n2, int n3) {
+    public InventoryItem a(int n2, int n3) {
         if (this.a[n2] != null) {
             if (this.a[n2].count <= n3) {
-                Item fp2 = this.a[n2];
+                InventoryItem fp2 = this.a[n2];
                 this.a[n2] = null;
                 return fp2;
             }
-            Item fp3 = this.a[n2].a(n3);
+            InventoryItem fp3 = this.a[n2].a(n3);
             if (this.a[n2].count == 0) {
                 this.a[n2] = null;
             }
@@ -38,7 +38,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
+    public void a(int n2, InventoryItem fp2) {
         this.a[n2] = fp2;
         if (fp2 != null && fp2.count > this.o_()) {
             fp2.count = this.o_();
@@ -54,12 +54,12 @@ implements hi {
     public void a(NBTCompoundTag iq2) {
         super.a(iq2);
         NBTListTag ly2 = iq2.getListTag("Items");
-        this.a = new Item[this.c()];
+        this.a = new InventoryItem[this.c()];
         for (int i2 = 0; i2 < ly2.c(); ++i2) {
             NBTCompoundTag iq3 = (NBTCompoundTag)ly2.a(i2);
             byte by2 = iq3.getByte("Slot");
             if (by2 < 0 || by2 >= this.a.length) continue;
-            this.a[by2] = new Item(iq3);
+            this.a[by2] = new InventoryItem(iq3);
         }
         this.burnTime = iq2.getShort("BurnTime");
         this.cookTime = iq2.getShort("CookTime");
@@ -159,7 +159,7 @@ implements hi {
         if (this.a[2].count < this.o_() && this.a[2].count < this.a[2].c()) {
             return true;
         }
-        return this.a[2].count < ItemRegistry.c[n2].c();
+        return this.a[2].count < Item.c[n2].c();
     }
 
     public void i() {
@@ -168,7 +168,7 @@ implements hi {
         }
         int n2 = this.d(this.a[0].a().id);
         if (this.a[2] == null) {
-            this.a[2] = new Item(n2, 1);
+            this.a[2] = new InventoryItem(n2, 1);
         } else if (this.a[2].id == n2) {
             ++this.a[2].count;
         }
@@ -180,33 +180,33 @@ implements hi {
 
     private int d(int n2) {
         if (n2 == Block.H.bh) {
-            return ItemRegistry.m.id;
+            return Item.m.id;
         }
         if (n2 == Block.G.bh) {
-            return ItemRegistry.n.id;
+            return Item.n.id;
         }
         if (n2 == Block.aw.bh) {
-            return ItemRegistry.l.id;
+            return Item.l.id;
         }
         if (n2 == Block.E.bh) {
             return Block.M.bh;
         }
-        if (n2 == ItemRegistry.ao.id) {
-            return ItemRegistry.ap.id;
+        if (n2 == Item.ao.id) {
+            return Item.ap.id;
         }
-        if (n2 == ItemRegistry.aS.id) {
-            return ItemRegistry.aT.id;
+        if (n2 == Item.aS.id) {
+            return Item.aT.id;
         }
         if (n2 == Block.w.bh) {
             return Block.t.bh;
         }
-        if (n2 == ItemRegistry.aG.id) {
-            return ItemRegistry.aF.id;
+        if (n2 == Item.aG.id) {
+            return Item.aF.id;
         }
         return -1;
     }
 
-    private int a(Item fp2) {
+    private int a(InventoryItem fp2) {
         if (fp2 == null) {
             return 0;
         }
@@ -214,13 +214,13 @@ implements hi {
         if (n2 < 256 && Block.m[n2].bs == hb.c) {
             return 300;
         }
-        if (n2 == ItemRegistry.B.id) {
+        if (n2 == Item.B.id) {
             return 100;
         }
-        if (n2 == ItemRegistry.k.id) {
+        if (n2 == Item.k.id) {
             return 1600;
         }
-        if (n2 == ItemRegistry.aw.id) {
+        if (n2 == Item.aw.id) {
             return 20000;
         }
         return 0;

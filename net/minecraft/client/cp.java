@@ -76,7 +76,7 @@ extends js {
                 cy2.d(n5, n13, n12, Block.au.bh);
                 Chest ga2 = (Chest)cy2.b(n5, n13, n12);
                 for (int i2 = 0; i2 < 8; ++i2) {
-                    Item fp2 = this.a(random);
+                    InventoryItem fp2 = this.a(random);
                     if (fp2 == null) continue;
                     ga2.a(random.nextInt(ga2.c()), fp2);
                 }
@@ -89,37 +89,37 @@ extends js {
         return true;
     }
 
-    private Item a(Random random) {
+    private InventoryItem a(Random random) {
         int n2 = random.nextInt(11);
         if (n2 == 0) {
-            return new Item(ItemRegistry.ay);
+            return new InventoryItem(Item.ay);
         }
         if (n2 == 1) {
-            return new Item(ItemRegistry.m, random.nextInt(4) + 1);
+            return new InventoryItem(Item.m, random.nextInt(4) + 1);
         }
         if (n2 == 2) {
-            return new Item(ItemRegistry.S);
+            return new InventoryItem(Item.S);
         }
         if (n2 == 3) {
-            return new Item(ItemRegistry.R, random.nextInt(4) + 1);
+            return new InventoryItem(Item.R, random.nextInt(4) + 1);
         }
         if (n2 == 4) {
-            return new Item(ItemRegistry.K, random.nextInt(4) + 1);
+            return new InventoryItem(Item.K, random.nextInt(4) + 1);
         }
         if (n2 == 5) {
-            return new Item(ItemRegistry.I, random.nextInt(4) + 1);
+            return new InventoryItem(Item.I, random.nextInt(4) + 1);
         }
         if (n2 == 6) {
-            return new Item(ItemRegistry.au);
+            return new InventoryItem(Item.au);
         }
         if (n2 == 7 && random.nextInt(100) == 0) {
-            return new Item(ItemRegistry.ar);
+            return new InventoryItem(Item.ar);
         }
         if (n2 == 8 && random.nextInt(2) == 0) {
-            return new Item(ItemRegistry.aA, random.nextInt(4) + 1);
+            return new InventoryItem(Item.aA, random.nextInt(4) + 1);
         }
         if (n2 == 9 && random.nextInt(10) == 0) {
-            return new Item(ItemRegistry.c[ItemRegistry.aU.id + random.nextInt(2)]);
+            return new InventoryItem(Item.c[Item.aU.id + random.nextInt(2)]);
         }
         return null;
     }

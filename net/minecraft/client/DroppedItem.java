@@ -4,14 +4,14 @@
 package net.minecraft.client;
 public class DroppedItem
 extends lw {
-    public Item a;
+    public InventoryItem a;
     private int e;
     public int b = 0;
     public int c;
     private int f = 5;
     public float d = (float)(Math.random() * Math.PI * 2.0);
 
-    public DroppedItem(Session cy2, double d2, double d3, double d4, Item fp2) {
+    public DroppedItem(Session cy2, double d2, double d3, double d4, InventoryItem fp2) {
         super(cy2);
         this.a(0.25f, 0.25f);
         this.aO = this.aQ / 2.0f;
@@ -165,7 +165,7 @@ extends lw {
         this.f = iq2.getShort("Health") & 0xFF;
         this.b = iq2.getShort("Age");
         NBTCompoundTag iq3 = iq2.getCompoundTag("Item");
-        this.a = new Item(iq3);
+        this.a = new InventoryItem(iq3);
     }
 
     @Override

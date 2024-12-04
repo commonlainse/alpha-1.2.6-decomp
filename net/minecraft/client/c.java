@@ -149,7 +149,7 @@ extends lh {
     public void b(Session cy2, int n2, int n3, int n4) {
         Chest ga2 = (Chest)cy2.b(n2, n3, n4);
         for (int i2 = 0; i2 < ga2.c(); ++i2) {
-            Item fp2 = ga2.c(i2);
+            InventoryItem fp2 = ga2.c(i2);
             if (fp2 == null) continue;
             float f2 = this.a.nextFloat() * 0.8f + 0.1f;
             float f3 = this.a.nextFloat() * 0.8f + 0.1f;
@@ -160,7 +160,7 @@ extends lh {
                     n5 = fp2.count;
                 }
                 fp2.count -= n5;
-                DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f2, (float)n3 + f3, (float)n4 + f4, new Item(fp2.id, n5, fp2.damage));
+                DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f2, (float)n3 + f3, (float)n4 + f4, new InventoryItem(fp2.id, n5, fp2.damage));
                 float f5 = 0.05f;
                 eo2.az = (float)this.a.nextGaussian() * f5;
                 eo2.aA = (float)this.a.nextGaussian() * f5 + 0.2f;

@@ -3,13 +3,13 @@
  */
 package net.minecraft.client;
 public class ey
-extends ItemRegistry {
+extends Item {
     public ey(int n2) {
         super(n2);
     }
 
     @Override
-    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(InventoryItem fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         if (n5 == 0) {
             --n3;
         }

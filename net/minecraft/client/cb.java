@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class cb
-extends ItemRegistry {
+extends Item {
     private Block[] bb;
     private float bc = 4.0f;
     private int bd;
@@ -23,7 +23,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public float a(Item fp2, Block nq2) {
+    public float a(InventoryItem fp2, Block nq2) {
         for (int i2 = 0; i2 < this.bb.length; ++i2) {
             if (this.bb[i2] != nq2) continue;
             return this.bc;
@@ -32,12 +32,12 @@ extends ItemRegistry {
     }
 
     @Override
-    public void a(Item fp2, Mob hf2) {
+    public void a(InventoryItem fp2, Mob hf2) {
         fp2.b(2);
     }
 
     @Override
-    public void a(Item fp2, int n2, int n3, int n4, int n5) {
+    public void a(InventoryItem fp2, int n2, int n3, int n4, int n5) {
         fp2.b(1);
     }
 

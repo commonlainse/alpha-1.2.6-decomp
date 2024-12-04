@@ -73,7 +73,7 @@ extends lw {
                 this.a(Block.x.bh, 1, 0.0f);
             }
             for (n3 = 0; n3 < 2; ++n3) {
-                this.a(ItemRegistry.B.id, 1, 0.0f);
+                this.a(Item.B.id, 1, 0.0f);
             }
             this.J();
         }
@@ -222,7 +222,7 @@ extends lw {
                     this.a(Block.x.bh, 1, 0.0f);
                 }
                 for (n4 = 0; n4 < 2; ++n4) {
-                    this.a(ItemRegistry.B.id, 1, 0.0f);
+                    this.a(Item.B.id, 1, 0.0f);
                 }
             }
         } else {

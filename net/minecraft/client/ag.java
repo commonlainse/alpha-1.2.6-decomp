@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class ag
-extends ItemRegistry {
+extends Item {
     private int a;
 
     public ag(int n2, int n3) {
@@ -14,7 +14,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public Item a(Item fp2, Session cy2, Player eb2) {
+    public InventoryItem a(InventoryItem fp2, Session cy2, Player eb2) {
         float f2;
         float f3;
         float f4;
@@ -45,15 +45,15 @@ extends ItemRegistry {
             if (this.a == 0) {
                 if (cy2.f(n2, n3, n4) == hb.f && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new Item(ItemRegistry.av);
+                    return new InventoryItem(Item.av);
                 }
                 if (cy2.f(n2, n3, n4) == hb.g && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new Item(ItemRegistry.aw);
+                    return new InventoryItem(Item.aw);
                 }
             } else {
                 if (this.a < 0) {
-                    return new Item(ItemRegistry.au);
+                    return new InventoryItem(Item.au);
                 }
                 if (nx2.e == 0) {
                     --n3;
@@ -82,11 +82,11 @@ extends ItemRegistry {
                     } else {
                         cy2.b(n2, n3, n4, this.a, 0);
                     }
-                    return new Item(ItemRegistry.au);
+                    return new InventoryItem(Item.au);
                 }
             }
         } else if (this.a == 0 && nx2.g instanceof Cow) {
-            return new Item(ItemRegistry.aE);
+            return new InventoryItem(Item.aE);
         }
         return fp2;
     }

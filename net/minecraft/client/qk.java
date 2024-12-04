@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class qk
-extends ItemRegistry {
+extends Item {
     private int a;
 
     public qk(int n2, int n3) {
@@ -13,7 +13,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public Item a(Item fp2, Session cy2, Player eb2) {
+    public InventoryItem a(InventoryItem fp2, Session cy2, Player eb2) {
         --fp2.count;
         eb2.c(this.a);
         return fp2;

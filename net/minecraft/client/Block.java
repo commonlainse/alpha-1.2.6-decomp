@@ -321,7 +321,7 @@ public class Block {
             double d2 = (double)(cy2.l.nextFloat() * f3) + (double)(1.0f - f3) * 0.5;
             double d3 = (double)(cy2.l.nextFloat() * f3) + (double)(1.0f - f3) * 0.5;
             double d4 = (double)(cy2.l.nextFloat() * f3) + (double)(1.0f - f3) * 0.5;
-            DroppedItem eo2 = new DroppedItem(cy2, (double)n2 + d2, (double)n3 + d3, (double)n4 + d4, new Item(n7));
+            DroppedItem eo2 = new DroppedItem(cy2, (double)n2 + d2, (double)n3 + d3, (double)n4 + d4, new InventoryItem(n7));
             eo2.c = 10;
             cy2.a(eo2);
         }
@@ -491,7 +491,7 @@ public class Block {
     static {
         for (int i2 = 0; i2 < 256; ++i2) {
             if (m[i2] == null) continue;
-            ItemRegistry.c[i2] = new bc(i2 - 256);
+            Item.c[i2] = new bc(i2 - 256);
         }
     }
 }

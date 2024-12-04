@@ -69,7 +69,7 @@ extends bp {
         int n3 = of2.a;
         int n4 = of2.e;
         int n5 = of2.f;
-        Item fp2 = hi2.c(n3);
+        InventoryItem fp2 = hi2.c(n3);
         if (fp2 == null && (n2 = of2.c()) >= 0) {
             GL11.glDisable(2896);
             this.b.n.b(this.b.n.a("/gui/items.png"));
@@ -96,7 +96,7 @@ extends bp {
             dz dz2 = this.a(n2, n3);
             Inventory fo2 = this.b.g.e;
             if (dz2 != null) {
-                Item fp2 = dz2.b();
+                InventoryItem fp2 = dz2.b();
                 if (fp2 != null || fo2.holding != null) {
                     if (fp2 != null && fo2.holding == null) {
                         int n5 = n4 == 0 ? fp2.count : (fp2.count + 1) / 2;
@@ -120,7 +120,7 @@ extends bp {
                         if (dz2.a(fo2.holding)) {
                             if (fp2.id != fo2.holding.id) {
                                 if (fo2.holding.count <= dz2.e()) {
-                                    Item fp3 = fp2;
+                                    InventoryItem fp3 = fp2;
                                     dz2.b(fo2.holding);
                                     fo2.holding = fp3;
                                 }

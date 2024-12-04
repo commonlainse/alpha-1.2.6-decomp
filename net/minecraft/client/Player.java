@@ -103,7 +103,7 @@ extends Mob {
         this.b(this.aw, this.ax, this.ay);
         this.aA = 0.1f;
         if (this.name.equals("Notch")) {
-            this.a(new Item(ItemRegistry.h, 1), true);
+            this.a(new InventoryItem(Item.h, 1), true);
         }
         this.e.g();
         if (lw2 != null) {
@@ -121,11 +121,11 @@ extends Mob {
         this.g += n2;
     }
 
-    public void a(Item fp2) {
+    public void a(InventoryItem fp2) {
         this.a(fp2, false);
     }
 
-    public void a(Item fp2, boolean bl2) {
+    public void a(InventoryItem fp2, boolean bl2) {
         if (fp2 == null) {
             return;
         }
@@ -243,7 +243,7 @@ extends Mob {
         lw2.a(this);
     }
 
-    public Item w() {
+    public InventoryItem w() {
         return this.e.a();
     }
 
@@ -265,7 +265,7 @@ extends Mob {
         int n2 = this.e.a(lw2);
         if (n2 > 0) {
             lw2.a(this, n2);
-            Item fp2 = this.w();
+            InventoryItem fp2 = this.w();
             if (fp2 != null && lw2 instanceof Mob) {
                 fp2.a((Mob)lw2);
                 if (fp2.count <= 0) {

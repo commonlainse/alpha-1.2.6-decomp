@@ -3,14 +3,14 @@
  */
 package net.minecraft.client;
 public class qe
-extends ItemRegistry {
+extends Item {
     public qe(int n2) {
         super(n2);
         this.aY = 64;
     }
 
     @Override
-    public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
+    public boolean a(InventoryItem fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         Painting kp2;
         if (n5 == 0) {
             return false;

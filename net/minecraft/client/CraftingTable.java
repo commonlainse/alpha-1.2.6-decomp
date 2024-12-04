@@ -4,17 +4,17 @@
 package net.minecraft.client;
 public class CraftingTable
 implements hi {
-    private Item[] a;
+    private InventoryItem[] a;
     private int b;
     private ax c;
 
     public CraftingTable(ax ax2, int n2, int n3) {
         this.b = n2 * n3;
-        this.a = new Item[this.b];
+        this.a = new InventoryItem[this.b];
         this.c = ax2;
     }
 
-    public CraftingTable(ax ax2, Item[] fpArray) {
+    public CraftingTable(ax ax2, InventoryItem[] fpArray) {
         this.b = fpArray.length;
         this.a = fpArray;
         this.c = ax2;
@@ -26,7 +26,7 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
+    public InventoryItem c(int n2) {
         return this.a[n2];
     }
 
@@ -36,15 +36,15 @@ implements hi {
     }
 
     @Override
-    public Item a(int n2, int n3) {
+    public InventoryItem a(int n2, int n3) {
         if (this.a[n2] != null) {
             if (this.a[n2].count <= n3) {
-                Item fp2 = this.a[n2];
+                InventoryItem fp2 = this.a[n2];
                 this.a[n2] = null;
                 this.c.a(this);
                 return fp2;
             }
-            Item fp3 = this.a[n2].a(n3);
+            InventoryItem fp3 = this.a[n2].a(n3);
             if (this.a[n2].count == 0) {
                 this.a[n2] = null;
             }
@@ -55,7 +55,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
+    public void a(int n2, InventoryItem fp2) {
         this.a[n2] = fp2;
         this.c.a(this);
     }

@@ -176,9 +176,9 @@ extends Block {
             return 0;
         }
         if (this.bs == hb.e) {
-            return ItemRegistry.az.id;
+            return Item.az.id;
         }
-        return ItemRegistry.at.id;
+        return Item.at.id;
     }
 
     @Override

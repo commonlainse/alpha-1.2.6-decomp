@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class lk
-extends ItemRegistry {
+extends Item {
     public lk(int n2) {
         super(n2);
         this.aX = 1;
@@ -11,7 +11,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public void b(Item fp2, Mob hf2) {
+    public void b(InventoryItem fp2, Mob hf2) {
         if (hf2 instanceof Pig) {
             Pig op2 = (Pig)hf2;
             if (!op2.a) {
@@ -22,7 +22,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public void a(Item fp2, Mob hf2) {
+    public void a(InventoryItem fp2, Mob hf2) {
         this.b(fp2, hf2);
     }
 }

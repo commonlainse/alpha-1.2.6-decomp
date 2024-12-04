@@ -15,15 +15,15 @@ public class dz {
         this.d();
     }
 
-    public boolean a(Item fp2) {
+    public boolean a(InventoryItem fp2) {
         return true;
     }
 
-    public Item b() {
+    public InventoryItem b() {
         return this.b.c(this.a);
     }
 
-    public void b(Item fp2) {
+    public void b(InventoryItem fp2) {
         this.b.a(this.a, fp2);
         this.d();
     }

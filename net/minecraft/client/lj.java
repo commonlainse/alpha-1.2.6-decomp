@@ -12,7 +12,7 @@ extends Block {
 
     @Override
     public int a(int n2, Random random) {
-        return ItemRegistry.aG.id;
+        return Item.aG.id;
     }
 
     @Override

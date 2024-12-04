@@ -13,10 +13,10 @@ extends Block {
     @Override
     public int a(int n2, Random random) {
         if (this.bh == Block.I.bh) {
-            return ItemRegistry.k.id;
+            return Item.k.id;
         }
         if (this.bh == Block.aw.bh) {
-            return ItemRegistry.l.id;
+            return Item.l.id;
         }
         return this.bh;
     }

@@ -74,7 +74,7 @@ extends Monster {
 
     @Override
     protected int g_() {
-        return ItemRegistry.I.id;
+        return Item.I.id;
     }
 }
 

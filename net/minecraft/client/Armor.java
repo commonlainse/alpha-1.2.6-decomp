@@ -22,8 +22,8 @@ extends ec {
     }
 
     protected boolean a(Player eb2, int n2) {
-        ItemRegistry dx2;
-        Item fp2 = eb2.e.d(3 - n2);
+        Item dx2;
+        InventoryItem fp2 = eb2.e.d(3 - n2);
         if (fp2 != null && (dx2 = fp2.a()) instanceof oj) {
             oj oj2 = (oj)dx2;
             this.a("/armor/" + i[oj2.bd] + "_" + (n2 == 2 ? 2 : 1) + ".png");
@@ -43,7 +43,7 @@ extends ec {
 
     public void a(Player eb2, double d2, double d3, double d4, float f2, float f3) {
         float f4;
-        Item fp2 = eb2.e.a();
+        InventoryItem fp2 = eb2.e.a();
         this.a.i = fp2 != null;
         this.h.i = this.a.i;
         this.g.i = this.a.i;
@@ -126,8 +126,8 @@ extends ec {
     }
 
     protected void a(Player eb2, float f2) {
-        Item fp2;
-        Item fp3 = eb2.e.d(3);
+        InventoryItem fp2;
+        InventoryItem fp3 = eb2.e.d(3);
         if (fp3 != null && fp3.a().id < 256) {
             GL11.glPushMatrix();
             this.a.a.b(0.0625f);
@@ -145,7 +145,7 @@ extends ec {
             this.a.d.b(0.0625f);
             GL11.glTranslatef(-0.0625f, 0.4375f, 0.0625f);
             if (eb2.n != null) {
-                fp2 = new Item(ItemRegistry.B.id);
+                fp2 = new InventoryItem(Item.B.id);
             }
             if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
                 float f4 = 0.5f;
@@ -153,9 +153,9 @@ extends ec {
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);
                 GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
                 GL11.glScalef((float)(f4 *= 0.75f), (float)(-f4), (float)f4);
-            } else if (ItemRegistry.c[fp2.id].a()) {
+            } else if (Item.c[fp2.id].a()) {
                 float f5 = 0.625f;
-                if (ItemRegistry.c[fp2.id].b()) {
+                if (Item.c[fp2.id].b()) {
                     GL11.glRotatef(180.0f, 0.0f, 0.0f, 1.0f);
                     GL11.glTranslatef(0.0f, -0.125f, 0.0f);
                 }

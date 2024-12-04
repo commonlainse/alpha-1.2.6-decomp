@@ -78,7 +78,7 @@ extends Block {
 
     @Override
     public int a(int n2, Random random) {
-        return ItemRegistry.aH.id;
+        return Item.aH.id;
     }
 
     @Override

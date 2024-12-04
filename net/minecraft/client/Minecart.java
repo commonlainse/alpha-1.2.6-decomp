@@ -7,7 +7,7 @@ import java.util.List;
 public class Minecart
 extends lw
 implements hi {
-    private Item[] h = new Item[36];
+    private InventoryItem[] h = new InventoryItem[36];
     public int a = 0;
     public int b = 0;
     public int c = 1;
@@ -77,7 +77,7 @@ implements hi {
         this.M();
         this.a += n2 * 10;
         if (this.a > 40) {
-            this.a(ItemRegistry.ax.id, 1, 0.0f);
+            this.a(Item.ax.id, 1, 0.0f);
             if (this.d == 1) {
                 this.a(Block.au.bh, 1, 0.0f);
             } else if (this.d == 2) {
@@ -104,7 +104,7 @@ implements hi {
     @Override
     public void J() {
         for (int i2 = 0; i2 < this.c(); ++i2) {
-            Item fp2 = this.c(i2);
+            InventoryItem fp2 = this.c(i2);
             if (fp2 == null) continue;
             float f2 = this.bd.nextFloat() * 0.8f + 0.1f;
             float f3 = this.bd.nextFloat() * 0.8f + 0.1f;
@@ -115,7 +115,7 @@ implements hi {
                     n2 = fp2.count;
                 }
                 fp2.count -= n2;
-                DroppedItem eo2 = new DroppedItem(this.as, this.aw + (double)f2, this.ax + (double)f3, this.ay + -0.0, new Item(fp2.id, n2, fp2.damage));
+                DroppedItem eo2 = new DroppedItem(this.as, this.aw + (double)f2, this.ax + (double)f3, this.ay + -0.0, new InventoryItem(fp2.id, n2, fp2.damage));
                 float f5 = 0.05f;
                 eo2.az = (float)this.bd.nextGaussian() * f5;
                 eo2.aA = (float)this.bd.nextGaussian() * f5 + 0.2f;
@@ -476,12 +476,12 @@ implements hi {
             this.e = iq2.getShort("Fuel");
         } else if (this.d == 1) {
             NBTListTag ly2 = iq2.getListTag("Items");
-            this.h = new Item[this.c()];
+            this.h = new InventoryItem[this.c()];
             for (int i2 = 0; i2 < ly2.c(); ++i2) {
                 NBTCompoundTag iq3 = (NBTCompoundTag)ly2.a(i2);
                 int n2 = iq3.getByte("Slot") & 0xFF;
                 if (n2 < 0 || n2 >= this.h.length) continue;
-                this.h[n2] = new Item(iq3);
+                this.h[n2] = new InventoryItem(iq3);
             }
         }
     }
@@ -557,19 +557,19 @@ implements hi {
     }
 
     @Override
-    public Item c(int n2) {
+    public InventoryItem c(int n2) {
         return this.h[n2];
     }
 
     @Override
-    public Item a(int n2, int n3) {
+    public InventoryItem a(int n2, int n3) {
         if (this.h[n2] != null) {
             if (this.h[n2].count <= n3) {
-                Item fp2 = this.h[n2];
+                InventoryItem fp2 = this.h[n2];
                 this.h[n2] = null;
                 return fp2;
             }
-            Item fp3 = this.h[n2].a(n3);
+            InventoryItem fp3 = this.h[n2].a(n3);
             if (this.h[n2].count == 0) {
                 this.h[n2] = null;
             }
@@ -579,7 +579,7 @@ implements hi {
     }
 
     @Override
-    public void a(int n2, Item fp2) {
+    public void a(int n2, InventoryItem fp2) {
         this.h[n2] = fp2;
         if (fp2 != null && fp2.count > this.o_()) {
             fp2.count = this.o_();
@@ -612,8 +612,8 @@ implements hi {
         } else if (this.d == 1) {
             eb2.a((hi)this); // TODO: It wasn't originally casted to (hi), I guessed
         } else if (this.d == 2) {
-            Item fp2 = eb2.e.a();
-            if (fp2 != null && fp2.id == ItemRegistry.k.id) {
+            InventoryItem fp2 = eb2.e.a();
+            if (fp2 != null && fp2.id == Item.k.id) {
                 if (--fp2.count == 0) {
                     eb2.e.a(eb2.e.d, null);
                 }

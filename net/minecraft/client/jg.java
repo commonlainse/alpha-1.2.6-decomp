@@ -28,7 +28,7 @@ extends iv {
         int n6 = this.a.e.a(n2, n3, n4);
         int n7 = this.a.e.e(n2, n3, n4);
         boolean bl2 = super.b(n2, n3, n4, n5);
-        Item fp2 = this.a.g.w();
+        InventoryItem fp2 = this.a.g.w();
         boolean bl3 = this.a.g.b(Block.m[n6]);
         if (fp2 != null) {
             fp2.a(n6, n2, n3, n4);
