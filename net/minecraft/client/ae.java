@@ -15,7 +15,7 @@ extends ad {
     private double j;
 
     public ae(Minecraft minecraft) {
-        super(Item.aO.a((InventoryItem)null));
+        super(Item.aO.getIconCoor((InventoryItem)null));
         this.g = minecraft;
         this.f = 1;
         try {

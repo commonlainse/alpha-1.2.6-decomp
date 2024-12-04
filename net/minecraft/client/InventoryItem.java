@@ -53,7 +53,7 @@ public final class InventoryItem {
     }
 
     public int b() {
-        return this.a().a(this);
+        return this.a().getIconCoor(this);
     }
 
     public boolean a(Player eb2, Session cy2, int n2, int n3, int n4, int n5) {

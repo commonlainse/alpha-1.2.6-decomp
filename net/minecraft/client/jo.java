@@ -6,7 +6,7 @@ public class jo
 extends pp {
     public jo(Session cy2, double d2, double d3, double d4, Item dx2) {
         super(cy2, d2, d3, d4, 0.0, 0.0, 0.0);
-        this.b = dx2.a((InventoryItem)null);
+        this.b = dx2.getIconCoor((InventoryItem)null);
         this.k = 1.0f;
         this.j = 1.0f;
         this.i = 1.0f;

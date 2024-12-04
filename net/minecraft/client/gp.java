@@ -16,7 +16,7 @@ extends ad {
     private double k;
 
     public gp(Minecraft minecraft) {
-        super(Item.aQ.a((InventoryItem)null));
+        super(Item.aQ.getIconCoor((InventoryItem)null));
         this.g = minecraft;
         this.f = 1;
         try {

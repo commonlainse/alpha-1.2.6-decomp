@@ -15,7 +15,7 @@ extends aq {
         GL11.glEnable(32826);
         float f4 = 2.0f;
         GL11.glScalef((float)(f4 / 1.0f), (float)(f4 / 1.0f), (float)(f4 / 1.0f));
-        int n2 = Item.aB.a((InventoryItem)null);
+        int n2 = Item.aB.getIconCoor((InventoryItem)null);
         this.a("/gui/items.png");
         is is2 = is.a;
         float f5 = (float)(n2 % 16 * 16 + 0) / 256.0f;

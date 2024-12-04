@@ -9,7 +9,7 @@ extends Item {
     public bc(int n2) {
         super(n2);
         this.a = n2 + 256;
-        this.a(Block.m[n2 + 256].a(2));
+        this.setIcon(Block.m[n2 + 256].a(2));
     }
 
     @Override

@@ -119,7 +119,7 @@ extends js {
             return new InventoryItem(Item.aA, random.nextInt(4) + 1);
         }
         if (n2 == 9 && random.nextInt(10) == 0) {
-            return new InventoryItem(Item.c[Item.aU.id + random.nextInt(2)]);
+            return new InventoryItem(Item.registry[Item.aU.id + random.nextInt(2)]);
         }
         return null;
     }

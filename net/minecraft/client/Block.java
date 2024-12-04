@@ -491,7 +491,7 @@ public class Block {
     static {
         for (int i2 = 0; i2 < 256; ++i2) {
             if (m[i2] == null) continue;
-            Item.c[i2] = new bc(i2 - 256);
+            Item.registry[i2] = new bc(i2 - 256);
         }
     }
 }

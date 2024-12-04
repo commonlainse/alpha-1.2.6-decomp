@@ -159,7 +159,7 @@ implements hi {
         if (this.a[2].count < this.o_() && this.a[2].count < this.a[2].c()) {
             return true;
         }
-        return this.a[2].count < Item.c[n2].c();
+        return this.a[2].count < Item.registry[n2].c();
     }
 
     public void i() {
