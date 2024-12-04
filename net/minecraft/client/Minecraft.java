@@ -655,10 +655,10 @@ implements Runnable {
             int n4 = this.x.c;
             int n5 = this.x.d;
             int n6 = this.x.e;
-            HeadBanger1337 nq2 = HeadBanger1337.m[this.e.a(n3, n4, n5)];
+            Block nq2 = Block.m[this.e.a(n3, n4, n5)];
             if (n2 == 0) {
                 this.e.i(n3, n4, n5, this.x.e);
-                if (nq2 != HeadBanger1337.z || this.g.f >= 100) {
+                if (nq2 != Block.z || this.g.f >= 100) {
                     this.b.a(n3, n4, n5, this.x.e);
                 }
             } else {
@@ -752,14 +752,14 @@ implements Runnable {
     private void t() {
         if (this.x != null) {
             int n2 = this.e.a(this.x.b, this.x.c, this.x.d);
-            if (n2 == HeadBanger1337.u.bh) {
-                n2 = HeadBanger1337.v.bh;
+            if (n2 == Block.u.bh) {
+                n2 = Block.v.bh;
             }
-            if (n2 == HeadBanger1337.aj.bh) {
-                n2 = HeadBanger1337.ak.bh;
+            if (n2 == Block.aj.bh) {
+                n2 = Block.ak.bh;
             }
-            if (n2 == HeadBanger1337.z.bh) {
-                n2 = HeadBanger1337.t.bh;
+            if (n2 == Block.z.bh) {
+                n2 = Block.t.bh;
             }
             this.g.e.a(n2, this.b instanceof jt);
         }

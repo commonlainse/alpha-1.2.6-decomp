@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class dd
-extends HeadBanger1337 {
+extends Block {
     protected dd(int n2) {
         super(n2, hb.c);
         this.bg = 59;
@@ -15,7 +15,7 @@ extends HeadBanger1337 {
             return this.bg - 16;
         }
         if (n2 == 0) {
-            return HeadBanger1337.x.a(0);
+            return Block.x.a(0);
         }
         if (n2 == 2 || n2 == 4) {
             return this.bg + 1;

@@ -48,7 +48,7 @@ extends nb {
             this.a(this.g.g.a(f2), n7, n8);
         }
         Item fp2 = this.g.g.e.d(3);
-        if (!this.g.y.y && fp2 != null && fp2.id == HeadBanger1337.ba.bh) {
+        if (!this.g.y.y && fp2 != null && fp2.id == Block.ba.bh) {
             this.a(n7, n8);
         }
         if ((f3 = this.g.g.d + (this.g.g.c - this.g.g.d) * f2) > 0.0f) {
@@ -268,10 +268,10 @@ extends nb {
         GL11.glBlendFunc(770, 771);
         GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)f2);
         GL11.glBindTexture(3553, (int)this.g.n.a("/terrain.png"));
-        float f3 = (float)(HeadBanger1337.be.bg % 16) / 16.0f;
-        float f4 = (float)(HeadBanger1337.be.bg / 16) / 16.0f;
-        float f5 = (float)(HeadBanger1337.be.bg % 16 + 1) / 16.0f;
-        float f6 = (float)(HeadBanger1337.be.bg / 16 + 1) / 16.0f;
+        float f3 = (float)(Block.be.bg % 16) / 16.0f;
+        float f4 = (float)(Block.be.bg / 16) / 16.0f;
+        float f5 = (float)(Block.be.bg % 16 + 1) / 16.0f;
+        float f6 = (float)(Block.be.bg / 16 + 1) / 16.0f;
         is is2 = is.a;
         is2.b();
         is2.a(0.0, n3, -90.0, f3, f6);

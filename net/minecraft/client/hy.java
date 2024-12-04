@@ -10,7 +10,7 @@ extends js {
     private int b;
 
     public hy(int n2) {
-        this.a = HeadBanger1337.aW.bh;
+        this.a = Block.aW.bh;
         this.b = n2;
     }
 
@@ -40,7 +40,7 @@ extends js {
                         double d14 = ((double)i3 + 0.5 - d8) / (d12 / 2.0);
                         double d15 = ((double)i4 + 0.5 - d9) / (d13 / 2.0);
                         double d16 = ((double)i5 + 0.5 - d10) / (d12 / 2.0);
-                        if (!(d14 * d14 + d15 * d15 + d16 * d16 < 1.0) || (n5 = cy2.a(i3, i4, i5)) != HeadBanger1337.E.bh) continue;
+                        if (!(d14 * d14 + d15 * d15 + d16 * d16 < 1.0) || (n5 = cy2.a(i3, i4, i5)) != Block.E.bh) continue;
                         cy2.a(i3, i4, i5, this.a);
                     }
                 }

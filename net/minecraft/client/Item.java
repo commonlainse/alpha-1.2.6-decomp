@@ -8,11 +8,11 @@ public final class Item {
     public int id;
     public int damage;
 
-    public Item(HeadBanger1337 nq2) {
+    public Item(Block nq2) {
         this(nq2, 1);
     }
 
-    public Item(HeadBanger1337 nq2, int n2) {
+    public Item(Block nq2, int n2) {
         this(nq2.bh, n2);
     }
 
@@ -61,7 +61,7 @@ public final class Item {
         return this.a().a(this, eb2, cy2, n2, n3, n4, n5);
     }
 
-    public float a(HeadBanger1337 nq2) {
+    public float a(Block nq2) {
         return this.a().a(this, nq2);
     }
 
@@ -113,7 +113,7 @@ public final class Item {
         return ItemRegistry.c[this.id].a(lw2);
     }
 
-    public boolean b(HeadBanger1337 nq2) {
+    public boolean b(Block nq2) {
         return ItemRegistry.c[this.id].a(nq2);
     }
 

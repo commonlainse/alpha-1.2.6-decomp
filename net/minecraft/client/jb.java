@@ -34,14 +34,14 @@ extends aq {
         }
         f4 = (1.0f - ((float)kr2.a - f3 + 1.0f) / 100.0f) * 0.8f;
         this.a("/terrain.png");
-        this.a.a(HeadBanger1337.am);
+        this.a.a(Block.am);
         if (kr2.a / 5 % 2 == 0) {
             GL11.glDisable(3553);
             GL11.glDisable(2896);
             GL11.glEnable(3042);
             GL11.glBlendFunc(770, 772);
             GL11.glColor4f(1.0f, 1.0f, 1.0f, (float)f4);
-            this.a.a(HeadBanger1337.am);
+            this.a.a(Block.am);
             GL11.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
             GL11.glDisable(3042);
             GL11.glEnable(2896);

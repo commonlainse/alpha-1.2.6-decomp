@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.ArrayList;
 
 public class gd
-extends HeadBanger1337 {
+extends Block {
     public gd(int n2, int n3) {
         super(n2, n3, hb.c);
     }

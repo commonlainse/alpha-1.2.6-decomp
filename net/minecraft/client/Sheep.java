@@ -18,7 +18,7 @@ extends Creature {
             this.a = true;
             int n3 = 1 + this.bd.nextInt(3);
             for (int i2 = 0; i2 < n3; ++i2) {
-                DroppedItem eo2 = this.a(HeadBanger1337.ab.bh, 1, 1.0f);
+                DroppedItem eo2 = this.a(Block.ab.bh, 1, 1.0f);
                 eo2.aA += (double)(this.bd.nextFloat() * 0.05f);
                 eo2.az += (double)((this.bd.nextFloat() - this.bd.nextFloat()) * 0.1f);
                 eo2.aB += (double)((this.bd.nextFloat() - this.bd.nextFloat()) * 0.1f);

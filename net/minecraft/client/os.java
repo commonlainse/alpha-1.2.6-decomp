@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class os
-extends HeadBanger1337 {
+extends Block {
     protected os(int n2) {
         super(n2, hb.b);
         this.bg = 3;
@@ -44,15 +44,15 @@ extends HeadBanger1337 {
             if (random.nextInt(4) != 0) {
                 return;
             }
-            cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
-        } else if (cy2.j(n2, n3 + 1, n4) >= 9 && cy2.a(n7 = n2 + random.nextInt(3) - 1, n6 = n3 + random.nextInt(5) - 3, n5 = n4 + random.nextInt(3) - 1) == HeadBanger1337.v.bh && cy2.j(n7, n6 + 1, n5) >= 4 && !cy2.f(n7, n6 + 1, n5).b()) {
-            cy2.d(n7, n6, n5, HeadBanger1337.u.bh);
+            cy2.d(n2, n3, n4, Block.v.bh);
+        } else if (cy2.j(n2, n3 + 1, n4) >= 9 && cy2.a(n7 = n2 + random.nextInt(3) - 1, n6 = n3 + random.nextInt(5) - 3, n5 = n4 + random.nextInt(3) - 1) == Block.v.bh && cy2.j(n7, n6 + 1, n5) >= 4 && !cy2.f(n7, n6 + 1, n5).b()) {
+            cy2.d(n7, n6, n5, Block.u.bh);
         }
     }
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.v.a(0, random);
+        return Block.v.a(0, random);
     }
 }
 

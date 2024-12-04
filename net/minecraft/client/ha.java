@@ -64,7 +64,7 @@ public class ha {
             for (int i3 = 0; i3 < 16; ++i3) {
                 int n3;
                 int n4 = i2 << 11 | i3 << 7;
-                for (n3 = 127; n3 > 0 && HeadBanger1337.q[this.b[n4 + n3 - 1]] == 0; --n3) {
+                for (n3 = 127; n3 > 0 && Block.q[this.b[n4 + n3 - 1]] == 0; --n3) {
                 }
                 this.h[i3 << 4 | i2] = (byte)n3;
                 if (n3 >= n2) continue;
@@ -104,7 +104,7 @@ public class ha {
                 int n4;
                 int n5 = i2 << 11 | i3 << 7;
                 for (n4 = 0; n4 < 128; ++n4) {
-                    n3 = HeadBanger1337.s[this.b[n5 + n4]];
+                    n3 = Block.s[this.b[n5 + n4]];
                     if (n3 <= 0) continue;
                     this.g.a(i2, n4, i3, n3);
                 }
@@ -112,8 +112,8 @@ public class ha {
                 n3 = n2 - 2;
                 while (n3 < 128 && n4 > 0) {
                     byte by2 = this.b[n5 + ++n3];
-                    int n6 = HeadBanger1337.q[by2];
-                    int n7 = HeadBanger1337.s[by2];
+                    int n6 = Block.q[by2];
+                    int n7 = Block.s[by2];
                     if (n6 == 0) {
                         n6 = 1;
                     }
@@ -161,7 +161,7 @@ public class ha {
             n9 = n3;
         }
         int n10 = n2 << 11 | n4 << 7;
-        while (n9 > 0 && HeadBanger1337.q[this.b[n10 + n9 - 1]] == 0) {
+        while (n9 > 0 && Block.q[this.b[n10 + n9 - 1]] == 0) {
             --n9;
         }
         if (n9 == n8) {
@@ -197,7 +197,7 @@ public class ha {
         int n11 = n9;
         while (n9 > 0 && n5 > 0) {
             int n12;
-            if ((n12 = HeadBanger1337.q[this.a(n2, --n9, n4)]) == 0) {
+            if ((n12 = Block.q[this.a(n2, --n9, n4)]) == 0) {
                 n12 = 1;
             }
             if ((n5 -= n12) < 0) {
@@ -205,7 +205,7 @@ public class ha {
             }
             this.f.a(n2, n9, n4, n5);
         }
-        while (n9 > 0 && HeadBanger1337.q[this.a(n2, n9 - 1, n4)] == 0) {
+        while (n9 > 0 && Block.q[this.a(n2, n9 - 1, n4)] == 0) {
             --n9;
         }
         if (n9 != n11) {
@@ -229,11 +229,11 @@ public class ha {
         int n10 = this.k * 16 + n4;
         this.b[n2 << 11 | n4 << 7 | n3] = by2;
         if (n8 != 0 && !this.d.z) {
-            HeadBanger1337.m[n8].b(this.d, n9, n3, n10);
+            Block.m[n8].b(this.d, n9, n3, n10);
         }
         this.e.a(n2, n3, n4, n6);
         if (!this.d.q.e) {
-            if (HeadBanger1337.q[by2] != 0) {
+            if (Block.q[by2] != 0) {
                 if (n3 >= n7) {
                     this.g(n2, n3 + 1, n4);
                 }
@@ -245,7 +245,7 @@ public class ha {
         this.d.a(ch.Block, n9, n3, n10, n9, n3, n10);
         this.c(n2, n4);
         if (n5 != 0) {
-            HeadBanger1337.m[n5].e(this.d, n9, n3, n10);
+            Block.m[n5].e(this.d, n9, n3, n10);
         }
         this.e.a(n2, n3, n4, n6);
         this.o = true;
@@ -263,10 +263,10 @@ public class ha {
         int n9 = this.k * 16 + n4;
         this.b[n2 << 11 | n4 << 7 | n3] = by2;
         if (n7 != 0) {
-            HeadBanger1337.m[n7].b(this.d, n8, n3, n9);
+            Block.m[n7].b(this.d, n8, n3, n9);
         }
         this.e.a(n2, n3, n4, 0);
-        if (HeadBanger1337.q[by2] != 0) {
+        if (Block.q[by2] != 0) {
             if (n3 >= n6) {
                 this.g(n2, n3 + 1, n4);
             }
@@ -277,7 +277,7 @@ public class ha {
         this.d.a(ch.Block, n8, n3, n9, n8, n3, n9);
         this.c(n2, n4);
         if (n5 != 0 && !this.d.z) {
-            HeadBanger1337.m[n5].e(this.d, n8, n3, n9);
+            Block.m[n5].e(this.d, n8, n3, n9);
         }
         this.o = true;
         return true;
@@ -373,10 +373,10 @@ public class ha {
         TileEntityRegistry ji2 = (TileEntityRegistry)this.l.get(on2);
         if (ji2 == null) {
             int n5 = this.a(n2, n3, n4);
-            if (!HeadBanger1337.p[n5]) {
+            if (!Block.p[n5]) {
                 return null;
             }
-            lh lh2 = (lh)HeadBanger1337.m[n5];
+            lh lh2 = (lh)Block.m[n5];
             lh2.e(this.d, this.j * 16 + n2, n3, this.k * 16 + n4);
             ji2 = (TileEntityRegistry)this.l.get(on2);
         }
@@ -396,7 +396,7 @@ public class ha {
         ji2.f = this.j * 16 + n2;
         ji2.g = n3;
         ji2.h = this.k * 16 + n4;
-        if (this.a(n2, n3, n4) == 0 || !(HeadBanger1337.m[this.a(n2, n3, n4)] instanceof lh)) {
+        if (this.a(n2, n3, n4) == 0 || !(Block.m[this.a(n2, n3, n4)] instanceof lh)) {
             System.out.println("Attempted to place a tile entity where there was no entity tile!");
             return;
         }

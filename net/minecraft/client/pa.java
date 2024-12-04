@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class pa {
     private String[][] a = new String[][]{{"X", "X", "#"}};
-    private Object[][] b = new Object[][]{{HeadBanger1337.x, HeadBanger1337.w, ItemRegistry.m, ItemRegistry.l, ItemRegistry.n}, {ItemRegistry.p, ItemRegistry.t, ItemRegistry.o, ItemRegistry.x, ItemRegistry.E}};
+    private Object[][] b = new Object[][]{{Block.x, Block.w, ItemRegistry.m, ItemRegistry.l, ItemRegistry.n}, {ItemRegistry.p, ItemRegistry.t, ItemRegistry.o, ItemRegistry.x, ItemRegistry.E}};
 
     public void a(RecipeRegistry en2) {
         for (int i2 = 0; i2 < this.b[0].length; ++i2) {

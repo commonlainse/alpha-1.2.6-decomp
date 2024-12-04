@@ -179,17 +179,17 @@ implements hi {
     }
 
     private int d(int n2) {
-        if (n2 == HeadBanger1337.H.bh) {
+        if (n2 == Block.H.bh) {
             return ItemRegistry.m.id;
         }
-        if (n2 == HeadBanger1337.G.bh) {
+        if (n2 == Block.G.bh) {
             return ItemRegistry.n.id;
         }
-        if (n2 == HeadBanger1337.aw.bh) {
+        if (n2 == Block.aw.bh) {
             return ItemRegistry.l.id;
         }
-        if (n2 == HeadBanger1337.E.bh) {
-            return HeadBanger1337.M.bh;
+        if (n2 == Block.E.bh) {
+            return Block.M.bh;
         }
         if (n2 == ItemRegistry.ao.id) {
             return ItemRegistry.ap.id;
@@ -197,8 +197,8 @@ implements hi {
         if (n2 == ItemRegistry.aS.id) {
             return ItemRegistry.aT.id;
         }
-        if (n2 == HeadBanger1337.w.bh) {
-            return HeadBanger1337.t.bh;
+        if (n2 == Block.w.bh) {
+            return Block.t.bh;
         }
         if (n2 == ItemRegistry.aG.id) {
             return ItemRegistry.aF.id;
@@ -211,7 +211,7 @@ implements hi {
             return 0;
         }
         int n2 = fp2.a().id;
-        if (n2 < 256 && HeadBanger1337.m[n2].bs == hb.c) {
+        if (n2 < 256 && Block.m[n2].bs == hb.c) {
             return 300;
         }
         if (n2 == ItemRegistry.B.id) {

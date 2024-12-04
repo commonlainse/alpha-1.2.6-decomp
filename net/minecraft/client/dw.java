@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class dw
-extends HeadBanger1337 {
+extends Block {
     public static boolean a = false;
 
     public dw(int n2, int n3) {
@@ -53,10 +53,10 @@ extends HeadBanger1337 {
         if (n5 == 0) {
             return true;
         }
-        if (n5 == HeadBanger1337.ar.bh) {
+        if (n5 == Block.ar.bh) {
             return true;
         }
-        hb hb2 = HeadBanger1337.m[n5].bs;
+        hb hb2 = Block.m[n5].bs;
         if (hb2 == hb.f) {
             return true;
         }

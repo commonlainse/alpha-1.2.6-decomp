@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ap
-extends HeadBanger1337 {
+extends Block {
     private lg a;
 
     protected ap(int n2, int n3, lg lg2) {

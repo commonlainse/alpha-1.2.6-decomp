@@ -5,9 +5,7 @@ package net.minecraft.client;
 import java.util.ArrayList;
 import java.util.Random;
 
-// I thought this class was something else.
-// When I realised it wasn't I changed its name to HeadBanger1337.
-public class HeadBanger1337 {
+public class Block {
     public static final bi d = new bi("stone", 1.0f, 1.0f);
     public static final bi e = new bi("wood", 1.0f, 1.0f);
     public static final bi f = new bi("gravel", 1.0f, 1.0f);
@@ -17,104 +15,104 @@ public class HeadBanger1337 {
     public static final bi j = new y("stone", 1.0f, 1.0f);
     public static final bi k = new bi("cloth", 1.0f, 1.0f);
     public static final bi l = new w("sand", 1.0f, 1.0f);
-    public static final HeadBanger1337[] m = new HeadBanger1337[256];
+    public static final Block[] m = new Block[256];
     public static final boolean[] n = new boolean[256];
     public static final boolean[] o = new boolean[256];
     public static final boolean[] p = new boolean[256];
     public static final int[] q = new int[256];
     public static final boolean[] r = new boolean[256];
     public static final int[] s = new int[256];
-    public static final HeadBanger1337 t = new cn(1, 1).c(1.5f).b(10.0f).a(h);
+    public static final Block t = new cn(1, 1).c(1.5f).b(10.0f).a(h);
     public static final os u = (os)new os(2).c(0.6f).a(g);
-    public static final HeadBanger1337 v = new jf(3, 2).c(0.5f).a(f);
-    public static final HeadBanger1337 w = new HeadBanger1337(4, 16, hb.d).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 x = new HeadBanger1337(5, 4, hb.c).c(2.0f).b(5.0f).a(e);
-    public static final HeadBanger1337 y = new ej(6, 15).c(0.0f).a(g);
-    public static final HeadBanger1337 z = new HeadBanger1337(7, 17, hb.d).c(-1.0f).b(6000000.0f).a(h);
-    public static final HeadBanger1337 A = new ja(8, hb.f).c(100.0f).d(3);
-    public static final HeadBanger1337 B = new ir(9, hb.f).c(100.0f).d(3);
-    public static final HeadBanger1337 C = new ja(10, hb.g).c(0.0f).a(1.0f).d(255);
-    public static final HeadBanger1337 D = new ir(11, hb.g).c(100.0f).a(1.0f).d(255);
-    public static final HeadBanger1337 E = new dw(12, 18).c(0.5f).a(l);
-    public static final HeadBanger1337 F = new ic(13, 19).c(0.6f).a(f);
-    public static final HeadBanger1337 G = new hz(14, 32).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 H = new hz(15, 33).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 I = new hz(16, 34).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 J = new ny(17).c(2.0f).a(e);
+    public static final Block v = new jf(3, 2).c(0.5f).a(f);
+    public static final Block w = new Block(4, 16, hb.d).c(2.0f).b(10.0f).a(h);
+    public static final Block x = new Block(5, 4, hb.c).c(2.0f).b(5.0f).a(e);
+    public static final Block y = new ej(6, 15).c(0.0f).a(g);
+    public static final Block z = new Block(7, 17, hb.d).c(-1.0f).b(6000000.0f).a(h);
+    public static final Block A = new ja(8, hb.f).c(100.0f).d(3);
+    public static final Block B = new ir(9, hb.f).c(100.0f).d(3);
+    public static final Block C = new ja(10, hb.g).c(0.0f).a(1.0f).d(255);
+    public static final Block D = new ir(11, hb.g).c(100.0f).a(1.0f).d(255);
+    public static final Block E = new dw(12, 18).c(0.5f).a(l);
+    public static final Block F = new ic(13, 19).c(0.6f).a(f);
+    public static final Block G = new hz(14, 32).c(3.0f).b(5.0f).a(h);
+    public static final Block H = new hz(15, 33).c(3.0f).b(5.0f).a(h);
+    public static final Block I = new hz(16, 34).c(3.0f).b(5.0f).a(h);
+    public static final Block J = new ny(17).c(2.0f).a(e);
     public static final km K = (km)new km(18, 52).c(0.2f).d(1).a(g);
-    public static final HeadBanger1337 L = new pd(19).c(0.6f).a(g);
-    public static final HeadBanger1337 M = new de(20, 49, hb.o, false).c(0.3f).a(j);
-    public static final HeadBanger1337 N = null;
-    public static final HeadBanger1337 O = null;
-    public static final HeadBanger1337 P = null;
-    public static final HeadBanger1337 Q = null;
-    public static final HeadBanger1337 R = null;
-    public static final HeadBanger1337 S = null;
-    public static final HeadBanger1337 T = null;
-    public static final HeadBanger1337 U = null;
-    public static final HeadBanger1337 V = null;
-    public static final HeadBanger1337 W = null;
-    public static final HeadBanger1337 X = null;
-    public static final HeadBanger1337 Y = null;
-    public static final HeadBanger1337 Z = null;
-    public static final HeadBanger1337 aa = null;
-    public static final HeadBanger1337 ab = new HeadBanger1337(35, 64, hb.k).c(0.8f).a(k);
-    public static final HeadBanger1337 ac = null;
+    public static final Block L = new pd(19).c(0.6f).a(g);
+    public static final Block M = new de(20, 49, hb.o, false).c(0.3f).a(j);
+    public static final Block N = null;
+    public static final Block O = null;
+    public static final Block P = null;
+    public static final Block Q = null;
+    public static final Block R = null;
+    public static final Block S = null;
+    public static final Block T = null;
+    public static final Block U = null;
+    public static final Block V = null;
+    public static final Block W = null;
+    public static final Block X = null;
+    public static final Block Y = null;
+    public static final Block Z = null;
+    public static final Block aa = null;
+    public static final Block ab = new Block(35, 64, hb.k).c(0.8f).a(k);
+    public static final Block ac = null;
     public static final ok ad = (ok)new ok(37, 13).c(0.0f).a(g);
     public static final ok ae = (ok)new ok(38, 12).c(0.0f).a(g);
     public static final ok af = (ok)new mr(39, 29).c(0.0f).a(g).a(0.125f);
     public static final ok ag = (ok)new mr(40, 28).c(0.0f).a(g);
-    public static final HeadBanger1337 ah = new e(41, 39).c(3.0f).b(10.0f).a(i);
-    public static final HeadBanger1337 ai = new e(42, 38).c(5.0f).b(10.0f).a(i);
-    public static final HeadBanger1337 aj = new qj(43, true).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 ak = new qj(44, false).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 al = new HeadBanger1337(45, 7, hb.d).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 am = new v(46, 8).c(0.0f).a(g);
-    public static final HeadBanger1337 an = new eh(47, 35).c(1.5f).a(e);
-    public static final HeadBanger1337 ao = new HeadBanger1337(48, 36, hb.d).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 ap = new cw(49, 37).c(10.0f).b(2000.0f).a(h);
-    public static final HeadBanger1337 aq = new ob(50, 80).c(0.0f).a(0.9375f).a(e);
+    public static final Block ah = new e(41, 39).c(3.0f).b(10.0f).a(i);
+    public static final Block ai = new e(42, 38).c(5.0f).b(10.0f).a(i);
+    public static final Block aj = new qj(43, true).c(2.0f).b(10.0f).a(h);
+    public static final Block ak = new qj(44, false).c(2.0f).b(10.0f).a(h);
+    public static final Block al = new Block(45, 7, hb.d).c(2.0f).b(10.0f).a(h);
+    public static final Block am = new v(46, 8).c(0.0f).a(g);
+    public static final Block an = new eh(47, 35).c(1.5f).a(e);
+    public static final Block ao = new Block(48, 36, hb.d).c(2.0f).b(10.0f).a(h);
+    public static final Block ap = new cw(49, 37).c(10.0f).b(2000.0f).a(h);
+    public static final Block aq = new ob(50, 80).c(0.0f).a(0.9375f).a(e);
     public static final qh ar = (qh)new qh(51, 31).c(0.0f).a(1.0f).a(e);
-    public static final HeadBanger1337 as = new br(52, 65).c(5.0f).a(i);
-    public static final HeadBanger1337 at = new mb(53, x);
-    public static final HeadBanger1337 au = new c(54).c(2.5f).a(e);
-    public static final HeadBanger1337 av = new lu(55, 84).c(0.0f).a(d);
-    public static final HeadBanger1337 aw = new hz(56, 50).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 ax = new e(57, 40).c(5.0f).b(10.0f).a(i);
-    public static final HeadBanger1337 ay = new dd(58).c(2.5f).a(e);
-    public static final HeadBanger1337 az = new ig(59, 88).c(0.0f).a(g);
-    public static final HeadBanger1337 aA = new oa(60).c(0.6f).a(f);
-    public static final HeadBanger1337 aB = new mj(61, false).c(3.5f).a(h);
-    public static final HeadBanger1337 aC = new mj(62, true).c(3.5f).a(h).a(0.875f);
-    public static final HeadBanger1337 aD = new ni(63, Sign.class, true).c(1.0f).a(e);
-    public static final HeadBanger1337 aE = new gv(64, hb.c).c(3.0f).a(e);
-    public static final HeadBanger1337 aF = new ca(65, 83).c(0.4f).a(e);
-    public static final HeadBanger1337 aG = new jn(66, 128).c(0.7f).a(i);
-    public static final HeadBanger1337 aH = new mb(67, w);
-    public static final HeadBanger1337 aI = new ni(68, Sign.class, false).c(1.0f).a(e);
-    public static final HeadBanger1337 aJ = new pl(69, 96).c(0.5f).a(e);
-    public static final HeadBanger1337 aK = new ap(70, HeadBanger1337.t.bg, lg.mobs).c(0.5f).a(h);
-    public static final HeadBanger1337 aL = new gv(71, hb.e).c(5.0f).a(i);
-    public static final HeadBanger1337 aM = new ap(72, HeadBanger1337.x.bg, lg.everything).c(0.5f).a(e);
-    public static final HeadBanger1337 aN = new an(73, 51, false).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 aO = new an(74, 51, true).a(0.625f).c(3.0f).b(5.0f).a(h);
-    public static final HeadBanger1337 aP = new boclass(75, 115, false).c(0.0f).a(e);
-    public static final HeadBanger1337 aQ = new boclass(76, 99, true).c(0.0f).a(0.5f).a(e);
-    public static final HeadBanger1337 aR = new iy(77, HeadBanger1337.t.bg).c(0.5f).a(h);
-    public static final HeadBanger1337 aS = new fz(78, 66).c(0.1f).a(k);
-    public static final HeadBanger1337 aT = new ih(79, 67).c(0.5f).d(3).a(j);
-    public static final HeadBanger1337 aU = new s(80, 66).c(0.2f).a(k);
-    public static final HeadBanger1337 aV = new je(81, 70).c(0.4f).a(k);
-    public static final HeadBanger1337 aW = new lj(82, 72).c(0.6f).a(f);
-    public static final HeadBanger1337 aX = new kz(83, 73).c(0.0f).a(g);
-    public static final HeadBanger1337 aY = new dg(84, 74).c(2.0f).b(10.0f).a(h);
-    public static final HeadBanger1337 aZ = new gd(85, 4).c(2.0f).b(5.0f).a(e);
-    public static final HeadBanger1337 ba = new cx(86, 102, false).c(1.0f).a(e);
-    public static final HeadBanger1337 bb = new qb(87, 103).c(0.4f).a(h);
-    public static final HeadBanger1337 bc = new it(88, 104).c(0.5f).a(l);
-    public static final HeadBanger1337 bd = new hk(89, 105, hb.o).c(0.3f).a(j).a(1.0f);
+    public static final Block as = new br(52, 65).c(5.0f).a(i);
+    public static final Block at = new mb(53, x);
+    public static final Block au = new c(54).c(2.5f).a(e);
+    public static final Block av = new lu(55, 84).c(0.0f).a(d);
+    public static final Block aw = new hz(56, 50).c(3.0f).b(5.0f).a(h);
+    public static final Block ax = new e(57, 40).c(5.0f).b(10.0f).a(i);
+    public static final Block ay = new dd(58).c(2.5f).a(e);
+    public static final Block az = new ig(59, 88).c(0.0f).a(g);
+    public static final Block aA = new oa(60).c(0.6f).a(f);
+    public static final Block aB = new mj(61, false).c(3.5f).a(h);
+    public static final Block aC = new mj(62, true).c(3.5f).a(h).a(0.875f);
+    public static final Block aD = new ni(63, Sign.class, true).c(1.0f).a(e);
+    public static final Block aE = new gv(64, hb.c).c(3.0f).a(e);
+    public static final Block aF = new ca(65, 83).c(0.4f).a(e);
+    public static final Block aG = new jn(66, 128).c(0.7f).a(i);
+    public static final Block aH = new mb(67, w);
+    public static final Block aI = new ni(68, Sign.class, false).c(1.0f).a(e);
+    public static final Block aJ = new pl(69, 96).c(0.5f).a(e);
+    public static final Block aK = new ap(70, Block.t.bg, lg.mobs).c(0.5f).a(h);
+    public static final Block aL = new gv(71, hb.e).c(5.0f).a(i);
+    public static final Block aM = new ap(72, Block.x.bg, lg.everything).c(0.5f).a(e);
+    public static final Block aN = new an(73, 51, false).c(3.0f).b(5.0f).a(h);
+    public static final Block aO = new an(74, 51, true).a(0.625f).c(3.0f).b(5.0f).a(h);
+    public static final Block aP = new boclass(75, 115, false).c(0.0f).a(e);
+    public static final Block aQ = new boclass(76, 99, true).c(0.0f).a(0.5f).a(e);
+    public static final Block aR = new iy(77, Block.t.bg).c(0.5f).a(h);
+    public static final Block aS = new fz(78, 66).c(0.1f).a(k);
+    public static final Block aT = new ih(79, 67).c(0.5f).d(3).a(j);
+    public static final Block aU = new s(80, 66).c(0.2f).a(k);
+    public static final Block aV = new je(81, 70).c(0.4f).a(k);
+    public static final Block aW = new lj(82, 72).c(0.6f).a(f);
+    public static final Block aX = new kz(83, 73).c(0.0f).a(g);
+    public static final Block aY = new dg(84, 74).c(2.0f).b(10.0f).a(h);
+    public static final Block aZ = new gd(85, 4).c(2.0f).b(5.0f).a(e);
+    public static final Block ba = new cx(86, 102, false).c(1.0f).a(e);
+    public static final Block bb = new qb(87, 103).c(0.4f).a(h);
+    public static final Block bc = new it(88, 104).c(0.5f).a(l);
+    public static final Block bd = new hk(89, 105, hb.o).c(0.3f).a(j).a(1.0f);
     public static final x be = (x)new x(90, 14).c(-1.0f).a(j).a(0.75f);
-    public static final HeadBanger1337 bf = new cx(91, 102, true).c(1.0f).a(e).a(1.0f);
+    public static final Block bf = new cx(91, 102, true).c(1.0f).a(e).a(1.0f);
     public int bg;
     public final int bh;
     protected float bi;
@@ -130,41 +128,41 @@ public class HeadBanger1337 {
     public final hb bs;
     public float bt = 0.6f;
 
-    protected HeadBanger1337(int n2, hb hb2) {
+    protected Block(int n2, hb hb2) {
         if (m[n2] != null) {
             throw new IllegalArgumentException("Slot " + n2 + " is already occupied by " + m[n2] + " when adding " + this);
         }
         this.bs = hb2;
-        HeadBanger1337.m[n2] = this;
+        Block.m[n2] = this;
         this.bh = n2;
         this.a(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
-        HeadBanger1337.o[n2] = this.a();
-        HeadBanger1337.q[n2] = this.a() ? 255 : 0;
-        HeadBanger1337.r[n2] = this.i();
-        HeadBanger1337.p[n2] = false;
+        Block.o[n2] = this.a();
+        Block.q[n2] = this.a() ? 255 : 0;
+        Block.r[n2] = this.i();
+        Block.p[n2] = false;
     }
 
-    protected HeadBanger1337(int n2, int n3, hb hb2) {
+    protected Block(int n2, int n3, hb hb2) {
         this(n2, hb2);
         this.bg = n3;
     }
 
-    protected HeadBanger1337 a(bi bi2) {
+    protected Block a(bi bi2) {
         this.bq = bi2;
         return this;
     }
 
-    protected HeadBanger1337 d(int n2) {
-        HeadBanger1337.q[this.bh] = n2;
+    protected Block d(int n2) {
+        Block.q[this.bh] = n2;
         return this;
     }
 
-    protected HeadBanger1337 a(float f2) {
-        HeadBanger1337.s[this.bh] = (int)(15.0f * f2);
+    protected Block a(float f2) {
+        Block.s[this.bh] = (int)(15.0f * f2);
         return this;
     }
 
-    protected HeadBanger1337 b(float f2) {
+    protected Block b(float f2) {
         this.bj = f2 * 3.0f;
         return this;
     }
@@ -181,7 +179,7 @@ public class HeadBanger1337 {
         return 0;
     }
 
-    protected HeadBanger1337 c(float f2) {
+    protected Block c(float f2) {
         this.bi = f2;
         if (this.bj < f2 * 5.0f) {
             this.bj = f2 * 5.0f;
@@ -190,7 +188,7 @@ public class HeadBanger1337 {
     }
 
     protected void b(boolean bl2) {
-        HeadBanger1337.n[this.bh] = bl2;
+        Block.n[this.bh] = bl2;
     }
 
     public void a(float f2, float f3, float f4, float f5, float f6, float f7) {
@@ -435,7 +433,7 @@ public class HeadBanger1337 {
 
     public boolean a(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4);
-        return n5 == 0 || HeadBanger1337.m[n5].bs.d();
+        return n5 == 0 || Block.m[n5].bs.d();
     }
 
     public boolean a(Session cy2, int n2, int n3, int n4, Player eb2) {

@@ -74,7 +74,7 @@ extends ItemRegistry {
                     ++n2;
                 }
                 if (cy2.a(n2, n3, n4) == 0 || !cy2.f(n2, n3, n4).a()) {
-                    if (cy2.q.d && this.a == HeadBanger1337.A.bh) {
+                    if (cy2.q.d && this.a == Block.A.bh) {
                         cy2.a(d3 + 0.5, d4 + 0.5, d5 + 0.5, "random.fizz", 0.5f, 2.6f + (cy2.l.nextFloat() - cy2.l.nextFloat()) * 0.8f);
                         for (int i2 = 0; i2 < 8; ++i2) {
                             cy2.a("largesmoke", (double)n2 + Math.random(), (double)n3 + Math.random(), (double)n4 + Math.random(), 0.0, 0.0, 0.0);

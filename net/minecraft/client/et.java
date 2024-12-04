@@ -10,7 +10,7 @@ extends ad {
     private byte[][] h = new byte[32][1024];
 
     public et() {
-        super(HeadBanger1337.be.bg);
+        super(Block.be.bg);
         Random random = new Random(100L);
         for (int i2 = 0; i2 < 32; ++i2) {
             for (int i3 = 0; i3 < 16; ++i3) {

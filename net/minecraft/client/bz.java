@@ -98,7 +98,7 @@ public class bz {
         if (n5 == 0) {
             return;
         }
-        HeadBanger1337 nq2 = HeadBanger1337.m[n5];
+        Block nq2 = Block.m[n5];
         int n6 = 4;
         for (int i2 = 0; i2 < n6; ++i2) {
             for (int i3 = 0; i3 < n6; ++i3) {
@@ -117,7 +117,7 @@ public class bz {
         if (n6 == 0) {
             return;
         }
-        HeadBanger1337 nq2 = HeadBanger1337.m[n6];
+        Block nq2 = Block.m[n6];
         float f2 = 0.1f;
         double d2 = (double)n2 + this.d.nextDouble() * (nq2.bn - nq2.bk - (double)(f2 * 2.0f)) + (double)f2 + nq2.bk;
         double d3 = (double)n3 + this.d.nextDouble() * (nq2.bo - nq2.bl - (double)(f2 * 2.0f)) + (double)f2 + nq2.bl;

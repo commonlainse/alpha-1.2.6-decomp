@@ -15,7 +15,7 @@ extends ItemRegistry {
     @Override
     public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
-        if (n6 == HeadBanger1337.aG.bh) {
+        if (n6 == Block.aG.bh) {
             if (!cy2.z) {
                 cy2.a(new Minecart(cy2, (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f, this.a));
             }

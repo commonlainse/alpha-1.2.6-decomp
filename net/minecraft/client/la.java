@@ -17,7 +17,7 @@ extends ItemRegistry {
             return false;
         }
         int n6 = cy2.a(n2, n3, n4);
-        if (n6 == HeadBanger1337.aA.bh) {
+        if (n6 == Block.aA.bh) {
             cy2.d(n2, n3 + 1, n4, this.a);
             --fp2.count;
             return true;

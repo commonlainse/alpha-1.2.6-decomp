@@ -42,7 +42,7 @@ public class oz {
 
     public boolean a(int n2, int n3) {
         int n4 = this.a.a(n2, n3);
-        return n4 == HeadBanger1337.E.bh;
+        return n4 == Block.E.bh;
     }
 
     public float a(long l2, float f2) {

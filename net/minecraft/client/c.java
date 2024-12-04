@@ -39,10 +39,10 @@ extends lh {
                 n10 = -1 - n10;
             }
             int n13 = 5;
-            if ((HeadBanger1337.o[n8] || HeadBanger1337.o[n11]) && !HeadBanger1337.o[n9] && !HeadBanger1337.o[n12]) {
+            if ((Block.o[n8] || Block.o[n11]) && !Block.o[n9] && !Block.o[n12]) {
                 n13 = 5;
             }
-            if ((HeadBanger1337.o[n9] || HeadBanger1337.o[n12]) && !HeadBanger1337.o[n8] && !HeadBanger1337.o[n11]) {
+            if ((Block.o[n9] || Block.o[n12]) && !Block.o[n8] && !Block.o[n11]) {
                 n13 = 4;
             }
             return (n5 == n13 ? this.bg + 16 : this.bg + 32) + n10;
@@ -61,25 +61,25 @@ extends lh {
                 n14 = -1 - n14;
             }
             int n17 = 3;
-            if ((HeadBanger1337.o[n6] || HeadBanger1337.o[n15]) && !HeadBanger1337.o[n7] && !HeadBanger1337.o[n16]) {
+            if ((Block.o[n6] || Block.o[n15]) && !Block.o[n7] && !Block.o[n16]) {
                 n17 = 3;
             }
-            if ((HeadBanger1337.o[n7] || HeadBanger1337.o[n16]) && !HeadBanger1337.o[n6] && !HeadBanger1337.o[n15]) {
+            if ((Block.o[n7] || Block.o[n16]) && !Block.o[n6] && !Block.o[n15]) {
                 n17 = 2;
             }
             return (n5 == n17 ? this.bg + 16 : this.bg + 32) + n14;
         }
         int n18 = 3;
-        if (HeadBanger1337.o[n6] && !HeadBanger1337.o[n7]) {
+        if (Block.o[n6] && !Block.o[n7]) {
             n18 = 3;
         }
-        if (HeadBanger1337.o[n7] && !HeadBanger1337.o[n6]) {
+        if (Block.o[n7] && !Block.o[n6]) {
             n18 = 2;
         }
-        if (HeadBanger1337.o[n8] && !HeadBanger1337.o[n9]) {
+        if (Block.o[n8] && !Block.o[n9]) {
             n18 = 5;
         }
-        if (HeadBanger1337.o[n9] && !HeadBanger1337.o[n8]) {
+        if (Block.o[n9] && !Block.o[n8]) {
             n18 = 4;
         }
         return n5 == n18 ? this.bg + 1 : this.bg;

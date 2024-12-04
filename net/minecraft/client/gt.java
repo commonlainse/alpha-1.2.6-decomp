@@ -14,15 +14,15 @@ extends ItemRegistry {
     public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
         hb hb2 = cy2.f(n2, n3 + 1, n4);
-        if (!hb2.a() && n6 == HeadBanger1337.u.bh || n6 == HeadBanger1337.v.bh) {
-            HeadBanger1337 nq2 = HeadBanger1337.aA;
+        if (!hb2.a() && n6 == Block.u.bh || n6 == Block.v.bh) {
+            Block nq2 = Block.aA;
             cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), nq2.bq.d(), (nq2.bq.b() + 1.0f) / 2.0f, nq2.bq.c() * 0.8f);
             if (cy2.z) {
                 return true;
             }
             cy2.d(n2, n3, n4, nq2.bh);
             fp2.b(1);
-            if (cy2.l.nextInt(8) == 0 && n6 == HeadBanger1337.u.bh) {
+            if (cy2.l.nextInt(8) == 0 && n6 == Block.u.bh) {
                 int n7 = 1;
                 for (int i2 = 0; i2 < n7; ++i2) {
                     float f2 = 0.7f;

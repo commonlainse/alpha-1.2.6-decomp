@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class v
-extends HeadBanger1337 {
+extends Block {
     public v(int n2, int n3) {
         super(n2, n3, hb.p);
     }
@@ -23,7 +23,7 @@ extends HeadBanger1337 {
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, int n5) {
-        if (n5 > 0 && HeadBanger1337.m[n5].e() && cy2.o(n2, n3, n4)) {
+        if (n5 > 0 && Block.m[n5].e() && cy2.o(n2, n3, n4)) {
             this.b(cy2, n2, n3, n4, 0);
             cy2.d(n2, n3, n4, 0);
         }

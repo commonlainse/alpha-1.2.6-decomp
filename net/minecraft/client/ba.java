@@ -10,7 +10,7 @@ extends ad {
     protected float[] j = new float[256];
 
     public ba() {
-        super(HeadBanger1337.C.bg);
+        super(Block.C.bg);
     }
 
     @Override

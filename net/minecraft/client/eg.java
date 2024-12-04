@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class eg {
     private String[][] a = new String[][]{{"XXX", " # ", " # "}, {"X", "#", "#"}, {"XX", "X#", " #"}, {"XX", " #", " #"}};
-    private Object[][] b = new Object[][]{{HeadBanger1337.x, HeadBanger1337.w, ItemRegistry.m, ItemRegistry.l, ItemRegistry.n}, {ItemRegistry.r, ItemRegistry.v, ItemRegistry.e, ItemRegistry.z, ItemRegistry.G}, {ItemRegistry.q, ItemRegistry.u, ItemRegistry.d, ItemRegistry.y, ItemRegistry.F}, {ItemRegistry.s, ItemRegistry.w, ItemRegistry.f, ItemRegistry.A, ItemRegistry.H}, {ItemRegistry.L, ItemRegistry.M, ItemRegistry.N, ItemRegistry.O, ItemRegistry.P}};
+    private Object[][] b = new Object[][]{{Block.x, Block.w, ItemRegistry.m, ItemRegistry.l, ItemRegistry.n}, {ItemRegistry.r, ItemRegistry.v, ItemRegistry.e, ItemRegistry.z, ItemRegistry.G}, {ItemRegistry.q, ItemRegistry.u, ItemRegistry.d, ItemRegistry.y, ItemRegistry.F}, {ItemRegistry.s, ItemRegistry.w, ItemRegistry.f, ItemRegistry.A, ItemRegistry.H}, {ItemRegistry.L, ItemRegistry.M, ItemRegistry.N, ItemRegistry.O, ItemRegistry.P}};
 
     public void a(RecipeRegistry en2) {
         for (int i2 = 0; i2 < this.b[0].length; ++i2) {

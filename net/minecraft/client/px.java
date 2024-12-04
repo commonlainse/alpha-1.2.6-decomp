@@ -78,10 +78,10 @@ implements bd {
                                 double d19 = dArray[(i2 * 4 + i6) * 16 + (i3 * 4 + i7)];
                                 int n11 = 0;
                                 if (i4 * 8 + i5 < n5) {
-                                    n11 = d19 < 0.5 && i4 * 8 + i5 >= n5 - 1 ? HeadBanger1337.aT.bh : HeadBanger1337.B.bh;
+                                    n11 = d19 < 0.5 && i4 * 8 + i5 >= n5 - 1 ? Block.aT.bh : Block.B.bh;
                                 }
                                 if (d17 > 0.0) {
-                                    n11 = HeadBanger1337.t.bh;
+                                    n11 = Block.t.bh;
                                 }
                                 byArray[n9] = (byte)n11;
                                 n9 += n10;
@@ -118,7 +118,7 @@ implements bd {
                 for (int i4 = 127; i4 >= 0; --i4) {
                     int n7 = (i2 * 16 + i3) * 128 + i4;
                     if (i4 <= 0 + this.j.nextInt(5)) {
-                        byArray[n7] = (byte)HeadBanger1337.z.bh;
+                        byArray[n7] = (byte)Block.z.bh;
                         continue;
                     }
                     byte by4 = byArray[n7];
@@ -126,11 +126,11 @@ implements bd {
                         n6 = -1;
                         continue;
                     }
-                    if (by4 != HeadBanger1337.t.bh) continue;
+                    if (by4 != Block.t.bh) continue;
                     if (n6 == -1) {
                         if (n5 <= 0) {
                             by2 = 0;
-                            by3 = (byte)HeadBanger1337.t.bh;
+                            by3 = (byte)Block.t.bh;
                         } else if (i4 >= n4 - 4 && i4 <= n4 + 1) {
                             by2 = gg2.o;
                             by3 = gg2.p;
@@ -138,17 +138,17 @@ implements bd {
                                 by2 = 0;
                             }
                             if (bl3) {
-                                by3 = (byte)HeadBanger1337.F.bh;
+                                by3 = (byte)Block.F.bh;
                             }
                             if (bl2) {
-                                by2 = (byte)HeadBanger1337.E.bh;
+                                by2 = (byte)Block.E.bh;
                             }
                             if (bl2) {
-                                by3 = (byte)HeadBanger1337.E.bh;
+                                by3 = (byte)Block.E.bh;
                             }
                         }
                         if (i4 < n4 && by2 == 0) {
-                            by2 = (byte)HeadBanger1337.B.bh;
+                            by2 = (byte)Block.B.bh;
                         }
                         n6 = n5;
                         if (i4 >= n4 - 1) {
@@ -285,14 +285,14 @@ implements bd {
             n11 = n12 + this.j.nextInt(16) + 8;
             n10 = this.j.nextInt(128);
             n9 = n13 + this.j.nextInt(16) + 8;
-            new bv(HeadBanger1337.B.bh).a(this.p, this.j, n11, n10, n9);
+            new bv(Block.B.bh).a(this.p, this.j, n11, n10, n9);
         }
         if (this.j.nextInt(8) == 0) {
             n11 = n12 + this.j.nextInt(16) + 8;
             n10 = this.j.nextInt(this.j.nextInt(120) + 8);
             n9 = n13 + this.j.nextInt(16) + 8;
             if (n10 < 64 || this.j.nextInt(10) == 0) {
-                new bv(HeadBanger1337.D.bh).a(this.p, this.j, n11, n10, n9);
+                new bv(Block.D.bh).a(this.p, this.j, n11, n10, n9);
             }
         }
         for (n11 = 0; n11 < 8; ++n11) {
@@ -311,43 +311,43 @@ implements bd {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(128);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.v.bh, 32).a(this.p, this.j, n10, n9, n8);
+            new df(Block.v.bh, 32).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 10; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(128);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.F.bh, 32).a(this.p, this.j, n10, n9, n8);
+            new df(Block.F.bh, 32).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 20; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(128);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.I.bh, 16).a(this.p, this.j, n10, n9, n8);
+            new df(Block.I.bh, 16).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 20; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(64);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.H.bh, 8).a(this.p, this.j, n10, n9, n8);
+            new df(Block.H.bh, 8).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 2; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(32);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.G.bh, 8).a(this.p, this.j, n10, n9, n8);
+            new df(Block.G.bh, 8).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 8; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(16);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.aN.bh, 7).a(this.p, this.j, n10, n9, n8);
+            new df(Block.aN.bh, 7).a(this.p, this.j, n10, n9, n8);
         }
         for (n11 = 0; n11 < 1; ++n11) {
             n10 = n12 + this.j.nextInt(16);
             n9 = this.j.nextInt(16);
             n8 = n13 + this.j.nextInt(16);
-            new df(HeadBanger1337.aw.bh, 7).a(this.p, this.j, n10, n9, n8);
+            new df(Block.aw.bh, 7).a(this.p, this.j, n10, n9, n8);
         }
         d2 = 0.5;
         n11 = (int)((this.c.a((double)n12 * d2, (double)n13 * d2) / 8.0 + this.j.nextDouble() * 4.0 + 4.0) / 3.0);
@@ -393,25 +393,25 @@ implements bd {
             n7 = n12 + this.j.nextInt(16) + 8;
             n6 = this.j.nextInt(128);
             n5 = n13 + this.j.nextInt(16) + 8;
-            new aj(HeadBanger1337.ad.bh).a(this.p, this.j, n7, n6, n5);
+            new aj(Block.ad.bh).a(this.p, this.j, n7, n6, n5);
         }
         if (this.j.nextInt(2) == 0) {
             n8 = n12 + this.j.nextInt(16) + 8;
             n7 = this.j.nextInt(128);
             n6 = n13 + this.j.nextInt(16) + 8;
-            new aj(HeadBanger1337.ae.bh).a(this.p, this.j, n8, n7, n6);
+            new aj(Block.ae.bh).a(this.p, this.j, n8, n7, n6);
         }
         if (this.j.nextInt(4) == 0) {
             n8 = n12 + this.j.nextInt(16) + 8;
             n7 = this.j.nextInt(128);
             n6 = n13 + this.j.nextInt(16) + 8;
-            new aj(HeadBanger1337.af.bh).a(this.p, this.j, n8, n7, n6);
+            new aj(Block.af.bh).a(this.p, this.j, n8, n7, n6);
         }
         if (this.j.nextInt(8) == 0) {
             n8 = n12 + this.j.nextInt(16) + 8;
             n7 = this.j.nextInt(128);
             n6 = n13 + this.j.nextInt(16) + 8;
-            new aj(HeadBanger1337.ag.bh).a(this.p, this.j, n8, n7, n6);
+            new aj(Block.ag.bh).a(this.p, this.j, n8, n7, n6);
         }
         for (n8 = 0; n8 < 10; ++n8) {
             n7 = n12 + this.j.nextInt(16) + 8;
@@ -439,13 +439,13 @@ implements bd {
             n6 = n12 + this.j.nextInt(16) + 8;
             n5 = this.j.nextInt(this.j.nextInt(120) + 8);
             n4 = n13 + this.j.nextInt(16) + 8;
-            new pj(HeadBanger1337.A.bh).a(this.p, this.j, n6, n5, n4);
+            new pj(Block.A.bh).a(this.p, this.j, n6, n5, n4);
         }
         for (n7 = 0; n7 < 20; ++n7) {
             n6 = n12 + this.j.nextInt(16) + 8;
             n5 = this.j.nextInt(this.j.nextInt(this.j.nextInt(112) + 8) + 8);
             n4 = n13 + this.j.nextInt(16) + 8;
-            new pj(HeadBanger1337.C.bh).a(this.p, this.j, n6, n5, n4);
+            new pj(Block.C.bh).a(this.p, this.j, n6, n5, n4);
         }
         this.w = this.p.a().a(this.w, n12 + 8, n13 + 8, 16, 16);
         for (n7 = n12 + 8; n7 < n12 + 8 + 16; ++n7) {
@@ -455,7 +455,7 @@ implements bd {
                 int n14 = this.p.e(n7, n6);
                 double d3 = this.w[n5 * 16 + n4] - (double)(n14 - 64) / 64.0 * 0.3;
                 if (!(d3 < 0.5) || n14 <= 0 || n14 >= 128 || this.p.a(n7, n14, n6) != 0 || !this.p.f(n7, n14 - 1, n6).c() || this.p.f(n7, n14 - 1, n6) == hb.r) continue;
-                this.p.d(n7, n14, n6, HeadBanger1337.aS.bh);
+                this.p.d(n7, n14, n6, Block.aS.bh);
             }
         }
         dw.a = false;

@@ -44,13 +44,13 @@ extends oz {
     @Override
     public boolean a(int n2, int n3) {
         int n4 = this.a.a(n2, n3);
-        if (n4 == HeadBanger1337.z.bh) {
+        if (n4 == Block.z.bh) {
             return false;
         }
         if (n4 == 0) {
             return false;
         }
-        return HeadBanger1337.o[n4];
+        return Block.o[n4];
     }
 
     @Override

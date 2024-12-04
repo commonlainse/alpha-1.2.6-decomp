@@ -17,7 +17,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public float a(Item fp2, HeadBanger1337 nq2) {
+    public float a(Item fp2, Block nq2) {
         return 1.5f;
     }
 

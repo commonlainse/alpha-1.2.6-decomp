@@ -36,11 +36,11 @@ extends aq {
         }
         GL11.glTranslatef((float)((float)d2), (float)((float)d3 + f4), (float)((float)d4));
         GL11.glEnable(32826);
-        if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
+        if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
             GL11.glRotatef((float)f5, 0.0f, 1.0f, 0.0f);
             this.a("/terrain.png");
             float f6 = 0.25f;
-            if (!HeadBanger1337.m[fp2.id].b() && fp2.id != HeadBanger1337.ak.bh) {
+            if (!Block.m[fp2.id].b() && fp2.id != Block.ak.bh) {
                 f6 = 0.5f;
             }
             GL11.glScalef((float)f6, (float)f6, (float)f6);
@@ -52,7 +52,7 @@ extends aq {
                     float f9 = (this.e.nextFloat() * 2.0f - 1.0f) * 0.2f / f6;
                     GL11.glTranslatef((float)f7, (float)f8, (float)f9);
                 }
-                this.a.a(HeadBanger1337.m[fp2.id]);
+                this.a.a(Block.m[fp2.id]);
                 GL11.glPopMatrix();
             }
         } else {
@@ -98,10 +98,10 @@ extends aq {
         if (fp2 == null) {
             return;
         }
-        if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
+        if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
             int n4 = fp2.id;
             fu2.b(fu2.a("/terrain.png"));
-            HeadBanger1337 nq2 = HeadBanger1337.m[n4];
+            Block nq2 = Block.m[n4];
             GL11.glPushMatrix();
             GL11.glTranslatef((float)(n2 - 2), (float)(n3 + 3), 0.0f);
             GL11.glScalef(10.0f, 10.0f, 10.0f);

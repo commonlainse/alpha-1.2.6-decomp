@@ -12,7 +12,7 @@ extends ok {
 
     @Override
     protected boolean b(int n2) {
-        return HeadBanger1337.o[n2];
+        return Block.o[n2];
     }
 
     @Override

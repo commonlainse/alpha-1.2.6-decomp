@@ -78,7 +78,7 @@ extends il {
     private int g(Session cy2, int n2, int n3, int n4, int n5) {
         int n6;
         int n7 = cy2.a(n2, n3, n4);
-        if (n7 == HeadBanger1337.J.bh) {
+        if (n7 == Block.J.bh) {
             return 16;
         }
         if (n7 == this.bh && (n6 = cy2.e(n2, n3, n4)) != 0 && n6 > n5) {
@@ -115,7 +115,7 @@ extends il {
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.y.bh;
+        return Block.y.bh;
     }
 
     @Override

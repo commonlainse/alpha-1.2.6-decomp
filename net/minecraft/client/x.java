@@ -43,10 +43,10 @@ extends fy {
         int n6;
         int n7 = 0;
         int n8 = 0;
-        if (cy2.a(n2 - 1, n3, n4) == HeadBanger1337.ap.bh || cy2.a(n2 + 1, n3, n4) == HeadBanger1337.ap.bh) {
+        if (cy2.a(n2 - 1, n3, n4) == Block.ap.bh || cy2.a(n2 + 1, n3, n4) == Block.ap.bh) {
             n7 = 1;
         }
-        if (cy2.a(n2, n3, n4 - 1) == HeadBanger1337.ap.bh || cy2.a(n2, n3, n4 + 1) == HeadBanger1337.ap.bh) {
+        if (cy2.a(n2, n3, n4 - 1) == Block.ap.bh || cy2.a(n2, n3, n4 + 1) == Block.ap.bh) {
             n8 = 1;
         }
         System.out.println(n7 + ", " + n8);
@@ -63,14 +63,14 @@ extends fy {
                 boolean bl3 = bl2 = n6 == -1 || n6 == 2 || n5 == -1 || n5 == 3;
                 if (!(n6 != -1 && n6 != 2 || n5 != -1 && n5 != 3)) continue;
                 int n9 = cy2.a(n2 + n7 * n6, n3 + n5, n4 + n8 * n6);
-                if (!(bl2 ? n9 != HeadBanger1337.ap.bh : n9 != 0 && n9 != HeadBanger1337.ar.bh)) continue;
+                if (!(bl2 ? n9 != Block.ap.bh : n9 != 0 && n9 != Block.ar.bh)) continue;
                 return false;
             }
         }
         cy2.i = true;
         for (n6 = 0; n6 < 2; ++n6) {
             for (n5 = 0; n5 < 3; ++n5) {
-                cy2.d(n2 + n7 * n6, n3 + n5, n4 + n8 * n6, HeadBanger1337.be.bh);
+                cy2.d(n2 + n7 * n6, n3 + n5, n4 + n8 * n6, Block.be.bh);
             }
         }
         cy2.i = false;
@@ -91,13 +91,13 @@ extends fy {
         while (cy2.a(n2, n9 - 1, n4) == this.bh) {
             --n9;
         }
-        if (cy2.a(n2, n9 - 1, n4) != HeadBanger1337.ap.bh) {
+        if (cy2.a(n2, n9 - 1, n4) != Block.ap.bh) {
             cy2.d(n2, n3, n4, 0);
             return;
         }
         for (n6 = 1; n6 < 4 && cy2.a(n2, n9 + n6, n4) == this.bh; ++n6) {
         }
-        if (n6 != 3 || cy2.a(n2, n9 + n6, n4) != HeadBanger1337.ap.bh) {
+        if (n6 != 3 || cy2.a(n2, n9 + n6, n4) != Block.ap.bh) {
             cy2.d(n2, n3, n4, 0);
             return;
         }
@@ -107,7 +107,7 @@ extends fy {
             cy2.d(n2, n3, n4, 0);
             return;
         }
-        if (!(cy2.a(n2 + n7, n3, n4 + n8) == HeadBanger1337.ap.bh && cy2.a(n2 - n7, n3, n4 - n8) == this.bh || cy2.a(n2 - n7, n3, n4 - n8) == HeadBanger1337.ap.bh && cy2.a(n2 + n7, n3, n4 + n8) == this.bh)) {
+        if (!(cy2.a(n2 + n7, n3, n4 + n8) == Block.ap.bh && cy2.a(n2 - n7, n3, n4 - n8) == this.bh || cy2.a(n2 - n7, n3, n4 - n8) == Block.ap.bh && cy2.a(n2 + n7, n3, n4 + n8) == this.bh)) {
             cy2.d(n2, n3, n4, 0);
             return;
         }

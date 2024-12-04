@@ -9,12 +9,12 @@ extends ItemRegistry {
     public bc(int n2) {
         super(n2);
         this.a = n2 + 256;
-        this.a(HeadBanger1337.m[n2 + 256].a(2));
+        this.a(Block.m[n2 + 256].a(2));
     }
 
     @Override
     public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
-        if (cy2.a(n2, n3, n4) == HeadBanger1337.aS.bh) {
+        if (cy2.a(n2, n3, n4) == Block.aS.bh) {
             n5 = 0;
         } else {
             if (n5 == 0) {
@@ -40,10 +40,10 @@ extends ItemRegistry {
             return false;
         }
         if (cy2.a(this.a, n2, n3, n4, false)) {
-            HeadBanger1337 nq2 = HeadBanger1337.m[this.a];
+            Block nq2 = Block.m[this.a];
             if (cy2.d(n2, n3, n4, this.a)) {
-                HeadBanger1337.m[this.a].d(cy2, n2, n3, n4, n5);
-                HeadBanger1337.m[this.a].a(cy2, n2, n3, n4, (Mob)eb2);
+                Block.m[this.a].d(cy2, n2, n3, n4, n5);
+                Block.m[this.a].a(cy2, n2, n3, n4, (Mob)eb2);
                 cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), nq2.bq.d(), (nq2.bq.b() + 1.0f) / 2.0f, nq2.bq.c() * 0.8f);
                 --fp2.count;
             }

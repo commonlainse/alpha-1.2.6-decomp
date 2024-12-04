@@ -75,8 +75,8 @@ public class TileEntityRegistry {
         return d5 * d5 + d6 * d6 + d7 * d7;
     }
 
-    public HeadBanger1337 g() {
-        return HeadBanger1337.m[this.e.a(this.f, this.g, this.h)];
+    public Block g() {
+        return Block.m[this.e.a(this.f, this.g, this.h)];
     }
 
     static {

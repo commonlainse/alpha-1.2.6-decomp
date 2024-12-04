@@ -54,7 +54,7 @@ extends lw {
             f2 = 0.58800006f;
             int n2 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
             if (n2 > 0) {
-                f2 = HeadBanger1337.m[n2].bt * 0.98f;
+                f2 = Block.m[n2].bt * 0.98f;
             }
         }
         this.az *= (double)f2;
@@ -82,13 +82,13 @@ extends lw {
         double d5 = d2 - (double)n2;
         double d6 = d3 - (double)n3;
         double d7 = d4 - (double)n4;
-        if (HeadBanger1337.o[this.as.a(n2, n3, n4)]) {
-            boolean bl2 = !HeadBanger1337.o[this.as.a(n2 - 1, n3, n4)];
-            boolean bl3 = !HeadBanger1337.o[this.as.a(n2 + 1, n3, n4)];
-            boolean bl4 = !HeadBanger1337.o[this.as.a(n2, n3 - 1, n4)];
-            boolean bl5 = !HeadBanger1337.o[this.as.a(n2, n3 + 1, n4)];
-            boolean bl6 = !HeadBanger1337.o[this.as.a(n2, n3, n4 - 1)];
-            boolean bl7 = !HeadBanger1337.o[this.as.a(n2, n3, n4 + 1)];
+        if (Block.o[this.as.a(n2, n3, n4)]) {
+            boolean bl2 = !Block.o[this.as.a(n2 - 1, n3, n4)];
+            boolean bl3 = !Block.o[this.as.a(n2 + 1, n3, n4)];
+            boolean bl4 = !Block.o[this.as.a(n2, n3 - 1, n4)];
+            boolean bl5 = !Block.o[this.as.a(n2, n3 + 1, n4)];
+            boolean bl6 = !Block.o[this.as.a(n2, n3, n4 - 1)];
+            boolean bl7 = !Block.o[this.as.a(n2, n3, n4 + 1)];
             int n5 = -1;
             double d8 = 9999.0;
             if (bl2 && d5 < d8) {

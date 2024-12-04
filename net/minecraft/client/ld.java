@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public abstract class ld
-extends HeadBanger1337 {
+extends Block {
     protected ld(int n2, hb hb2) {
         super(n2, (hb2 == hb.g ? 14 : 12) * 16 + 13, hb2);
         float f2 = 0.0f;
@@ -217,10 +217,10 @@ extends HeadBanger1337 {
     public static double a(pk pk2, int n2, int n3, int n4, hb hb2) {
         Vector3D ao2 = null;
         if (hb2 == hb.f) {
-            ao2 = ((ld)HeadBanger1337.A).e(pk2, n2, n3, n4);
+            ao2 = ((ld)Block.A).e(pk2, n2, n3, n4);
         }
         if (hb2 == hb.g) {
-            ao2 = ((ld)HeadBanger1337.C).e(pk2, n2, n3, n4);
+            ao2 = ((ld)Block.C).e(pk2, n2, n3, n4);
         }
         if (ao2.x == 0.0 && ao2.z == 0.0) {
             return -1000.0;
@@ -262,9 +262,9 @@ extends HeadBanger1337 {
             if (bl2) {
                 int n5 = cy2.e(n2, n3, n4);
                 if (n5 == 0) {
-                    cy2.d(n2, n3, n4, HeadBanger1337.ap.bh);
+                    cy2.d(n2, n3, n4, Block.ap.bh);
                 } else if (n5 <= 4) {
-                    cy2.d(n2, n3, n4, HeadBanger1337.w.bh);
+                    cy2.d(n2, n3, n4, Block.w.bh);
                 }
                 this.i(cy2, n2, n3, n4);
             }

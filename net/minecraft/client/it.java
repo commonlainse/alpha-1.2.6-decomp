@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class it
-extends HeadBanger1337 {
+extends Block {
     public it(int n2, int n3) {
         super(n2, n3, hb.m);
     }

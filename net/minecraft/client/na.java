@@ -24,7 +24,7 @@ extends of {
             return ((oj)fp2.a()).bb == this.c;
         }
         System.out.println(fp2.a().id + ", " + this.c);
-        if (fp2.a().id == HeadBanger1337.ba.bh) {
+        if (fp2.a().id == Block.ba.bh) {
             return this.c == 0;
         }
         return false;

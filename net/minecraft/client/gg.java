@@ -27,8 +27,8 @@ public class gg {
     static private gg[] t = new gg[4096];
 
     public gg() {
-        this.o = (byte)HeadBanger1337.u.bh;
-        this.p = (byte)HeadBanger1337.v.bh;
+        this.o = (byte)Block.u.bh;
+        this.p = (byte)Block.v.bh;
         this.q = 5169201;
         this.monsters = new Class[]{Spider.class, Zombie.class, Skeleton.class, Creeper.class};
         this.creatures = new Class[]{Sheep.class, Pig.class, Chicken.class, Cow.class};
@@ -40,8 +40,8 @@ public class gg {
                 gg.t[i2 + i3 * 64] = gg.a((float)i2 / 63.0f, (float)i3 / 63.0f);
             }
         }
-        gg.h.o = gg.h.p = (byte)HeadBanger1337.E.bh;
-        gg.j.o = gg.j.p = (byte)HeadBanger1337.E.bh;
+        gg.h.o = gg.h.p = (byte)Block.E.bh;
+        gg.j.o = gg.j.p = (byte)Block.E.bh;
     }
 
     protected gg b() {

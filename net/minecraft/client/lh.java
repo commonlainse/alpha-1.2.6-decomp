@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public abstract class lh
-extends HeadBanger1337 {
+extends Block {
     protected lh(int n2, hb hb2) {
         super(n2, hb2);
         lh.p[n2] = true;

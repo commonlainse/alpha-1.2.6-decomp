@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class qj
-extends HeadBanger1337 {
+extends Block {
     private boolean a;
 
     public qj(int n2, boolean bl2) {
@@ -32,7 +32,7 @@ extends HeadBanger1337 {
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, int n5) {
-        if (this != HeadBanger1337.ak) {
+        if (this != Block.ak) {
             return;
         }
     }
@@ -40,18 +40,18 @@ extends HeadBanger1337 {
     @Override
     public void e(Session cy2, int n2, int n3, int n4) {
         int n5;
-        if (this != HeadBanger1337.ak) {
+        if (this != Block.ak) {
             super.e(cy2, n2, n3, n4);
         }
         if ((n5 = cy2.a(n2, n3 - 1, n4)) == qj.ak.bh) {
             cy2.d(n2, n3, n4, 0);
-            cy2.d(n2, n3 - 1, n4, HeadBanger1337.aj.bh);
+            cy2.d(n2, n3 - 1, n4, Block.aj.bh);
         }
     }
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.ak.bh;
+        return Block.ak.bh;
     }
 
     @Override
@@ -61,7 +61,7 @@ extends HeadBanger1337 {
 
     @Override
     public boolean b(pk pk2, int n2, int n3, int n4, int n5) {
-        if (this != HeadBanger1337.ak) {
+        if (this != Block.ak) {
             super.b(pk2, n2, n3, n4, n5);
         }
         if (n5 == 1) {

@@ -26,7 +26,7 @@ extends fy {
     public void b(Session cy2, int n2, int n3, int n4) {
         hb hb2 = cy2.f(n2, n3 - 1, n4);
         if (hb2.c() || hb2.d()) {
-            cy2.d(n2, n3, n4, HeadBanger1337.A.bh);
+            cy2.d(n2, n3, n4, Block.A.bh);
         }
     }
 
@@ -37,9 +37,9 @@ extends fy {
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, Random random) {
-        if (cy2.a(ch.Block, n2, n3, n4) > 11 - HeadBanger1337.q[this.bh]) {
+        if (cy2.a(ch.Block, n2, n3, n4) > 11 - Block.q[this.bh]) {
             this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
-            cy2.d(n2, n3, n4, HeadBanger1337.B.bh);
+            cy2.d(n2, n3, n4, Block.B.bh);
         }
     }
 }

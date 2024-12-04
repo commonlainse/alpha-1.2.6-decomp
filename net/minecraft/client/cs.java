@@ -57,7 +57,7 @@ implements pk {
         if (n2 < -32000000 || n4 < -32000000 || n2 >= 32000000 || n4 > 32000000) {
             return 15;
         }
-        if (bl2 && ((n5 = this.a(n2, n3, n4)) == HeadBanger1337.ak.bh || n5 == HeadBanger1337.aA.bh)) {
+        if (bl2 && ((n5 = this.a(n2, n3, n4)) == Block.ak.bh || n5 == Block.aA.bh)) {
             int n6 = this.a(n2, n3 + 1, n4, false);
             int n7 = this.a(n2 + 1, n3, n4, false);
             int n8 = this.a(n2 - 1, n3, n4, false);
@@ -111,12 +111,12 @@ implements pk {
         if (n5 == 0) {
             return hb.a;
         }
-        return HeadBanger1337.m[n5].bs;
+        return Block.m[n5].bs;
     }
 
     @Override
     public boolean g(int n2, int n3, int n4) {
-        HeadBanger1337 nq2 = HeadBanger1337.m[this.a(n2, n3, n4)];
+        Block nq2 = Block.m[this.a(n2, n3, n4)];
         if (nq2 == null) {
             return false;
         }

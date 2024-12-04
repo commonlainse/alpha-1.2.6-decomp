@@ -46,7 +46,7 @@ public class ItemRegistry {
     public static ItemRegistry N = new gt(36, 2).a(130);
     public static ItemRegistry O = new gt(37, 3).a(131);
     public static ItemRegistry P = new gt(38, 1).a(132);
-    public static ItemRegistry Q = new la(39, HeadBanger1337.az.bh).a(9);
+    public static ItemRegistry Q = new la(39, Block.az.bh).a(9);
     public static ItemRegistry R = new ItemRegistry(40).a(25);
     public static ItemRegistry S = new qk(41, 5).a(41);
     public static ItemRegistry T = new oj(42, 0, 0, 0).a(0);
@@ -77,8 +77,8 @@ public class ItemRegistry {
     public static ItemRegistry as = new nv(67).a(42);
     public static ItemRegistry at = new eu(68, hb.c).a(43);
     public static ItemRegistry au = new ag(69, 0).a(74);
-    public static ItemRegistry av = new ag(70, HeadBanger1337.A.bh).a(75);
-    public static ItemRegistry aw = new ag(71, HeadBanger1337.C.bh).a(76);
+    public static ItemRegistry av = new ag(70, Block.A.bh).a(75);
+    public static ItemRegistry aw = new ag(71, Block.C.bh).a(76);
     public static ItemRegistry ax = new lb(72, 0).a(135);
     public static ItemRegistry ay = new lk(73).a(104);
     public static ItemRegistry az = new eu(74, hb.e).a(44);
@@ -89,7 +89,7 @@ public class ItemRegistry {
     public static ItemRegistry aE = new ag(79, -1).a(77);
     public static ItemRegistry aF = new ItemRegistry(80).a(22);
     public static ItemRegistry aG = new ItemRegistry(81).a(57);
-    public static ItemRegistry aH = new hh(82, HeadBanger1337.aX).a(27);
+    public static ItemRegistry aH = new hh(82, Block.aX).a(27);
     public static ItemRegistry aI = new ItemRegistry(83).a(58);
     public static ItemRegistry aJ = new ItemRegistry(84).a(59);
     public static ItemRegistry aK = new ItemRegistry(85).a(30);
@@ -131,7 +131,7 @@ public class ItemRegistry {
         return false;
     }
 
-    public float a(Item fp2, HeadBanger1337 nq2) {
+    public float a(Item fp2, Block nq2) {
         return 1.0f;
     }
 
@@ -157,7 +157,7 @@ public class ItemRegistry {
         return 1;
     }
 
-    public boolean a(HeadBanger1337 nq2) {
+    public boolean a(Block nq2) {
         return false;
     }
 

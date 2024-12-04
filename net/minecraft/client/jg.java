@@ -29,7 +29,7 @@ extends iv {
         int n7 = this.a.e.e(n2, n3, n4);
         boolean bl2 = super.b(n2, n3, n4, n5);
         Item fp2 = this.a.g.w();
-        boolean bl3 = this.a.g.b(HeadBanger1337.m[n6]);
+        boolean bl3 = this.a.g.b(Block.m[n6]);
         if (fp2 != null) {
             fp2.a(n6, n2, n3, n4);
             if (fp2.count == 0) {
@@ -38,7 +38,7 @@ extends iv {
             }
         }
         if (bl2 && bl3) {
-            HeadBanger1337.m[n6].a_(this.a.e, n2, n3, n4, n7);
+            Block.m[n6].a_(this.a.e, n2, n3, n4, n7);
         }
         return bl2;
     }
@@ -47,9 +47,9 @@ extends iv {
     public void a(int n2, int n3, int n4, int n5) {
         int n6 = this.a.e.a(n2, n3, n4);
         if (n6 > 0 && this.f == 0.0f) {
-            HeadBanger1337.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
+            Block.m[n6].b(this.a.e, n2, n3, n4, this.a.g);
         }
-        if (n6 > 0 && HeadBanger1337.m[n6].a(this.a.g) >= 1.0f) {
+        if (n6 > 0 && Block.m[n6].a(this.a.g) >= 1.0f) {
             this.b(n2, n3, n4, n5);
         }
     }
@@ -71,7 +71,7 @@ extends iv {
             if (n6 == 0) {
                 return;
             }
-            HeadBanger1337 nq2 = HeadBanger1337.m[n6];
+            Block nq2 = Block.m[n6];
             this.f += nq2.a(this.a.g);
             if (this.h % 4.0f == 0.0f && nq2 != null) {
                 this.a.A.b(nq2.bq.d(), (float)n2 + 0.5f, (float)n3 + 0.5f, (float)n4 + 0.5f, (nq2.bq.b() + 1.0f) / 8.0f, nq2.bq.c() * 0.5f);

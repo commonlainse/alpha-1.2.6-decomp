@@ -367,14 +367,14 @@ public abstract class lw {
             n3 = this.as.a(n6, n2, n7);
             if (this.aS > (float)this.b && n3 > 0) {
                 ++this.b;
-                bi bi2 = HeadBanger1337.m[n3].bq;
-                if (this.as.a(n6, n2 + 1, n7) == HeadBanger1337.aS.bh) {
-                    bi2 = HeadBanger1337.aS.bq;
+                bi bi2 = Block.m[n3].bq;
+                if (this.as.a(n6, n2 + 1, n7) == Block.aS.bh) {
+                    bi2 = Block.aS.bq;
                     this.as.a(this, bi2.d(), bi2.b() * 0.15f, bi2.c());
-                } else if (!HeadBanger1337.m[n3].bs.d()) {
+                } else if (!Block.m[n3].bs.d()) {
                     this.as.a(this, bi2.d(), bi2.b() * 0.15f, bi2.c());
                 }
-                HeadBanger1337.m[n3].b(this.as, n6, n2, n7, this);
+                Block.m[n3].b(this.as, n6, n2, n7, this);
             }
         }
         int n8 = TrigLookup.b(this.aG.a);
@@ -388,7 +388,7 @@ public abstract class lw {
                 for (int i4 = n9; i4 <= n11; ++i4) {
                     int n12 = this.as.a(i2, i3, i4);
                     if (n12 <= 0) continue;
-                    HeadBanger1337.m[n12].a(this.as, i2, i3, i4, this);
+                    Block.m[n12].a(this.as, i2, i3, i4, this);
                 }
             }
         }
@@ -449,7 +449,7 @@ public abstract class lw {
         double d2 = this.ax + (double)this.v();
         int n4 = TrigLookup.b(this.aw);
         int n5 = this.as.a(n4, n3 = TrigLookup.d(TrigLookup.b(d2)), n2 = TrigLookup.b(this.ay));
-        if (n5 != 0 && HeadBanger1337.m[n5].bs == hb2) {
+        if (n5 != 0 && Block.m[n5].bs == hb2) {
             float f2 = ld.b(this.as.e(n4, n3, n2)) - 0.11111111f;
             float f3 = (float)(n3 + 1) - f2;
             return d2 < (double)f3;

@@ -16,7 +16,7 @@ extends lh {
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.aB.bh;
+        return Block.aB.bh;
     }
 
     @Override
@@ -31,16 +31,16 @@ extends lh {
         int n7 = cy2.a(n2 - 1, n3, n4);
         int n8 = cy2.a(n2 + 1, n3, n4);
         int n9 = 3;
-        if (HeadBanger1337.o[n5] && !HeadBanger1337.o[n6]) {
+        if (Block.o[n5] && !Block.o[n6]) {
             n9 = 3;
         }
-        if (HeadBanger1337.o[n6] && !HeadBanger1337.o[n5]) {
+        if (Block.o[n6] && !Block.o[n5]) {
             n9 = 2;
         }
-        if (HeadBanger1337.o[n7] && !HeadBanger1337.o[n8]) {
+        if (Block.o[n7] && !Block.o[n8]) {
             n9 = 5;
         }
-        if (HeadBanger1337.o[n8] && !HeadBanger1337.o[n7]) {
+        if (Block.o[n8] && !Block.o[n7]) {
             n9 = 4;
         }
         cy2.b(n2, n3, n4, n9);
@@ -49,10 +49,10 @@ extends lh {
     @Override
     public int a(pk pk2, int n2, int n3, int n4, int n5) {
         if (n5 == 1) {
-            return HeadBanger1337.t.bg;
+            return Block.t.bg;
         }
         if (n5 == 0) {
-            return HeadBanger1337.t.bg;
+            return Block.t.bg;
         }
         int n6 = pk2.e(n2, n3, n4);
         if (n5 != n6) {
@@ -93,10 +93,10 @@ extends lh {
     @Override
     public int a(int n2) {
         if (n2 == 1) {
-            return HeadBanger1337.t.bh;
+            return Block.t.bh;
         }
         if (n2 == 0) {
-            return HeadBanger1337.t.bh;
+            return Block.t.bh;
         }
         if (n2 == 3) {
             return this.bg - 1;
@@ -115,9 +115,9 @@ extends lh {
         int n5 = cy2.e(n2, n3, n4);
         TileEntityRegistry ji2 = cy2.b(n2, n3, n4);
         if (bl2) {
-            cy2.d(n2, n3, n4, HeadBanger1337.aC.bh);
+            cy2.d(n2, n3, n4, Block.aC.bh);
         } else {
-            cy2.d(n2, n3, n4, HeadBanger1337.aB.bh);
+            cy2.d(n2, n3, n4, Block.aB.bh);
         }
         cy2.b(n2, n3, n4, n5);
         cy2.a(n2, n3, n4, ji2);

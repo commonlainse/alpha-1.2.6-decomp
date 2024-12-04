@@ -90,7 +90,7 @@ extends dl {
                             for (int i3 = n13 + 1; !bl4 && i3 >= n12 - 1; --i3) {
                                 n8 = (n9 * 16 + i2) * 128 + i3;
                                 if (i3 < 0 || i3 >= 128) continue;
-                                if (byArray[n8] == HeadBanger1337.A.bh || byArray[n8] == HeadBanger1337.B.bh) {
+                                if (byArray[n8] == Block.A.bh || byArray[n8] == Block.B.bh) {
                                     bl4 = true;
                                 }
                                 if (i3 == n12 - 1 || n9 == n10 || n9 == n11 - 1 || i2 == n14 || i2 == n15 - 1) continue;
@@ -109,16 +109,16 @@ extends dl {
                                     double d16 = ((double)i4 + 0.5 - d3) / d9;
                                     if (d16 > -0.7 && d14 * d14 + d16 * d16 + d15 * d15 < 1.0) {
                                         byte by2 = byArray[n16];
-                                        if (by2 == HeadBanger1337.u.bh) {
+                                        if (by2 == Block.u.bh) {
                                             bl5 = true;
                                         }
-                                        if (by2 == HeadBanger1337.t.bh || by2 == HeadBanger1337.v.bh || by2 == HeadBanger1337.u.bh) {
+                                        if (by2 == Block.t.bh || by2 == Block.v.bh || by2 == Block.u.bh) {
                                             if (i4 < 10) {
-                                                byArray[n16] = (byte)HeadBanger1337.C.bh;
+                                                byArray[n16] = (byte)Block.C.bh;
                                             } else {
                                                 byArray[n16] = 0;
-                                                if (bl5 && byArray[n16 - 1] == HeadBanger1337.v.bh) {
-                                                    byArray[n16 - 1] = (byte)HeadBanger1337.u.bh;
+                                                if (bl5 && byArray[n16 - 1] == Block.v.bh) {
+                                                    byArray[n16 - 1] = (byte)Block.u.bh;
                                                 }
                                             }
                                         }

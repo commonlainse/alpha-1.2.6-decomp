@@ -23,7 +23,7 @@ extends ec {
             GL11.glPushMatrix();
             this.a.d.b(0.0625f);
             GL11.glTranslatef(-0.0625f, 0.4375f, 0.0625f);
-            if (fp2.id < 256 && bk.a(HeadBanger1337.m[fp2.id].g())) {
+            if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
                 float f3 = 0.5f;
                 GL11.glTranslatef(0.0f, 0.1875f, -0.3125f);
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);

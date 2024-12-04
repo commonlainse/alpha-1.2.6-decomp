@@ -16,7 +16,7 @@ extends ok {
 
     @Override
     protected boolean b(int n2) {
-        return n2 == HeadBanger1337.aA.bh;
+        return n2 == Block.aA.bh;
     }
 
     @Override
@@ -46,7 +46,7 @@ extends ok {
             for (int i3 = n4 - 1; i3 <= n4 + 1; ++i3) {
                 int n13 = cy2.a(i2, n3 - 1, i3);
                 float f3 = 0.0f;
-                if (n13 == HeadBanger1337.aA.bh) {
+                if (n13 == Block.aA.bh) {
                     f3 = 1.0f;
                     if (cy2.e(i2, n3 - 1, i3) > 0) {
                         f3 = 3.0f;

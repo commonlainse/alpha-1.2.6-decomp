@@ -39,10 +39,10 @@ extends ld {
                 int n6 = cy2.a(n2 += random.nextInt(3) - 1, ++n3, n4 += random.nextInt(3) - 1);
                 if (n6 == 0) {
                     if (!this.k(cy2, n2 - 1, n3, n4) && !this.k(cy2, n2 + 1, n3, n4) && !this.k(cy2, n2, n3, n4 - 1) && !this.k(cy2, n2, n3, n4 + 1) && !this.k(cy2, n2, n3 - 1, n4) && !this.k(cy2, n2, n3 + 1, n4)) continue;
-                    cy2.d(n2, n3, n4, HeadBanger1337.ar.bh);
+                    cy2.d(n2, n3, n4, Block.ar.bh);
                     return;
                 }
-                if (!HeadBanger1337.m[n6].bs.c()) continue;
+                if (!Block.m[n6].bs.c()) continue;
                 return;
             }
         }

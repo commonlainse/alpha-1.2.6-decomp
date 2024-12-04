@@ -61,9 +61,9 @@ extends aq {
             GL11.glTranslatef(0.0f, 0.3125f, 0.0f);
             GL11.glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
             if (qd2.d == 1) {
-                new bk().a(HeadBanger1337.au);
+                new bk().a(Block.au);
             } else if (qd2.d == 2) {
-                new bk().a(HeadBanger1337.aB);
+                new bk().a(Block.aB);
             }
             GL11.glRotatef(-90.0f, 0.0f, 1.0f, 0.0f);
             GL11.glTranslatef(0.0f, -0.3125f, 0.0f);

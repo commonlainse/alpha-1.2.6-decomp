@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class ny
-extends HeadBanger1337 {
+extends Block {
     protected ny(int n2) {
         super(n2, hb.c);
         this.bg = 20;
@@ -18,7 +18,7 @@ extends HeadBanger1337 {
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.J.bh;
+        return Block.J.bh;
     }
 
     @Override

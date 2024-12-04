@@ -107,7 +107,7 @@ extends ld {
                 if (this.bs == hb.g) {
                     this.i(cy2, n2, n3, n4);
                 } else {
-                    HeadBanger1337.m[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
+                    Block.m[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
                 }
             }
             cy2.b(n2, n3, n4, this.bh, n5);
@@ -180,13 +180,13 @@ extends ld {
 
     private boolean l(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4);
-        if (n5 == HeadBanger1337.aE.bh || n5 == HeadBanger1337.aL.bh || n5 == HeadBanger1337.aD.bh || n5 == HeadBanger1337.aF.bh || n5 == HeadBanger1337.aX.bh) {
+        if (n5 == Block.aE.bh || n5 == Block.aL.bh || n5 == Block.aD.bh || n5 == Block.aF.bh || n5 == Block.aX.bh) {
             return true;
         }
         if (n5 == 0) {
             return false;
         }
-        hb hb2 = HeadBanger1337.m[n5].bs;
+        hb hb2 = Block.m[n5].bs;
         return hb2.a();
     }
 

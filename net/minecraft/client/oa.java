@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class oa
-extends HeadBanger1337 {
+extends Block {
     protected oa(int n2) {
         super(n2, hb.b);
         this.bg = 87;
@@ -50,7 +50,7 @@ extends HeadBanger1337 {
                 if (n5 > 0) {
                     cy2.b(n2, n3, n4, n5 - 1);
                 } else if (!this.h(cy2, n2, n3, n4)) {
-                    cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
+                    cy2.d(n2, n3, n4, Block.v.bh);
                 }
             }
         }
@@ -59,7 +59,7 @@ extends HeadBanger1337 {
     @Override
     public void b(Session cy2, int n2, int n3, int n4, lw lw2) {
         if (cy2.l.nextInt(4) == 0) {
-            cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
+            cy2.d(n2, n3, n4, Block.v.bh);
         }
     }
 
@@ -67,7 +67,7 @@ extends HeadBanger1337 {
         int n5 = 0;
         for (int i2 = n2 - n5; i2 <= n2 + n5; ++i2) {
             for (int i3 = n4 - n5; i3 <= n4 + n5; ++i3) {
-                if (cy2.a(i2, n3 + 1, i3) != HeadBanger1337.az.bh) continue;
+                if (cy2.a(i2, n3 + 1, i3) != Block.az.bh) continue;
                 return true;
             }
         }
@@ -91,13 +91,13 @@ extends HeadBanger1337 {
         super.a(cy2, n2, n3, n4, n5);
         hb hb2 = cy2.f(n2, n3 + 1, n4);
         if (hb2.a()) {
-            cy2.d(n2, n3, n4, HeadBanger1337.v.bh);
+            cy2.d(n2, n3, n4, Block.v.bh);
         }
     }
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.v.a(0, random);
+        return Block.v.a(0, random);
     }
 }
 

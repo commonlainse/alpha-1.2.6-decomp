@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class kz
-extends HeadBanger1337 {
+extends Block {
     protected kz(int n2, int n3) {
         super(n2, hb.i);
         this.bg = n3;
@@ -39,7 +39,7 @@ extends HeadBanger1337 {
         if (n5 == this.bh) {
             return true;
         }
-        if (n5 != HeadBanger1337.u.bh && n5 != HeadBanger1337.v.bh) {
+        if (n5 != Block.u.bh && n5 != Block.v.bh) {
             return false;
         }
         if (cy2.f(n2 - 1, n3 - 1, n4) == hb.f) {

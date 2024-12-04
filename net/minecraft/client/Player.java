@@ -156,7 +156,7 @@ extends Mob {
         this.as.a(eo2);
     }
 
-    public float a(HeadBanger1337 nq2) {
+    public float a(Block nq2) {
         float f2 = this.e.a(nq2);
         if (this.a(hb.f)) {
             f2 /= 5.0f;
@@ -167,7 +167,7 @@ extends Mob {
         return f2;
     }
 
-    public boolean b(HeadBanger1337 nq2) {
+    public boolean b(Block nq2) {
         return this.e.b(nq2);
     }
 

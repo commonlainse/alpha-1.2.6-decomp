@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class je
-extends HeadBanger1337 {
+extends Block {
     protected je(int n2, int n3) {
         super(n2, n3, hb.u);
         this.b(true);
@@ -99,7 +99,7 @@ extends HeadBanger1337 {
             return false;
         }
         int n5 = cy2.a(n2, n3 - 1, n4);
-        return n5 == HeadBanger1337.aV.bh || n5 == HeadBanger1337.E.bh;
+        return n5 == Block.aV.bh || n5 == Block.E.bh;
     }
 
     @Override

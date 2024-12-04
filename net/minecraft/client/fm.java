@@ -15,8 +15,8 @@ extends js {
             if (cy2.a(n7, n6 = n3, n5 = n4 + random.nextInt(4) - random.nextInt(4)) != 0 || cy2.f(n7 - 1, n6 - 1, n5) != hb.f && cy2.f(n7 + 1, n6 - 1, n5) != hb.f && cy2.f(n7, n6 - 1, n5 - 1) != hb.f && cy2.f(n7, n6 - 1, n5 + 1) != hb.f) continue;
             int n8 = 2 + random.nextInt(random.nextInt(3) + 1);
             for (int i3 = 0; i3 < n8; ++i3) {
-                if (!HeadBanger1337.aX.g(cy2, n7, n6 + i3, n5)) continue;
-                cy2.a(n7, n6 + i3, n5, HeadBanger1337.aX.bh);
+                if (!Block.aX.g(cy2, n7, n6 + i3, n5)) continue;
+                cy2.a(n7, n6 + i3, n5, Block.aX.bh);
             }
         }
         return true;

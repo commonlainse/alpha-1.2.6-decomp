@@ -11,10 +11,10 @@ extends js {
         if (cy2.a(n2, n3, n4) != 0) {
             return false;
         }
-        if (cy2.a(n2, n3 + 1, n4) != HeadBanger1337.bb.bh) {
+        if (cy2.a(n2, n3 + 1, n4) != Block.bb.bh) {
             return false;
         }
-        cy2.d(n2, n3, n4, HeadBanger1337.bd.bh);
+        cy2.d(n2, n3, n4, Block.bd.bh);
         for (int i2 = 0; i2 < 1500; ++i2) {
             int n5;
             int n6;
@@ -41,11 +41,11 @@ extends js {
                 if (i3 == 5) {
                     n9 = cy2.a(n7, n6, n5 + 1);
                 }
-                if (n9 != HeadBanger1337.bd.bh) continue;
+                if (n9 != Block.bd.bh) continue;
                 ++n8;
             }
             if (n8 == 1) {
-                cy2.d(n7, n6, n5, HeadBanger1337.bd.bh);
+                cy2.d(n7, n6, n5, Block.bd.bh);
             }
         }
         return true;

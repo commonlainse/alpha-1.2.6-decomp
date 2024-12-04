@@ -70,7 +70,7 @@ extends lw {
         if (this.a > 40) {
             int n3;
             for (n3 = 0; n3 < 3; ++n3) {
-                this.a(HeadBanger1337.x.bh, 1, 0.0f);
+                this.a(Block.x.bh, 1, 0.0f);
             }
             for (n3 = 0; n3 < 2; ++n3) {
                 this.a(ItemRegistry.B.id, 1, 0.0f);
@@ -219,7 +219,7 @@ extends lw {
                 int n4;
                 this.J();
                 for (n4 = 0; n4 < 3; ++n4) {
-                    this.a(HeadBanger1337.x.bh, 1, 0.0f);
+                    this.a(Block.x.bh, 1, 0.0f);
                 }
                 for (n4 = 0; n4 < 2; ++n4) {
                     this.a(ItemRegistry.B.id, 1, 0.0f);

@@ -43,10 +43,10 @@ extends js {
                         }
                         if (!cy2.f(n7, n6, n5).a()) continue;
                         if (n6 == n3 - 1 && random.nextInt(4) != 0) {
-                            cy2.d(n7, n6, n5, HeadBanger1337.ao.bh);
+                            cy2.d(n7, n6, n5, Block.ao.bh);
                             continue;
                         }
-                        cy2.d(n7, n6, n5, HeadBanger1337.w.bh);
+                        cy2.d(n7, n6, n5, Block.w.bh);
                         continue;
                     }
                     cy2.d(n7, n6, n5, 0);
@@ -73,7 +73,7 @@ extends js {
                     ++n14;
                 }
                 if (n14 != 1) continue;
-                cy2.d(n5, n13, n12, HeadBanger1337.au.bh);
+                cy2.d(n5, n13, n12, Block.au.bh);
                 Chest ga2 = (Chest)cy2.b(n5, n13, n12);
                 for (int i2 = 0; i2 < 8; ++i2) {
                     Item fp2 = this.a(random);
@@ -83,7 +83,7 @@ extends js {
                 continue block6;
             }
         }
-        cy2.d(n2, n3, n4, HeadBanger1337.as.bh);
+        cy2.d(n2, n3, n4, Block.as.bh);
         MobSpawner bl2 = (MobSpawner)cy2.b(n2, n3, n4);
         bl2.b = this.b(random);
         return true;

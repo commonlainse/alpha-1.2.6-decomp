@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class fz
-extends HeadBanger1337 {
+extends Block {
     protected fz(int n2, int n3) {
         super(n2, n3, hb.s);
         this.a(0.0f, 0.0f, 0.0f, 1.0f, 0.125f, 1.0f);
@@ -30,7 +30,7 @@ extends HeadBanger1337 {
     @Override
     public boolean a(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3 - 1, n4);
-        if (n5 == 0 || !HeadBanger1337.m[n5].a()) {
+        if (n5 == 0 || !Block.m[n5].a()) {
             return false;
         }
         return cy2.f(n2, n3 - 1, n4).c();

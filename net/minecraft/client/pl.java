@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class pl
-extends HeadBanger1337 {
+extends Block {
     protected pl(int n2, int n3) {
         super(n2, n3, hb.n);
     }

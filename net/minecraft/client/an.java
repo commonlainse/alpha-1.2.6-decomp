@@ -5,7 +5,7 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class an
-extends HeadBanger1337 {
+extends Block {
     private boolean a;
 
     public an(int n2, int n3, boolean bl2) {
@@ -41,15 +41,15 @@ extends HeadBanger1337 {
 
     private void h(Session cy2, int n2, int n3, int n4) {
         this.i(cy2, n2, n3, n4);
-        if (this.bh == HeadBanger1337.aN.bh) {
-            cy2.d(n2, n3, n4, HeadBanger1337.aO.bh);
+        if (this.bh == Block.aN.bh) {
+            cy2.d(n2, n3, n4, Block.aO.bh);
         }
     }
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, Random random) {
-        if (this.bh == HeadBanger1337.aO.bh) {
-            cy2.d(n2, n3, n4, HeadBanger1337.aN.bh);
+        if (this.bh == Block.aO.bh) {
+            cy2.d(n2, n3, n4, Block.aN.bh);
         }
     }
 

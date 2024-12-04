@@ -113,7 +113,7 @@ public class bw {
             for (int i4 = n3; i4 < n6; ++i4) {
                 for (int i5 = n4; i5 < n7; ++i5) {
                     for (int i6 = n2; i6 < n5; ++i6) {
-                        HeadBanger1337 nq2;
+                        Block nq2;
                         int n9;
                         TileEntityRegistry ji2;
                         int n10 = cs2.a(i6, i4, i5);
@@ -130,10 +130,10 @@ public class bw {
                             D.b();
                             D.b((double)(-this.c), (double)(-this.d), (double)(-this.e));
                         }
-                        if (i3 == 0 && HeadBanger1337.p[n10] && gz.a.a(ji2 = cs2.b(i6, i4, i5))) {
+                        if (i3 == 0 && Block.p[n10] && gz.a.a(ji2 = cs2.b(i6, i4, i5))) {
                             this.B.add(ji2);
                         }
-                        if ((n9 = (nq2 = HeadBanger1337.m[n10]).c()) != i3) {
+                        if ((n9 = (nq2 = Block.m[n10]).c()) != i3) {
                             bl2 = true;
                             continue;
                         }

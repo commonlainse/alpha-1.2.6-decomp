@@ -12,8 +12,8 @@ extends js {
             int n5;
             int n6;
             int n7 = n2 + random.nextInt(8) - random.nextInt(8);
-            if (cy2.a(n7, n6 = n3 + random.nextInt(4) - random.nextInt(4), n5 = n4 + random.nextInt(8) - random.nextInt(8)) != 0 || cy2.a(n7, n6 - 1, n5) != HeadBanger1337.u.bh || !HeadBanger1337.ba.a(cy2, n7, n6, n5)) continue;
-            cy2.a(n7, n6, n5, HeadBanger1337.ba.bh, random.nextInt(4));
+            if (cy2.a(n7, n6 = n3 + random.nextInt(4) - random.nextInt(4), n5 = n4 + random.nextInt(8) - random.nextInt(8)) != 0 || cy2.a(n7, n6 - 1, n5) != Block.u.bh || !Block.ba.a(cy2, n7, n6, n5)) continue;
+            cy2.a(n7, n6, n5, Block.ba.bh, random.nextInt(4));
         }
         return true;
     }

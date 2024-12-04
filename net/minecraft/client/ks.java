@@ -58,7 +58,7 @@ public class ks {
                         int n8 = TrigLookup.b(d4);
                         int n9 = this.i.a(n8, n7 = TrigLookup.b(d3), n6 = TrigLookup.b(d2));
                         if (n9 > 0) {
-                            f4 -= (HeadBanger1337.m[n9].a(this.e) + 0.3f) * f3;
+                            f4 -= (Block.m[n9].a(this.e) + 0.3f) * f3;
                         }
                         if (f4 > 0.0f) {
                             this.g.add(new on(n8, n7, n6));
@@ -109,8 +109,8 @@ public class ks {
                 int n15 = on2.c;
                 int n16 = this.i.a(n13, n14, n15);
                 int n17 = this.i.a(n13, n14 - 1, n15);
-                if (n16 != 0 || !HeadBanger1337.o[n17] || this.h.nextInt(3) != 0) continue;
-                this.i.d(n13, n14, n15, HeadBanger1337.ar.bh);
+                if (n16 != 0 || !Block.o[n17] || this.h.nextInt(3) != 0) continue;
+                this.i.d(n13, n14, n15, Block.ar.bh);
             }
         }
     }
@@ -141,9 +141,9 @@ public class ks {
                 this.i.a("smoke", d2, d3, d4, d5, d6, d7);
             }
             if (n5 <= 0) continue;
-            HeadBanger1337.m[n5].a(this.i, n2, n3, n4, this.i.e(n2, n3, n4), 0.3f);
+            Block.m[n5].a(this.i, n2, n3, n4, this.i.e(n2, n3, n4), 0.3f);
             this.i.d(n2, n3, n4, 0);
-            HeadBanger1337.m[n5].c(this.i, n2, n3, n4);
+            Block.m[n5].c(this.i, n2, n3, n4);
         }
     }
 }

@@ -31,9 +31,9 @@ extends ItemRegistry {
         if (cy2.a(n2, n3, n4) != 0) {
             return false;
         }
-        if (HeadBanger1337.av.a(cy2, n2, n3, n4)) {
+        if (Block.av.a(cy2, n2, n3, n4)) {
             --fp2.count;
-            cy2.d(n2, n3, n4, HeadBanger1337.av.bh);
+            cy2.d(n2, n3, n4, Block.av.bh);
         }
         return true;
     }

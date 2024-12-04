@@ -164,7 +164,7 @@ implements hi {
         fpArray[n2] = fp2;
     }
 
-    public float a(HeadBanger1337 nq2) {
+    public float a(Block nq2) {
         float f2 = 1.0f;
         if (this.storage[this.d] != null) {
             f2 *= this.storage[this.d].a(nq2);
@@ -254,7 +254,7 @@ implements hi {
         return 1;
     }
 
-    public boolean b(HeadBanger1337 nq2) {
+    public boolean b(Block nq2) {
         if (nq2.bs != hb.d && nq2.bs != hb.e && nq2.bs != hb.t && nq2.bs != hb.s) {
             return true;
         }

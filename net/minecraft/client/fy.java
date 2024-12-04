@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class fy
-extends HeadBanger1337 {
+extends Block {
     private boolean a;
 
     protected fy(int n2, int n3, hb hb2, boolean bl2) {

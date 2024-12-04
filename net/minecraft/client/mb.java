@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class mb
-extends HeadBanger1337 {
-    private HeadBanger1337 a;
+extends Block {
+    private Block a;
 
-    protected mb(int n2, HeadBanger1337 nq2) {
+    protected mb(int n2, Block nq2) {
         super(n2, nq2.bg, nq2.bs);
         this.a = nq2;
         this.c(nq2.bi);

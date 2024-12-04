@@ -28,7 +28,7 @@ public abstract class aq {
 
     private void a(lw lw2, double d2, double d3, double d4, float f2) {
         GL11.glDisable(2896);
-        int n2 = HeadBanger1337.ar.bg;
+        int n2 = Block.ar.bg;
         int n3 = (n2 & 0xF) << 4;
         int n4 = n2 & 0xF0;
         float f3 = (float)n3 / 256.0f;
@@ -91,7 +91,7 @@ public abstract class aq {
                 for (int i4 = n6; i4 <= n7; ++i4) {
                     int n8 = cy2.a(i2, i3 - 1, i4);
                     if (n8 <= 0 || cy2.j(i2, i3, i4) <= 3) continue;
-                    this.a(HeadBanger1337.m[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
+                    this.a(Block.m[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
                 }
             }
         }
@@ -105,7 +105,7 @@ public abstract class aq {
         return this.b.g;
     }
 
-    private void a(HeadBanger1337 nq2, double d2, double d3, double d4, int n2, int n3, int n4, float f2, float f3, double d5, double d6, double d7) {
+    private void a(Block nq2, double d2, double d3, double d4, int n2, int n3, int n4, float f2, float f3, double d5, double d6, double d7) {
         is is2 = is.a;
         if (!nq2.b()) {
             return;

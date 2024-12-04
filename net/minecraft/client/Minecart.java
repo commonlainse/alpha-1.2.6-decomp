@@ -79,9 +79,9 @@ implements hi {
         if (this.a > 40) {
             this.a(ItemRegistry.ax.id, 1, 0.0f);
             if (this.d == 1) {
-                this.a(HeadBanger1337.au.bh, 1, 0.0f);
+                this.a(Block.au.bh, 1, 0.0f);
             } else if (this.d == 2) {
-                this.a(HeadBanger1337.aB.bh, 1, 0.0f);
+                this.a(Block.aB.bh, 1, 0.0f);
             }
             this.J();
         }
@@ -164,13 +164,13 @@ implements hi {
         this.av = this.ay;
         this.aA -= (double)0.04f;
         int n4 = TrigLookup.b(this.aw);
-        if (this.as.a(n4, (n3 = TrigLookup.b(this.ax)) - 1, n2 = TrigLookup.b(this.ay)) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, (n3 = TrigLookup.b(this.ax)) - 1, n2 = TrigLookup.b(this.ay)) == Block.aG.bh) {
             --n3;
         }
         double d7 = 0.4;
         boolean bl2 = false;
         double d8 = 0.0078125;
-        if (this.as.a(n4, n3, n2) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, n3, n2) == Block.aG.bh) {
             double d9;
             double d10;
             double d11;
@@ -374,10 +374,10 @@ implements hi {
         int n2;
         int n3;
         int n4 = TrigLookup.b(d2);
-        if (this.as.a(n4, (n3 = TrigLookup.b(d3)) - 1, n2 = TrigLookup.b(d4)) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, (n3 = TrigLookup.b(d3)) - 1, n2 = TrigLookup.b(d4)) == Block.aG.bh) {
             --n3;
         }
-        if (this.as.a(n4, n3, n2) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, n3, n2) == Block.aG.bh) {
             int n5 = this.as.e(n4, n3, n2);
             d3 = n3;
             if (n5 >= 2 && n5 <= 5) {
@@ -401,10 +401,10 @@ implements hi {
         int n2;
         int n3;
         int n4 = TrigLookup.b(d2);
-        if (this.as.a(n4, (n3 = TrigLookup.b(d3)) - 1, n2 = TrigLookup.b(d4)) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, (n3 = TrigLookup.b(d3)) - 1, n2 = TrigLookup.b(d4)) == Block.aG.bh) {
             --n3;
         }
-        if (this.as.a(n4, n3, n2) == HeadBanger1337.aG.bh) {
+        if (this.as.a(n4, n3, n2) == Block.aG.bh) {
             int n5 = this.as.e(n4, n3, n2);
             d3 = n3;
             if (n5 >= 2 && n5 <= 5) {

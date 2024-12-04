@@ -10,7 +10,7 @@ extends pp {
         this.k = 1.0f;
         this.j = 1.0f;
         this.i = 1.0f;
-        this.h = HeadBanger1337.aU.br;
+        this.h = Block.aU.br;
         this.g /= 2.0f;
     }
 

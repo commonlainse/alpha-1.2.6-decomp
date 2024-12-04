@@ -70,8 +70,8 @@ extends js {
         for (n6 = 0; n6 < 16; ++n6) {
             for (int i7 = 0; i7 < 16; ++i7) {
                 for (n5 = 4; n5 < 8; ++n5) {
-                    if (!blArray[(n6 * 16 + i7) * 8 + n5] || cy2.a(n2 + n6, n3 + n5 - 1, n4 + i7) != HeadBanger1337.v.bh || cy2.a(ch.Sky, n2 + n6, n3 + n5, n4 + i7) <= 0) continue;
-                    cy2.d(n2 + n6, n3 + n5 - 1, n4 + i7, HeadBanger1337.u.bh);
+                    if (!blArray[(n6 * 16 + i7) * 8 + n5] || cy2.a(n2 + n6, n3 + n5 - 1, n4 + i7) != Block.v.bh || cy2.a(ch.Sky, n2 + n6, n3 + n5, n4 + i7) <= 0) continue;
+                    cy2.d(n2 + n6, n3 + n5 - 1, n4 + i7, Block.u.bh);
                 }
             }
         }

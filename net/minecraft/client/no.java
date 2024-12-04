@@ -30,8 +30,8 @@ public class no {
             for (int i2 = n8 - n3; i2 <= n8 + n3; ++i2) {
                 double d5 = (double)i2 + 0.5 - lw2.ay;
                 for (int i3 = 127; i3 >= 0; --i3) {
-                    if (cy2.a(n2, i3, i2) != HeadBanger1337.be.bh) continue;
-                    while (cy2.a(n2, i3 - 1, i2) == HeadBanger1337.be.bh) {
+                    if (cy2.a(n2, i3, i2) != Block.be.bh) continue;
+                    while (cy2.a(n2, i3 - 1, i2) == Block.be.bh) {
                         --i3;
                     }
                     d2 = (double)i3 + 0.5 - lw2.ax;
@@ -51,16 +51,16 @@ public class no {
             double d7 = (double)n2 + 0.5;
             double d8 = (double)n9 + 0.5;
             d2 = (double)n10 + 0.5;
-            if (cy2.a(n2 - 1, n9, n10) == HeadBanger1337.be.bh) {
+            if (cy2.a(n2 - 1, n9, n10) == Block.be.bh) {
                 d7 -= 0.5;
             }
-            if (cy2.a(n2 + 1, n9, n10) == HeadBanger1337.be.bh) {
+            if (cy2.a(n2 + 1, n9, n10) == Block.be.bh) {
                 d7 += 0.5;
             }
-            if (cy2.a(n2, n9, n10 - 1) == HeadBanger1337.be.bh) {
+            if (cy2.a(n2, n9, n10 - 1) == Block.be.bh) {
                 d2 -= 0.5;
             }
-            if (cy2.a(n2, n9, n10 + 1) == HeadBanger1337.be.bh) {
+            if (cy2.a(n2, n9, n10 + 1) == Block.be.bh) {
                 d2 += 0.5;
             }
             System.out.println("Teleporting to " + d7 + ", " + d8 + ", " + d2);
@@ -194,7 +194,7 @@ public class no {
                         n6 = n25 + n8;
                         n5 = n11 + (n9 - 1) * n27 - n10 * n26;
                         n4 = n8 < 0 ? 1 : 0;
-                        cy2.d(n7, n6, n5, n4 != 0 ? HeadBanger1337.ap.bh : 0);
+                        cy2.d(n7, n6, n5, n4 != 0 ? Block.ap.bh : 0);
                     }
                 }
             }
@@ -207,7 +207,7 @@ public class no {
                     n6 = n25 + n8;
                     n5 = n11 + (n9 - 1) * n27;
                     n4 = n9 == 0 || n9 == 3 || n8 == -1 || n8 == 3 ? 1 : 0;
-                    cy2.d(n7, n6, n5, n4 != 0 ? HeadBanger1337.ap.bh : HeadBanger1337.be.bh);
+                    cy2.d(n7, n6, n5, n4 != 0 ? Block.ap.bh : Block.be.bh);
                 }
             }
             cy2.i = false;

@@ -90,7 +90,7 @@ extends dl {
                             for (int i3 = n13 + 1; !bl4 && i3 >= n12 - 1; --i3) {
                                 n8 = (n9 * 16 + i2) * 128 + i3;
                                 if (i3 < 0 || i3 >= 128) continue;
-                                if (byArray[n8] == HeadBanger1337.C.bh || byArray[n8] == HeadBanger1337.D.bh) {
+                                if (byArray[n8] == Block.C.bh || byArray[n8] == Block.D.bh) {
                                     bl4 = true;
                                 }
                                 if (i3 == n12 - 1 || n9 == n10 || n9 == n11 - 1 || i2 == n14 || i2 == n15 - 1) continue;
@@ -107,7 +107,7 @@ extends dl {
                                 for (int i4 = n13 - 1; i4 >= n12; --i4) {
                                     byte by2;
                                     double d16 = ((double)i4 + 0.5 - d3) / d9;
-                                    if (d16 > -0.7 && d14 * d14 + d16 * d16 + d15 * d15 < 1.0 && ((by2 = byArray[n16]) == HeadBanger1337.bb.bh || by2 == HeadBanger1337.v.bh || by2 == HeadBanger1337.u.bh)) {
+                                    if (d16 > -0.7 && d14 * d14 + d16 * d16 + d15 * d15 < 1.0 && ((by2 = byArray[n16]) == Block.bb.bh || by2 == Block.v.bh || by2 == Block.u.bh)) {
                                         byArray[n16] = 0;
                                     }
                                     --n16;

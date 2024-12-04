@@ -183,7 +183,7 @@ extends bp {
                     GL11.glTranslatef((float)i5, (float)i4, (float)f3);
                     GL11.glScalef((float)f4, (float)f4, (float)f4);
                     GL11.glRotatef((float)f6, 0.0f, 1.0f, 0.0f);
-                    bk2.a(HeadBanger1337.t, f5);
+                    bk2.a(Block.t, f5);
                     GL11.glPopMatrix();
                 }
             }

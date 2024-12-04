@@ -11,7 +11,7 @@ extends ad {
     private int k = 0;
 
     public oe() {
-        super(HeadBanger1337.A.bg);
+        super(Block.A.bg);
     }
 
     @Override

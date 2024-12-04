@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class pd
-extends HeadBanger1337 {
+extends Block {
     protected pd(int n2) {
         super(n2, hb.j);
         this.bg = 48;

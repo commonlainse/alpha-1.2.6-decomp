@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class cx
-extends HeadBanger1337 {
+extends Block {
     private boolean a;
 
     protected cx(int n2, int n3, boolean bl2) {
@@ -62,7 +62,7 @@ extends HeadBanger1337 {
     @Override
     public boolean a(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3, n4);
-        return (n5 == 0 || HeadBanger1337.m[n5].bs.d()) && cy2.g(n2, n3 - 1, n4);
+        return (n5 == 0 || Block.m[n5].bs.d()) && cy2.g(n2, n3 - 1, n4);
     }
 
     @Override

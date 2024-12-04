@@ -18,7 +18,7 @@ extends ItemRegistry {
         if (n5 != 1) {
             return false;
         }
-        HeadBanger1337 nq2 = this.a == hb.c ? HeadBanger1337.aE : HeadBanger1337.aL;
+        Block nq2 = this.a == hb.c ? Block.aE : Block.aL;
         if (!nq2.a(cy2, n2, ++n3, n4)) {
             return false;
         }

@@ -14,7 +14,7 @@ extends ob {
     @Override
     public int a(int n2, int n3) {
         if (n2 == 1) {
-            return HeadBanger1337.av.a(n2, n3);
+            return Block.av.a(n2, n3);
         }
         return super.a(n2, n3);
     }
@@ -116,7 +116,7 @@ extends ob {
         }
         if (this.a) {
             if (bl2) {
-                cy2.b(n2, n3, n4, HeadBanger1337.aP.bh, cy2.e(n2, n3, n4));
+                cy2.b(n2, n3, n4, Block.aP.bh, cy2.e(n2, n3, n4));
                 if (this.a(cy2, n2, n3, n4, true)) {
                     cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), "random.fizz", 0.5f, 2.6f + (cy2.l.nextFloat() - cy2.l.nextFloat()) * 0.8f);
                     for (int i2 = 0; i2 < 5; ++i2) {
@@ -128,7 +128,7 @@ extends ob {
                 }
             }
         } else if (!bl2 && !this.a(cy2, n2, n3, n4, false)) {
-            cy2.b(n2, n3, n4, HeadBanger1337.aQ.bh, cy2.e(n2, n3, n4));
+            cy2.b(n2, n3, n4, Block.aQ.bh, cy2.e(n2, n3, n4));
         }
     }
 
@@ -148,7 +148,7 @@ extends ob {
 
     @Override
     public int a(int n2, Random random) {
-        return HeadBanger1337.aQ.bh;
+        return Block.aQ.bh;
     }
 
     @Override

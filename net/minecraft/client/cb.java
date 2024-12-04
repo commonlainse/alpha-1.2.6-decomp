@@ -4,12 +4,12 @@
 package net.minecraft.client;
 public class cb
 extends ItemRegistry {
-    private HeadBanger1337[] bb;
+    private Block[] bb;
     private float bc = 4.0f;
     private int bd;
     protected int a;
 
-    public cb(int n2, int n3, int n4, HeadBanger1337[] nqArray) {
+    public cb(int n2, int n3, int n4, Block[] nqArray) {
         super(n2);
         this.a = n4;
         this.bb = nqArray;
@@ -23,7 +23,7 @@ extends ItemRegistry {
     }
 
     @Override
-    public float a(Item fp2, HeadBanger1337 nq2) {
+    public float a(Item fp2, Block nq2) {
         for (int i2 = 0; i2 < this.bb.length; ++i2) {
             if (this.bb[i2] != nq2) continue;
             return this.bc;

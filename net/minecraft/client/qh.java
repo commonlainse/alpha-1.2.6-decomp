@@ -5,18 +5,18 @@ package net.minecraft.client;
 import java.util.Random;
 
 public class qh
-extends HeadBanger1337 {
+extends Block {
     private int[] a = new int[256];
     private int[] b = new int[256];
 
     protected qh(int n2, int n3) {
         super(n2, n3, hb.l);
-        this.a(HeadBanger1337.x.bh, 5, 20);
-        this.a(HeadBanger1337.J.bh, 5, 5);
-        this.a(HeadBanger1337.K.bh, 30, 60);
-        this.a(HeadBanger1337.an.bh, 30, 20);
-        this.a(HeadBanger1337.am.bh, 15, 100);
-        this.a(HeadBanger1337.ab.bh, 30, 60);
+        this.a(Block.x.bh, 5, 20);
+        this.a(Block.J.bh, 5, 5);
+        this.a(Block.K.bh, 30, 60);
+        this.a(Block.an.bh, 30, 20);
+        this.a(Block.am.bh, 15, 100);
+        this.a(Block.ab.bh, 30, 60);
         this.b(true);
     }
 
@@ -57,7 +57,7 @@ extends HeadBanger1337 {
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, Random random) {
-        boolean bl2 = cy2.a(n2, n3 - 1, n4) == HeadBanger1337.bb.bh;
+        boolean bl2 = cy2.a(n2, n3 - 1, n4) == Block.bb.bh;
         int n5 = cy2.e(n2, n3, n4);
         if (n5 < 15) {
             cy2.b(n2, n3, n4, n5 + 1);
@@ -101,14 +101,14 @@ extends HeadBanger1337 {
         int n6 = this.b[cy2.a(n2, n3, n4)];
         if (random.nextInt(n5) < n6) {
             boolean bl2;
-            boolean bl3 = bl2 = cy2.a(n2, n3, n4) == HeadBanger1337.am.bh;
+            boolean bl3 = bl2 = cy2.a(n2, n3, n4) == Block.am.bh;
             if (random.nextInt(2) == 0) {
                 cy2.d(n2, n3, n4, this.bh);
             } else {
                 cy2.d(n2, n3, n4, 0);
             }
             if (bl2) {
-                HeadBanger1337.am.b(cy2, n2, n3, n4, 0);
+                Block.am.b(cy2, n2, n3, n4, 0);
             }
         }
     }
@@ -178,7 +178,7 @@ extends HeadBanger1337 {
 
     @Override
     public void e(Session cy2, int n2, int n3, int n4) {
-        if (cy2.a(n2, n3 - 1, n4) == HeadBanger1337.ap.bh && HeadBanger1337.be.a_(cy2, n2, n3, n4)) {
+        if (cy2.a(n2, n3 - 1, n4) == Block.ap.bh && Block.be.a_(cy2, n2, n3, n4)) {
             return;
         }
         if (!cy2.g(n2, n3 - 1, n4) && !this.h(cy2, n2, n3, n4)) {
@@ -199,7 +199,7 @@ extends HeadBanger1337 {
                 if (random.nextInt(24) == 0) {
                     cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), "fire.fire", 1.0f + random.nextFloat(), random.nextFloat() * 0.7f + 0.3f);
                 }
-                if (!cy2.g(n2, n3 - 1, n4) && !HeadBanger1337.ar.c((pk)cy2, n2, n3 - 1, n4)) break block11;
+                if (!cy2.g(n2, n3 - 1, n4) && !Block.ar.c((pk)cy2, n2, n3 - 1, n4)) break block11;
                 for (int i2 = 0; i2 < 3; ++i2) {
                     float f5 = (float)n2 + random.nextFloat();
                     float f6 = (float)n3 + random.nextFloat() * 0.5f + 0.5f;
@@ -208,7 +208,7 @@ extends HeadBanger1337 {
                 }
                 break block12;
             }
-            if (HeadBanger1337.ar.c((pk)cy2, n2 - 1, n3, n4)) {
+            if (Block.ar.c((pk)cy2, n2 - 1, n3, n4)) {
                 for (n5 = 0; n5 < 2; ++n5) {
                     f4 = (float)n2 + random.nextFloat() * 0.1f;
                     f3 = (float)n3 + random.nextFloat();
@@ -216,7 +216,7 @@ extends HeadBanger1337 {
                     cy2.a("largesmoke", f4, f3, f2, 0.0, 0.0, 0.0);
                 }
             }
-            if (HeadBanger1337.ar.c((pk)cy2, n2 + 1, n3, n4)) {
+            if (Block.ar.c((pk)cy2, n2 + 1, n3, n4)) {
                 for (n5 = 0; n5 < 2; ++n5) {
                     f4 = (float)(n2 + 1) - random.nextFloat() * 0.1f;
                     f3 = (float)n3 + random.nextFloat();
@@ -224,7 +224,7 @@ extends HeadBanger1337 {
                     cy2.a("largesmoke", f4, f3, f2, 0.0, 0.0, 0.0);
                 }
             }
-            if (HeadBanger1337.ar.c((pk)cy2, n2, n3, n4 - 1)) {
+            if (Block.ar.c((pk)cy2, n2, n3, n4 - 1)) {
                 for (n5 = 0; n5 < 2; ++n5) {
                     f4 = (float)n2 + random.nextFloat();
                     f3 = (float)n3 + random.nextFloat();
@@ -232,7 +232,7 @@ extends HeadBanger1337 {
                     cy2.a("largesmoke", f4, f3, f2, 0.0, 0.0, 0.0);
                 }
             }
-            if (HeadBanger1337.ar.c((pk)cy2, n2, n3, n4 + 1)) {
+            if (Block.ar.c((pk)cy2, n2, n3, n4 + 1)) {
                 for (n5 = 0; n5 < 2; ++n5) {
                     f4 = (float)n2 + random.nextFloat();
                     f3 = (float)n3 + random.nextFloat();
@@ -240,7 +240,7 @@ extends HeadBanger1337 {
                     cy2.a("largesmoke", f4, f3, f2, 0.0, 0.0, 0.0);
                 }
             }
-            if (!HeadBanger1337.ar.c((pk)cy2, n2, n3 + 1, n4)) break block12;
+            if (!Block.ar.c((pk)cy2, n2, n3 + 1, n4)) break block12;
             for (n5 = 0; n5 < 2; ++n5) {
                 f4 = (float)n2 + random.nextFloat();
                 f3 = (float)(n3 + 1) - random.nextFloat() * 0.1f;

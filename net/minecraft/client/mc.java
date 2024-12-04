@@ -38,7 +38,7 @@ public class mc {
                     int n7 = cy2.a(this.a, i2, i4, i3);
                     int n8 = 0;
                     int n9 = cy2.a(i2, i4, i3);
-                    int n10 = HeadBanger1337.q[n9];
+                    int n10 = Block.q[n9];
                     if (n10 == 0) {
                         n10 = 1;
                     }
@@ -48,7 +48,7 @@ public class mc {
                             n11 = 15;
                         }
                     } else if (this.a == ch.Block) {
-                        n11 = HeadBanger1337.s[n9];
+                        n11 = Block.s[n9];
                     }
                     if (n10 >= 15 && n11 == 0) {
                         n8 = 0;

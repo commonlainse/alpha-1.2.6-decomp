@@ -8,7 +8,7 @@ extends ad {
     protected float[] h = new float[320];
 
     public ln(int n2) {
-        super(HeadBanger1337.ar.bg + n2 * 16);
+        super(Block.ar.bg + n2 * 16);
     }
 
     @Override
