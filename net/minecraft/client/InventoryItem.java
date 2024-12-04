@@ -29,7 +29,6 @@ public final class InventoryItem {
     }
 
     public InventoryItem(int n2, int n3) {
-        System.out.println("new item! id: " + n2 + ", count: " + n3);
         this.id = n2;
         this.count = n3;
     }
@@ -50,7 +49,7 @@ public final class InventoryItem {
     }
 
     public Item a() {
-        return Item.c[this.id];
+        return Item.registry[this.id];
     }
 
     public int b() {
@@ -87,7 +86,7 @@ public final class InventoryItem {
     }
 
     public int d() {
-        return Item.c[this.id].d();
+        return Item.registry[this.id].d();
     }
 
     public void b(int n2) {
@@ -102,26 +101,26 @@ public final class InventoryItem {
     }
 
     public void a(Mob hf2) {
-        Item.c[this.id].a(this, hf2);
+        Item.registry[this.id].a(this, hf2);
     }
 
     public void a(int n2, int n3, int n4, int n5) {
-        Item.c[this.id].a(this, n2, n3, n4, n5);
+        Item.registry[this.id].a(this, n2, n3, n4, n5);
     }
 
     public int a(lw lw2) {
-        return Item.c[this.id].a(lw2);
+        return Item.registry[this.id].a(lw2);
     }
 
     public boolean b(Block nq2) {
-        return Item.c[this.id].a(nq2);
+        return Item.registry[this.id].a(nq2);
     }
 
     public void a(Player eb2) {
     }
 
     public void b(Mob hf2) {
-        Item.c[this.id].b(this, hf2);
+        Item.registry[this.id].b(this, hf2);
     }
 
     public InventoryItem e() {
