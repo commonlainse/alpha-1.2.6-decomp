@@ -13,7 +13,7 @@ extends dw {
     @Override
     public int a(int n2, Random random) {
         if (random.nextInt(10) == 0) {
-            return dx.an.aW;
+            return ItemRegistry.an.id;
         }
         return this.bh;
     }

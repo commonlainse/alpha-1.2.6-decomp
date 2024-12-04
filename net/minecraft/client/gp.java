@@ -16,7 +16,7 @@ extends ad {
     private double k;
 
     public gp(Minecraft minecraft) {
-        super(dx.aQ.a((Item)null));
+        super(ItemRegistry.aQ.a((Item)null));
         this.g = minecraft;
         this.f = 1;
         try {

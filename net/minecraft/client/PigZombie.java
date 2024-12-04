@@ -8,7 +8,7 @@ public class PigZombie
 extends Zombie {
     private int a = 0;
     private int b = 0;
-    static private final Item c = new Item(dx.E, 1);
+    static private final Item c = new Item(ItemRegistry.E, 1);
 
     public PigZombie(Session cy2) {
         super(cy2);
@@ -95,7 +95,7 @@ extends Zombie {
 
     @Override
     protected int g_() {
-        return dx.ap.aW;
+        return ItemRegistry.ap.id;
     }
 
     @Override

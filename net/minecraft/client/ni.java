@@ -83,7 +83,7 @@ extends lh {
 
     @Override
     public int a(int n2, Random random) {
-        return dx.as.aW;
+        return ItemRegistry.as.id;
     }
 
     @Override

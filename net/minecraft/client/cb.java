@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class cb
-extends dx {
+extends ItemRegistry {
     private HeadBanger1337[] bb;
     private float bc = 4.0f;
     private int bd;

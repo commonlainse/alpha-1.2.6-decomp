@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class ag
-extends dx {
+extends ItemRegistry {
     private int a;
 
     public ag(int n2, int n3) {
@@ -45,15 +45,15 @@ extends dx {
             if (this.a == 0) {
                 if (cy2.f(n2, n3, n4) == hb.f && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new Item(dx.av);
+                    return new Item(ItemRegistry.av);
                 }
                 if (cy2.f(n2, n3, n4) == hb.g && cy2.e(n2, n3, n4) == 0) {
                     cy2.d(n2, n3, n4, 0);
-                    return new Item(dx.aw);
+                    return new Item(ItemRegistry.aw);
                 }
             } else {
                 if (this.a < 0) {
-                    return new Item(dx.au);
+                    return new Item(ItemRegistry.au);
                 }
                 if (nx2.e == 0) {
                     --n3;
@@ -82,11 +82,11 @@ extends dx {
                     } else {
                         cy2.b(n2, n3, n4, this.a, 0);
                     }
-                    return new Item(dx.au);
+                    return new Item(ItemRegistry.au);
                 }
             }
         } else if (this.a == 0 && nx2.g instanceof Cow) {
-            return new Item(dx.aE);
+            return new Item(ItemRegistry.aE);
         }
         return fp2;
     }

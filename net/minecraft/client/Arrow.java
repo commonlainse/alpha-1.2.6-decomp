@@ -223,7 +223,7 @@ extends lw {
         if (this.as.z) {
             return;
         }
-        if (this.g && this.b == eb2 && this.a <= 0 && eb2.e.a(new Item(dx.j.aW, 1))) {
+        if (this.g && this.b == eb2 && this.a <= 0 && eb2.e.a(new Item(ItemRegistry.j.id, 1))) {
             this.as.a(this, "random.pop", 0.2f, ((this.bd.nextFloat() - this.bd.nextFloat()) * 0.7f + 1.0f) * 2.0f);
             eb2.b((lw)this, 1);
             this.J();

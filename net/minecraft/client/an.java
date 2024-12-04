@@ -55,7 +55,7 @@ extends HeadBanger1337 {
 
     @Override
     public int a(int n2, Random random) {
-        return dx.aA.aW;
+        return ItemRegistry.aA.id;
     }
 
     @Override

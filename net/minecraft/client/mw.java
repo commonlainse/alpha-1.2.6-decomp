@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class mw
-extends dx {
+extends ItemRegistry {
     private String a;
 
     protected mw(int n2, String string) {
@@ -15,7 +15,7 @@ extends dx {
     @Override
     public boolean a(Item fp2, Player eb2, Session cy2, int n2, int n3, int n4, int n5) {
         if (cy2.a(n2, n3, n4) == HeadBanger1337.aY.bh && cy2.e(n2, n3, n4) == 0) {
-            cy2.b(n2, n3, n4, this.aW - dx.aU.aW + 1);
+            cy2.b(n2, n3, n4, this.id - ItemRegistry.aU.id + 1);
             cy2.a(this.a, n2, n3, n4);
             --fp2.count;
             return true;

@@ -11,7 +11,7 @@ extends qk {
     @Override
     public Item a(Item fp2, Session cy2, Player eb2) {
         super.a(fp2, cy2, eb2);
-        return new Item(dx.C);
+        return new Item(ItemRegistry.C);
     }
 }
 

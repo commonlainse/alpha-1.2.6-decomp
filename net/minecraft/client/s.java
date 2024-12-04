@@ -13,7 +13,7 @@ extends HeadBanger1337 {
 
     @Override
     public int a(int n2, Random random) {
-        return dx.aB.aW;
+        return ItemRegistry.aB.id;
     }
 
     @Override

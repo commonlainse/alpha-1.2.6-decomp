@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class kg
-extends dx {
+extends ItemRegistry {
     private int a;
 
     public kg(int n2, int n3) {

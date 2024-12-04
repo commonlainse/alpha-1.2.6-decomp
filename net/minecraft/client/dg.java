@@ -26,7 +26,7 @@ extends HeadBanger1337 {
     public void e(Session cy2, int n2, int n3, int n4, int n5) {
         cy2.a((String)null, n2, n3, n4);
         cy2.b(n2, n3, n4, 0);
-        int n6 = dx.aU.aW + n5 - 1;
+        int n6 = ItemRegistry.aU.id + n5 - 1;
         float f2 = 0.7f;
         double d2 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.5;
         double d3 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.2 + 0.6;

@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class qk
-extends dx {
+extends ItemRegistry {
     private int a;
 
     public qk(int n2, int n3) {

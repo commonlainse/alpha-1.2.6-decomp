@@ -103,7 +103,7 @@ extends Mob {
         this.b(this.aw, this.ax, this.ay);
         this.aA = 0.1f;
         if (this.name.equals("Notch")) {
-            this.a(new Item(dx.h, 1), true);
+            this.a(new Item(ItemRegistry.h, 1), true);
         }
         this.e.g();
         if (lw2 != null) {

@@ -87,7 +87,7 @@ extends ok {
                 float f3 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
                 float f4 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
                 float f5 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
-                DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new Item(dx.Q));
+                DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new Item(ItemRegistry.Q));
                 eo2.c = 10;
                 cy2.a(eo2);
             }
@@ -97,7 +97,7 @@ extends ok {
     @Override
     public int a(int n2, Random random) {
         if (n2 == 7) {
-            return dx.R.aW;
+            return ItemRegistry.R.id;
         }
         return -1;
     }

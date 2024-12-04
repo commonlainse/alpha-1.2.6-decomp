@@ -992,9 +992,9 @@ implements jv {
         } else if (string == "reddust") {
             this.t.h.a(new fh(this.k, d2, d3, d4));
         } else if (string == "snowballpoof") {
-            this.t.h.a(new jo(this.k, d2, d3, d4, dx.aB));
+            this.t.h.a(new jo(this.k, d2, d3, d4, ItemRegistry.aB));
         } else if (string == "slime") {
-            this.t.h.a(new jo(this.k, d2, d3, d4, dx.aK));
+            this.t.h.a(new jo(this.k, d2, d3, d4, ItemRegistry.aK));
         }
     }
 

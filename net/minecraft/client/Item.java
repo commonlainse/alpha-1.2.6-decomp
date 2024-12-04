@@ -16,12 +16,12 @@ public final class Item {
         this(nq2.bh, n2);
     }
 
-    public Item(dx dx2) {
+    public Item(ItemRegistry dx2) {
         this(dx2, 1);
     }
 
-    public Item(dx dx2, int n2) {
-        this(dx2.aW, n2);
+    public Item(ItemRegistry dx2, int n2) {
+        this(dx2.id, n2);
     }
 
     public Item(int n2) {
@@ -29,6 +29,7 @@ public final class Item {
     }
 
     public Item(int n2, int n3) {
+        System.out.println("new item! id: " + n2 + ", count: " + n3);
         this.id = n2;
         this.count = n3;
     }
@@ -48,8 +49,8 @@ public final class Item {
         return new Item(this.id, n2, this.damage);
     }
 
-    public dx a() {
-        return dx.c[this.id];
+    public ItemRegistry a() {
+        return ItemRegistry.c[this.id];
     }
 
     public int b() {
@@ -86,7 +87,7 @@ public final class Item {
     }
 
     public int d() {
-        return dx.c[this.id].d();
+        return ItemRegistry.c[this.id].d();
     }
 
     public void b(int n2) {
@@ -101,26 +102,26 @@ public final class Item {
     }
 
     public void a(Mob hf2) {
-        dx.c[this.id].a(this, hf2);
+        ItemRegistry.c[this.id].a(this, hf2);
     }
 
     public void a(int n2, int n3, int n4, int n5) {
-        dx.c[this.id].a(this, n2, n3, n4, n5);
+        ItemRegistry.c[this.id].a(this, n2, n3, n4, n5);
     }
 
     public int a(lw lw2) {
-        return dx.c[this.id].a(lw2);
+        return ItemRegistry.c[this.id].a(lw2);
     }
 
     public boolean b(HeadBanger1337 nq2) {
-        return dx.c[this.id].a(nq2);
+        return ItemRegistry.c[this.id].a(nq2);
     }
 
     public void a(Player eb2) {
     }
 
     public void b(Mob hf2) {
-        dx.c[this.id].b(this, hf2);
+        ItemRegistry.c[this.id].b(this, hf2);
     }
 
     public Item e() {

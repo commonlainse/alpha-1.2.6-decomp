@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  */
 package net.minecraft.client;
-public class jl
+public class PauseMenu
 extends bp {
     private int a = 0;
     private int h = 0;

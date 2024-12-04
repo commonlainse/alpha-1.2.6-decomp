@@ -29,7 +29,7 @@ extends ec {
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);
                 GL11.glRotatef(45.0f, 0.0f, 1.0f, 0.0f);
                 GL11.glScalef((float)(f3 *= 0.75f), (float)(-f3), (float)f3);
-            } else if (dx.c[fp2.id].a()) {
+            } else if (ItemRegistry.c[fp2.id].a()) {
                 float f4 = 0.625f;
                 GL11.glTranslatef(0.0f, 0.1875f, 0.0f);
                 GL11.glScalef((float)f4, (float)(-f4), (float)f4);

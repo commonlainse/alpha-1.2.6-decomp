@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class qe
-extends dx {
+extends ItemRegistry {
     public qe(int n2) {
         super(n2);
         this.aY = 64;

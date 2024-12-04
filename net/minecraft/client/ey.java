@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class ey
-extends dx {
+extends ItemRegistry {
     public ey(int n2) {
         super(n2);
     }

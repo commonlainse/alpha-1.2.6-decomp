@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class eu
-extends dx {
+extends ItemRegistry {
     private hb a;
 
     public eu(int n2, hb hb2) {

@@ -4,7 +4,7 @@
 package net.minecraft.client;
 public class Skeleton
 extends Monster {
-    static private final Item a = new Item(dx.i, 1);
+    static private final Item a = new Item(ItemRegistry.i, 1);
 
     public Skeleton(Session cy2) {
         super(cy2);
@@ -67,7 +67,7 @@ extends Monster {
 
     @Override
     protected int g_() {
-        return dx.j.aW;
+        return ItemRegistry.j.id;
     }
 
     @Override

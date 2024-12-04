@@ -52,7 +52,7 @@ extends HeadBanger1337 {
 
     @Override
     public void a_(Session cy2, int n2, int n3, int n4, int n5) {
-        int n6 = dx.aB.aW;
+        int n6 = ItemRegistry.aB.id;
         float f2 = 0.7f;
         double d2 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.5;
         double d3 = (double)(cy2.l.nextFloat() * f2) + (double)(1.0f - f2) * 0.5;
@@ -65,7 +65,7 @@ extends HeadBanger1337 {
 
     @Override
     public int a(int n2, Random random) {
-        return dx.aB.aW;
+        return ItemRegistry.aB.id;
     }
 
     @Override

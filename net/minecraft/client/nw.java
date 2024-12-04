@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class nw
-extends dx {
+extends ItemRegistry {
     public nw(int n2) {
         super(n2);
         this.aX = 1;

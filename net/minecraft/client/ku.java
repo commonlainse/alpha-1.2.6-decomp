@@ -129,7 +129,7 @@ public class ku {
         GL11.glColor4f((float)f4, (float)f4, (float)f4, 1.0f);
         Item fp2 = this.b;
         if (bq2.n != null) {
-            fp2 = new Item(dx.B.aW);
+            fp2 = new Item(ItemRegistry.B.id);
         }
         if (fp2 != null) {
             GL11.glPushMatrix();

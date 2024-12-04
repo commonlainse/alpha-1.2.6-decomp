@@ -493,7 +493,7 @@ public class HeadBanger1337 {
     static {
         for (int i2 = 0; i2 < 256; ++i2) {
             if (m[i2] == null) continue;
-            dx.c[i2] = new bc(i2 - 256);
+            ItemRegistry.c[i2] = new bc(i2 - 256);
         }
     }
 }

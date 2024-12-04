@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class oj
-extends dx {
+extends ItemRegistry {
     static private final int[] be = new int[]{3, 8, 6, 3};
     static private final int[] bf = new int[]{11, 16, 15, 13};
     public final int a;

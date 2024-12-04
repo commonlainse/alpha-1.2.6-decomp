@@ -124,7 +124,7 @@ implements cz {
 
     @Override
     protected int g_() {
-        return dx.K.aW;
+        return ItemRegistry.K.id;
     }
 
     @Override

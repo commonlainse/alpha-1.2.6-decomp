@@ -121,7 +121,7 @@ implements cz {
     @Override
     protected int g_() {
         if (this.c == 1) {
-            return dx.aK.aW;
+            return ItemRegistry.aK.id;
         }
         return 0;
     }

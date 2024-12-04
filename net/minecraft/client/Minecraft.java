@@ -609,7 +609,7 @@ implements Runnable {
         if (this.p != null) {
             return;
         }
-        this.a(new jl());
+        this.a(new PauseMenu());
     }
 
     private void a(int n2, boolean bl2) {

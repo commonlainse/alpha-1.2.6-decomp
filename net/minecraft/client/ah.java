@@ -29,7 +29,7 @@ MouseMotionListener,
 Runnable {
     private int a = 0;
     private int b = 2;
-    private boolean c = true;
+    private boolean c = false;
     private Session d;
     private File e;
     private boolean f = true;

@@ -77,7 +77,7 @@ implements hi {
         this.M();
         this.a += n2 * 10;
         if (this.a > 40) {
-            this.a(dx.ax.aW, 1, 0.0f);
+            this.a(ItemRegistry.ax.id, 1, 0.0f);
             if (this.d == 1) {
                 this.a(HeadBanger1337.au.bh, 1, 0.0f);
             } else if (this.d == 2) {
@@ -613,7 +613,7 @@ implements hi {
             eb2.a((hi)this); // TODO: It wasn't originally casted to (hi), I guessed
         } else if (this.d == 2) {
             Item fp2 = eb2.e.a();
-            if (fp2 != null && fp2.id == dx.k.aW) {
+            if (fp2 != null && fp2.id == ItemRegistry.k.id) {
                 if (--fp2.count == 0) {
                     eb2.e.a(eb2.e.d, null);
                 }

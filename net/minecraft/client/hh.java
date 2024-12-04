@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class hh
-extends dx {
+extends ItemRegistry {
     private int a;
 
     public hh(int n2, HeadBanger1337 nq2) {

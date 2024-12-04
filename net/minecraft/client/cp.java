@@ -92,34 +92,34 @@ extends js {
     private Item a(Random random) {
         int n2 = random.nextInt(11);
         if (n2 == 0) {
-            return new Item(dx.ay);
+            return new Item(ItemRegistry.ay);
         }
         if (n2 == 1) {
-            return new Item(dx.m, random.nextInt(4) + 1);
+            return new Item(ItemRegistry.m, random.nextInt(4) + 1);
         }
         if (n2 == 2) {
-            return new Item(dx.S);
+            return new Item(ItemRegistry.S);
         }
         if (n2 == 3) {
-            return new Item(dx.R, random.nextInt(4) + 1);
+            return new Item(ItemRegistry.R, random.nextInt(4) + 1);
         }
         if (n2 == 4) {
-            return new Item(dx.K, random.nextInt(4) + 1);
+            return new Item(ItemRegistry.K, random.nextInt(4) + 1);
         }
         if (n2 == 5) {
-            return new Item(dx.I, random.nextInt(4) + 1);
+            return new Item(ItemRegistry.I, random.nextInt(4) + 1);
         }
         if (n2 == 6) {
-            return new Item(dx.au);
+            return new Item(ItemRegistry.au);
         }
         if (n2 == 7 && random.nextInt(100) == 0) {
-            return new Item(dx.ar);
+            return new Item(ItemRegistry.ar);
         }
         if (n2 == 8 && random.nextInt(2) == 0) {
-            return new Item(dx.aA, random.nextInt(4) + 1);
+            return new Item(ItemRegistry.aA, random.nextInt(4) + 1);
         }
         if (n2 == 9 && random.nextInt(10) == 0) {
-            return new Item(dx.c[dx.aU.aW + random.nextInt(2)]);
+            return new Item(ItemRegistry.c[ItemRegistry.aU.id + random.nextInt(2)]);
         }
         return null;
     }

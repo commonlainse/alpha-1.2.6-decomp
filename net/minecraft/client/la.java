@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class la
-extends dx {
+extends ItemRegistry {
     private int a;
 
     public la(int n2, int n3) {

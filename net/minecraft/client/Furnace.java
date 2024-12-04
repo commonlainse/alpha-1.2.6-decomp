@@ -146,7 +146,7 @@ implements hi {
         if (this.a[0] == null) {
             return false;
         }
-        int n2 = this.d(this.a[0].a().aW);
+        int n2 = this.d(this.a[0].a().id);
         if (n2 < 0) {
             return false;
         }
@@ -159,14 +159,14 @@ implements hi {
         if (this.a[2].count < this.o_() && this.a[2].count < this.a[2].c()) {
             return true;
         }
-        return this.a[2].count < dx.c[n2].c();
+        return this.a[2].count < ItemRegistry.c[n2].c();
     }
 
     public void i() {
         if (!this.j()) {
             return;
         }
-        int n2 = this.d(this.a[0].a().aW);
+        int n2 = this.d(this.a[0].a().id);
         if (this.a[2] == null) {
             this.a[2] = new Item(n2, 1);
         } else if (this.a[2].id == n2) {
@@ -180,28 +180,28 @@ implements hi {
 
     private int d(int n2) {
         if (n2 == HeadBanger1337.H.bh) {
-            return dx.m.aW;
+            return ItemRegistry.m.id;
         }
         if (n2 == HeadBanger1337.G.bh) {
-            return dx.n.aW;
+            return ItemRegistry.n.id;
         }
         if (n2 == HeadBanger1337.aw.bh) {
-            return dx.l.aW;
+            return ItemRegistry.l.id;
         }
         if (n2 == HeadBanger1337.E.bh) {
             return HeadBanger1337.M.bh;
         }
-        if (n2 == dx.ao.aW) {
-            return dx.ap.aW;
+        if (n2 == ItemRegistry.ao.id) {
+            return ItemRegistry.ap.id;
         }
-        if (n2 == dx.aS.aW) {
-            return dx.aT.aW;
+        if (n2 == ItemRegistry.aS.id) {
+            return ItemRegistry.aT.id;
         }
         if (n2 == HeadBanger1337.w.bh) {
             return HeadBanger1337.t.bh;
         }
-        if (n2 == dx.aG.aW) {
-            return dx.aF.aW;
+        if (n2 == ItemRegistry.aG.id) {
+            return ItemRegistry.aF.id;
         }
         return -1;
     }
@@ -210,17 +210,17 @@ implements hi {
         if (fp2 == null) {
             return 0;
         }
-        int n2 = fp2.a().aW;
+        int n2 = fp2.a().id;
         if (n2 < 256 && HeadBanger1337.m[n2].bs == hb.c) {
             return 300;
         }
-        if (n2 == dx.B.aW) {
+        if (n2 == ItemRegistry.B.id) {
             return 100;
         }
-        if (n2 == dx.k.aW) {
+        if (n2 == ItemRegistry.k.id) {
             return 1600;
         }
-        if (n2 == dx.aw.aW) {
+        if (n2 == ItemRegistry.aw.id) {
             return 20000;
         }
         return 0;

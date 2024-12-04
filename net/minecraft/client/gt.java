@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class gt
-extends dx {
+extends ItemRegistry {
     public gt(int n2, int n3) {
         super(n2);
         this.aX = 1;
@@ -29,7 +29,7 @@ extends dx {
                     float f3 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
                     float f4 = 1.2f;
                     float f5 = cy2.l.nextFloat() * f2 + (1.0f - f2) * 0.5f;
-                    DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new Item(dx.Q));
+                    DroppedItem eo2 = new DroppedItem(cy2, (float)n2 + f3, (float)n3 + f4, (float)n4 + f5, new Item(ItemRegistry.Q));
                     eo2.c = 10;
                     cy2.a(eo2);
                 }

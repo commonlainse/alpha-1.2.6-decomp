@@ -23,8 +23,8 @@ extends of {
         if (fp2.a() instanceof oj) {
             return ((oj)fp2.a()).bb == this.c;
         }
-        System.out.println(fp2.a().aW + ", " + this.c);
-        if (fp2.a().aW == HeadBanger1337.ba.bh) {
+        System.out.println(fp2.a().id + ", " + this.c);
+        if (fp2.a().id == HeadBanger1337.ba.bh) {
             return this.c == 0;
         }
         return false;

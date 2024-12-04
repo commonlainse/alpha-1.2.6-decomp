@@ -3,7 +3,7 @@
  */
 package net.minecraft.client;
 public class bj
-extends dx {
+extends ItemRegistry {
     public bj(int n2) {
         super(n2);
         this.aY = 64;

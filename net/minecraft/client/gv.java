@@ -176,9 +176,9 @@ extends HeadBanger1337 {
             return 0;
         }
         if (this.bs == hb.e) {
-            return dx.az.aW;
+            return ItemRegistry.az.id;
         }
-        return dx.at.aW;
+        return ItemRegistry.at.id;
     }
 
     @Override
