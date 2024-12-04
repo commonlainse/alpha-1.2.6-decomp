@@ -91,7 +91,7 @@ public abstract class aq {
                 for (int i4 = n6; i4 <= n7; ++i4) {
                     int n8 = cy2.a(i2, i3 - 1, i4);
                     if (n8 <= 0 || cy2.j(i2, i3, i4) <= 3) continue;
-                    this.a(Block.m[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
+                    this.a(Block.registry[n8], d2, d3 + (double)lw2.i_(), d4, i2, i3, i4, f2, f4, d8, d9 + (double)lw2.i_(), d10);
                 }
             }
         }

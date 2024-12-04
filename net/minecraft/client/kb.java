@@ -409,7 +409,7 @@ public class kb {
             float f2 = this.m.nextFloat();
             float f3 = this.m.nextFloat();
             if (n9 <= 0) continue;
-            this.h.h.a(new pc(cy2, (float)n6 + f2, (double)((float)n8 + 0.1f) - Block.m[n9].bl, (float)n7 + f3));
+            this.h.h.a(new pc(cy2, (float)n6 + f2, (double)((float)n8 + 0.1f) - Block.registry[n9].bl, (float)n7 + f3));
         }
     }
 

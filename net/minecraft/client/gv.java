@@ -145,7 +145,7 @@ extends Block {
             if (cy2.a(n2, n3 - 1, n4) != this.bh) {
                 cy2.d(n2, n3, n4, 0);
             }
-            if (n5 > 0 && Block.m[n5].e()) {
+            if (n5 > 0 && Block.registry[n5].e()) {
                 this.a(cy2, n2, n3 - 1, n4, n5);
             }
         } else {
@@ -163,7 +163,7 @@ extends Block {
             }
             if (bl2) {
                 this.b_(cy2, n2, n3, n4, n6);
-            } else if (n5 > 0 && Block.m[n5].e()) {
+            } else if (n5 > 0 && Block.registry[n5].e()) {
                 boolean bl3 = cy2.o(n2, n3, n4) || cy2.o(n2, n3 + 1, n4);
                 this.a(cy2, n2, n3, n4, bl3);
             }

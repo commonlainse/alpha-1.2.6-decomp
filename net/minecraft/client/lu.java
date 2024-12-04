@@ -315,7 +315,7 @@ extends Block {
         if (n5 == 0) {
             return false;
         }
-        return Block.m[n5].e();
+        return Block.registry[n5].e();
     }
 }
 

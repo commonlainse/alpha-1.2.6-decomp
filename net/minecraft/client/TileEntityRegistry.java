@@ -76,7 +76,7 @@ public class TileEntityRegistry {
     }
 
     public Block g() {
-        return Block.m[this.e.a(this.f, this.g, this.h)];
+        return Block.registry[this.e.a(this.f, this.g, this.h)];
     }
 
     static {

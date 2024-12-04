@@ -21,9 +21,9 @@ public class ku {
 
     public void a(InventoryItem fp2) {
         GL11.glPushMatrix();
-        if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
+        if (fp2.id < 256 && bk.a(Block.registry[fp2.id].g())) {
             GL11.glBindTexture(3553, (int)this.a.n.a("/terrain.png"));
-            this.e.a(Block.m[fp2.id]);
+            this.e.a(Block.registry[fp2.id]);
         } else {
             float f2;
             float f3;
@@ -202,8 +202,8 @@ public class ku {
             int n5 = this.a.n.a("/terrain.png");
             GL11.glBindTexture(3553, (int)n5);
             int n6 = this.a.e.a(n2, n3, n4);
-            if (Block.m[n6] != null) {
-                this.a(f2, Block.m[n6].a(2));
+            if (Block.registry[n6] != null) {
+                this.a(f2, Block.registry[n6].a(2));
             }
         }
         if (this.a.g.a(hb.f)) {

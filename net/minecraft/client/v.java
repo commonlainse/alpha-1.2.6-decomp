@@ -23,7 +23,7 @@ extends Block {
 
     @Override
     public void a(Session cy2, int n2, int n3, int n4, int n5) {
-        if (n5 > 0 && Block.m[n5].e() && cy2.o(n2, n3, n4)) {
+        if (n5 > 0 && Block.registry[n5].e() && cy2.o(n2, n3, n4)) {
             this.b(cy2, n2, n3, n4, 0);
             cy2.d(n2, n3, n4, 0);
         }

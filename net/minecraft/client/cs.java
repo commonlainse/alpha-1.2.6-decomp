@@ -111,12 +111,12 @@ implements pk {
         if (n5 == 0) {
             return hb.a;
         }
-        return Block.m[n5].bs;
+        return Block.registry[n5].bs;
     }
 
     @Override
     public boolean g(int n2, int n3, int n4) {
-        Block nq2 = Block.m[this.a(n2, n3, n4)];
+        Block nq2 = Block.registry[this.a(n2, n3, n4)];
         if (nq2 == null) {
             return false;
         }

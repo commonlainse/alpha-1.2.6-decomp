@@ -211,7 +211,7 @@ implements hi {
             return 0;
         }
         int n2 = fp2.a().id;
-        if (n2 < 256 && Block.m[n2].bs == hb.c) {
+        if (n2 < 256 && Block.registry[n2].bs == hb.c) {
             return 300;
         }
         if (n2 == Item.B.id) {

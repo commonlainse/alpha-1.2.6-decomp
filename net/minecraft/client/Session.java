@@ -403,7 +403,7 @@ implements pk {
         if (n5 == 0) {
             return hb.a;
         }
-        return Block.m[n5].bs;
+        return Block.registry[n5].bs;
     }
 
     @Override
@@ -497,7 +497,7 @@ implements pk {
         if (this.i || this.z) {
             return;
         }
-        Block nq2 = Block.m[this.a(n2, n3, n4)];
+        Block nq2 = Block.registry[this.a(n2, n3, n4)];
         if (nq2 != null) {
             nq2.a(this, n2, n3, n4, n5);
         }
@@ -740,7 +740,7 @@ implements pk {
             }
             int n10 = this.a(n5, n6, n7);
             int n11 = this.e(n5, n6, n7);
-            Block nq2 = Block.m[n10];
+            Block nq2 = Block.registry[n10];
             if (n10 <= 0 || !nq2.a(n11, bl2) || (nx2 = nq2.a(this, n5, n6, n7, ao2, ao3)) == null) continue;
             return nx2;
         }
@@ -830,7 +830,7 @@ implements pk {
             for (int i3 = n6; i3 < n7; ++i3) {
                 if (!this.d(i2, 64, i3)) continue;
                 for (int i4 = n4 - 1; i4 < n5; ++i4) {
-                    Block nq2 = Block.m[this.a(i2, i4, i3)];
+                    Block nq2 = Block.registry[this.a(i2, i4, i3)];
                     if (nq2 == null) continue;
                     nq2.a(this, i2, i4, i3, co2, this.I);
                 }
@@ -913,7 +913,7 @@ implements pk {
         n3 &= 0xF;
         while (n4 > 0) {
             int n5 = ha2.a(n2, n4, n3);
-            if (n5 == 0 || !Block.m[n5].bs.c() && !Block.m[n5].bs.d()) {
+            if (n5 == 0 || !Block.registry[n5].bs.c() && !Block.registry[n5].bs.d()) {
                 --n4;
                 continue;
             }
@@ -944,13 +944,13 @@ implements pk {
         if (this.a) {
             int n7;
             if (this.a(kq2.a - n6, kq2.b - n6, kq2.c - n6, kq2.a + n6, kq2.b + n6, kq2.c + n6) && (n7 = this.a(kq2.a, kq2.b, kq2.c)) == kq2.d && n7 > 0) {
-                Block.m[n7].a(this, kq2.a, kq2.b, kq2.c, this.l);
+                Block.registry[n7].a(this, kq2.a, kq2.b, kq2.c, this.l);
             }
             return;
         }
         if (this.a(n2 - n6, n3 - n6, n4 - n6, n2 + n6, n3 + n6, n4 + n6)) {
             if (n5 > 0) {
-                kq2.a((long)Block.m[n5].d() + this.e);
+                kq2.a((long)Block.registry[n5].d() + this.e);
             }
             if (!this.D.contains(kq2)) {
                 this.D.add(kq2);
@@ -1092,7 +1092,7 @@ implements pk {
         for (int i2 = n2; i2 < n3; ++i2) {
             for (int i3 = n4; i3 < n5; ++i3) {
                 for (int i4 = n6; i4 < n7; ++i4) {
-                    Block nq2 = Block.m[this.a(i2, i3, i4)];
+                    Block nq2 = Block.registry[this.a(i2, i3, i4)];
                     if (nq2 == null || !nq2.bs.d()) continue;
                     return true;
                 }
@@ -1133,7 +1133,7 @@ implements pk {
             for (int i3 = n4; i3 < n5; ++i3) {
                 for (int i4 = n6; i4 < n7; ++i4) {
                     double d2;
-                    Block nq2 = Block.m[this.a(i2, i3, i4)];
+                    Block nq2 = Block.registry[this.a(i2, i3, i4)];
                     if (nq2 == null || nq2.bs != hb2 || !((double)n5 >= (d2 = (double)((float)(i3 + 1) - ld.b(this.e(i2, i3, i4)))))) continue;
                     bl2 = true;
                     nq2.a(this, i2, i3, i4, lw2, ao2);
@@ -1160,7 +1160,7 @@ implements pk {
         for (int i2 = n2; i2 < n3; ++i2) {
             for (int i3 = n4; i3 < n5; ++i3) {
                 for (int i4 = n6; i4 < n7; ++i4) {
-                    Block nq2 = Block.m[this.a(i2, i3, i4)];
+                    Block nq2 = Block.registry[this.a(i2, i3, i4)];
                     if (nq2 == null || nq2.bs != hb2) continue;
                     return true;
                 }
@@ -1179,7 +1179,7 @@ implements pk {
         for (int i2 = n2; i2 < n3; ++i2) {
             for (int i3 = n4; i3 < n5; ++i3) {
                 for (int i4 = n6; i4 < n7; ++i4) {
-                    Block nq2 = Block.m[this.a(i2, i3, i4)];
+                    Block nq2 = Block.registry[this.a(i2, i3, i4)];
                     if (nq2 == null || nq2.bs != hb2) continue;
                     int n8 = this.e(i2, i3, i4);
                     double d2 = i3 + 1;
@@ -1292,7 +1292,7 @@ implements pk {
 
     @Override
     public boolean g(int n2, int n3, int n4) {
-        Block nq2 = Block.m[this.a(n2, n3, n4)];
+        Block nq2 = Block.registry[this.a(n2, n3, n4)];
         if (nq2 == null) {
             return false;
         }
@@ -1439,7 +1439,7 @@ implements pk {
                 n7 = n2 >> 16 & 0x7F;
                 byte by2 = ha2.b[n9 << 11 | n8 << 7 | n7];
                 if (!Block.n[by2]) continue;
-                Block.m[by2].a(this, n9 + n5, n7, n8 + n4, this.l);
+                Block.registry[by2].a(this, n9 + n5, n7, n8 + n4, this.l);
             }
         }
     }
@@ -1460,7 +1460,7 @@ implements pk {
             this.D.remove(kq2);
             int n4 = 8;
             if (!this.a(kq2.a - n4, kq2.b - n4, kq2.c - n4, kq2.a + n4, kq2.b + n4, kq2.c + n4) || (n3 = this.a(kq2.a, kq2.b, kq2.c)) != kq2.d || n3 <= 0) continue;
-            Block.m[n3].a(this, kq2.a, kq2.b, kq2.c, this.l);
+            Block.registry[n3].a(this, kq2.a, kq2.b, kq2.c, this.l);
         }
         return this.C.size() != 0;
     }
@@ -1474,7 +1474,7 @@ implements pk {
             int n8 = n2 + this.l.nextInt(n5) - this.l.nextInt(n5);
             int n9 = this.a(n8, n7 = n3 + this.l.nextInt(n5) - this.l.nextInt(n5), n6 = n4 + this.l.nextInt(n5) - this.l.nextInt(n5));
             if (n9 <= 0) continue;
-            Block.m[n9].b(this, n8, n7, n6, random);
+            Block.registry[n9].b(this, n8, n7, n6, random);
         }
     }
 
@@ -1549,8 +1549,8 @@ implements pk {
 
     public boolean a(int n2, int n3, int n4, int n5, boolean bl2) {
         int n6 = this.a(n3, n4, n5);
-        Block nq2 = Block.m[n6];
-        Block nq3 = Block.m[n2];
+        Block nq2 = Block.registry[n6];
+        Block nq3 = Block.registry[n2];
         co co2 = nq3.d(this, n3, n4, n5);
         if (bl2) {
             co2 = null;
@@ -1599,7 +1599,7 @@ implements pk {
         if (n6 == 0) {
             return false;
         }
-        return Block.m[n6].c(this, n2, n3, n4, n5);
+        return Block.registry[n6].c(this, n2, n3, n4, n5);
     }
 
     public boolean n(int n2, int n3, int n4) {
@@ -1629,7 +1629,7 @@ implements pk {
         if (n6 == 0) {
             return false;
         }
-        return Block.m[n6].c((pk)this, n2, n3, n4, n5);
+        return Block.registry[n6].c((pk)this, n2, n3, n4, n5);
     }
 
     public boolean o(int n2, int n3, int n4) {

@@ -9,7 +9,7 @@ extends Item {
     public bc(int n2) {
         super(n2);
         this.a = n2 + 256;
-        this.setIcon(Block.m[n2 + 256].a(2));
+        this.setIcon(Block.registry[n2 + 256].a(2));
     }
 
     @Override
@@ -40,10 +40,10 @@ extends Item {
             return false;
         }
         if (cy2.a(this.a, n2, n3, n4, false)) {
-            Block nq2 = Block.m[this.a];
+            Block nq2 = Block.registry[this.a];
             if (cy2.d(n2, n3, n4, this.a)) {
-                Block.m[this.a].d(cy2, n2, n3, n4, n5);
-                Block.m[this.a].a(cy2, n2, n3, n4, (Mob)eb2);
+                Block.registry[this.a].d(cy2, n2, n3, n4, n5);
+                Block.registry[this.a].a(cy2, n2, n3, n4, (Mob)eb2);
                 cy2.a((float)n2 + 0.5f, (double)((float)n3 + 0.5f), (double)((float)n4 + 0.5f), nq2.bq.d(), (nq2.bq.b() + 1.0f) / 2.0f, nq2.bq.c() * 0.8f);
                 --fp2.count;
             }

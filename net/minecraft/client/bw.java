@@ -133,7 +133,7 @@ public class bw {
                         if (i3 == 0 && Block.p[n10] && gz.a.a(ji2 = cs2.b(i6, i4, i5))) {
                             this.B.add(ji2);
                         }
-                        if ((n9 = (nq2 = Block.m[n10]).c()) != i3) {
+                        if ((n9 = (nq2 = Block.registry[n10]).c()) != i3) {
                             bl2 = true;
                             continue;
                         }

@@ -42,7 +42,7 @@ extends ld {
                     cy2.d(n2, n3, n4, Block.ar.bh);
                     return;
                 }
-                if (!Block.m[n6].bs.c()) continue;
+                if (!Block.registry[n6].bs.c()) continue;
                 return;
             }
         }

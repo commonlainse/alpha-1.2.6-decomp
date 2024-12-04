@@ -229,7 +229,7 @@ public class ha {
         int n10 = this.k * 16 + n4;
         this.b[n2 << 11 | n4 << 7 | n3] = by2;
         if (n8 != 0 && !this.d.z) {
-            Block.m[n8].b(this.d, n9, n3, n10);
+            Block.registry[n8].b(this.d, n9, n3, n10);
         }
         this.e.a(n2, n3, n4, n6);
         if (!this.d.q.e) {
@@ -245,7 +245,7 @@ public class ha {
         this.d.a(ch.Block, n9, n3, n10, n9, n3, n10);
         this.c(n2, n4);
         if (n5 != 0) {
-            Block.m[n5].e(this.d, n9, n3, n10);
+            Block.registry[n5].e(this.d, n9, n3, n10);
         }
         this.e.a(n2, n3, n4, n6);
         this.o = true;
@@ -263,7 +263,7 @@ public class ha {
         int n9 = this.k * 16 + n4;
         this.b[n2 << 11 | n4 << 7 | n3] = by2;
         if (n7 != 0) {
-            Block.m[n7].b(this.d, n8, n3, n9);
+            Block.registry[n7].b(this.d, n8, n3, n9);
         }
         this.e.a(n2, n3, n4, 0);
         if (Block.q[by2] != 0) {
@@ -277,7 +277,7 @@ public class ha {
         this.d.a(ch.Block, n8, n3, n9, n8, n3, n9);
         this.c(n2, n4);
         if (n5 != 0 && !this.d.z) {
-            Block.m[n5].e(this.d, n8, n3, n9);
+            Block.registry[n5].e(this.d, n8, n3, n9);
         }
         this.o = true;
         return true;
@@ -376,7 +376,7 @@ public class ha {
             if (!Block.p[n5]) {
                 return null;
             }
-            lh lh2 = (lh)Block.m[n5];
+            lh lh2 = (lh)Block.registry[n5];
             lh2.e(this.d, this.j * 16 + n2, n3, this.k * 16 + n4);
             ji2 = (TileEntityRegistry)this.l.get(on2);
         }
@@ -396,7 +396,7 @@ public class ha {
         ji2.f = this.j * 16 + n2;
         ji2.g = n3;
         ji2.h = this.k * 16 + n4;
-        if (this.a(n2, n3, n4) == 0 || !(Block.m[this.a(n2, n3, n4)] instanceof lh)) {
+        if (this.a(n2, n3, n4) == 0 || !(Block.registry[this.a(n2, n3, n4)] instanceof lh)) {
             System.out.println("Attempted to place a tile entity where there was no entity tile!");
             return;
         }

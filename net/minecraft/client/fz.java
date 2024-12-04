@@ -30,7 +30,7 @@ extends Block {
     @Override
     public boolean a(Session cy2, int n2, int n3, int n4) {
         int n5 = cy2.a(n2, n3 - 1, n4);
-        if (n5 == 0 || !Block.m[n5].a()) {
+        if (n5 == 0 || !Block.registry[n5].a()) {
             return false;
         }
         return cy2.f(n2, n3 - 1, n4).c();

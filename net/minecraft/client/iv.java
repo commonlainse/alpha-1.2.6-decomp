@@ -21,7 +21,7 @@ public class iv {
     public boolean b(int n2, int n3, int n4, int n5) {
         this.a.h.a(n2, n3, n4);
         Session cy2 = this.a.e;
-        Block nq2 = Block.m[cy2.a(n2, n3, n4)];
+        Block nq2 = Block.registry[cy2.a(n2, n3, n4)];
         int n6 = cy2.e(n2, n3, n4);
         boolean bl2 = cy2.d(n2, n3, n4, 0);
         if (nq2 != null && bl2) {
@@ -72,7 +72,7 @@ public class iv {
 
     public boolean a(Player eb2, Session cy2, InventoryItem fp2, int n2, int n3, int n4, int n5) {
         int n6 = cy2.a(n2, n3, n4);
-        if (n6 > 0 && Block.m[n6].a(cy2, n2, n3, n4, eb2)) {
+        if (n6 > 0 && Block.registry[n6].a(cy2, n2, n3, n4, eb2)) {
             return true;
         }
         if (fp2 == null) {

@@ -790,7 +790,7 @@ implements jv {
                 GL11.glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
                 GL11.glPushMatrix();
                 int n4 = this.k.a(nx2.b, nx2.c, nx2.d);
-                Block nq2 = n4 > 0 ? Block.m[n4] : null;
+                Block nq2 = n4 > 0 ? Block.registry[n4] : null;
                 GL11.glDisable(3008);
                 GL11.glPolygonOffset(-3.0f, -3.0f);
                 GL11.glEnable(32823);
@@ -855,11 +855,11 @@ implements jv {
             float f3 = 0.002f;
             int n3 = this.k.a(nx2.b, nx2.c, nx2.d);
             if (n3 > 0) {
-                Block.m[n3].a((pk)this.k, nx2.b, nx2.c, nx2.d);
+                Block.registry[n3].a((pk)this.k, nx2.b, nx2.c, nx2.d);
                 double d2 = eb2.aV + (eb2.aw - eb2.aV) * (double)f2;
                 double d3 = eb2.aW + (eb2.ax - eb2.aW) * (double)f2;
                 double d4 = eb2.aX + (eb2.ay - eb2.aX) * (double)f2;
-                this.a(Block.m[n3].f(this.k, nx2.b, nx2.c, nx2.d).b(f3, f3, f3).c(-d2, -d3, -d4));
+                this.a(Block.registry[n3].f(this.k, nx2.b, nx2.c, nx2.d).b(f3, f3, f3).c(-d2, -d3, -d4));
             }
             GL11.glDepthMask((boolean)true);
             GL11.glEnable(3553);

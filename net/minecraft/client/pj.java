@@ -52,7 +52,7 @@ extends js {
         if (n5 == 3 && n6 == 1) {
             cy2.d(n2, n3, n4, this.a);
             cy2.a = true;
-            Block.m[this.a].a(cy2, n2, n3, n4, random);
+            Block.registry[this.a].a(cy2, n2, n3, n4, random);
             cy2.a = false;
         }
         return true;

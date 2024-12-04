@@ -98,7 +98,7 @@ extends Block {
         if (bl2) {
             this.b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
             cy2.d(n2, n3, n4, 0);
-        } else if (n5 > 0 && Block.m[n5].e() && oc.a(new oc(this, cy2, n2, n3, n4)) == 3) {
+        } else if (n5 > 0 && Block.registry[n5].e() && oc.a(new oc(this, cy2, n2, n3, n4)) == 3) {
             this.h(cy2, n2, n3, n4);
         }
     }

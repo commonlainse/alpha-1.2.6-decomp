@@ -410,7 +410,7 @@ extends lw {
             this.a(null, n2);
             int n3 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.ax - (double)0.2f - (double)this.aO), TrigLookup.b(this.ay));
             if (n3 > 0) {
-                bi bi2 = Block.m[n3].bq;
+                SoundSteps bi2 = Block.registry[n3].bq;
                 this.as.a(this, bi2.d(), bi2.b() * 0.5f, bi2.c() * 0.75f);
             }
         }
@@ -445,7 +445,7 @@ extends lw {
                 f4 = 0.54600006f;
                 int n2 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n2 > 0) {
-                    f4 = Block.m[n2].bt * 0.91f;
+                    f4 = Block.registry[n2].bt * 0.91f;
                 }
             }
             float f5 = 0.16277136f / (f4 * f4 * f4);
@@ -455,7 +455,7 @@ extends lw {
                 f4 = 0.54600006f;
                 int n3 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n3 > 0) {
-                    f4 = Block.m[n3].bt * 0.91f;
+                    f4 = Block.registry[n3].bt * 0.91f;
                 }
             }
             if (this.D()) {

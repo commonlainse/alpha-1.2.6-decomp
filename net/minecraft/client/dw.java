@@ -56,7 +56,7 @@ extends Block {
         if (n5 == Block.ar.bh) {
             return true;
         }
-        hb hb2 = Block.m[n5].bs;
+        hb hb2 = Block.registry[n5].bs;
         if (hb2 == hb.f) {
             return true;
         }

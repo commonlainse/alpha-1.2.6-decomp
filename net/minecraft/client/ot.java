@@ -32,7 +32,7 @@ extends Mob {
                 f4 = 0.54600006f;
                 int n2 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n2 > 0) {
-                    f4 = Block.m[n2].bt * 0.91f;
+                    f4 = Block.registry[n2].bt * 0.91f;
                 }
             }
             float f5 = 0.16277136f / (f4 * f4 * f4);
@@ -42,7 +42,7 @@ extends Mob {
                 f4 = 0.54600006f;
                 int n3 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
                 if (n3 > 0) {
-                    f4 = Block.m[n3].bt * 0.91f;
+                    f4 = Block.registry[n3].bt * 0.91f;
                 }
             }
             this.d(this.az, this.aA, this.aB);

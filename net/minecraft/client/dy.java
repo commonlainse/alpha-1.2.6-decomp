@@ -19,7 +19,7 @@ extends aq {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)((float)d2), (float)((float)d3), (float)((float)d4));
         this.a("/terrain.png");
-        Block nq2 = Block.m[gb2.a];
+        Block nq2 = Block.registry[gb2.a];
         Session cy2 = gb2.k();
         GL11.glDisable(2896);
         this.a.a(nq2, cy2, TrigLookup.b(gb2.aw), TrigLookup.b(gb2.ax), TrigLookup.b(gb2.ay));

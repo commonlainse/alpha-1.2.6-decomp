@@ -54,7 +54,7 @@ extends lw {
             f2 = 0.58800006f;
             int n2 = this.as.a(TrigLookup.b(this.aw), TrigLookup.b(this.aG.b) - 1, TrigLookup.b(this.ay));
             if (n2 > 0) {
-                f2 = Block.m[n2].bt * 0.98f;
+                f2 = Block.registry[n2].bt * 0.98f;
             }
         }
         this.az *= (double)f2;

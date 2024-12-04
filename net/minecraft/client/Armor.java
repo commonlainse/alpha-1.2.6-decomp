@@ -131,7 +131,7 @@ extends ec {
         if (fp3 != null && fp3.a().id < 256) {
             GL11.glPushMatrix();
             this.a.a.b(0.0625f);
-            if (bk.a(Block.m[fp3.id].g())) {
+            if (bk.a(Block.registry[fp3.id].g())) {
                 float f3 = 0.625f;
                 GL11.glTranslatef(0.0f, -0.25f, 0.0f);
                 GL11.glRotatef(180.0f, 0.0f, 1.0f, 0.0f);
@@ -147,7 +147,7 @@ extends ec {
             if (eb2.n != null) {
                 fp2 = new InventoryItem(Item.B.id);
             }
-            if (fp2.id < 256 && bk.a(Block.m[fp2.id].g())) {
+            if (fp2.id < 256 && bk.a(Block.registry[fp2.id].g())) {
                 float f4 = 0.5f;
                 GL11.glTranslatef(0.0f, 0.1875f, -0.3125f);
                 GL11.glRotatef(20.0f, 1.0f, 0.0f, 0.0f);

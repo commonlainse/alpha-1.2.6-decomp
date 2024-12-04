@@ -107,7 +107,7 @@ extends ld {
                 if (this.bs == hb.g) {
                     this.i(cy2, n2, n3, n4);
                 } else {
-                    Block.m[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
+                    Block.registry[n6].b_(cy2, n2, n3, n4, cy2.e(n2, n3, n4));
                 }
             }
             cy2.b(n2, n3, n4, this.bh, n5);
@@ -186,7 +186,7 @@ extends ld {
         if (n5 == 0) {
             return false;
         }
-        hb hb2 = Block.m[n5].bs;
+        hb hb2 = Block.registry[n5].bs;
         return hb2.a();
     }
 

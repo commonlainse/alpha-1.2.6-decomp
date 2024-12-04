@@ -655,7 +655,7 @@ implements Runnable {
             int n4 = this.x.c;
             int n5 = this.x.d;
             int n6 = this.x.e;
-            Block nq2 = Block.m[this.e.a(n3, n4, n5)];
+            Block nq2 = Block.registry[this.e.a(n3, n4, n5)];
             if (n2 == 0) {
                 this.e.i(n3, n4, n5, this.x.e);
                 if (nq2 != Block.z || this.g.f >= 100) {
